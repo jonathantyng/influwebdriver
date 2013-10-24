@@ -10,6 +10,8 @@ import static org.junit.Assert.*;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 import java.io.File;
+
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,14 +19,14 @@ import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
 public class online_review {
-    FirefoxDriver wd;
+    ChromeDriver wd;
     
     @Before
     public void setUp() throws Exception {
 
         System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
 
-        wd = new FirefoxDriver();
+        wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
     
@@ -87,6 +89,7 @@ public class online_review {
         wd.findElement(By.name("params.url")).sendKeys("http://www.influitive.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Preview")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("button.close")).click();
         wd.findElement(By.id("ui-id-2")).click();
         wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
