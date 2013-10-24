@@ -10,6 +10,8 @@ import static org.junit.Assert.*;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 import java.io.File;
+
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,14 +19,14 @@ import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
 public class like_on_fb {
-    FirefoxDriver wd;
+    ChromeDriver wd;
     
     @Before
     public void setUp() throws Exception {
 
         System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
 
-        wd = new FirefoxDriver();
+        wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
     
