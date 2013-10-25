@@ -18,17 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class invite_advocate {
-    ChromeDriver wd;
-    
-    @Before
-    public void setUp() throws Exception {
-
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
-
-        wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
+public class invite_advocate extends BaseClass{
     
     @Test
     public void invite_advocate() {

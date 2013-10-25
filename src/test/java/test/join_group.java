@@ -10,39 +10,49 @@ import static org.junit.Assert.*;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 import java.io.File;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class join_group {
-    FirefoxDriver wd;
-    
-    @Before
-    public void setUp() throws Exception {
-
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
-
-        wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
+public class join_group extends BaseClass{
     
     @Test
     public void join_group() {
         wd.get("http://oct24.influitiveqa.com/users/sign_in");
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-        wd.findElement(By.id("Challenges")).click();
+
+        //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
+
+        boolean signin = wd.findElements( By.id("user_email")).size() != 0;
+
+        if (signin)
+        {
+            wd.findElement(By.id("user_email")).click();
+            wd.findElement(By.id("user_email")).clear();
+            wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+            wd.findElement(By.id("user_password")).click();
+            wd.findElement(By.id("user_password")).clear();
+            wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+            wd.findElement(By.id("sign-in-button")).click();
+            System.out.println("Sign in complete");
+            wd.findElement(By.id("Challenges")).click();
+
+        }
+        else
+        {
+            System.out.println("Found cookie");
+            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wd.findElement(By.id("Challenges")).click();
+        }
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
-        boolean exists = wd.findElements( By.linkText("No Thanks")).size() != 0;
+        boolean  exists = wd.findElements( By.linkText("No Thanks")).size() != 0;
 
         if (exists)
         {
@@ -60,6 +70,7 @@ public class join_group {
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("name")).click();
         wd.findElement(By.name("name")).clear();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -74,6 +85,7 @@ public class join_group {
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#new_challenge_type > input[name=\"commit\"]")).click();
         wd.findElement(By.cssSelector("button.close")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Join Group");
@@ -89,15 +101,13 @@ public class join_group {
         wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Influitive_group_join']")).click();
-        wd.findElement(By.linkText("Preview")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("button.close")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//div[@id='s2id_params.group_id17']/a/span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Test Group");
-        wd.findElement(By.className("select2-match")).click();
-        //new Actions(wd).clickAndHold(wd.findElement(By.xpath("//div[@id='s2id_params.group_id17']/a/span"))).build().perform();
-        //new Actions(wd).release(wd.findElement(By.cssSelector(".select2-result-label:contains('Test Group')"))).build().perform();
+        wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        //wd.findElement(By.className("select2-match")).click();
+        //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
         wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

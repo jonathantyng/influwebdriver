@@ -20,17 +20,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.safari.SafariDriver;
 import static org.openqa.selenium.OutputType.*;
 
-public class blog_post {
-     FirefoxDriver wd;
-
-    @Before
-    public void setUp() throws Exception {
-
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
-
-        wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
+public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
@@ -90,8 +80,9 @@ public class blog_post {
         wd.findElement(By.id("s2id_autogen1")).click();
         wd.findElement(By.id("s2id_autogen1")).clear();
         wd.findElement(By.id("s2id_autogen1")).sendKeys("Alice");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("img[alt=\"Alice Advocate\"]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();

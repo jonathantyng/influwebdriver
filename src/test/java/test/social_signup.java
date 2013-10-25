@@ -18,17 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class social_signup {
-    ChromeDriver wd;
-    
-    @Before
-    public void setUp() throws Exception {
-
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
-
-        wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
+public class social_signup extends BaseClass{
     
     @Test
     public void social_signup() {

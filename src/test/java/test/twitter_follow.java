@@ -16,17 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class twitter_follow {
-    FirefoxDriver wd;
-    
-    @Before
-    public void setUp() throws Exception {
-
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
-
-        wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
+public class twitter_follow extends BaseClass{
     
     @Test
     public void twitter_follow() {

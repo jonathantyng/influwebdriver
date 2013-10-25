@@ -2,13 +2,9 @@ package test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
 
-import java.util.concurrent.TimeUnit;
-
-public class SeleniumTest  extends Set {
+public class SeleniumTest  extends BaseClass {
     public static void main(String[] args) {
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface,
