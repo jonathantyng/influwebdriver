@@ -86,6 +86,7 @@ public class appexchangechallenge extends BaseClass{
         wd.findElement(By.cssSelector("li.select2-search-field")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("s2id_autogen20")).sendKeys("Test Group");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-1")).click();

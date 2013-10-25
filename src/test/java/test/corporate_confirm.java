@@ -55,20 +55,26 @@ public class corporate_confirm extends BaseClass{
         wd.findElement(By.name("name")).click();
         wd.findElement(By.name("name")).clear();
         wd.findElement(By.name("name")).sendKeys("Two Corporate Confirmations");
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Survey");
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("headline")).click();
         wd.findElement(By.name("headline")).clear();
         wd.findElement(By.name("headline")).sendKeys("Two Corporate Confirmations");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("description")).click();
         wd.findElement(By.name("description")).clear();
         wd.findElement(By.name("description")).sendKeys("Two Corporate Confirmations. Testing approving advocates in different stages of a challenge.");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("subject")).click();
         wd.findElement(By.name("subject")).clear();
         wd.findElement(By.name("subject")).sendKeys("The first question.");

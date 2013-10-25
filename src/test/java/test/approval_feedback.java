@@ -53,8 +53,11 @@ public class approval_feedback extends BaseClass{
         wd.findElement(By.name("name")).clear();
         wd.findElement(By.name("name")).sendKeys("Approval Challenge with Feedback");
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Survey");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("headline")).click();
         wd.findElement(By.name("headline")).clear();
         wd.findElement(By.name("headline")).sendKeys("Approval Challenge with Feedback");

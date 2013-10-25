@@ -24,7 +24,7 @@ public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
-        wd.get("http://app.influitiveqa.com/users/sign_in");
+        wd.get("http://oct24.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -57,19 +57,24 @@ public class blog_post extends BaseClass{
         wd.findElement(By.name("name")).click();
         wd.findElement(By.name("name")).clear();
         wd.findElement(By.name("name")).sendKeys("Comment on a Blog Post");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Testimonials");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.name("headline")).click();
         wd.findElement(By.name("headline")).clear();
         wd.findElement(By.name("headline")).sendKeys("Comment on a Blog Post");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("description")).click();
         wd.findElement(By.name("description")).clear();
         wd.findElement(By.name("description")).sendKeys("Comment on a Blog Post");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.cssSelector("img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Blog_post']")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();
         wd.findElement(By.name("params.url")).sendKeys("http://www.slashgear.com/jobs-movie-tanks-on-opening-weekend-19294106/");
@@ -82,6 +87,8 @@ public class blog_post extends BaseClass{
         wd.findElement(By.id("s2id_autogen1")).sendKeys("Alice");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("img[alt=\"Alice Advocate\"]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("ui-id-1")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }

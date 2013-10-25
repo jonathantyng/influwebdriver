@@ -69,13 +69,13 @@ public class join_linkedin_group extends BaseClass{
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Linkedin_group_join']")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("entered_url")).click();
         wd.findElement(By.name("entered_url")).clear();
         wd.findElement(By.name("entered_url")).sendKeys("http://www.linkedin.com/groups/Javascript-121615?trk=myg_ugrp_ovr");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("button.load-preview.right")).click();
-        wd.findElement(By.name("entered_url")).click();
-        wd.findElement(By.name("entered_url")).clear();
-        wd.findElement(By.name("entered_url")).sendKeys();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
         wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
         try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }

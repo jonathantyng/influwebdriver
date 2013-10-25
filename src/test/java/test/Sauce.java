@@ -17,6 +17,7 @@ public class Sauce {
     private WebDriver driver;
 
     @Before
+
     public void setUp() throws Exception {
 
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
@@ -27,7 +28,6 @@ public class Sauce {
                 capabilities);
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
-
     @Test
     public void webDriver() throws Exception {
         driver.get("http://oct21.influitiveqa.com/corporate/settings/levels");

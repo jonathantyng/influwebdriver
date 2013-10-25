@@ -56,7 +56,11 @@ public class geo_checkin extends BaseClass{
         wd.findElement(By.id("challenge_type_name")).click();
         wd.findElement(By.id("challenge_type_name")).clear();
         wd.findElement(By.id("challenge_type_name")).sendKeys("Geo");
-        wd.findElement(By.cssSelector("#new_challenge_type > input[name=\"commit\"]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Testimonial");
+        wd.findElement(By.className("select2-match")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("headline")).click();
         wd.findElement(By.name("headline")).clear();
@@ -70,7 +74,9 @@ public class geo_checkin extends BaseClass{
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Check_in']")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.address")).click();
         wd.findElement(By.cssSelector("input.address")).clear();
         wd.findElement(By.cssSelector("input.address")).sendKeys("355 Adelaide Street West Toronto");
