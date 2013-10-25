@@ -31,8 +31,6 @@ public class BaseClass {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
-
-
     }
 
 */
@@ -41,7 +39,6 @@ public class BaseClass {
 //
 //Uncomment everything below to enable SauceLabs integration
 //
-
 
 public class BaseClass {
 
@@ -59,8 +56,6 @@ public class BaseClass {
                 capabilities);
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         }
-
-
     }
 
 

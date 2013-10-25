@@ -22,8 +22,31 @@ public class create_rewards extends BaseClass{
 
     @Test
     public void create_rewards() {
+        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+        wd.findElement(By.id("user_email")).click();
+        wd.findElement(By.id("user_email")).clear();
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).click();
+        wd.findElement(By.id("user_password")).clear();
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.id("sign-in-button")).click();
         wd.findElement(By.id("Rewards")).click();
-        wd.findElement(By.id("NoThanks")).click();
+
+        //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
+
+        boolean exists = wd.findElements( By.linkText("No Thanks")).size() != 0;
+
+        if (exists)
+        {
+            wd.findElement(By.linkText("No Thanks")).click();
+            System.out.println("Tutorial dismissed");
+        }
+        else
+        {
+            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            System.out.println("Tutorial not encountered");
+        }
+
         wd.findElement(By.linkText("Add a reward")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).clear();
