@@ -78,7 +78,7 @@ public class appexchangechallenge extends BaseClass{
         wd.findElement(By.xpath("//img[@alt='App_exchange']")).click();
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).sendKeys("https://appexchange.salesforce.com/listingDetail?listingId=a0N300000016YDkEAM");
-        wd.findElement(By.linkText("Load")).click();
+        //wd.findElement(By.linkText("Load")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
         wd.findElement(By.id("visibility_setting_membership_group")).click();

@@ -1,6 +1,7 @@
 package test;
 
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,11 +12,16 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-
+/*
 
 public class BaseClass {
 
     ChromeDriver wd;
+
+     @Test public void BaseClass(){
+
+        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+    }
 
     @Before
     public void setUp() throws Exception {
@@ -29,14 +35,14 @@ public class BaseClass {
 
     }
 
-
+*/
 
 
 //
 //Uncomment everything below to enable SauceLabs integration
 //
 
-/*
+
 public class BaseClass {
 
     WebDriver wd;
@@ -57,4 +63,4 @@ public class BaseClass {
 
     }
 
-*/
+
