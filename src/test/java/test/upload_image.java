@@ -22,6 +22,7 @@ public class upload_image extends BaseClass{
     
     @Test
     public void upload_image() {
+
         wd.get("http://oct24.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
