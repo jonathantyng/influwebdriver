@@ -58,8 +58,8 @@ public class create_rewards extends BaseClass{
         wd.findElement(By.id("reward_description")).sendKeys("This is a great hoodie!");
         wd.findElement(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Swag");
-        wd.findElement(By.className("select2-match")).click();
+        wd.findElement(By.linkText("Swag")).click();
+        //wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.id("link-redeeming")).click();
         wd.findElement(By.id("reward_in_catalog")).click();
         wd.findElement(By.id("reward_points")).click();

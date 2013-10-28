@@ -12,6 +12,6 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({create_company.class, create_badges.class, create_groups.class})
 
-public class Suite2 {
+public class CompanyCreation_Suite {
 
 }
