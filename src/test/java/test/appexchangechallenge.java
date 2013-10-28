@@ -26,13 +26,15 @@ public class appexchangechallenge extends BaseClass{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+        wd.get("http://sanityoct28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("sign-in-button")).click();
         wd.findElement(By.id("Challenges")).click();
 

@@ -22,7 +22,7 @@ public class social_signup extends BaseClass{
     
     @Test
     public void social_signup() {
-        wd.get("http://oct24.influitiveqa.com/join/Sanity");
+        wd.get("http://sanityoct28.influitives.com/join/Sanity");
         wd.findElement(By.cssSelector("img[alt=\"Twitter\"]")).click();
         wd.findElement(By.id("username_or_email")).click();
         wd.findElement(By.id("username_or_email")).clear();
@@ -34,10 +34,10 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.cssSelector("span")).click();
         wd.findElement(By.linkText("Sign out")).click();
-        wd.get("http://oct24.influitiveqa.com/join/Test");
+        wd.get("http://sanityoct28.influitives.com/join/Test");
         wd.findElement(By.id("registration_user_email")).click();
         wd.findElement(By.id("registration_user_email")).clear();
-        wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test25@gmail.com");
+        wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
         wd.findElement(By.id("registration_contact_name")).click();
         wd.findElement(By.id("registration_contact_name")).clear();
         wd.findElement(By.id("registration_contact_name")).sendKeys("Bob Advocate");
@@ -47,7 +47,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.cssSelector("span")).click();
         wd.findElement(By.linkText("Sign out")).click();
-        wd.get("http://oct24.influitiveqa.com/join/Sanity");
+        wd.get("http://sanityoct28.influitives.com/join/Sanity");
         wd.findElement(By.cssSelector("img[alt=\"Linkedin\"]")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).clear();
@@ -59,7 +59,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.cssSelector("span")).click();
         wd.findElement(By.linkText("Sign out")).click();
-        wd.get("http://oct24.influitiveqa.com/join/Sanity");
+        wd.get("http://sanityoct28.influitives.com/join/Sanity");
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
         wd.findElement(By.id("email")).click();
         wd.findElement(By.id("email")).clear();

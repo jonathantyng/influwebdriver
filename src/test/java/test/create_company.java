@@ -23,7 +23,8 @@ public class create_company extends BaseClass{
 
     @Test
     public void createcompany() {
-        wd.get("http://app.influitiveqa.com/users/sign_in");
+        wd.get("http://app.influitives.com/users/sign_in");
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -47,9 +48,8 @@ public class create_company extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
-        /*
-
         wd.findElement(By.xpath("//div[@id='header']/div/ul[2]/li/a/b")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
@@ -60,11 +60,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("oct24");
+        wd.findElement(By.id("company_name")).sendKeys("sanityoct28");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("oct24");
+        wd.findElement(By.id("company_subdomain")).sendKeys("sanityoct28");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -82,9 +82,8 @@ public class create_company extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        */
 
-        wd.get("http://oct24.influitiveqa.com/");
+        wd.get("http://sanityoct28.influitives.com/");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Influitive Admin")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

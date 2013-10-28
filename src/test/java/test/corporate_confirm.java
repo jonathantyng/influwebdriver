@@ -23,7 +23,7 @@ public class corporate_confirm extends BaseClass{
 
     @Test
     public void corporateconfirm() {
-        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+        wd.get("http://sanityoct28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

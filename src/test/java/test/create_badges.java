@@ -22,13 +22,15 @@ public class create_badges extends BaseClass{
 
     @Test
     public void createbadges() {
-        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+        wd.get("http://sanityoct28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("sign-in-button")).click();
         wd.findElement(By.xpath("//div[@id='header']/div/ul[2]/li/a/b")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -55,8 +57,7 @@ public class create_badges extends BaseClass{
 
         //Continue creating badges
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("No Thanks")).click();
+
         try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("add_badge")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -137,7 +138,7 @@ public class create_badges extends BaseClass{
         wd.findElement(By.id("badge_settings_points_value")).clear();
         wd.findElement(By.id("badge_settings_points_value")).sendKeys("1500");
         wd.findElement(By.id("create_badge_button")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("add_badge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("badge_name")).click();

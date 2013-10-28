@@ -24,7 +24,7 @@ public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
-        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+        wd.get("http://sanityoct28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -59,7 +59,7 @@ public class blog_post extends BaseClass{
         wd.findElement(By.name("name")).sendKeys("Comment on a Blog Post");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
-        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Testimonials");
+        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Testimonial");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.name("headline")).click();

@@ -22,7 +22,7 @@ public class create_rewards extends BaseClass{
 
     @Test
     public void create_rewards() {
-        wd.get("http://oct24.influitiveqa.com/users/sign_in");
+        wd.get("http://sanityoct28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -48,6 +48,8 @@ public class create_rewards extends BaseClass{
         }
 
         wd.findElement(By.linkText("Add a reward")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("link-headline")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).clear();
         wd.findElement(By.id("reward_name")).sendKeys("Hoodie");
@@ -79,6 +81,8 @@ public class create_rewards extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a reward")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("link-headline")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).clear();
@@ -111,6 +115,8 @@ public class create_rewards extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a reward")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("link-headline")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).clear();
@@ -138,6 +144,8 @@ public class create_rewards extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a reward")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("link-headline")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).clear();
         wd.findElement(By.id("reward_name")).sendKeys("Cape");
@@ -164,6 +172,8 @@ public class create_rewards extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.linkText("Add a reward")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("link-headline")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).click();
         wd.findElement(By.id("reward_name")).clear();
