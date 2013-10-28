@@ -60,11 +60,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("sanityoct28");
+        wd.findElement(By.id("company_name")).sendKeys("oct28");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("sanityoct28");
+        wd.findElement(By.id("company_subdomain")).sendKeys("oct28");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -83,7 +83,7 @@ public class create_company extends BaseClass{
         try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
-        wd.get("http://sanityoct28.influitives.com/");
+        wd.get("http://oct28.influitives.com/");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Influitive Admin")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -108,9 +108,7 @@ public class create_company extends BaseClass{
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
         wd.findElement(By.linkText("Enabled Features")).click();
-        wd.findElement(By.id("toggles_blog_stage")).click();
         wd.findElement(By.id("toggles_disqus_auth")).click();
-        wd.findElement(By.id("toggles_app_exchange")).click();
         wd.findElement(By.id("toggles_private_leaderboards")).click();
         wd.findElement(By.id("toggles_check_in")).click();
         wd.findElement(By.id("toggles_show_future_stages")).click();
