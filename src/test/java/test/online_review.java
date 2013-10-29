@@ -39,7 +39,7 @@ public class online_review extends BaseClass{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Tutorial dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {

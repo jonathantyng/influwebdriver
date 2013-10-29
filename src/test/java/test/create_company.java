@@ -40,7 +40,7 @@ public class create_company extends BaseClass{
         if (exists)
         {
             wd.findElement(By.className("remove")).click();
-            System.out.println("Tutorial dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
