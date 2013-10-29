@@ -60,11 +60,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("oct28");
+        wd.findElement(By.id("company_name")).sendKeys("sanityoct29");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("oct28");
+        wd.findElement(By.id("company_subdomain")).sendKeys("sanityoct29");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -83,7 +83,7 @@ public class create_company extends BaseClass{
         try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
-        wd.get("http://oct28.influitives.com/");
+        wd.get("http://sanityoct29.influitives.com/");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Influitive Admin")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -115,6 +115,7 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("toggles_quick_referral")).click();
         wd.findElement(By.id("toggles_tango_card")).click();
         wd.findElement(By.id("toggles_referral_email")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
     }
 

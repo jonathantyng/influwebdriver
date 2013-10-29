@@ -24,7 +24,7 @@ public class join_group extends BaseClass{
     
     @Test
     public void join_group() {
-        wd.get("http://sanityoct28.influitives.com/users/sign_in");
+        wd.get("http://sanityoct29.influitives.com/users/sign_in");
 
         //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
 
@@ -76,6 +76,8 @@ public class join_group extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("name")).sendKeys("Join Group");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        /*
         wd.findElement(By.linkText("Add...")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("challenge_type_name")).click();
@@ -85,6 +87,8 @@ public class join_group extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#new_challenge_type > input[name=\"commit\"]")).click();
         wd.findElement(By.cssSelector("button.close")).click();
+        */
+
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -114,6 +118,7 @@ public class join_group extends BaseClass{
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
     
     @After

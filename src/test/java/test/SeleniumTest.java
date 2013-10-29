@@ -14,7 +14,7 @@ public class SeleniumTest  extends BaseClass {
 
         //driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
-        driver.get("http://sanityoct28.influitives.com/users/sign_in");
+        driver.get("http://sanityoct29.influitives.com/users/sign_in");
         driver.findElement(By.id("user_email")).click();
         driver.findElement(By.id("user_email")).clear();
         driver.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

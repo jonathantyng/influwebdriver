@@ -24,7 +24,7 @@ public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
-        wd.get("http://sanityoct28.influitives.com/users/sign_in");
+        wd.get("http://sanityoct29.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -94,6 +94,7 @@ public class blog_post extends BaseClass{
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         wd.findElement(By.name("commit")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     @After

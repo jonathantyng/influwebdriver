@@ -20,7 +20,7 @@ public class online_action extends BaseClass{
     
     @Test
     public void online_action() {
-        wd.get("http://sanityoct28.influitives.com/users/sign_in");
+        wd.get("http://sanityoct29.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -83,6 +83,7 @@ public class online_action extends BaseClass{
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
     
     @After
