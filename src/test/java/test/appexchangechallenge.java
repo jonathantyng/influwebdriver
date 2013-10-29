@@ -26,7 +26,7 @@ public class appexchangechallenge extends BaseClass{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://sanityoct29.influitives.com/users/sign_in");
+        wd.get("http://oct29.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
