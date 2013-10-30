@@ -1,4 +1,4 @@
-package test;
+package interaction;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
-public class BaseClass2 {
+public class BaseClassTwo {
 
     ChromeDriver wd;
 

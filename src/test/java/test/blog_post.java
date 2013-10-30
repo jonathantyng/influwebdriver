@@ -24,7 +24,7 @@ public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
-        wd.get("http://sanityoct29.influitives.com/users/sign_in");
+        wd.get("http://sanityoct30.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

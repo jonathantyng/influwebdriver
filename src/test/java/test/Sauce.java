@@ -30,7 +30,7 @@ public class Sauce {
     }
     @Test
     public void webDriver() throws Exception {
-        driver.get("http://oct21.influitiveqa.com/corporate/settings/levels");
+        driver.get("http://oct21.influitives.com/corporate/settings/levels");
         driver.findElement(By.id("user_email")).click();
         driver.findElement(By.id("user_email")).clear();
         driver.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
