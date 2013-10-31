@@ -26,7 +26,7 @@ public class alice_reset extends BaseClassTwo{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        wd.get("http://app.influitiveqa.com/users/sign_in");
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Cancel")).click();
@@ -69,18 +69,38 @@ public class alice_reset extends BaseClassTwo{
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         }
 
+        //Select reset password email from list of emails on gmail
+
         wd.findElement(By.id(":3h")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("img.ajT")).click();
+
+        //Expand the reset password email if it exists
+
+        boolean doesexist = wd.findElements( By.cssSelector("img.ajT")).size() != 0;
+
+        if (doesexist)
+        {
+            wd.findElement(By.cssSelector("img.ajT")).click();
+        }
+        else
+        {
+            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        }
+
+        //Click to change password
+
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Click here to change your password")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //wd.switchTo().window(wd.getWindowHandles().toArray()[0]);
+        //Switch to new tab
 
-        //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //new Actions(wd).sendKeys(wd.findElement(By.tagName("html")), Keys.CONTROL).sendKeys(wd.findElement(By.tagName("html")),Keys.NUMPAD2).build().perform();
-        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
+        for(String winHandle : wd.getWindowHandles()){
+            wd.switchTo().window(winHandle);
+        }
+
+        //Enter new password and commit
+
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
@@ -89,7 +109,15 @@ public class alice_reset extends BaseClassTwo{
         wd.findElement(By.id("user_password_confirmation")).clear();
         wd.findElement(By.id("user_password_confirmation")).sendKeys("macbook18");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("commit")).click();
+        wd.findElement(By.name("commit")).click();
 
     }
+
+    @After
+    public void tearDown() {
+        wd.quit();
+    }
 }
+
+
+//        wd.findElement(By.partialLinkText("").toString()
