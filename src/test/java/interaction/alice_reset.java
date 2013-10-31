@@ -110,6 +110,7 @@ public class alice_reset extends BaseClassTwo{
         wd.findElement(By.id("user_password_confirmation")).sendKeys("macbook18");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 

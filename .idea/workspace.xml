@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/interaction/alice_reset.java" afterPath="$PROJECT_DIR$/src/test/java/interaction/alice_reset.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +51,9 @@
     <file path="/CompanyCreation_Suite.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383053372364" ignored="false" />
     <file path="/alice_password_reset.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383154490520" ignored="false" />
     <file path="/BaseClassTwo.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383154607667" ignored="false" />
-    <file path="/alice_reset.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383244458566" ignored="false" />
+    <file path="/alice_reset.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383245502543" ignored="false" />
+    <file path="/alice_singin.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383249903785" ignored="false" />
+    <file path="/alice_sign.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383250995889" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,10 +120,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="alice_reset.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="alice_reset.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_reset.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="604" selection-end="604" vertical-scroll-proportion="0.14778325">
+            <state line="69" column="24" selection-start="2783" selection-end="3075" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alice_sign.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_sign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="31" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5011136">
               <folding />
             </state>
           </provider>
@@ -167,7 +177,7 @@
       <file leaf-file-name="create_groups.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/create_groups.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
+            <state line="25" column="8" selection-start="701" selection-end="1392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -202,15 +212,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_company.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/create_company.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="40" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -232,8 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/test/nps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/online_action.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/online_review.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/referral.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/share_link.java" />
@@ -248,6 +247,8 @@
         <option value="$PROJECT_DIR$/src/test/java/test/create_company.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/ChallengeCreation_Suite.java" />
         <option value="$PROJECT_DIR$/src/test/java/interaction/alice_reset.java" />
+        <option value="$PROJECT_DIR$/src/test/java/interaction/alice_singin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/interaction/alice_sign.java" />
       </list>
     </option>
   </component>
@@ -291,10 +292,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1716" />
-    <option name="y" value="60" />
-    <option name="width" value="1373" />
-    <option name="height" value="823" />
+    <option name="x" value="1781" />
+    <option name="y" value="107" />
+    <option name="width" value="1432" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -436,35 +437,13 @@
       <recent name="interaction" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.alice_reset">
+  <component name="RunManager" selected="JUnit.alice_sign">
     <configuration default="false" name="upload_image" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.upload_image" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="twitter_follow" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.twitter_follow" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -531,6 +510,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.CompanyCreation_Suite" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="alice_sign" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="interaction" />
+      <option name="MAIN_CLASS_NAME" value="interaction.alice_sign" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -705,18 +706,18 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ChallengeCreation_Suite" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.upload_image" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.twitter_follow" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.twitter_post" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.alice_reset" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.twitter_post" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.alice_reset" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.alice_sign" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.alice_reset" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.upload_image" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.twitter_post" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.twitter_follow" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.alice_sign" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.alice_reset" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.upload_image" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.twitter_post" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -771,7 +772,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1716" y="60" width="1373" height="823" extended-state="0" />
+    <frame x="1781" y="107" width="1432" height="865" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -779,7 +780,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.64721483" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3602649" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24658519" sideWeight="0.43589744" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32716927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -787,8 +788,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25847778" sideWeight="0.65007114" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3499289" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24747474" sideWeight="0.67114097" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -861,13 +862,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/approval_feedback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="80" selection-start="1281" selection-end="1294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/approval_challenge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="21" selection-start="555" selection-end="585" vertical-scroll-proportion="0.0">
@@ -910,30 +904,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/create_badges.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/create_groups.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/ChallengeCreation_Suite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="43" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/CompanyCreation_Suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -961,6 +934,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/CompanyCreation_Suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/create_badges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/blog_post.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="13" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
@@ -968,9 +955,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/create_groups.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="701" selection-end="1392" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_reset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="604" selection-end="604" vertical-scroll-proportion="0.14778325">
+        <state line="69" column="24" selection-start="2783" selection-end="3075" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_sign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="31" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5011136">
           <folding />
         </state>
       </provider>
