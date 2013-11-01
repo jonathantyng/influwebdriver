@@ -18,10 +18,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
-public class create_groups extends BaseClass{
-    
+public class group_email extends BaseClass{
+
     @Test
-    public void create_groups() {
+    public void create_group_email () {
         wd.get("http://oct30.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -52,54 +52,7 @@ public class create_groups extends BaseClass{
 
         //Add Test Group
 
-        wd.findElement(By.linkText("Add a group")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).clear();
-        wd.findElement(By.id("group_name")).sendKeys("Test Group");
-        wd.findElement(By.id("group_description")).click();
-        wd.findElement(By.id("group_description")).clear();
-        wd.findElement(By.id("group_description")).sendKeys("This is a test group for testing!");
-        wd.findElement(By.id("group_token")).click();
-        wd.findElement(By.id("group_token")).clear();
-        wd.findElement(By.id("group_token")).sendKeys("Test");
-        wd.findElement(By.id("link-membership rules")).click();
-        wd.findElement(By.id("save-button")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("Groups")).click();
-        wd.findElement(By.linkText("Add a group")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).clear();
-        wd.findElement(By.id("group_name")).sendKeys("Sanity Group");
-        wd.findElement(By.id("group_description")).click();
-        wd.findElement(By.id("group_description")).clear();
-        wd.findElement(By.id("group_description")).sendKeys("This is a group for sane people!");
-        wd.findElement(By.id("group_token")).click();
-        wd.findElement(By.id("group_token")).clear();
-        wd.findElement(By.id("group_token")).sendKeys("Sanity");
-        wd.findElement(By.id("link-membership rules")).click();
-        wd.findElement(By.id("save-button")).click();
-        wd.findElement(By.id("Groups")).click();
-        wd.findElement(By.linkText("Add a group")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).clear();
-        wd.findElement(By.id("group_name")).sendKeys("Chocolate Chips");
-        wd.findElement(By.id("group_description")).click();
-        wd.findElement(By.id("group_description")).clear();
-        wd.findElement(By.id("group_description")).sendKeys("This is a group for people who have earned the social cookie.");
-        wd.findElement(By.id("link-membership rules")).click();
-        wd.findElement(By.linkText("Add new criteria...")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes_0_field_name > a.select2-choice > span")).click();
-        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Badges");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li/ul/li/div/span")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes_0_value > a.select2-choice")).click();
-        wd.findElement(By.cssSelector("#select2-drop > div.select2-search > input.select2-input.select2-focused")).sendKeys("Social Cookie");
-        wd.findElement(By.className("select2-match")).click();
-        wd.findElement(By.id("save-button")).click();
+
         wd.findElement(By.id("Groups")).click();
         wd.findElement(By.linkText("Add a group")).click();
         wd.findElement(By.id("group_name")).click();
@@ -122,12 +75,12 @@ public class create_groups extends BaseClass{
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
-    
+
     @After
     public void tearDown() {
         wd.quit();
     }
-    
+
     public static boolean isAlertPresent(FirefoxDriver wd) {
         try {
             wd.switchTo().alert();
@@ -137,4 +90,3 @@ public class create_groups extends BaseClass{
         }
     }
 }
-

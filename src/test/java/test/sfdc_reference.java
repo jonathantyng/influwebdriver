@@ -50,7 +50,7 @@ public class sfdc_reference extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("WebLinkFields_ContentEditor")).click();
         wd.findElement(By.id("WebLinkFields_ContentEditor")).clear();
-        wd.findElement(By.id("WebLinkFields_ContentEditor")).sendKeys("http://may31.influitiveqa.com/corporate/request_reference?embedded=true&salesforce_org_id={!$Organization.Id}&salesforce_opp_id={!Opportunity.Id}&owner_id={!$User.Id}&opp_name={!Opportunity.Name}&session_id={!API.Session_ID}&api_partner_server_url={!API.Partner_Server_URL_90}");
+        wd.findElement(By.id("WebLinkFields_ContentEditor")).sendKeys("http://sanityoct28.influitives.com/corporate/request_reference?embedded=true&salesforce_org_id={!$Organization.Id}&salesforce_opp_id={!Opportunity.Id}&owner_id={!$User.Id}&opp_name={!Opportunity.Name}&session_id={!API.Session_ID}&api_partner_server_url={!API.Partner_Server_URL_90}");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("save_close")).click();
 
@@ -61,7 +61,7 @@ public class sfdc_reference extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("request_a_reference_2")).click();
 
-        //Switch to new tab
+        //Focus on new window
 
         for(String winHandle : wd.getWindowHandles()){
             wd.switchTo().window(winHandle);
@@ -75,5 +75,10 @@ public class sfdc_reference extends BaseClass{
         wd.findElement(By.linkText("Close this window to return to the opportunity.")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+    }
+
+    @After
+    public void tearDown() {
+        wd.quit();
     }
 }
