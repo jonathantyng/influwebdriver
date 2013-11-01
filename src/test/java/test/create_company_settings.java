@@ -102,4 +102,9 @@ public class create_company_settings extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
     }
+
+    @After
+    public void tearDown() {
+        wd.quit();
+    }
 }

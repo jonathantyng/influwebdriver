@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import org.openqa.selenium.*;
 
-public class appex_complete extends BaseClassTwo{
+public class alice_appex_complete extends BaseClassTwo{
 
     @Test
     public void Blog_Post() {
