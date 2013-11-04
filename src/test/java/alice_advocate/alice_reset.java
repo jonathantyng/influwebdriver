@@ -8,11 +8,11 @@ import org.openqa.selenium.*;
 public class alice_reset extends BaseClassTwo{
 
     @Test
-    public void appexchangechallenge() {
+    public void alicereset() {
 
         //Sign into app and access challenge screen
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        wd.get("http://nov4.influitiveqa.com/users/sign_in");
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Cancel")).click();
@@ -57,7 +57,7 @@ public class alice_reset extends BaseClassTwo{
 
         //Select reset password email from list of emails on gmail
 
-        wd.findElement(By.id(":3h")).click();
+        wd.findElement(By.id(":3f")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Expand the reset password email if it exists
@@ -101,6 +101,8 @@ public class alice_reset extends BaseClassTwo{
         //
 
         System.out.println("Page title is: " + wd.getCurrentUrl());
+
+
 
     }
 

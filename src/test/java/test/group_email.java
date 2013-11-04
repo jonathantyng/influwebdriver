@@ -22,7 +22,7 @@ public class group_email extends BaseClass{
 
     @Test
     public void create_group_email () {
-        wd.get("http://oct30.influitives.com/users/sign_in");
+        wd.get("http://nov4.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -64,13 +64,14 @@ public class group_email extends BaseClass{
         wd.findElement(By.id("link-membership rules")).click();
         wd.findElement(By.linkText("Add new criteria...")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes_0_field_name > a.select2-choice > span")).click();
+        wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes0_field_name > a.select2-choice > span.select2-chosen")).click();
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Email");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li/ul/li/div")).click();
-        wd.findElement(By.id("group_search_criteria_attributes_0_value")).click();
-        wd.findElement(By.id("group_search_criteria_attributes_0_value")).clear();
-        wd.findElement(By.id("group_search_criteria_attributes_0_value")).sendKeys("gmail.com");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.id("group_search_criteria_attributes0_value")).click();
+        wd.findElement(By.id("group_search_criteria_attributes0_value")).clear();
+        wd.findElement(By.id("group_search_criteria_attributes0_value")).sendKeys("gmail.com");
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 

@@ -27,7 +27,7 @@ public class adjust_points extends BaseClassThree{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        wd.get("http://nov4.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

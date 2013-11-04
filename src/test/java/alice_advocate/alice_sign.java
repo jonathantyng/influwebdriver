@@ -11,7 +11,7 @@ public class alice_sign extends BaseClassTwo {
 
     //Sign into app and access challenge screen
 
-        wd.get("http://may31.influitiveqa.com/join/Test");
+        wd.get("http://nov4.influitiveqa.com/join/Test");
 
         boolean newuser = wd.findElements( By.id("registration_user_email")).size() != 0;
 

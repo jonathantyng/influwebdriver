@@ -24,7 +24,7 @@ public class create_company_settings extends BaseClass{
     @Test
     public void createcompanysettings(){
 
-        wd.get("http://nov1.influitiveqa.com/");
+        wd.get("http://nov4.influitiveqa.com/");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -98,7 +98,6 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.id("toggles_quick_referral")).click();
         wd.findElement(By.id("toggles_tango_card")).click();
         wd.findElement(By.id("toggles_referral_email")).click();
-        wd.findElement(By.id("toggles_quick_referral")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
     }

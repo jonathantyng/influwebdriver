@@ -1,5 +1,6 @@
 package alice_advocate;
 
+import org.junit.After;
 import org.junit.Test;
 
 import org.openqa.selenium.*;
@@ -11,7 +12,7 @@ public class alice_appex_complete extends BaseClassTwo{
 
         //Log in as alice
 
-        wd.get("http://may31.influitiveqa.com/challenges/78");
+        wd.get("http://nov4.influitiveqa.com/challenges/78");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("alice.advocate@gmail.com");
@@ -58,5 +59,10 @@ public class alice_appex_complete extends BaseClassTwo{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+    }
+
+    @After
+    public void tearDown() {
+        wd.quit();
     }
 }

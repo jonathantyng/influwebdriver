@@ -1,10 +1,16 @@
 package alice_advocate;
 
 import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
 
 
 public class BaseClassTwo {
@@ -17,7 +23,7 @@ public class BaseClassTwo {
         System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
 
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 }
 
@@ -29,7 +35,7 @@ public class BaseClassTwo {
 
 /*
 
-public class BaseClass {
+public class BaseClassTwo {
 
     WebDriver wd;
 
@@ -46,5 +52,5 @@ public class BaseClass {
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         }
     }
-
 */
+
