@@ -20,7 +20,7 @@ public class referral extends BaseClass{
     
     @Test
     public void referral() {
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -75,12 +75,12 @@ public class referral extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Refer_prospect']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("params.fields21")).click();
-        wd.findElement(By.id("params.required22")).click();
+        wd.findElement(By.id("params.fields22")).click();
+        wd.findElement(By.id("params.required23")).click();
         wd.findElement(By.cssSelector("div.vertical-space-medium > label.input.checkbox")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
+        wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

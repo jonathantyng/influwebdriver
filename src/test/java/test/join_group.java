@@ -24,7 +24,7 @@ public class join_group extends BaseClass{
     
     @Test
     public void join_group() {
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
 
         //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
 
@@ -106,14 +106,14 @@ public class join_group extends BaseClass{
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Influitive_group_join']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//div[@id='s2id_params.group_id17']/a/span")).click();
+        wd.findElement(By.xpath("//div[@id='s2id_params.group_id18']/a/span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.className("select2-match")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
+        wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

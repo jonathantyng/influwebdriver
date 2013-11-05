@@ -20,7 +20,7 @@ public class approval_feedback extends BaseClass{
 
     @Test
     public void approval_with_feedback() {
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -80,7 +80,7 @@ public class approval_feedback extends BaseClass{
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Corporate_confirmation']")).click();
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
+        wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         wd.findElement(By.name("commit")).click();

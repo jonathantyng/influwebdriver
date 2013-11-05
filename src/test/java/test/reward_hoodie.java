@@ -22,7 +22,7 @@ public class reward_hoodie extends BaseClass{
 
     @Test
     public void reward_hoodie() {
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -73,8 +73,8 @@ public class reward_hoodie extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Not Published")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("visibility_setting_membership_group")).click();
-        wd.findElement(By.cssSelector("#s2id_visibility_setting_group_ids > ul.select2-choices")).click();
+        wd.findElement(By.id("nov5_setting_membership_group")).click();
+        wd.findElement(By.cssSelector("#s2id_nov5_setting_group_ids > ul.select2-choices")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Test Group");
         wd.findElement(By.className("select2-match")).click();

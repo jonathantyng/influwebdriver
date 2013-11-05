@@ -22,7 +22,7 @@ public class badge_activity extends BaseClass{
 
     @Test
     public void createactivitybadge() {
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -70,10 +70,7 @@ public class badge_activity extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("badge_settings_rule_type_event_logged")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
-        //fix
         wd.findElement(By.linkText("Any Type")).click();
-        new Actions(wd).clickAndHold(wd.findElement(By.cssSelector("#s2id_badge_settings_event_type_code > a.select2-choice > span.select2-chosen"))).build().perform();
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Advocate Joined");
         wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.id("badge_settings_event_times")).click();

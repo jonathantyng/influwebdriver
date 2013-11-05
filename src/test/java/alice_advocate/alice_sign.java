@@ -1,5 +1,6 @@
 package alice_advocate;
 
+import org.junit.After;
 import org.junit.Test;
 
 import org.openqa.selenium.*;
@@ -11,7 +12,7 @@ public class alice_sign extends BaseClassTwo {
 
     //Sign into app and access challenge screen
 
-        wd.get("http://nov4.influitiveqa.com/join/Test");
+        wd.get("http://nov5.influitiveqa.com/join/Test");
 
         boolean newuser = wd.findElements( By.id("registration_user_email")).size() != 0;
 
@@ -66,5 +67,10 @@ public class alice_sign extends BaseClassTwo {
         {
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         }
+    }
+
+    @After
+    public void tearDown() {
+        wd.quit();
     }
 }

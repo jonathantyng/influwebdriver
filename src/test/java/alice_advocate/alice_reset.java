@@ -12,7 +12,7 @@ public class alice_reset extends BaseClassTwo{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Cancel")).click();
@@ -57,7 +57,7 @@ public class alice_reset extends BaseClassTwo{
 
         //Select reset password email from list of emails on gmail
 
-        wd.findElement(By.id(":3f")).click();
+        wd.findElement(By.id(":3d")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Expand the reset password email if it exists

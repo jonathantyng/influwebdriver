@@ -20,7 +20,7 @@ public class linkedin_recom extends BaseClass{
     
     @Test
     public void linkedin_recom() {
-        wd.get("http://nov4.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -79,10 +79,12 @@ public class linkedin_recom extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("button.summarize-url")).click();
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.id("visibility_setting_membership_criteria")).click();
+        //wd.findElement(By.id("nov5_setting_membership_criteria")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes_0_value > a.select2-choice")).click();
-        wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
+        //wd.findElement(By.linkText("Add new criteria...")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        //wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes_0value > a.select2-choice")).click();
+        //wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
