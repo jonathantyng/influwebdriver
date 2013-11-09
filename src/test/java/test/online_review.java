@@ -22,7 +22,7 @@ public class online_review extends BaseClass{
     
     @Test
     public void online_review() {
-        wd.get("http://oct30.influitives.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -78,11 +78,8 @@ public class online_review extends BaseClass{
         wd.findElement(By.name("params.url")).clear();
         wd.findElement(By.name("params.url")).sendKeys("http://www.influitive.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Preview")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("button.close")).click();
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
+        wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         wd.findElement(By.name("commit")).click();

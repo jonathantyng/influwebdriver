@@ -26,7 +26,7 @@ public class appexchangechallenge extends BaseClass{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://oct30.influitives.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -83,13 +83,18 @@ public class appexchangechallenge extends BaseClass{
         //wd.findElement(By.linkText("Load")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
+
+        /*
+
         wd.findElement(By.id("visibility_setting_membership_group")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("li.select2-search-field")).click();
+        wd.findElement(By.cssSelector("li.select2-search-field")).sendKeys("Test Group");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("s2id_autogen20")).sendKeys("Test Group");
+        //wd.findElement(By.id("select2-drop-mask")).sendKeys("Test Group");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
+
+        */
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-1")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }

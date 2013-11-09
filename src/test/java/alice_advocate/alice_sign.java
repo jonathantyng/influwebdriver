@@ -1,23 +1,9 @@
-package interaction;
+package alice_advocate;
 
 import org.junit.After;
-import org.junit.Before;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
-import java.util.concurrent.TimeUnit;
-import java.util.Date;
-import java.io.File;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
-import static org.openqa.selenium.OutputType.*;
 
 public class alice_sign extends BaseClassTwo {
 
@@ -26,7 +12,7 @@ public class alice_sign extends BaseClassTwo {
 
     //Sign into app and access challenge screen
 
-        wd.get("http://may31.influitiveqa.com/join/Test");
+        wd.get("http://nov5.influitiveqa.com/join/Test");
 
         boolean newuser = wd.findElements( By.id("registration_user_email")).size() != 0;
 
@@ -81,5 +67,10 @@ public class alice_sign extends BaseClassTwo {
         {
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         }
+    }
+
+    @After
+    public void tearDown() {
+        wd.quit();
     }
 }

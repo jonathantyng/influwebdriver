@@ -22,7 +22,7 @@ public class like_on_fb extends BaseClass{
     
     @Test
     public void like_on_fb() {
-        wd.get("http://oct30.influitives.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -83,7 +83,7 @@ public class like_on_fb extends BaseClass{
         wd.findElement(By.name("notification_message")).sendKeys("Thanks for the like!");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
+        wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

@@ -22,7 +22,7 @@ public class social_signup extends BaseClass{
     
     @Test
     public void social_signup() {
-        wd.get("http://oct30.influitives.com/join/Sanity");
+        wd.get("http://nov5.influitiveqa.com/join/Sanity");
         wd.findElement(By.cssSelector("img[alt=\"Twitter\"]")).click();
         wd.findElement(By.id("username_or_email")).click();
         wd.findElement(By.id("username_or_email")).clear();
@@ -36,7 +36,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.cssSelector("span")).click();
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.get("http://oct30.influitives.com/join/Test");
+        wd.get("http://nov5.influitiveqa.com/join/Test");
         wd.findElement(By.id("registration_user_email")).click();
         wd.findElement(By.id("registration_user_email")).clear();
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
@@ -51,7 +51,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.cssSelector("span")).click();
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.get("http://oct30.influitives.com/join/Sanity");
+        wd.get("http://nov5.influitiveqa.com/join/Sanity");
         wd.findElement(By.cssSelector("img[alt=\"Linkedin\"]")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).clear();
@@ -65,7 +65,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.cssSelector("span")).click();
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.get("http://oct30.influitives.com/Sanity");
+        wd.get("http://nov5.influitiveqa.com/join/Sanity");
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
         wd.findElement(By.id("email")).click();
         wd.findElement(By.id("email")).clear();

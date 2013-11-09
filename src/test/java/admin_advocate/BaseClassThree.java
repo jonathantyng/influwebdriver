@@ -1,4 +1,4 @@
-package interaction;
+package admin_advocate;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 
 
-public class BaseClassTwo {
+public class BaseClassThree {
 
     ChromeDriver wd;
 

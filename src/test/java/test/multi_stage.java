@@ -22,7 +22,7 @@ public class multi_stage extends BaseClass{
     
     @Test
     public void multi_stage() {
-        wd.get("http://oct30.influitives.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -73,7 +73,7 @@ public class multi_stage extends BaseClass{
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("public17")).click();
+        wd.findElement(By.id("public18")).click();
         wd.findElement(By.name("subject")).click();
         wd.findElement(By.name("subject")).clear();
         wd.findElement(By.name("subject")).sendKeys("Answer this question!");
@@ -82,14 +82,14 @@ public class multi_stage extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("button.close")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_data_type18 > a.select2-choice > span")).click();
+        wd.findElement(By.cssSelector("#s2id_data_type19 > a.select2-choice > span.select2-chosen")).click();
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Corporate_confirmation']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
-        wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
+        wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

@@ -1,10 +1,7 @@
 package test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
+
 import static org.junit.Assert.*;
 
 import java.util.concurrent.TimeUnit;
@@ -19,10 +16,11 @@ import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
 public class nps extends BaseClass{
-    
+
+
     @Test
     public void nps() {
-        wd.get("http://oct30.influitives.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

@@ -1,32 +1,18 @@
-package interaction;
+package alice_advocate;
 
 import org.junit.After;
-import org.junit.Before;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
-import java.util.concurrent.TimeUnit;
-import java.util.Date;
-import java.io.File;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
-import static org.openqa.selenium.OutputType.*;
 
 public class alice_reset extends BaseClassTwo{
 
     @Test
-    public void appexchangechallenge() {
+    public void alicereset() {
 
         //Sign into app and access challenge screen
 
-        wd.get("http://app.influitiveqa.com/users/sign_in");
+        wd.get("http://nov5.influitiveqa.com/users/sign_in");
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Cancel")).click();
@@ -71,7 +57,7 @@ public class alice_reset extends BaseClassTwo{
 
         //Select reset password email from list of emails on gmail
 
-        wd.findElement(By.id(":3h")).click();
+        wd.findElement(By.id(":3d")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Expand the reset password email if it exists
@@ -111,6 +97,12 @@ public class alice_reset extends BaseClassTwo{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //
+
+        System.out.println("Page title is: " + wd.getCurrentUrl());
+
+
 
     }
 

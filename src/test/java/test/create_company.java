@@ -23,7 +23,9 @@ public class create_company extends BaseClass{
 
     @Test
     public void createcompany() {
-        wd.get("http://app.influitives.com/users/sign_in");
+
+
+        wd.get("http://app.influitiveqa.com/users/sign_in");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -60,11 +62,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("oct30");
+        wd.findElement(By.id("company_name")).sendKeys("nov5");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("oct30");
+        wd.findElement(By.id("company_subdomain")).sendKeys("nov5");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -82,41 +84,6 @@ public class create_company extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-
-        wd.get("http://oct30.influitives.com/");
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Influitive Admin")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Settings")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//ul[@id='accordion']/li[3]/h4")).click();
-        wd.findElement(By.linkText("Welcome Email")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("email_preferences_preferences_deliver_welcome_email")).click();
-        wd.findElement(By.name("commit")).click();
-        wd.findElement(By.linkText("Invitations")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Challenge Digest")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("company_preference_email_digest_send")).click();
-        wd.findElement(By.name("commit")).click();
-        wd.findElement(By.linkText("Challenge Email")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Notifications")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("company_preference_deliver_notifications")).click();
-        wd.findElement(By.name("commit")).click();
-        wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
-        wd.findElement(By.linkText("Enabled Features")).click();
-        wd.findElement(By.id("toggles_disqus_auth")).click();
-        wd.findElement(By.id("toggles_private_leaderboards")).click();
-        wd.findElement(By.id("toggles_check_in")).click();
-        wd.findElement(By.id("toggles_show_future_stages")).click();
-        wd.findElement(By.id("toggles_quick_referral")).click();
-        wd.findElement(By.id("toggles_tango_card")).click();
-        wd.findElement(By.id("toggles_referral_email")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("commit")).click();
     }
 
     @After
