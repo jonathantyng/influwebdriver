@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/interaction/alice_sign.java" afterPath="$PROJECT_DIR$/src/test/java/interaction/alice_sign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1381955882031" ignored="false" />
     <file path="/Test.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1381956371650" ignored="false" />
     <file path="/fragment.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383154453842" ignored="false" />
-    <file path="/Dummy.txt" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383239996125" ignored="false" />
+    <file path="/Dummy.txt" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383971199740" ignored="false" />
     <file path="/create_company.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383056784218" ignored="false" />
     <file path="/Selenium.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1382019925531" ignored="false" />
     <file path="/SeleniumTest.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1382642671717" ignored="false" />
@@ -120,19 +120,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="alice_reset.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="alice_reset.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_reset.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="24" selection-start="2783" selection-end="3075" vertical-scroll-proportion="0.0">
+            <state line="70" column="74" selection-start="3076" selection-end="3076" vertical-scroll-proportion="-0.29310346">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alice_sign.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="alice_sign.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_sign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="12" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.8017817">
+            <state line="46" column="12" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -141,7 +141,7 @@
       <file leaf-file-name="BaseClass.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+            <state line="23" column="13" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,7 +150,7 @@
       <file leaf-file-name="CompanyCreation_Suite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/CompanyCreation_Suite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,7 +177,7 @@
       <file leaf-file-name="create_groups.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/create_groups.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="8" selection-start="701" selection-end="1392" vertical-scroll-proportion="0.0">
+            <state line="25" column="8" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -186,7 +186,7 @@
       <file leaf-file-name="ChallengeCreation_Suite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/ChallengeCreation_Suite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="43" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+            <state line="13" column="43" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,10 +204,8 @@
       <file leaf-file-name="appexchangechallenge.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/appexchangechallenge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="5298" selection-end="5588" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="108" column="0" selection-start="5394" selection-end="5589" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -292,8 +290,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1820" />
-    <option name="y" value="86" />
+    <option name="x" value="408" />
+    <option name="y" value="114" />
     <option name="width" value="1432" />
     <option name="height" value="865" />
   </component>
@@ -337,7 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
+              <option name="myItemId" value="influwebdriver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,7 +345,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
+              <option name="myItemId" value="influwebdriver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -373,7 +371,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
+              <option name="myItemId" value="influwebdriver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -399,7 +397,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
+              <option name="myItemId" value="influwebdriver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -409,8 +407,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -772,7 +770,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1820" y="86" width="1432" height="865" extended-state="0" />
+    <frame x="408" y="114" width="1432" height="865" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -783,16 +781,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24658519" sideWeight="0.43589744" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32716927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24747474" sideWeight="0.67114097" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32716927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -864,30 +862,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/test/approval_challenge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="555" selection-end="585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="21" selection-start="555" selection-end="585" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/twitter_post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="8" selection-start="1177" selection-end="1688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="34" column="8" selection-start="1177" selection-end="1688" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/Sauce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="32" column="33" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/SeleniumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="33" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/interaction/BaseClassTwo.java">
@@ -899,14 +889,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/create_company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="40" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="79" column="40" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/ChallengeCreation_Suite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+        <state line="13" column="43" selection-start="715" selection-end="715" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -920,23 +908,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/appexchangechallenge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="5298" selection-end="5588" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="108" column="0" selection-start="5394" selection-end="5589" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+        <state line="23" column="13" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/CompanyCreation_Suite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -957,21 +943,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/create_groups.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="701" selection-end="1392" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_reset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="24" selection-start="2783" selection-end="3075" vertical-scroll-proportion="0.0">
+        <state line="25" column="8" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_sign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="12" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.8017817">
+        <state line="46" column="12" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/interaction/alice_reset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="74" selection-start="3076" selection-end="3076" vertical-scroll-proportion="-0.29310346">
           <folding />
         </state>
       </provider>
