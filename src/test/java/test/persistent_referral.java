@@ -25,7 +25,7 @@ public class persistent_referral extends BaseClass{
 
         @Test
         public void Blog_Post() {
-            wd.get("http://nov5.influitiveqa.com/users/sign_in");
+            wd.get("http://sanitynov11.influitives.com/users/sign_in");
             wd.findElement(By.id("user_email")).click();
             wd.findElement(By.id("user_email")).clear();
             wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -94,6 +94,7 @@ public class persistent_referral extends BaseClass{
             try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
             wd.findElement(By.linkText("NOT PUBLISHED")).click();
 
+            /*
             //Close publish challenge modal if it appears
 
             boolean commit = wd.findElements( By.name("commit")).size() != 0;
@@ -110,7 +111,7 @@ public class persistent_referral extends BaseClass{
                 System.out.println("Published!");
             }
             try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-
+            */
         }
         @After
         public void tearDown() {

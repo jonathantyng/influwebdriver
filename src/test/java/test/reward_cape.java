@@ -22,7 +22,7 @@ public class reward_cape extends BaseClass{
 
     @Test
     public void cape() {
-        wd.get("http://nov5.influitiveqa.com/users/sign_in");
+        wd.get("http://sanitynov11.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -64,22 +64,26 @@ public class reward_cape extends BaseClass{
         wd.findElement(By.id("link-redeeming")).click();
         wd.findElement(By.id("awardable")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_reward_settings_challenge_id > a.select2-choice > span")).click();
+        wd.findElement(By.cssSelector("#s2id_reward_settings_challenge_id > a.select2-choice > span.select2-chosen")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#select2-drop > div.select2-search > input.select2-input.select2-focused")).sendKeys("Join a LinkedIn Group");
-        wd.findElement(By.className("select2-match")).click();
+        wd.findElement(By.cssSelector("div.select2-result-label")).click();
+        /*
         wd.findElement(By.id("reward_settings_challenge_times")).click();
         wd.findElement(By.id("reward_settings_challenge_times")).clear();
         wd.findElement(By.id("reward_settings_challenge_times")).sendKeys("3");
+
+        */
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Not Published")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
     }
-
+    /*
     @After
     public void tearDown() {
         wd.quit();
     }
+    */
 }

@@ -23,7 +23,7 @@ public class survey extends BaseClass{
     
     @Test
     public void ssurvey() {
-        wd.get("http://nov5.influitiveqa.com/users/sign_in");
+        wd.get("http://sanitynov11.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

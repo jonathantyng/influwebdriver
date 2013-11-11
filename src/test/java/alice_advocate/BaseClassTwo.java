@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-
+/*
 public class BaseClassTwo {
 
     ChromeDriver wd;
@@ -27,13 +27,13 @@ public class BaseClassTwo {
     }
 }
 
-
+*/
 
 //
 //Uncomment everything below to enable SauceLabs integration
 //
 
-/*
+
 
 public class BaseClassTwo {
 
@@ -43,7 +43,7 @@ public class BaseClassTwo {
 
     public void setUp() throws Exception {
 
-        DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+        DesiredCapabilities capabilities = DesiredCapabilities.safari();
         capabilities.setCapability("version", "10");
         capabilities.setCapability("platform", Platform.WIN8);
         this.wd = new RemoteWebDriver(
@@ -52,5 +52,5 @@ public class BaseClassTwo {
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         }
     }
-*/
+
 

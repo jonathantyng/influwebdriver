@@ -22,7 +22,7 @@ public class group_test extends BaseClass{
 
     @Test
     public void group_tests () {
-        wd.get("http://nov5.influitiveqa.com/users/sign_in");
+        wd.get("http://sanitynov11.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -65,20 +65,7 @@ public class group_test extends BaseClass{
         wd.findElement(By.id("link-membership rules")).click();
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("Groups")).click();
-        wd.findElement(By.linkText("Add a group")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).clear();
-        wd.findElement(By.id("group_name")).sendKeys("Sanity Group");
-        wd.findElement(By.id("group_description")).click();
-        wd.findElement(By.id("group_description")).clear();
-        wd.findElement(By.id("group_description")).sendKeys("This is a group for sane people!");
-        wd.findElement(By.id("group_token")).click();
-        wd.findElement(By.id("group_token")).clear();
-        wd.findElement(By.id("group_token")).sendKeys("Sanity");
-        wd.findElement(By.id("link-membership rules")).click();
-        wd.findElement(By.id("save-button")).click();
+
     }
 
     @After

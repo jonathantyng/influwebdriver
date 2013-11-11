@@ -23,7 +23,7 @@ public class invite_advocate extends BaseClass{
     @Test
     public void invite_advocate() {
 
-        wd.get("http://nov5.influitiveqa.com/users/sign_in");
+        wd.get("http://sanitynov11.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -50,7 +50,7 @@ public class invite_advocate extends BaseClass{
 
         //Invite nominees
 
-        wd.findElement(By.linkText("Invite Nominees")).click();
+        wd.findElement(By.partialLinkText("Invite Nominees")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a new Nominee")).click();
         wd.findElement(By.id("contact_email")).click();
@@ -66,7 +66,7 @@ public class invite_advocate extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("send-invite")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Invite Nominees")).click();
+        wd.findElement(By.partialLinkText("Invite Nominees")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a new Nominee")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -83,7 +83,7 @@ public class invite_advocate extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("send-invite")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Invite Nominees")).click();
+        wd.findElement(By.partialLinkText("Invite Nominees")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a new Nominee")).click();
         wd.findElement(By.id("contact_email")).click();

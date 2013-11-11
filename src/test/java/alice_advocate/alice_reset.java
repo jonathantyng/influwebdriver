@@ -12,7 +12,7 @@ public class alice_reset extends BaseClassTwo{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://nov5.influitiveqa.com/users/sign_in");
+        wd.get("http://sanitynov11.influitives.com/users/sign_in");
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Cancel")).click();

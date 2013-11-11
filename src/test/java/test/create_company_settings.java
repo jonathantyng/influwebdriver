@@ -24,7 +24,7 @@ public class create_company_settings extends BaseClass{
     @Test
     public void createcompanysettings(){
 
-        wd.get("http://nov5.influitiveqa.com/");
+        wd.get("http://sanitynov11.influitives.com/");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
