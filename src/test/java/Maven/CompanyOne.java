@@ -52,7 +52,7 @@ import static org.junit.Assert.assertTrue;
  * @author Ross Rowe
  */
 
-public class appium2 {
+public class CompanyOne {
 
     private WebDriver driver;
 
@@ -84,44 +84,52 @@ public class appium2 {
     }
 
     @Test
-    public void Test() throws Exception {
+    public void Companyone_challenge_completion() throws Exception {
 
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.findElement(By.name("btn singup")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]")).sendKeys("Test One");
+
+        /*
+        //Sign up as nominee
+
+        driver.findElement(By.name("btn signup")).click();
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 11");
         driver.findElement(By.name("Done")).click();
-        driver.findElement(By.name("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.name("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@one.com");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@11.com");
         driver.findElement(By.name("Done")).click();
-        driver.findElement(By.name("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
-        driver.findElement(By.name("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");
         driver.findElement(By.name("Done")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Sign up now")).click();
         try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
+        */
+
+        //Add company one
+
         driver.findElement(By.name("Add a company")).click();
-        driver.findElement(By.name("Stagey Stagers")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("window[1]/textfield[1]")).click();
+        driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companyone");
+        driver.findElement(By.name("Search")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.name("Stagey Stagers")).click();
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        //Select company one
 
-        // slider values can be string representations of numbers between 0 and 1
-        // e.g., "0.1" is 10%, "1.0" is 100%
-        WebElement slider =  driver.findElement(By.xpath("//window[1]/slider[1]"));
-        slider.sendKeys("0.1");
+        driver.findElement(By.name("Companyone AdvocateHub")).click();
 
-        // slider values can be string representations of numbers between 0 and 1
-        // e.g., "0.1" is 10%, "1.0" is 100%
-        slider.sendKeys("0.5");
+        //Complete follow on twitter
 
-        // slider values can be string representations of numbers between 0 and 1
-        // e.g., "0.1" is 10%, "1.0" is 100%
-        slider.sendKeys("0.9");
+        driver.findElement(By.name("Follow on Twitter")).click();
+        driver.findElement(By.name("Continue")).click();
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Submit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
 
     }
 
