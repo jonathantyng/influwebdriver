@@ -100,7 +100,7 @@ public class CompanyOne {
         swipeObject.put("endY", 450.0);
         swipeObject.put("duration", 4.0);
         js.executeScript("mobile: swipe", swipeObject);
-        try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Swipe to locate 'add company'
 

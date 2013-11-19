@@ -150,6 +150,7 @@ public class CompanyTwo {
 
         //Complete online action
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Online Action and Share")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Continue")).click();

@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1381955882031" ignored="false" />
     <file path="/Test.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1381956371650" ignored="false" />
     <file path="/fragment.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384890714738" ignored="false" />
-    <file path="/Dummy.txt" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384870015463" ignored="false" />
+    <file path="/Dummy.txt" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384900596930" ignored="false" />
     <file path="/create_company.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383313747438" ignored="false" />
     <file path="/Selenium.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1382019925531" ignored="false" />
     <file path="/SeleniumTest.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1382642671717" ignored="false" />
@@ -158,7 +155,7 @@
       <file leaf-file-name="CompanyOne.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="136" selection-start="5531" selection-end="5531" vertical-scroll-proportion="0.0">
+            <state line="48" column="13" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#3297#3313#0" expanded="true" />
                 <element signature="e#3812#3828#0" expanded="true" />
@@ -170,7 +167,7 @@
       <file leaf-file-name="CompanyTwo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="103" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
+            <state line="48" column="13" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,7 +185,7 @@
       <file leaf-file-name="CompanyFour.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.33333334">
+            <state line="80" column="27" selection-start="2735" selection-end="2735" vertical-scroll-proportion="-1.3442982">
               <folding />
             </state>
           </provider>
@@ -237,9 +234,9 @@
         <option value="$PROJECT_DIR$/src/test/java/Maven/appium2.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/MavenSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" />
       </list>
     </option>
   </component>
@@ -283,7 +280,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1452" />
+    <option name="x" value="1482" />
     <option name="y" value="15" />
     <option name="width" value="1404" />
     <option name="height" value="874" />
@@ -702,8 +699,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MavenSuite" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MavenSuite" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyTwo" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyThree" />
       </list>
@@ -760,8 +757,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1452" y="15" width="1404" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="1482" y="15" width="1404" height="874" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -777,8 +774,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26495728" sideWeight="0.63799745" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36200258" sideWeight="0.90100336" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26495728" sideWeight="0.63799745" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36200258" sideWeight="0.90100336" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -827,7 +824,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -927,23 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/MavenSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="94" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="136" selection-start="5531" selection-end="5531" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3297#3313#0" expanded="true" />
-            <element signature="e#3812#3828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="0" selection-start="2930" selection-end="2930" vertical-scroll-proportion="0.0">
@@ -951,16 +931,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/MavenSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="94" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="103" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.0">
+        <state line="48" column="13" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="13" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3297#3313#0" expanded="true" />
+            <element signature="e#3812#3828#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.33333334">
+        <state line="80" column="27" selection-start="2735" selection-end="2735" vertical-scroll-proportion="-1.3442982">
           <folding />
         </state>
       </provider>
