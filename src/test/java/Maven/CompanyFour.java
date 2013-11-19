@@ -45,13 +45,6 @@ import java.net.URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Simple <a href="https://github.com/appium/appium">Appium</a> test which runs against a local Appium instance deployed
- * with the 'TestApp' iPhone project which is included in the Appium source distribution.
- *
- * @author Ross Rowe
- */
-
 public class CompanyFour {
 
     private WebDriver driver;
@@ -90,7 +83,7 @@ public class CompanyFour {
 
         //Sign up as nominee
 
-        driver.findElement(By.name("btn signup")).click();
+        driver.findElement(By.xpath("//window[1]/button[5]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 11");
         driver.findElement(By.name("Done")).click();

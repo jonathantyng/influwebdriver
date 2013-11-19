@@ -45,12 +45,6 @@ import java.net.URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Simple <a href="https://github.com/appium/appium">Appium</a> test which runs against a local Appium instance deployed
- * with the 'TestApp' iPhone project which is included in the Appium source distribution.
- *
- * @author Ross Rowe
- */
 
 public class CompanyThree {
 
@@ -65,7 +59,7 @@ public class CompanyThree {
     public void setUp() throws Exception {
         // set up appium
 
-        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphonesimulator");
+        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphoneos");
         File app = new File(appDir, "Maven.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
@@ -91,7 +85,8 @@ public class CompanyThree {
 
         //Sign up as nominee
 
-        driver.findElement(By.name("btn signup")).click();
+        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("//window[1]/button[5]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 12");
         driver.findElement(By.name("Done")).click();
@@ -137,6 +132,7 @@ public class CompanyThree {
         driver.findElement(By.name("Continue")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
         //Complete Survey

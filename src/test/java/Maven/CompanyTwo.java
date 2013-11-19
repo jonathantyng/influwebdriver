@@ -59,7 +59,7 @@ public class CompanyTwo {
     public void setUp() throws Exception {
         // set up appium
 
-        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphonesimulator");
+        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphoneos");
         File app = new File(appDir, "Maven.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
@@ -82,10 +82,10 @@ public class CompanyTwo {
 
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
-        /*
+
         //Sign up as nominee
 
-        driver.findElement(By.name("btn signup")).click();
+        driver.findElement(By.xpath("//window[1]/button[5]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 11");
         driver.findElement(By.name("Done")).click();
@@ -98,14 +98,16 @@ public class CompanyTwo {
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Sign up now")).click();
         try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
-        */
+
 
         //Add company one
 
         driver.findElement(By.name("Add a company")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companytwo");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Search")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
@@ -114,26 +116,33 @@ public class CompanyTwo {
         //Select company two
 
         driver.findElement(By.name("Companytwo AdvocateHub")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Complete follow on geo checkin
 
         driver.findElement(By.name("Geo Check-in")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Continue")).click();
 
         //Accept alert if present
+        /*
+        boolean exists = driver.findElements( By.linkText("No Thanks")).size() != 0;
 
-        boolean location = driver.findElements( By.linkText("OK")).size() != 0;
-
-        if (location)
+        if (exists)
         {
-            driver.switchTo().alert().accept();
-            System.out.println("Location enabled");
+            driver.findElement(By.linkText("No Thanks")).click();
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-            System.out.println("Location already set");
+            System.out.println("Tutorial not encountered");
         }
+
+            driver.switchTo().alert().accept();
+            System.out.println("Location enabled");
+        */
+        //Check in
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Check In")).click();
@@ -142,10 +151,27 @@ public class CompanyTwo {
         //Complete online action
 
         driver.findElement(By.name("Online Action and Share")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Continue")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //
+        //Complete upload image challenge
+
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Upload an Image Stage Type")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Continue")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("question addphoto")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Use Last Photo Taken")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Submit")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
     }
 
     public class SwipeableWebDriver extends RemoteWebDriver implements HasTouchScreen {

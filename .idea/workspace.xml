@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Maven/appium2.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
@@ -10,7 +13,7 @@
     <file path="/pom.xml" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1381955882031" ignored="false" />
     <file path="/Test.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1381956371650" ignored="false" />
     <file path="/fragment.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383154453842" ignored="false" />
-    <file path="/Dummy.txt" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384784582991" ignored="false" />
+    <file path="/Dummy.txt" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384870015463" ignored="false" />
     <file path="/create_company.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383313747438" ignored="false" />
     <file path="/Selenium.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1382019925531" ignored="false" />
     <file path="/SeleniumTest.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1382642671717" ignored="false" />
@@ -82,9 +85,10 @@
     <file path="/appium.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384537075317" ignored="false" />
     <file path="/appium2.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384799448994" ignored="false" />
     <file path="/CompanyFour.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384803426070" ignored="false" />
-    <file path="/CompanyOne.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384803161902" ignored="false" />
-    <file path="/CompanyTwo.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384803896685" ignored="false" />
-    <file path="/CompanyThree.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384804380378" ignored="false" />
+    <file path="/CompanyOne.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384879077091" ignored="false" />
+    <file path="/CompanyTwo.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384875048393" ignored="false" />
+    <file path="/CompanyThree.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384871847235" ignored="false" />
+    <file path="/MavenSuite.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384805075466" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,28 +155,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BaseClass.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseClass.java">
+      <file leaf-file-name="CompanyFour.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="68" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adjust_points.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/admin_advocate/adjust_points.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeleniumTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/SeleniumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+            <state line="47" column="13" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,23 +182,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompanyFour.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="28" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CompanyOne.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="58" selection-start="0" selection-end="5787" vertical-scroll-proportion="0.0">
+            <state line="172" column="28" selection-start="7318" selection-end="7318" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3297#3313#0" expanded="true" />
+                <element signature="e#3812#3828#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,10 +197,8 @@
       <file leaf-file-name="CompanyTwo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="10" selection-start="5777" selection-end="5777" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="180" column="0" selection-start="7719" selection-end="7719" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -232,7 +206,7 @@
       <file leaf-file-name="CompanyThree.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="28" selection-start="6535" selection-end="6535" vertical-scroll-proportion="0.39678285">
+            <state line="48" column="13" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.8552279">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -240,10 +214,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="approval_challenge.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/approval_challenge.java">
+      <file leaf-file-name="MavenSuite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Maven/MavenSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+            <state line="17" column="94" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -270,7 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/test/group_email.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/appexchangechallenge.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/group_earned_badge.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/reward_cape.java" />
@@ -282,10 +255,11 @@
         <option value="$PROJECT_DIR$/src/test/java/test/appium.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/appium2.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/appium2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Maven/MavenSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
       </list>
     </option>
   </component>
@@ -329,9 +303,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1368" />
-    <option name="y" value="22" />
-    <option name="width" value="1267" />
+    <option name="x" value="1721" />
+    <option name="y" value="41" />
+    <option name="width" value="1404" />
     <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -399,10 +373,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -443,63 +413,11 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alice_advocate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin_advocate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -515,85 +433,19 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="interaction" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompanyThree">
-    <configuration default="false" name="alice_appex_complete" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="alice_advocate" />
-      <option name="MAIN_CLASS_NAME" value="alice_advocate.alice_appex_complete" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="approval_challenge" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.approval_challenge" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="appium" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Maven" />
-      <option name="MAIN_CLASS_NAME" value="Maven.appium" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.CompanyOne">
     <configuration default="false" name="CompanyFour" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -622,6 +474,72 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Maven" />
       <option name="MAIN_CLASS_NAME" value="Maven.CompanyThree" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MavenSuite" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Maven" />
+      <option name="MAIN_CLASS_NAME" value="Maven.MavenSuite" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CompanyTwo" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Maven" />
+      <option name="MAIN_CLASS_NAME" value="Maven.CompanyTwo" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CompanyOne" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Maven" />
+      <option name="MAIN_CLASS_NAME" value="Maven.CompanyOne" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -674,19 +592,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -712,6 +617,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -795,19 +713,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ChallengeCreation_Suite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.alice_appex_complete" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.appium" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.CompanyThree" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyThree" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MavenSuite" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CompanyTwo" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CompanyThree" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.appium" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.alice_appex_complete" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyTwo" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyThree" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MavenSuite" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -862,7 +780,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1368" y="22" width="1267" height="874" extended-state="0" />
+    <frame x="1721" y="41" width="1404" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -878,7 +796,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29360694" sideWeight="0.5609756" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26495728" sideWeight="0.5609756" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4390244" sideWeight="0.90100336" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -952,20 +870,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/invite_advocate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="41" selection-start="4123" selection-end="4123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/geo_checkin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/badge_points_reached.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="0" selection-start="3060" selection-end="3060" vertical-scroll-proportion="0.0">
@@ -1022,9 +926,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/appium.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/alice_advocate/Alice_Suite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="162" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="25" selection-end="462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/MavenSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="94" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1036,36 +947,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/appium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="10" selection-start="5777" selection-end="5777" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="60" column="162" selection-start="1980" selection-end="1980" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="58" selection-start="0" selection-end="5787" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="180" column="0" selection-start="7719" selection-end="7719" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="28" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.0">
+        <state line="47" column="13" selection-start="1559" selection-end="1559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="28" selection-start="7318" selection-end="7318" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3297#3313#0" expanded="true" />
+            <element signature="e#3812#3828#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="28" selection-start="6535" selection-end="6535" vertical-scroll-proportion="0.39678285">
+        <state line="48" column="13" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.8552279">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

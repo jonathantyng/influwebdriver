@@ -45,12 +45,6 @@ import java.net.URL;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-/**
- * Simple <a href="https://github.com/appium/appium">Appium</a> test which runs against a local Appium instance deployed
- * with the 'TestApp' iPhone project which is included in the Appium source distribution.
- *
- * @author Ross Rowe
- */
 
 public class CompanyOne {
 
@@ -65,7 +59,7 @@ public class CompanyOne {
     public void setUp() throws Exception {
         // set up appium
 
-        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphonesimulator");
+        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphoneos");
         File app = new File(appDir, "Maven.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
@@ -88,23 +82,35 @@ public class CompanyOne {
 
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
-        /*
-        //Sign up as nominee
 
-        driver.findElement(By.name("btn signup")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 11");
-        driver.findElement(By.name("Done")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@11.com");
-        driver.findElement(By.name("Done")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");
-        driver.findElement(By.name("Done")).click();
+        //Log in as Pelican Pete
+
+        driver.findElement(By.xpath("//window[1]/button[1]")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.name("Sign up now")).click();
+        driver.findElement(By.name("PelicanPete1")).click();
         try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
-        */
+
+        //Swipe screen
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap<String, Double> swipeObject = new HashMap<String, Double>();
+        swipeObject.put("startX", 160.0);
+        swipeObject.put("startY", 74.0);
+        swipeObject.put("endX", 160.0);
+        swipeObject.put("endY", 450.0);
+        swipeObject.put("duration", 4.0);
+        js.executeScript("mobile: swipe", swipeObject);
+        try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Swipe to locate 'add company'
+
+        js = (JavascriptExecutor) driver;
+        HashMap<String, Double> flickObject = new HashMap<String, Double>();
+        flickObject.put("endX", 0.0);
+        flickObject.put("endY", 0.0);
+        flickObject.put("touchCount", 1.0);
+        js.executeScript("mobile: flick", flickObject);
+        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add company one
 
@@ -119,17 +125,71 @@ public class CompanyOne {
 
         //Select company one
 
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        js = (JavascriptExecutor) driver;
+        flickObject = new HashMap<String, Double>();
+        flickObject.put("endX", 160.0);
+        flickObject.put("endY", 450.0);
+        flickObject.put("touchCount", 1.0);
+        js.executeScript("mobile: flick", flickObject);
+
+        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Companyone AdvocateHub")).click();
 
         //Complete follow on twitter
 
         driver.findElement(By.name("Follow on Twitter")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Continue")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Follow on Twitter")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Complete Join linkedin group
+
+        driver.findElement(By.name("Join a linkedin group")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Continue")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Join LinkedIn Group")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select Share Link challenge
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Share this link")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Continue")).click();
 
+        //Share via email and cancel
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.name("Submit")).click();
+        driver.findElement(By.xpath("//window[1]/button[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Cancel")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Delete Draft")).click();
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        /*
+        //Share via social
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("//window[1]/button[1]")).click();
+
+        //Select FB share
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("//window[1]/button[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("OK")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("OK")).click();
+
+        */
+
+        //Submit share link challenge
+
+        driver.findElement(By.name("I've shared the link")).click();
 
     }
 
