@@ -87,10 +87,10 @@ public class CompanyTwo {
 
         driver.findElement(By.xpath("//window[1]/button[5]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 11");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 13");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@11.com");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@13.com");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");

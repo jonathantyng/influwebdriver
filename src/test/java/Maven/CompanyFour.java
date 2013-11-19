@@ -85,10 +85,10 @@ public class CompanyFour {
 
         driver.findElement(By.xpath("//window[1]/button[5]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 11");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 13");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@11.com");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@13.com");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");
@@ -100,7 +100,7 @@ public class CompanyFour {
         //Add company four
 
         driver.findElement(By.name("Add a company")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companyfour");
         driver.findElement(By.name("Search")).click();
@@ -149,18 +149,23 @@ public class CompanyFour {
         //Select Approval Challenge
 
         driver.findElement(By.name("Approval Challenge")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Continue")).click();
 
         //Submit first survey response
 
         driver.findElement(By.xpath("//window[1]/textfield[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/textfield[1]")).sendKeys("This is a really great answer");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Submit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Submit second survey response
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/textfield[1]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/textfield[1]")).sendKeys("This is another really great answer");
@@ -173,33 +178,43 @@ public class CompanyFour {
         //Select Referral Challenge
 
         driver.findElement(By.name("Referral Challenge is amazing. Complete this challenge.")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Continue")).click();
 
         //Submit referral name
 
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("Jon Snow");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
 
         //Submit referral email
 
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/textfield[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/textfield[1]")).sendKeys("jon@snow.com");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
 
         //Submit referral company
 
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[4]/textfield[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[4]/textfield[1]")).sendKeys("Nights Watch");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
 
         //Submit referral title
 
         driver.findElement(By.xpath("/window[1]/tableview[1]/cell[5]/textfield[1]")).click();
-        driver.findElement(By.xpath("/window[1]/tableview[1]/cell[5]/textfield[1]")).sendKeys("I know nothing");
-        driver.findElement(By.name("Done")).click();
-        driver.findElement(By.name("Submit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("/window[1]/tableview[1]/cell[5]/textfield[1]")).sendKeys("I know nothing");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Done")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Submit")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
     }

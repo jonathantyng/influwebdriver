@@ -110,7 +110,7 @@ public class CompanyOne {
         flickObject.put("endY", 0.0);
         flickObject.put("touchCount", 1.0);
         js.executeScript("mobile: flick", flickObject);
-        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add company one
 
@@ -126,14 +126,12 @@ public class CompanyOne {
         //Select company one
 
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         js = (JavascriptExecutor) driver;
         flickObject = new HashMap<String, Double>();
         flickObject.put("endX", 160.0);
         flickObject.put("endY", 450.0);
         flickObject.put("touchCount", 1.0);
         js.executeScript("mobile: flick", flickObject);
-
         try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -146,7 +144,7 @@ public class CompanyOne {
         driver.findElement(By.name("Continue")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Follow on Twitter")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Complete Join linkedin group
 
@@ -155,7 +153,7 @@ public class CompanyOne {
         driver.findElement(By.name("Continue")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Join LinkedIn Group")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Share Link challenge
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -169,7 +167,7 @@ public class CompanyOne {
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Cancel")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.name("Delete Draft")).click();
+        driver.findElement(By.xpath("//window[4]/actionsheet[1]/button[1]")).click();
         try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         /*
