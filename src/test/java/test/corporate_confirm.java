@@ -23,7 +23,7 @@ public class corporate_confirm extends BaseClass{
 
     @Test
     public void corporateconfirm() {
-        wd.get("http://sanitynov11.influitives.com/users/sign_in");
+        wd.get("http://nov22.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -88,9 +88,9 @@ public class corporate_confirm extends BaseClass{
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#c45 > label > input[name=\"subject\"]")).click();
-        wd.findElement(By.cssSelector("#c45 > label > input[name=\"subject\"]")).clear();
-        wd.findElement(By.cssSelector("#c45 > label > input[name=\"subject\"]")).sendKeys("The second question");
+        wd.findElement(By.cssSelector("#c43 > label > input[name=\"subject\"]")).click();
+        wd.findElement(By.cssSelector("#c43 > label > input[name=\"subject\"]")).clear();
+        wd.findElement(By.cssSelector("#c43 > label > input[name=\"subject\"]")).sendKeys("The second question");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }

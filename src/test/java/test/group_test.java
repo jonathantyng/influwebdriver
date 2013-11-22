@@ -22,7 +22,7 @@ public class group_test extends BaseClass{
 
     @Test
     public void group_tests () {
-        wd.get("http://sanitynov11.influitives.com/users/sign_in");
+        wd.get("http://nov22.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -42,7 +42,7 @@ public class group_test extends BaseClass{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Challenge Tutorial Dismissed");
+            System.out.println("Group Tutorial Dismissed");
         }
         else
         {

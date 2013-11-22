@@ -85,15 +85,25 @@ public class CompanyTwo {
 
         //Sign up as nominee
 
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/button[5]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 13");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 16");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@13.com");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@16.com");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Sign up now")).click();
@@ -125,23 +135,10 @@ public class CompanyTwo {
         driver.findElement(By.name("Continue")).click();
 
         //Accept alert if present
-        /*
-        boolean exists = driver.findElements( By.linkText("No Thanks")).size() != 0;
 
-        if (exists)
-        {
-            driver.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Challenge Tutorial Dismissed");
-        }
-        else
-        {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-            System.out.println("Tutorial not encountered");
-        }
+        //driver.switchTo().alert().accept();
+        //try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-            driver.switchTo().alert().accept();
-            System.out.println("Location enabled");
-        */
         //Check in
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

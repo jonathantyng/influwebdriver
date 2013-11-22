@@ -24,7 +24,7 @@ public class approval_challenge extends BaseClass{
 
     @Test
     public void approval_challenge() {
-        wd.get("http://sanitynov11.influitives.com/users/sign_in");
+        wd.get("http://nov22.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         //wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -73,9 +73,9 @@ public class approval_challenge extends BaseClass{
         wd.findElement(By.name("subject")).sendKeys("The first question issss??");
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
-        wd.findElement(By.cssSelector("#c42> label > input[name=\"subject\"]")).click();
-        wd.findElement(By.cssSelector("#c42> label > input[name=\"subject\"]")).clear();
-        wd.findElement(By.cssSelector("#c42> label > input[name=\"subject\"]")).sendKeys("The second question issss?");
+        wd.findElement(By.cssSelector("#c40> label > input[name=\"subject\"]")).click();
+        wd.findElement(By.cssSelector("#c40> label > input[name=\"subject\"]")).clear();
+        wd.findElement(By.cssSelector("#c40> label > input[name=\"subject\"]")).sendKeys("The second question issss?");
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Corporate_confirmation']")).click();
         wd.findElement(By.id("ui-id-2")).click();

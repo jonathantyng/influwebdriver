@@ -22,7 +22,7 @@ public class reward_hoodie extends BaseClass{
 
     @Test
     public void reward_hoodie() {
-        wd.get("http://sanitynov11.influitives.com/users/sign_in");
+        wd.get("http://nov22.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

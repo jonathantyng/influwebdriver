@@ -20,7 +20,7 @@ public class approval_feedback extends BaseClass{
 
     @Test
     public void approval_with_feedback() {
-        wd.get("http://sanitynov11.influitives.com/users/sign_in");
+        wd.get("http://nov22.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -52,7 +52,7 @@ public class approval_feedback extends BaseClass{
         wd.findElement(By.name("name")).click();
         wd.findElement(By.name("name")).clear();
         wd.findElement(By.name("name")).sendKeys("Approval Challenge with Feedback");
-        wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
+        wd.findElement(By.linkText("Choose One")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Survey");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
