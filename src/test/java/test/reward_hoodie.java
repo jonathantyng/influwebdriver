@@ -22,7 +22,7 @@ public class reward_hoodie extends BaseClass{
 
     @Test
     public void reward_hoodie() {
-        wd.get("http://nov22.influitiveqa.com/users/sign_in");
+        wd.get("http://nov28.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -58,7 +58,7 @@ public class reward_hoodie extends BaseClass{
         wd.findElement(By.id("reward_description")).sendKeys("This is a great hoodie!");
         wd.findElement(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Swag")).click();
+        wd.findElement(By.cssSelector("div.select2-result-label")).click();
         //wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.id("link-redeeming")).click();
         wd.findElement(By.id("reward_in_catalog")).click();
@@ -71,14 +71,15 @@ public class reward_hoodie extends BaseClass{
         wd.findElement(By.name("subject")).sendKeys("What size do you wear??");
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Not Published")).click();
+        wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("nov5_setting_membership_group")).click();
-        wd.findElement(By.cssSelector("#s2id_nov5_setting_group_ids > ul.select2-choices")).click();
+        wd.findElement(By.id("visibility_setting_membership_group")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_visibility_setting_group_ids\"]/ul/li")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Test Group");
         wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.name("commit")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     @After

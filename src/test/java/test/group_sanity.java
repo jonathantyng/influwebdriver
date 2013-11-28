@@ -22,7 +22,7 @@ public class group_sanity extends BaseClass{
 
     @Test
     public void group_sanity () {
-        wd.get("http://nov22.influitiveqa.com/users/sign_in");
+        wd.get("http://nov28.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

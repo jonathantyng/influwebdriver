@@ -24,7 +24,7 @@ public class join_group extends BaseClass{
     
     @Test
     public void join_group() {
-        wd.get("http://nov22.influitiveqa.com/users/sign_in");
+        wd.get("http://nov28.influitiveqa.com/users/sign_in");
 
         //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
 

@@ -20,7 +20,7 @@ public class geo_checkin extends BaseClass{
     
     @Test
     public void geo_checkin() {
-        wd.get("http://nov22.influitiveqa.com/users/sign_in");
+        wd.get("http://nov28.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -70,7 +70,7 @@ public class geo_checkin extends BaseClass{
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Check_in']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.address")).click();

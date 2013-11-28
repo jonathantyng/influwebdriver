@@ -20,7 +20,7 @@ public class share_link extends BaseClass{
     
     @Test
     public void share_link() {
-        wd.get("http://nov22.influitiveqa.com/users/sign_in");
+        wd.get("http://nov28.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -47,7 +47,7 @@ public class share_link extends BaseClass{
 
         //Add share link challenge
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();

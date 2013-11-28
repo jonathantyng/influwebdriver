@@ -188,6 +188,7 @@ public class CompanyOne {
         //Submit share link challenge
 
         driver.findElement(By.name("I've shared the link")).click();
+        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 
