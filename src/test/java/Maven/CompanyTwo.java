@@ -96,7 +96,7 @@ public class CompanyTwo {
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@16.com");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("Admin@16.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Done")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

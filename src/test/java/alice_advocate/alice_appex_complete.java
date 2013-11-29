@@ -12,7 +12,7 @@ public class alice_appex_complete extends BaseClassTwo{
 
         //Log in as alice
 
-        wd.get("http://sanitynov11.influitives.com/challenges/41");
+        wd.get("http://nov28.influitiveqa.com/challenges/41");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("alice.advocate@gmail.com");

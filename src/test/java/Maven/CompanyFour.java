@@ -89,7 +89,7 @@ public class CompanyFour {
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 14");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@14.com");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("Admin@14.com");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");

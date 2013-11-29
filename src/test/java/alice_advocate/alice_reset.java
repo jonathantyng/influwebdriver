@@ -12,16 +12,16 @@ public class alice_reset extends BaseClassTwo{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://sanitynov11.influitives.com/users/sign_in");
+        wd.get("http://nov28.influitiveqa.com/users/sign_in");
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Cancel")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Forgot Password?")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("(//input[@id='user_email'])[2]")).click();
-        wd.findElement(By.xpath("(//input[@id='user_email'])[2]")).clear();
-        wd.findElement(By.xpath("(//input[@id='user_email'])[2]")).sendKeys("alice.advocate@gmail.com");
+        wd.findElement(By.id("forgot_password_email")).click();
+        wd.findElement(By.id("forgot_password_email")).clear();
+        wd.findElement(By.id("forgot_password_email")).sendKeys("alice.advocate@gmail.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#new_user > input[name=\"commit\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

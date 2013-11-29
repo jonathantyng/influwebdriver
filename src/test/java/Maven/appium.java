@@ -40,7 +40,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Simple <a href="https://github.com/appium/appium">Appium</a> test which runs against a local Appium instance deployed
+ * Simple <a href="https://github.com/appium/appium">Appium</a> Admin which runs against a local Appium instance deployed
  * with the 'TestApp' iPhone project which is included in the Appium source distribution.
  *
  * @author Ross Rowe
