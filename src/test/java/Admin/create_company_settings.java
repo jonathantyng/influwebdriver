@@ -10,7 +10,7 @@ public class create_company_settings extends BaseClass{
     @Test
     public void createcompanysettings(){
 
-        wd.get("http://sanitynov25.influitives.com/");
+        wd.get("http://advocatetest.influitiveqa.com/");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -43,7 +43,7 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.xpath("//ul[@id='accordion']/li[3]/h4")).click();
         wd.findElement(By.linkText("Welcome Email")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("email_preferences_preferences_deliver_welcome_email")).click();
+        wd.findElement(By.id("settings_builder_preferences_deliver_welcome_email")).click();
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.linkText("Invitations")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -60,7 +60,7 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.xpath("//ul[@id='accordion']/li[5]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#collapse-me4 > li > a")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("provider_setting_options_user_name")).click();
         wd.findElement(By.id("provider_setting_options_user_name")).clear();
         wd.findElement(By.id("provider_setting_options_user_name")).sendKeys("patrick@influitive.com");
