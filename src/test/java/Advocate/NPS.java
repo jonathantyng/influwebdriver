@@ -2,11 +2,12 @@ package Advocate;
 
 import org.junit.After;
 import org.junit.Test;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
 
 public class NPS extends Advocate{
+
 
     @Test
     public void NPSChallenge() {

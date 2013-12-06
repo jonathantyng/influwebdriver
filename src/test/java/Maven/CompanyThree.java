@@ -103,7 +103,7 @@ public class CompanyThree {
 
         //Add company three
 
-        driver.findElement(By.name("Add a company")).click();
+        driver.findElement(By.name("Add a Hub")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companythree");

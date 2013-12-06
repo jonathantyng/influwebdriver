@@ -58,7 +58,7 @@ public class CompanyFour {
     public void setUp() throws Exception {
         // set up appium
 
-        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphonesimulator");
+        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/QA-iphoneos");
         File app = new File(appDir, "Maven.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
@@ -96,11 +96,11 @@ public class CompanyFour {
         driver.findElement(By.name("Done")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Sign up now")).click();
-        try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add company four
 
-        driver.findElement(By.name("Add a company")).click();
+        driver.findElement(By.name("Add a Hub")).click();
         try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companyfour");

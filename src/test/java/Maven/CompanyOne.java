@@ -90,9 +90,12 @@ public class CompanyOne {
         driver.findElement(By.name("PelicanPete1")).click();
         try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+
         //Swipe screen
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        /*
         HashMap<String, Double> swipeObject = new HashMap<String, Double>();
         swipeObject.put("startX", 160.0);
         swipeObject.put("startY", 74.0);
@@ -103,18 +106,21 @@ public class CompanyOne {
         try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Swipe to locate 'add company'
-
+        */
         js = (JavascriptExecutor) driver;
         HashMap<String, Double> flickObject = new HashMap<String, Double>();
+        /*
         flickObject.put("endX", 0.0);
         flickObject.put("endY", 0.0);
         flickObject.put("touchCount", 1.0);
         js.executeScript("mobile: flick", flickObject);
         try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+*/
+
         //Add company one
 
-        driver.findElement(By.name("Add a company")).click();
+        driver.findElement(By.name("Add a Hub")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companyone");

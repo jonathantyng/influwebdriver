@@ -32,7 +32,7 @@ public class FBLike extends Advocate{
 
         //Like page
 
-        wd.findElement(By.xpath("//*[@id=\"u_0_1\"]/div/div[1]/div/div/div")).click();
+        wd.findElement(By.linkText("Like")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }

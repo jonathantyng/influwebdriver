@@ -9,7 +9,7 @@ public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
-        wd.get("http://advocatetest.influitiveqa.com/users/sign_in");
+        wd.get("http://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -69,9 +69,9 @@ public class blog_post extends BaseClass{
         wd.findElement(By.id("visibility_setting_membership_specific")).click();
         wd.findElement(By.id("s2id_autogen1")).click();
         wd.findElement(By.id("s2id_autogen1")).clear();
-        wd.findElement(By.id("s2id_autogen1")).sendKeys("Alice");
+        wd.findElement(By.id("s2id_autogen1")).sendKeys("Pelican");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("img[alt=\"Alice Advocate\"]")).click();
+        wd.findElement(By.cssSelector("img[alt=\"Pelican Pete\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-1")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

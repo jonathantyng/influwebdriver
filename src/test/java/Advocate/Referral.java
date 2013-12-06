@@ -32,7 +32,7 @@ public class Referral extends Advocate{
 
         //Enter referral name
 
-        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_name")).click();
+        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_title")).click();
         wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_name")).clear();
         wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_name")).sendKeys("Name Namerson");
 
@@ -50,9 +50,9 @@ public class Referral extends Advocate{
 
         //Enter referral Title
 
-        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_required")).click();
-        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_required")).clear();
-        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_required")).sendKeys("CEO");
+        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_title")).click();
+        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_title")).clear();
+        wd.findElement(By.id("activity_prospect_attributions_attributes_0_prospect_attributes_title")).sendKeys("CEO");
 
         //Submit referral
 

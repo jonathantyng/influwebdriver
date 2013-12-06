@@ -49,11 +49,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("advocatetest");
+        wd.findElement(By.id("company_name")).sendKeys("deletethis");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("advocatetest");
+        wd.findElement(By.id("company_subdomain")).sendKeys("deletethis");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
