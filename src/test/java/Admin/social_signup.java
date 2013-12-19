@@ -9,8 +9,8 @@ import org.openqa.selenium.*;
 public class social_signup extends BaseClass{
     
     @Test
-    public void social_signup() {
-        wd.get("http://advocatetest.influitives.com/join/Test");
+    public void social_signupp() {
+        wd.get("http://sanitydec20.influitives.com/join/Test");
         wd.findElement(By.id("registration_user_email")).click();
         wd.findElement(By.id("registration_user_email")).clear();
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
@@ -23,9 +23,10 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("span")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.get("http://advocatetest.influitives.com/join/sanity");
+        wd.get("http://sanitydec20.influitives.com/join/sanity");
         wd.findElement(By.cssSelector("img[alt=\"Linkedin\"]")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).clear();
@@ -37,9 +38,10 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("span")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.get("http://advocatetest.influitives.com/join/sanity");
+        wd.get("http://sanitydec20.influitives.com/join/sanity");
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
         wd.findElement(By.id("email")).click();
         wd.findElement(By.id("email")).clear();
@@ -50,6 +52,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("u_0_1")).click();
         wd.findElement(By.name("commit")).click();
         wd.findElement(By.cssSelector("span")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }

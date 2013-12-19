@@ -13,7 +13,7 @@ public class LinkedinRecom extends Advocate{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://advocatetest.influitiveqa.com/users/sign_in");
+        wd.get("http://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("pelican.pete123@gmail.com");
@@ -27,7 +27,7 @@ public class LinkedinRecom extends Advocate{
 
         //Load challenge
 
-        wd.get("http://advocatetest.influitiveqa.com/challenges/27");
+        wd.get("http://advocatetest.influitives.com/challenges/27");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Recommend

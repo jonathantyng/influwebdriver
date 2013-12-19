@@ -89,7 +89,7 @@ public class CompanyFour {
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/textfield[1]")).sendKeys("Test 14");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).click();
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("Admin@14.com");
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[2]/textfield[1]")).sendKeys("test@14.com");
         driver.findElement(By.name("Done")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).click();
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[3]/secure[1]")).sendKeys("macbook18");
@@ -111,7 +111,7 @@ public class CompanyFour {
 
         //Select company four and complete NPS challenge
 
-        driver.findElement(By.xpath("//window[1]/UIACollectionView[1]/UIACollectionCell[1]/button[1]")).click();
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
 
         boolean chall = driver.findElements( By.name("NPS Survey Challenge")).size() != 0;
 
