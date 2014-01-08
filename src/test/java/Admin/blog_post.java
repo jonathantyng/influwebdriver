@@ -9,7 +9,7 @@ public class blog_post extends BaseClass{
 
     @Test
     public void Blog_Post() {
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -62,7 +62,7 @@ public class blog_post extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();
-        wd.findElement(By.name("params.url")).sendKeys("http://www.slashgear.com/jobs-movie-tanks-on-opening-weekend-19294106/");
+        wd.findElement(By.name("params.url")).sendKeys("https://www.slashgear.com/jobs-movie-tanks-on-opening-weekend-19294106/");
         wd.findElement(By.className("summarize-url")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
@@ -73,7 +73,7 @@ public class blog_post extends BaseClass{
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("img[alt=\"Pelican Pete\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("ui-id-1")).click();
+        //wd.findElement(By.id("ui-id-1")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }

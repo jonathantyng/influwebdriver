@@ -10,7 +10,7 @@ public class create_company_settings extends BaseClass{
     @Test
     public void createcompanysettings(){
 
-        wd.get("http://sanitydec20.influitives.com/");
+        wd.get("https://sanityjan7.influitives.com/");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -81,7 +81,6 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.id("toggles_private_leaderboards")).click();
         wd.findElement(By.id("toggles_check_in")).click();
         wd.findElement(By.id("toggles_show_future_stages")).click();
-        wd.findElement(By.id("toggles_quick_referral")).click();
         wd.findElement(By.id("toggles_tango_card")).click();
         wd.findElement(By.id("toggles_referral_email")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

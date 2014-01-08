@@ -11,7 +11,7 @@ public class upload_image extends BaseClass{
     @Test
     public void upload_image() {
 
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -41,7 +41,7 @@ public class upload_image extends BaseClass{
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
-        wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label")).click();
+        //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label")).click();
         wd.findElement(By.name("name")).click();
         wd.findElement(By.name("name")).clear();
         wd.findElement(By.name("name")).sendKeys("Upload an Image Stage Type");
@@ -60,7 +60,7 @@ public class upload_image extends BaseClass{
         wd.findElement(By.name("description")).sendKeys("Upload an Image Stage Type is amazing. Complete this challenge.");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
-        wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
+        //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

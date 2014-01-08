@@ -10,7 +10,7 @@ public class twitter_post extends BaseClass{
     
     @Test
     public void twitter_post() {
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -67,7 +67,8 @@ public class twitter_post extends BaseClass{
         wd.findElement(By.linkText("Preview")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("button.close")).click();
-        wd.findElement(By.xpath("//div[@id='s2id_params.content_type18']/a/span")).click();
+        //wd.findElement(By.xpath("//div[@id='s2id_params.content_type18']/a/span")).click();
+        wd.findElement(By.linkText("Choose One")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

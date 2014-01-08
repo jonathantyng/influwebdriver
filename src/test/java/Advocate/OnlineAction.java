@@ -13,7 +13,7 @@ public class OnlineAction extends Advocate{
 
         //Sign into app and access challenge screen
 
-        wd.get("http://advocatetest.influitives.com/users/sign_in");
+        wd.get("https://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("pelican.pete123@gmail.com");
@@ -27,7 +27,7 @@ public class OnlineAction extends Advocate{
 
         //Load challenge
 
-        wd.get("http://advocatetest.influitives.com/challenges/30");
+        wd.get("https://advocatetest.influitives.com/challenges/30");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click 'Take me there' to view article

@@ -10,7 +10,7 @@ public class twitter_follow extends BaseClass{
     
     @Test
     public void twitter_follow() {
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -59,7 +59,7 @@ public class twitter_follow extends BaseClass{
         wd.findElement(By.name("description")).sendKeys("Follow on Twitter is amazing. Complete this challenge.");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
-        wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
+        //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Twitter_follow']")).click();

@@ -10,7 +10,7 @@ public class multi_stage extends BaseClass{
     
     @Test
     public void multi_stage() {
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -61,7 +61,7 @@ public class multi_stage extends BaseClass{
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("public17")).click();
+        wd.findElement(By.id("public18")).click();
         wd.findElement(By.name("subject")).click();
         wd.findElement(By.name("subject")).clear();
         wd.findElement(By.name("subject")).sendKeys("Answer this question!");

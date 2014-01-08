@@ -10,7 +10,7 @@ public class referral extends BaseClass{
     
     @Test
     public void referral() {
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -65,8 +65,8 @@ public class referral extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//img[@alt='Refer_prospect']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("params.fields21")).click();
-        wd.findElement(By.id("params.required20")).click();
+        wd.findElement(By.id("params.fields22")).click();
+        wd.findElement(By.id("params.required21")).click();
         wd.findElement(By.cssSelector("div.vertical-space-medium > label.input.checkbox")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();

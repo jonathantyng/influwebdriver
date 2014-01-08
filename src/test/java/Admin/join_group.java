@@ -10,7 +10,7 @@ public class join_group extends BaseClass{
     
     @Test
     public void join_group() {
-        wd.get("http://sanitydec20.influitives.com/users/sign_in");
+        wd.get("https://sanityjan7.influitives.com/users/sign_in");
 
         //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
 
@@ -88,7 +88,7 @@ public class join_group extends BaseClass{
         wd.findElement(By.name("description")).sendKeys("Join this awesome group! You will be rewarded with cool offers and prizes!");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
-        wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
+        //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         wd.findElement(By.xpath("//img[@alt='Influitive_group_join']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
