@@ -81,6 +81,16 @@ public class CompanyFour {
 
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 
+        //Add company four
+
+        driver.findElement(By.name("Get Started!")).click();
+        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("window[1]/textfield[1]")).click();
+        driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("advocatetest");
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
         //Sign up as nominee
 
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -98,33 +108,23 @@ public class CompanyFour {
         driver.findElement(By.name("Sign up now")).click();
         try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Add company four
-
-        driver.findElement(By.name("Add a Hub")).click();
-        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.xpath("window[1]/textfield[1]")).click();
-        driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companyfour");
-        driver.findElement(By.name("Search")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select company four and complete NPS challenge
 
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
 
-        boolean chall = driver.findElements( By.name("NPS Survey Challenge")).size() != 0;
+        boolean chall = driver.findElements( By.name("NPS Survey Challenge, 500")).size() != 0;
 
             if (chall)
         {
-        driver.findElement(By.name("NPS Survey Challenge")).click();
+        driver.findElement(By.name("NPS Survey Challenge, 500")).click();
         }
             else
         {
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("mobile: scrollTo", chall);
 
-            driver.findElement(By.name("NPS Survey Challenge")).click();
+            driver.findElement(By.name("NPS Survey Challenge, 500")).click();
         }
 
         driver.findElement(By.name("Continue")).click();
@@ -146,7 +146,7 @@ public class CompanyFour {
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Submit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
+        /*
         //Select Approval Challenge
 
         driver.findElement(By.name("Approval Challenge")).click();
@@ -217,7 +217,7 @@ public class CompanyFour {
         driver.findElement(By.name("Submit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-
+        */
     }
 
     public class SwipeableWebDriver extends RemoteWebDriver implements HasTouchScreen {

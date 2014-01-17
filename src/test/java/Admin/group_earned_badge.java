@@ -9,7 +9,7 @@ public class group_earned_badge extends BaseClass{
 
     @Test
     public void group_badge () {
-        wd.get("https://sanityjan7.influitives.com/users/sign_in");
+        wd.get("https://jan17.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -56,7 +56,7 @@ public class group_earned_badge extends BaseClass{
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li/ul/li/div/span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("id('s2id_group_search_criteria_attributes0_value')")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Challenge Completed")).click();
         //wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.id("save-button")).click();

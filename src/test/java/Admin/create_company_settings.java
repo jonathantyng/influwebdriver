@@ -10,7 +10,7 @@ public class create_company_settings extends BaseClass{
     @Test
     public void createcompanysettings(){
 
-        wd.get("https://sanityjan7.influitives.com/");
+        wd.get("https://jan17.influitiveqa.com/");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -76,13 +76,8 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
-        wd.findElement(By.linkText("Enabled Features")).click();
-        wd.findElement(By.id("toggles_disqus_auth")).click();
-        wd.findElement(By.id("toggles_private_leaderboards")).click();
-        wd.findElement(By.id("toggles_check_in")).click();
-        wd.findElement(By.id("toggles_show_future_stages")).click();
+        wd.findElement(By.linkText("Influitive Labs")).click();
         wd.findElement(By.id("toggles_tango_card")).click();
-        wd.findElement(By.id("toggles_referral_email")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
     }

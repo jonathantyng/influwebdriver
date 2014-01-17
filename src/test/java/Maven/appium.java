@@ -58,7 +58,7 @@ public class appium {
     @Before
     public void setUp() throws Exception {
         // set up appium
-        File appDir = new File(System.getProperty("user.dir"), "/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphonesimulator");
+        File appDir = new File(System.getProperty("user.dir"), "/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/QA-iphonesimulator");
         File app = new File(appDir, "Maven");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
