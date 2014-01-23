@@ -3,6 +3,7 @@ package Advocate;
 import org.junit.After;
 import org.junit.Test;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 
@@ -39,7 +40,7 @@ public class UploadImage extends Advocate{
         wd.quit();
     }
 
-    public static boolean isAlertPresent(FirefoxDriver wd) {
+    public static boolean isAlertPresent(ChromeDriver wd) {
         try {
             wd.switchTo().alert();
             return true;

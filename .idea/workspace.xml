@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" afterPath="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Approval.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Approval.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/CoprorateConfirm.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/CoprorateConfirm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
@@ -53,7 +55,7 @@
     <file path="/ChallengeCreation_Suite.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383600431276" ignored="false" />
     <file path="/CompanyCreation_Suite.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1389976478636" ignored="false" />
     <file path="/alice_password_reset.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383154490520" ignored="false" />
-    <file path="/BaseClassTwo.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384201184063" ignored="false" />
+    <file path="/BaseClassTwo.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390515567422" ignored="false" />
     <file path="/alice_reset.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1385742638011" ignored="false" />
     <file path="/alice_singin.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383249903785" ignored="false" />
     <file path="/alice_sign.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1383600171259" ignored="false" />
@@ -88,10 +90,10 @@
     <file path="/CompanyTwo.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384875048393" ignored="false" />
     <file path="/CompanyThree.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384871847235" ignored="false" />
     <file path="/MavenSuite.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1384805075466" ignored="false" />
-    <file path="/Advocate.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390503951005" ignored="false" />
+    <file path="/Advocate.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390516030960" ignored="false" />
     <file path="/AppExchange.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386006620346" ignored="false" />
-    <file path="/Approval.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386007122517" ignored="false" />
-    <file path="/ApprovalFeedback.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386007169027" ignored="false" />
+    <file path="/Approval.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390512137131" ignored="false" />
+    <file path="/ApprovalFeedback.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390512388869" ignored="false" />
     <file path="/BlogPost.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386008606918" ignored="false" />
     <file path="/FBLike.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386015073688" ignored="false" />
     <file path="/FollowOnTwitter.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386013934458" ignored="false" />
@@ -106,8 +108,8 @@
     <file path="/ShareLink.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386014273975" ignored="false" />
     <file path="/Survey.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386014362822" ignored="false" />
     <file path="/TwitterPost.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386014408140" ignored="false" />
-    <file path="/UploadImage.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386007373870" ignored="false" />
-    <file path="/CoprorateConfirm.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386007495804" ignored="false" />
+    <file path="/UploadImage.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390513299789" ignored="false" />
+    <file path="/CoprorateConfirm.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1390512576999" ignored="false" />
     <file path="/AdvocateChallengeCompletion.java" changelist="a186e0b5-ae1c-4936-9167-c57a8eea1d39" time="1386013216938" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,37 +177,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Advocate.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Advocate.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Advocate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="79" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyFour.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="32" selection-start="1839" selection-end="1962" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppExchange.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/AppExchange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApprovalFeedback.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+            <state line="26" column="47" selection-start="744" selection-end="744" vertical-scroll-proportion="0.4955947">
               <folding />
             </state>
           </provider>
@@ -214,34 +189,18 @@
       <file leaf-file-name="Approval.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Approval.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="66" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="23" column="69" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="approval_challenge.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java">
+      <file leaf-file-name="Survey.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Survey.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="77" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NPS.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/NPS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.033039648">
+            <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,10 +215,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompanyOne.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
+      <file leaf-file-name="UploadImage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="49" selection-start="4218" selection-end="4218" vertical-scroll-proportion="0.0">
+            <state line="46" column="40" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reward_cape.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/reward_cape.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="multi_stage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/multi_stage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alice_sign.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/alice_advocate/alice_sign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseClassTwo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/alice_advocate/BaseClassTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="50" selection-end="351" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeleniumTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/SeleniumTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="15" selection-start="393" selection-end="441" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -286,11 +290,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Admin/referral.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Admin/multi_stage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Admin/group_earned_badge.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Maven/appium.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/group_email.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/CompanyCreation_Suite.java" />
@@ -301,6 +300,11 @@
         <option value="$PROJECT_DIR$/src/test/java/admin_advocate/adjust_points.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java" />
         <option value="$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Advocate/Approval.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Advocate/CoprorateConfirm.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/alice_advocate/BaseClassTwo.java" />
         <option value="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" />
       </list>
     </option>
@@ -345,8 +349,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="53" />
-    <option name="y" value="22" />
+    <option name="x" value="1720" />
+    <option name="y" value="80" />
     <option name="width" value="1340" />
     <option name="height" value="874" />
   </component>
@@ -555,73 +559,7 @@
       <recent name="interaction" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.approval_challenge">
-    <configuration default="false" name="AdvocateChallengeCompletion" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Advocate" />
-      <option name="MAIN_CLASS_NAME" value="Advocate.AdvocateChallengeCompletion" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="adjust_points" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="admin_advocate" />
-      <option name="MAIN_CLASS_NAME" value="admin_advocate.adjust_points" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompanyFour" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Maven" />
-      <option name="MAIN_CLASS_NAME" value="Maven.CompanyFour" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Approval">
     <configuration default="false" name="CompanyOne" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -650,6 +588,72 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Admin" />
       <option name="MAIN_CLASS_NAME" value="Admin.approval_challenge" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Approval" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Advocate" />
+      <option name="MAIN_CLASS_NAME" value="Advocate.Approval" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApprovalFeedback" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Advocate" />
+      <option name="MAIN_CLASS_NAME" value="Advocate.ApprovalFeedback" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CoprorateConfirm" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Advocate" />
+      <option name="MAIN_CLASS_NAME" value="Advocate.CoprorateConfirm" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -823,19 +827,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ChallengeCreation_Suite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AdvocateChallengeCompletion" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.adjust_points" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Approval" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ApprovalFeedback" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.CoprorateConfirm" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyFour" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.adjust_points" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AdvocateChallengeCompletion" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Approval" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CoprorateConfirm" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ApprovalFeedback" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyOne" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -890,7 +894,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="22" width="1340" height="874" extended-state="1" />
+    <frame x="1720" y="80" width="1340" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -901,7 +905,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36200258" sideWeight="0.09899117" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24658519" sideWeight="0.43589744" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32107496" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32092425" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
@@ -980,49 +984,49 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/admin_advocate/adjust_points.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/MultiSurvey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="47" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/alice_advocate/alice_appex_complete.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/NPS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/appium.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/OnlineAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="79" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/OnlineReview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Referral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="98" selection-start="4188" selection-end="4212" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/AdvocateChallengeCompletion.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/ShareLink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/AppExchange.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Survey.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding />
@@ -1036,58 +1040,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyFour.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="32" selection-start="1839" selection-end="1962" vertical-scroll-proportion="0.0">
+        <state line="46" column="40" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Maven/CompanyOne.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/reward_cape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="49" selection-start="4218" selection-end="4218" vertical-scroll-proportion="0.0">
+        <state line="6" column="13" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Advocate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="79" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/multi_stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/alice_advocate/alice_sign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="77" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+        <state line="7" column="13" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/SeleniumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="15" selection-start="393" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/alice_advocate/BaseClassTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="50" selection-end="351" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Approval.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="66" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="23" column="69" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Advocate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/NPS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.033039648">
+        <state line="26" column="47" selection-start="744" selection-end="744" vertical-scroll-proportion="0.4955947">
           <folding />
         </state>
       </provider>

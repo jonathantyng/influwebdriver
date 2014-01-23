@@ -30,6 +30,18 @@ public class CoprorateConfirm extends Advocate{
         wd.get("https://advocatetest.influitives.com/challenges/23");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        //Enter response
+
+        wd.findElement(By.id("activity_responses_attributes_0_body")).click();
+        wd.findElement(By.id("activity_responses_attributes_0_body")).sendKeys("Entering cool response");
+
+        //Submit response
+
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.name("commit")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
 
     }
 

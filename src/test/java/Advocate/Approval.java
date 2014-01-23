@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 public class Approval extends Advocate{
 
     @Test
-    public void appexchangechallenge() {
+    public void approvall() {
 
         //Sign into app and access challenge screen
 
@@ -29,6 +29,18 @@ public class Approval extends Advocate{
 
         wd.get("https://advocatetest.influitives.com/challenges/21");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Enter text into field
+
+        wd.findElement(By.id("activity_responses_attributes_0_body")).click();
+        wd.findElement(By.id("activity_responses_attributes_0_body")).sendKeys("This is a response!");
+
+        //Submit response
+
+        wd.findElement(By.name("commit")).click();
+
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
 
 
     }
