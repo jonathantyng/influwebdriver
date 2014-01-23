@@ -10,7 +10,7 @@ public class approval_challenge extends BaseClass{
 
     @Test
     public void approval_challenge() {
-        wd.get("https://jan17.influitiveqa.com/users/sign_in");
+        wd.get("https://sanityjan20.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         //wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
