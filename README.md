@@ -17,4 +17,10 @@ Steps to set up
 
 5. Open a new terminal window, navigate to influwebdriver and enter mvn clean install
 
-6. Finished!
+6. Install Java SE Dev Kit http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+
+7. Download intelliJ IDE Community Edition http://www.jetbrains.com/idea/download/
+
+8. Open influwebdriver with intelliJ
+
+9. Finished!

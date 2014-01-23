@@ -59,7 +59,7 @@ public class CompanyOne {
     public void setUp() throws Exception {
         // set up appium
 
-        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/InSanity-iphoneos");
+        File appDir = new File("/Users/patrickprestley/Library/Developer/Xcode/DerivedData/Influnet-fvwocgujorahvednhdqjlaedpqro/Build/Products/QA-iphoneos");
         File app = new File(appDir, "Maven.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
@@ -85,10 +85,10 @@ public class CompanyOne {
 
         //Log in as Pelican Pete
 
-        driver.findElement(By.xpath("//window[1]/button[1]")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        driver.findElement(By.name("PelicanPete1")).click();
-        try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
+        //driver.findElement(By.xpath("//window[1]/button[1]")).click();
+        //try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        //driver.findElement(By.name("PelicanPete1")).click();
+        //try { Thread.sleep(15000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
         //Swipe screen
@@ -120,7 +120,7 @@ public class CompanyOne {
 
         //Add company one
 
-        driver.findElement(By.name("Add a Hub")).click();
+        driver.findElement(By.name("Add a Company")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("Companyone");

@@ -62,9 +62,9 @@ public class CompanyFour {
         File app = new File(appDir, "Maven.app");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
-        capabilities.setCapability(CapabilityType.VERSION, "7.0");
+        capabilities.setCapability(CapabilityType.VERSION, "7.0.4");
         capabilities.setCapability(CapabilityType.PLATFORM, "Mac");
-        capabilities.setCapability("device", "iPhone Simulator");
+        capabilities.setCapability("device", "iPhone");
         capabilities.setCapability("app", app.getAbsolutePath());
         driver = new SwipeableWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         values = new ArrayList<Integer>();
@@ -88,6 +88,8 @@ public class CompanyFour {
         driver.findElement(By.xpath("window[1]/textfield[1]")).click();
         driver.findElement(By.xpath("window[1]/textfield[1]")).sendKeys("advocatetest");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        driver.findElement(By.name("Search")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.xpath("//window[1]/tableview[1]/cell[1]/text[1]")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
