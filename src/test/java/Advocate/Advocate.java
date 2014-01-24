@@ -16,14 +16,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Advocate {
 
-    ChromeDriver wd;
+    SafariDriver wd;
 
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
+        //System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
 
-        wd = new ChromeDriver();
+        wd = new SafariDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 }

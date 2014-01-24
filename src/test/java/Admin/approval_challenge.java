@@ -72,6 +72,11 @@ public class approval_challenge extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        //Click a button
+
+        wd.findElement(By.id("Challenges")).click();
+
+
     }
 
     @After

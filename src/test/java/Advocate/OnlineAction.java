@@ -60,6 +60,13 @@ public class OnlineAction extends Advocate{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        //Signout
+
+        wd.findElement(By.id("contact-dropdown")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.linkText("Sign out")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
     }
 
 

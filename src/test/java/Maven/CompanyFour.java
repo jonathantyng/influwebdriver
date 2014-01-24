@@ -80,7 +80,7 @@ public class CompanyFour {
     public void Companyfour_challenge_completion() throws Exception {
 
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-
+        /*
         //Add company four
 
         driver.findElement(By.name("Get Started!")).click();
@@ -109,7 +109,7 @@ public class CompanyFour {
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Sign up now")).click();
         try { Thread.sleep(20000l); } catch (Exception e) { throw new RuntimeException(e); }
-
+        */
 
         //Select company four and complete NPS challenge
 
@@ -130,6 +130,7 @@ public class CompanyFour {
         }
 
         driver.findElement(By.name("Continue")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
         // slider values can be string representations of numbers between 0 and 1
@@ -147,7 +148,7 @@ public class CompanyFour {
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         driver.findElement(By.name("Submit")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         /*
         //Select Approval Challenge
 
