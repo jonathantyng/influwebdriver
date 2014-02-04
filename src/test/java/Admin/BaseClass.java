@@ -16,14 +16,14 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
-    SafariDriver wd;
+    ChromeDriver wd;
 
     @Before
     public void setUp() throws Exception {
 
-        //System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
 
-        wd = new SafariDriver();
+        wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         }
     }
@@ -37,6 +37,8 @@ public class BaseClass {
 /*
 
 public class BaseClass {
+
+
 
     WebDriver wd;
 
@@ -55,3 +57,4 @@ public class BaseClass {
     }
 
 */
+

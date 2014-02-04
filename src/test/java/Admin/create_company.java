@@ -37,7 +37,7 @@ public class create_company extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
-        wd.findElement(By.xpath("//div[@id='header']/div/ul[2]/li/a/b")).click();
+        wd.findElement(By.linkText("Raj Rambob")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -49,11 +49,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("sanityjan20");
+        wd.findElement(By.id("company_name")).sendKeys("sanityfeb3");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("sanityjan20");
+        wd.findElement(By.id("company_subdomain")).sendKeys("sanityfeb3");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

@@ -16,7 +16,7 @@ public class ApprovalFeedback extends Advocate{
         wd.get("https://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("pelican.pete123@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("alice.advocate@gmail.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();

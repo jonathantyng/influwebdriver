@@ -13,21 +13,21 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-
+/*
 public class Advocate {
 
-    SafariDriver wd;
+    ChromeDriver wd;
 
     @Before
     public void setUp() throws Exception {
 
-        //System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
 
-        wd = new SafariDriver();
+        wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 }
-
+*/
 
 
 
@@ -35,7 +35,7 @@ public class Advocate {
 //Uncomment everything below to enable SauceLabs integration
 //
 
-/*
+
 
 public class Advocate {
 
@@ -56,4 +56,4 @@ public class Advocate {
     }
 }
 
-*/
+
