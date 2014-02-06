@@ -52,6 +52,7 @@ public class BaseClass {
         this.wd = new RemoteWebDriver(
                 new URL("http://influitive_dev:b372fec3-0552-4fb6-98bb-a027d82958b9@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
+        capabilities.setCapability("screen-resolution", "1920x1200");
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         }
     }

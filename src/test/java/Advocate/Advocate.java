@@ -49,6 +49,7 @@ public class Advocate {
         capabilities.setCapability("version", "8");
         capabilities.setCapability("platform", Platform.XP);
         capabilities.setCapability("name", "Advocate Challenge Completion");
+        capabilities.setCapability("screen-resolution", "1920x1200");
         this.wd = new RemoteWebDriver(
                 new URL("http://influitive_dev:b372fec3-0552-4fb6-98bb-a027d82958b9@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
