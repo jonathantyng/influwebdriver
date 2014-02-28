@@ -10,7 +10,7 @@ public class create_company_settings extends BaseClass{
     @Test
     public void createcompanysettings(){
 
-        wd.get("https://sanityfeb3.influitives.com/");
+        wd.get("http://sanityfeb18.influitives.com/");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -36,7 +36,7 @@ public class create_company_settings extends BaseClass{
         }
 
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Influitive Admin")).click();
+        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }

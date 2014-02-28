@@ -12,7 +12,7 @@ public class sfdc_reference extends BaseClass{
 
         //Log in to SFDC Dev account
 
-        wd.get("https://developer.force.com/");
+        wd.get("http://developer.force.com/");
         wd.findElement(By.linkText("DE LOGIN")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("username")).click();
@@ -39,7 +39,7 @@ public class sfdc_reference extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("WebLinkFields_ContentEditor")).click();
         wd.findElement(By.id("WebLinkFields_ContentEditor")).clear();
-        wd.findElement(By.id("WebLinkFields_ContentEditor")).sendKeys("https://sanityfeb3.influitives.com/corporate/request_reference?embedded=true&salesforce_org_id={!$Organization.Id}&salesforce_opp_id={!Opportunity.Id}&owner_id={!$User.Id}&opp_name={!Opportunity.Name}&session_id={!API.Session_ID}&api_partner_server_url={!API.Partner_Server_URL_90}");
+        wd.findElement(By.id("WebLinkFields_ContentEditor")).sendKeys("http://sanityfeb18.influitives.com/corporate/request_reference?embedded=true&salesforce_org_id={!$Organization.Id}&salesforce_opp_id={!Opportunity.Id}&owner_id={!$User.Id}&opp_name={!Opportunity.Name}&session_id={!API.Session_ID}&api_partner_server_url={!API.Partner_Server_URL_90}");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("save_close")).click();
 

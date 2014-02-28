@@ -10,7 +10,7 @@ public class online_action extends BaseClass{
     
     @Test
     public void online_action() {
-        wd.get("https://sanityfeb3.influitives.com/users/sign_in");
+        wd.get("http://sanityfeb18.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -64,7 +64,7 @@ public class online_action extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();
-        wd.findElement(By.name("params.url")).sendKeys("https://mashable.com/2013/04/09/no-nose-gifs/");
+        wd.findElement(By.name("params.url")).sendKeys("http://mashable.com/2013/04/09/no-nose-gifs/");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Load")).click();
         wd.findElement(By.id("ui-id-2")).click();

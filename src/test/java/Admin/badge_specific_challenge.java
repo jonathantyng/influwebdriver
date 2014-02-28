@@ -9,7 +9,7 @@ public class badge_specific_challenge extends BaseClass{
 
     @Test
     public void createbadges() {
-        wd.get("https://sanityfeb3.influitives.com/users/sign_in");
+        wd.get("http://sanityfeb18.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -19,7 +19,7 @@ public class badge_specific_challenge extends BaseClass{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("sign-in-button")).click();
-        wd.findElement(By.xpath("//div[@id='header']/div/ul[2]/li/a/b")).click();
+        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

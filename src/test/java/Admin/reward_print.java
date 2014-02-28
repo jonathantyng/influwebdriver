@@ -10,7 +10,7 @@ public class reward_print extends BaseClass{
 
     @Test
     public void reward_p() {
-        wd.get("https://sanityfeb3.influitives.com/users/sign_in");
+        wd.get("http://sanityfeb18.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -56,7 +56,7 @@ public class reward_print extends BaseClass{
         wd.findElement(By.id("reward_kind_redemptionlink")).click();
         wd.findElement(By.id("reward_redemption_links")).click();
         wd.findElement(By.id("reward_redemption_links")).clear();
-        wd.findElement(By.id("reward_redemption_links")).sendKeys("https://www.pepsi.com");
+        wd.findElement(By.id("reward_redemption_links")).sendKeys("http://www.pepsi.com");
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("NOT PUBLISHED")).click();

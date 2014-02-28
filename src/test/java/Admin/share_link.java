@@ -10,7 +10,7 @@ public class share_link extends BaseClass{
     
     @Test
     public void share_link() {
-        wd.get("https://sanityfeb3.influitives.com/users/sign_in");
+        wd.get("http://sanityfeb18.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -68,7 +68,7 @@ public class share_link extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();
-        wd.findElement(By.name("params.url")).sendKeys("https://www.nfl.com/draft/2012");
+        wd.findElement(By.name("params.url")).sendKeys("http://www.nfl.com/draft/2012");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.default_content")).click();
         wd.findElement(By.name("params.default_content")).clear();
