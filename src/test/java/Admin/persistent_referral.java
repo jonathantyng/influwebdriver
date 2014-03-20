@@ -10,7 +10,7 @@ public class persistent_referral extends BaseClass{
 
         @Test
         public void Blog_Post() {
-            wd.get("http://sanityfeb18.influitives.com/users/sign_in");
+            wd.get("http://sanitymar17.influitives.com/users/sign_in");
             wd.findElement(By.id("user_email")).click();
             wd.findElement(By.id("user_email")).clear();
             wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -40,9 +40,9 @@ public class persistent_referral extends BaseClass{
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
             wd.findElement(By.id("search_name_or_headline_contains")).click();
             wd.findElement(By.id("search_name_or_headline_contains")).clear();
-            wd.findElement(By.id("search_name_or_headline_contains")).sendKeys("New!");
+            wd.findElement(By.id("search_name_or_headline_contains")).sendKeys("Persistent");
             try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-            wd.findElement(By.linkText("New! Trackable Referral With Salesforce Integration")).click();
+            wd.findElement(By.linkText("Persistent Trackable Referral Challenge")).click();
 
             //Close publish challenge modal if it appears
 
@@ -76,27 +76,7 @@ public class persistent_referral extends BaseClass{
             try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
             wd.findElement(By.name("commit")).click();
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-            try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-            wd.findElement(By.linkText("NOT PUBLISHED")).click();
 
-            /*
-            //Close publish challenge modal if it appears
-
-            boolean commit = wd.findElements( By.name("commit")).size() != 0;
-
-            if (commit)
-            {
-                wd.findElement(By.name("commit")).click();
-                try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-                System.out.println("Published!");
-            }
-            else
-            {
-                try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-                System.out.println("Published!");
-            }
-            try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-            */
         }
         @After
         public void tearDown() {

@@ -10,7 +10,7 @@ public class multi_stage extends BaseClass{
     
     @Test
     public void multi_stage() {
-        wd.get("http://sanityfeb18.influitives.com/users/sign_in");
+        wd.get("http://sanitymar17.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
