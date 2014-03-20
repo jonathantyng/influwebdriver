@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/ChallengeCreation_Suite.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/ChallengeCreation_Suite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/CompanyCreationPartTwo.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/CompanyCreationPartTwo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/CompanyCreation_Suite.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/CompanyCreation_Suite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/SeleniumTest.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/SeleniumTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/admin_advocate/adjust_points.java" afterPath="$PROJECT_DIR$/src/test/java/admin_advocate/adjust_points.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/appexchangechallenge.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/appexchangechallenge.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/approval_feedback.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/approval_feedback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/badge_activity.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/badge_activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/badge_specific_challenge.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/badge_specific_challenge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/blog_post.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/blog_post.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/corporate_confirm.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/corporate_confirm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/create_company.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/create_company.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/geo_checkin.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/geo_checkin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/group_earned_badge.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/group_earned_badge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/group_email.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/group_email.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/group_sanity.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/group_sanity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/group_test.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/group_test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/invite_advocate.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/invite_advocate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/join_group.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/join_group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/join_linkedin_group.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/join_linkedin_group.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/like_on_fb.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/like_on_fb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/linkedin_recom.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/linkedin_recom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/multi_stage.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/multi_stage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/nps.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/nps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/online_action.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/online_action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/online_review.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/online_review.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/referral.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/referral.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/reward_cape.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/reward_cape.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/reward_duffelbag.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/reward_duffelbag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/reward_hoodie.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/reward_hoodie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/reward_print.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/reward_print.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/reward_tshirt.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/reward_tshirt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/sfdc_reference.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/sfdc_reference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/share_link.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/share_link.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/social_signup.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/social_signup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/survey.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/survey.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/twitter_follow.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/twitter_follow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/twitter_post.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/twitter_post.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/upload_image.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/upload_image.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
@@ -116,38 +75,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SeleniumTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/SeleniumTest.java">
+      <file leaf-file-name="approval_challenge.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1065">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="approval_feedback.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_feedback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1485">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="badge_points_reached.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="badge_activity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1170">
-              <folding />
+            <state line="81" column="10" selection-start="3975" selection-end="3980" vertical-scroll-proportion="1.2025317" vertical-offset="645" max-vertical-offset="1515">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,16 +89,61 @@
       <file leaf-file-name="group_sanity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_sanity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="990">
+            <state line="12" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="group_test.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="group_test.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="64" selection-start="198" selection-end="246" vertical-scroll-proportion="-0.089108914" vertical-offset="165" max-vertical-offset="960">
+            <state line="11" column="64" selection-start="198" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompanyCreation_Suite.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/CompanyCreation_Suite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group_email.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_email.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseClass.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="47" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_company.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="0" selection-start="3522" selection-end="3522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -173,7 +152,7 @@
       <file leaf-file-name="create_company_settings.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="227" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1395">
+            <state line="12" column="23" selection-start="227" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -182,26 +161,10 @@
       <file leaf-file-name="persistent_referral.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="3778" selection-end="3778" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1395">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="social_signup.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/social_signup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="50" selection-start="1465" selection-end="1492" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1245">
-              <folding />
+            <state line="16" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -227,7 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/badge_specific_challenge.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/badge_activity.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java" />
@@ -245,6 +207,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Admin/create_company.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java" />
       </list>
     </option>
   </component>
@@ -288,8 +252,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1720" />
-    <option name="y" value="73" />
+    <option name="x" value="1643" />
+    <option name="y" value="57" />
     <option name="width" value="1425" />
     <option name="height" value="920" />
   </component>
@@ -319,6 +283,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -326,6 +291,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -388,7 +357,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,35 +400,13 @@
       <recent name="interaction" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.persistent_referral">
+  <component name="RunManager" selected="JUnit.approval_challenge">
     <configuration default="false" name="CompanyCreation_Suite" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Admin" />
       <option name="MAIN_CLASS_NAME" value="Admin.CompanyCreation_Suite" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompanyCreationPartTwo" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Admin" />
-      <option name="MAIN_CLASS_NAME" value="Admin.CompanyCreationPartTwo" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -543,30 +489,32 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="approval_challenge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Admin" />
+      <option name="MAIN_CLASS_NAME" value="Admin.approval_challenge" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -591,25 +539,32 @@
       </MavenSettings>
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -637,6 +592,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -740,18 +708,18 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.ChallengeCreation_Suite" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyCreationPartTwo" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.social_signup" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.AdvocateChallengeCompletion" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.persistent_referral" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.social_signup" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AdvocateChallengeCompletion" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.persistent_referral" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.persistent_referral" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AdvocateChallengeCompletion" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.social_signup" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyCreationPartTwo" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.approval_challenge" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.persistent_referral" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyCreation_Suite" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AdvocateChallengeCompletion" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.social_signup" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -806,7 +774,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1720" y="73" width="1425" height="920" extended-state="0" />
+    <frame x="1643" y="57" width="1425" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -816,21 +784,21 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892396" sideWeight="0.64721483" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33012047" sideWeight="0.11402157" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35024154" sideWeight="0.114244394" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24658519" sideWeight="0.43589744" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3200483" sideWeight="0.49963847" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23427331" sideWeight="0.93068033" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35038364" sideWeight="0.8859784" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35024154" sideWeight="0.8857556" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31760204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3196931" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -857,23 +825,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/SeleniumTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/social_signup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="45" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_feedback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1125">
+        <state line="31" column="50" selection-start="1465" selection-end="1492" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
@@ -909,7 +863,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="0" selection-start="3778" selection-end="3778" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1350">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -944,7 +900,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1125">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -979,7 +937,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="9" selection-start="157" selection-end="4672" vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="1695">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -999,9 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/NPS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="39" selection-start="236" selection-end="1993" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1080">
-          <folding />
-        </state>
+        <state line="50" column="39" selection-start="236" selection-end="1993" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/twitter_post.java">
@@ -1049,7 +1007,9 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="39" selection-start="157" selection-end="4671" vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="1695">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,9 +1064,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/NPS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="39" selection-start="236" selection-end="1993" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="50" column="39" selection-start="236" selection-end="1993" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/ChallengeCreation_Suite.java">
@@ -1119,13 +1077,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/CompanyCreationPartTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="80" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/CompanyCreation_Suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
@@ -1144,34 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="227" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_sanity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="3522" selection-end="3522" vertical-scroll-proportion="0.0" vertical-offset="808" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="2997" selection-end="2997" vertical-scroll-proportion="0.0" vertical-offset="681" max-vertical-offset="1125">
@@ -1186,31 +1109,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+        <state line="11" column="64" selection-start="198" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/badge_points_reached.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="1125">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/CompanyCreation_Suite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/persistent_referral.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="3778" selection-end="3778" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+        <state line="16" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="227" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_email.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="8" column="13" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_sanity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="64" selection-start="198" selection-end="246" vertical-scroll-proportion="-0.089108914" vertical-offset="165" max-vertical-offset="960">
+        <state line="12" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="47" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="3522" selection-end="3522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="10" selection-start="3975" selection-end="3980" vertical-scroll-proportion="1.2025317" vertical-offset="645" max-vertical-offset="1515">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
