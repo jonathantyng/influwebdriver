@@ -1,15 +1,13 @@
 package Admin;
 
-import org.junit.After;
 import org.junit.Test;
-
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
 
 public class badge_activity extends BaseClass{
 
     @Test
     public void createactivitybadge() {
-        wd.get("http://sanitymar17.influitives.com/users/sign_in");
+        wd.get("http://april14.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -58,16 +56,16 @@ public class badge_activity extends BaseClass{
         wd.findElement(By.id("badge_settings_rule_type_event_logged")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Any Type")).click();
-        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Advocate Joined");
-        wd.findElement(By.className("select2-match")).click();
+        //wd.findElement(By.cssSelector("select2-input select2-focused")).sendKeys("Advocate Joined");
+        wd.findElement(By.name("Advanced Level")).click();
         wd.findElement(By.id("badge_settings_event_times")).click();
         wd.findElement(By.id("badge_settings_event_times")).clear();
         wd.findElement(By.id("badge_settings_event_times")).sendKeys("1");
         wd.findElement(By.id("create_badge_button")).click();
     }
 
-    @After
-    public void tearDown() {
-        wd.quit();
+    //@After
+    //public void tearDown() {
+       // wd.quit();
     }
-}
+//}

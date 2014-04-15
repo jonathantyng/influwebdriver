@@ -1,17 +1,14 @@
 package Admin;
 
-import org.junit.After;
 import org.junit.Test;
-
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
 
 public class social_signup extends BaseClass{
     
     @Test
     public void social_signupp() {
         /*
-        wd.get("http://sanitymar17.influitives.com/join/Test");
+        wd.get("http://april14.influitives.com/join/Test");
         wd.findElement(By.id("registration_user_email")).click();
         wd.findElement(By.id("registration_user_email")).clear();
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
@@ -29,7 +26,7 @@ public class social_signup extends BaseClass{
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         */
 
-        wd.get("http://sanitymar17.influitives.com/join/sanity");
+        wd.get("http://april14.influitives.com/join/sanity");
         wd.findElement(By.cssSelector("img[alt=\"Linkedin\"]")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).clear();
@@ -40,12 +37,12 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("authorize")).click();
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("span")).click();
+        wd.findElement(By.id("contact-dropdown")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        wd.get("http://sanitymar17.influitives.com/join/sanity");
+        wd.get("http://april14.influitives.com/join/sanity");
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
         wd.findElement(By.id("email")).click();
         wd.findElement(By.id("email")).clear();
@@ -55,12 +52,12 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("pass")).sendKeys("macbook18");
         wd.findElement(By.id("u_0_1")).click();
         wd.findElement(By.name("commit")).click();
-        wd.findElement(By.cssSelector("span")).click();
+        wd.findElement(By.id("contact-dropdown")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
-    
+    /*
     @After
     public void tearDown() {
         wd.quit();
@@ -74,4 +71,5 @@ public class social_signup extends BaseClass{
             return false;
         }
     }
+    */
 }
