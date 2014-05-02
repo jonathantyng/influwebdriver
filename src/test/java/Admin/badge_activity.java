@@ -1,5 +1,6 @@
 package Admin;
 
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -7,7 +8,7 @@ public class badge_activity extends BaseClass{
 
     @Test
     public void createactivitybadge() {
-        wd.get("http://april14.influitives.com/users/sign_in");
+        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -64,8 +65,8 @@ public class badge_activity extends BaseClass{
         wd.findElement(By.id("create_badge_button")).click();
     }
 
-    //@After
-    //public void tearDown() {
-       // wd.quit();
+    @After
+    public void tearDown() {
+        wd.quit();
     }
-//}
+}

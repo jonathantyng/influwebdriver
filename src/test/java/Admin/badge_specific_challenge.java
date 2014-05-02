@@ -1,15 +1,13 @@
 package Admin;
 
-import org.junit.After;
 import org.junit.Test;
-
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
 
 public class badge_specific_challenge extends BaseClass{
 
     @Test
     public void createbadges() {
-        wd.get("http://april14.influitives.com/users/sign_in");
+        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -60,7 +58,8 @@ public class badge_specific_challenge extends BaseClass{
         wd.findElement(By.id("badge_settings_rule_type_completed_specific_challenge")).click();
         wd.findElement(By.id("badge_settings_rule_type_completed_challenge")).click();
         wd.findElement(By.cssSelector("#s2id_badge_settings_challenge_type_code > a.select2-choice > span")).click();
-        wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Social Media");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.cssSelector("#select2-drop > div > input")).sendKeys("Social Media");
         wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.id("badge_settings_challenge_times")).click();
         wd.findElement(By.id("badge_settings_challenge_times")).clear();
@@ -70,8 +69,8 @@ public class badge_specific_challenge extends BaseClass{
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
-    @After
-    public void tearDown() {
-        wd.quit();
-    }
+    //@After
+    //public void tearDown() {
+        //wd.quit();
+    //}
 }

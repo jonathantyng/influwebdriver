@@ -10,7 +10,7 @@ public class share_link extends BaseClass{
     
     @Test
     public void share_link() {
-        wd.get("http://april14.influitives.com/users/sign_in");
+        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

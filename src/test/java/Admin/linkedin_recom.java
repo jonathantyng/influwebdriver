@@ -10,7 +10,7 @@ public class linkedin_recom extends BaseClass{
     
     @Test
     public void linkedin_recom() {
-        wd.get("http://april14.influitives.com/users/sign_in");
+        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

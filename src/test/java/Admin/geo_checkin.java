@@ -2,15 +2,17 @@ package Admin;
 
 import org.junit.After;
 import org.junit.Test;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
+
 
 public class geo_checkin extends BaseClass{
-    
+
+
     @Test
     public void geo_checkin() {
-        wd.get("http://april14.influitives.com/users/sign_in");
+        wd.get("url");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
@@ -82,7 +84,7 @@ public class geo_checkin extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
-    
+
     @After
     public void tearDown() {
         wd.quit();

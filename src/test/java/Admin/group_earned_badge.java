@@ -9,7 +9,7 @@ public class group_earned_badge extends BaseClass{
 
     @Test
     public void group_badge () {
-        wd.get("http://april14.influitives.com/users/sign_in");
+        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
