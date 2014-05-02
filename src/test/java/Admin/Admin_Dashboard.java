@@ -1,6 +1,7 @@
 package Admin;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -69,6 +70,10 @@ public class Admin_Dashboard extends BaseClass {
         wd.findElement(By.name("commit")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
 
+        //Make sure successful gritter message is shown
+
+        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Goal successfully updated!"));
+
 
     }
 
@@ -103,6 +108,9 @@ public class Admin_Dashboard extends BaseClass {
         wd.findElement(By.name("commit")).click();
         try {Thread.sleep(4000l);} catch (Exception e) {throw new RuntimeException(e);}
 
+        //Make sure successful gritter message is shown
+
+        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Goal successfully updated!"));
 
     }
     @Test
@@ -139,6 +147,10 @@ public class Admin_Dashboard extends BaseClass {
         }
 
         try {Thread.sleep(5000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+        //Make sure successful gritter message is shown
+
+        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Goal successfully deleted!"));
 
     }
     /*
