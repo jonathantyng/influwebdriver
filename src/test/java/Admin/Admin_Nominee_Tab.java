@@ -1,12 +1,11 @@
 package Admin;
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -51,7 +50,7 @@ public class Admin_Nominee_Tab extends BaseClass {
 
         //Verify link creation
 
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains(".com/join"));
+        //Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains(".com/join"));
 
         //Close invite nominee modal
 
@@ -133,6 +132,8 @@ public class Admin_Nominee_Tab extends BaseClass {
 
         //Select nominee search field and enter name
         wd.findElement(By.id("search_name_or_email_contains")).sendKeys("New Nominee");
+        try {Thread.sleep(4000l);} catch (Exception e) {throw new RuntimeException(e);}
+
 
     }
 
@@ -381,7 +382,7 @@ public class Admin_Nominee_Tab extends BaseClass {
     }
 
     @Test
-    public void archive_nominee(){
+    public void archive_nominee() {
 
         //Navigate to hub
 
@@ -404,7 +405,11 @@ public class Admin_Nominee_Tab extends BaseClass {
         //Select archive button
 
         wd.findElement(By.cssSelector("#contact-list > tr:nth-child(1) > td.archive > span")).click();
-        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        try {
+            Thread.sleep(2000l);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         //Handle pop-up
 
@@ -416,17 +421,61 @@ public class Admin_Nominee_Tab extends BaseClass {
         } catch (Exception e) {
             //exception handling
         }
-
-
-
     }
+     @Test
+    public void nominee_column_sort(){
+
+         //Navigate to hub
+
+         wd.get("http://may31.influitiveqa.com");
+
+         //Admin sign in
+
+         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+         wd.findElement(By.name("commit")).click();
+
+         //Navigate to Advocates tab
+
+         wd.findElement(By.id("Advocates")).click();
+
+         //Navigate to nominee page
+
+         wd.findElement(By.cssSelector("#wrapper > div > div.main-half > span > ul > li > a")).click();
+
+         //Sort Name Column ascending order
+
+         wd.findElement(By.id("sort-name")).click();
+         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+         //Sort Source column ascending order
+
+         wd.findElement(By.id("sort-source")).click();
+         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+         //Sort NPS column asceding order
+
+         wd.findElement(By.id("sort-nps")).click();
+         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+         //Sort Impact column ascending order
+
+         wd.findElement(By.id("sort-impact")).click();
+         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+         //Sort Activity count column ascending order
+
+         wd.findElement(By.id("sort-activity")).click();
+         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+     }
 
     @After
     public void tearDown() {
         wd.quit();
     }
 
-    public static boolean isAlertPresent(FirefoxDriver wd) {
+    public static boolean isAlertPresent(ChromeDriver wd) {
         try {
             wd.switchTo().alert();
             return true;

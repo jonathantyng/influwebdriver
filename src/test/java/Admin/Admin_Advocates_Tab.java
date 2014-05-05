@@ -88,6 +88,7 @@ public class Admin_Advocates_Tab extends BaseClass {
         //Navigate to Advocates tab
 
         wd.findElement(By.id("Advocates")).click();
+
         //Select Engaged toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(3) > div:nth-child(2) > label")).click();
