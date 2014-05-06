@@ -366,19 +366,6 @@ public class Admin_Settings_Tab extends BaseClass{
 
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Drag and drop badge
-
-        WebElement source = wd.findElement(By.xpath("//*[@id=\"badge_21\"]/img"));
-        WebElement target = wd.findElement(By.id("level_3"));
-
-        Actions builder = new Actions(wd);
-        builder.dragAndDrop(source, target) .perform();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
-        //Check for errors
-
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
     }
 
     @Test
