@@ -1,5 +1,6 @@
 package Admin;
 
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
@@ -107,6 +108,12 @@ public class Admin_Nominee_Tab extends BaseClass {
         //Save nominee
 
         wd.findElement(By.id("save-button")).click();
+
+        //Check for errors
+
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
     }
 
     @Test
@@ -134,6 +141,11 @@ public class Admin_Nominee_Tab extends BaseClass {
         wd.findElement(By.id("search_name_or_email_contains")).sendKeys("New Nominee");
         try {Thread.sleep(4000l);} catch (Exception e) {throw new RuntimeException(e);}
 
+        //Check for errors
+
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
 
     }
 
@@ -158,30 +170,35 @@ public class Admin_Nominee_Tab extends BaseClass {
 
         wd.findElement(By.cssSelector("#wrapper > div > div.main-half > span > ul > li > a")).click();
 
-        //Un-Select Active toggle
+        //Deselect Active toggle
 
         wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(2) > label")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Active toggle
 
         wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(2) > label")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-Select Active toggle
+        //Deselect Active toggle
 
         wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(2) > label")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select hidden toggle
 
         wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(3) > label")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-Select hidden toggle
+        //Deselect hidden toggle
 
         wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(3) > label")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }
 
     @Test
@@ -209,41 +226,49 @@ public class Admin_Nominee_Tab extends BaseClass {
 
         wd.findElement(By.id("search_by_nps_category_detractor")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select detractor
+        //Deselect detractor
 
         wd.findElement(By.id("search_by_nps_category_detractor")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select neutral
 
         wd.findElement(By.id("search_by_nps_category_neutral")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select neutral
+        //Deselect neutral
 
         wd.findElement(By.id("search_by_nps_category_neutral")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select promoter
 
         wd.findElement(By.id("search_by_nps_category_promoter")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select promoter
+        //Deselect promoter
 
         wd.findElement(By.id("search_by_nps_category_promoter")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Unknown
 
         wd.findElement(By.id("search_by_nps_category_unknown")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select Unknown
+        //Deselect Unknown
 
         wd.findElement(By.id("search_by_nps_category_unknown")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
 
@@ -272,41 +297,49 @@ public class Admin_Nominee_Tab extends BaseClass {
 
         wd.findElement(By.id("search_by_impact_score_80 to 100")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 80 to 100
+        //Deselect 80 to 100
 
         wd.findElement(By.id("search_by_impact_score_80 to 100")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 60 to 79
 
         wd.findElement(By.id("search_by_impact_score_60 to 79")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 60 to 79
+        //Deselect 60 to 79
 
         wd.findElement(By.id("search_by_impact_score_60 to 79")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 40 to 59
 
         wd.findElement(By.id("search_by_impact_score_40 to 59")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 40 to 59
+        //Deselect 40 to 59
 
         wd.findElement(By.id("search_by_impact_score_40 to 59")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Below 40
 
         wd.findElement(By.id("search_by_impact_score_below 40")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select Below 40
+        //Deselect Below 40
 
         wd.findElement(By.id("search_by_impact_score_below 40")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }
 
     @Test
@@ -334,51 +367,61 @@ public class Admin_Nominee_Tab extends BaseClass {
 
         wd.findElement(By.id("search_by_activity_count_20 and above")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 20 and above
+        //Deselect 20 and above
 
         wd.findElement(By.id("search_by_activity_count_20 and above")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 10 to 19
 
         wd.findElement(By.id("search_by_activity_count_10 to 19")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 10 to 19
+        //Deselect 10 to 19
 
         wd.findElement(By.id("search_by_activity_count_10 to 19")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 5 to 9
 
         wd.findElement(By.id("search_by_activity_count_5 to 9")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 5 to 9
+        //Deselect 5 to 9
 
         wd.findElement(By.id("search_by_activity_count_5 to 9")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 1 to 4
 
         wd.findElement(By.id("search_by_activity_count_1 to 4")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select 1 to 4
+        //Deselect 1 to 4
 
         wd.findElement(By.id("search_by_activity_count_1 to 4")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select none
 
         wd.findElement(By.id("search_by_activity_count_none")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Un-select none
+        //Deselect none
 
         wd.findElement(By.id("search_by_activity_count_none")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }
 
     @Test
@@ -421,6 +464,12 @@ public class Admin_Nominee_Tab extends BaseClass {
         } catch (Exception e) {
             //exception handling
         }
+
+        //Check for errors
+
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
     }
      @Test
     public void nominee_column_sort(){
@@ -447,26 +496,31 @@ public class Admin_Nominee_Tab extends BaseClass {
 
          wd.findElement(By.id("sort-name")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
          //Sort Source column ascending order
 
          wd.findElement(By.id("sort-source")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-         //Sort NPS column asceding order
+         //Sort NPS column ascending order
 
          wd.findElement(By.id("sort-nps")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
          //Sort Impact column ascending order
 
          wd.findElement(By.id("sort-impact")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
          //Sort Activity count column ascending order
 
          wd.findElement(By.id("sort-activity")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
      }
 

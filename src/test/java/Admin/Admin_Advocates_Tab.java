@@ -32,42 +32,49 @@ public class Admin_Advocates_Tab extends BaseClass {
         //Select Fan from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(2) > label")).click();
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("There was an error processing your request. Rest assured - we've been notified!"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle Fan from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(2) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Advocate from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(3) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle Advocate from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(3) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Evangelist from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(4) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-Toggle Evangelist from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(4) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Rockstar from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(5) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle Rockstar from level filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(2) > div:nth-child(5) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
@@ -92,21 +99,25 @@ public class Admin_Advocates_Tab extends BaseClass {
         //Select Engaged toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(3) > div:nth-child(2) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle Engaged from status filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(3) > div:nth-child(2) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select not engaged toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(3) > div:nth-child(3) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle not engaged status filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(3) > div:nth-child(3) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
@@ -130,41 +141,49 @@ public class Admin_Advocates_Tab extends BaseClass {
         //Select detractor toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(2) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle detractor filter
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(2) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Neutral toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(3) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle neutral toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(3) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Promoter toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(4) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle promoter toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(4) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select unknown toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(5) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Un-toggle unknown toggle
 
         wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(5) > label")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
