@@ -23,11 +23,11 @@ public class BasePage {
 
 }
 
-
+/*
 //
 //Uncomment everything below to enable SauceLabs integration
 //
-/*
+
 
 import org.junit.Before;
 import org.openqa.selenium.Platform;
@@ -36,8 +36,9 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
-public class BaseClass {
+public class BasePage {
 
 
 
@@ -58,5 +59,5 @@ public class BaseClass {
         }
     }
 
-
 */
+

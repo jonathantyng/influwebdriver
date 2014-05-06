@@ -3,8 +3,8 @@ package Page;
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Test;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import java.io.File;
 
@@ -23,8 +23,13 @@ public class ScreenCompare extends BasePage{
 		
 		//Open the BMI Calculator Page and get a Screen Shot of Page into a File
 		wd.get("http://may31.influitiveqa.com");
-		File screenshotFile = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File(scrFile));
+        WebElement pmoabsdiv = wd.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[2]"));
+
+        try {
+            FileUtils.copyFile(WebElementExtender.captureElementBitmap(pmoabsdiv), new File(scrFile));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 		try {
 			//Verify baseline image with actual image 
@@ -35,7 +40,7 @@ public class ScreenCompare extends BasePage{
 		}
 	}
 
-
+    @Test
 
 	
 	@After
