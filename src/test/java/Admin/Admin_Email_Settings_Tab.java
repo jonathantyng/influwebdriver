@@ -8,7 +8,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
- * Created by patrickprestley on 2014-05-08.
+ * Created by patrickpriestley on 2014-05-08.
  */
 public class Admin_Email_Settings_Tab extends BaseClass{
 
@@ -36,6 +36,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"collapse-me2\"]/li[1]/a")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Click 'Update Default Sender'
 
@@ -69,6 +70,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Welcome Email")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Toggle enable welcome emails off
 
@@ -145,7 +147,8 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Invitation")).click();
+        wd.findElement(By.linkText("Invitations")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Toggle 'Send follow-up emails' on
 
@@ -215,6 +218,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Challenge Digest")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Toggle 'Send follow-up emails' off
 
@@ -230,7 +234,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         //Preview digest email
 
-        wd.findElement(By.xpath("//*[@id=\"new_settings_builder\"]/input[2]")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_company_preference_1\"]/input[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -279,16 +283,19 @@ public class Admin_Email_Settings_Tab extends BaseClass{
         wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Navigate to 'challenge email' settings
 
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Challenge Digest")).click();
+        wd.findElement(By.linkText("Challenge Email")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Preview challenge email
 
-        wd.findElement(By.xpath("//*[@id=\"new_settings_builder\"]/input[2]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/fieldset/input")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -342,10 +349,11 @@ public class Admin_Email_Settings_Tab extends BaseClass{
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Notifications")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Preview challenge email
 
-        wd.findElement(By.xpath("//*[@id=\"new_settings_builder\"]/input[2]")).click();
+        wd.findElement(By.xpath("//*[@id=\"configuration-panel\"]/div/fieldset/form/input")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

@@ -366,6 +366,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
+
     }
 
     @Test
