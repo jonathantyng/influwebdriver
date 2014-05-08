@@ -2,7 +2,9 @@ package Page;
 
 
 import org.junit.Before;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,9 +17,14 @@ public class BasePage {
     public void setUp() throws Exception {
 
         System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
-
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability("screen-resolution", "1920x1080");
+
+        wd.manage().window().setSize(new Dimension(1400,1400));
+
 
     }
 
