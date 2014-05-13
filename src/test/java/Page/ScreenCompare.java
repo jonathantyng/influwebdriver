@@ -23,6 +23,7 @@ public class ScreenCompare extends BasePage{
 		
 		//Navigate to hub and take a screenshot of the login page for comparison
 		wd.get("https://may31.influitiveqa.com/");
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         WebElement loginpage = wd.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[2]"));
 
         try {
