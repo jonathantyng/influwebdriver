@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Created by patrickprestley on 2014-05-02.
+ * Created by patrickpriestley on 2014-05-02.
  */
 public class Admin_Nominee_Tab extends BaseClass {
 

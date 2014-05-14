@@ -18,6 +18,7 @@ ChromeDriver wd;
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        wd.get("http://may31.influitiveqa.com");
 
     }
 

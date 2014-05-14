@@ -9,7 +9,7 @@ public class badge_points_reached extends BaseClass{
 
     @Test
     public void createpointbadge() {
-        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
+        //wd.get("http://may14.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

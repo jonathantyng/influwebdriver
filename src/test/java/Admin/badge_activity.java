@@ -8,7 +8,7 @@ public class badge_activity extends BaseClass{
 
     @Test
     public void createactivitybadge() {
-        wd.get("http://sanitytwoapril28.influitives.com/users/sign_in");
+        //wd.get("http://may14.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

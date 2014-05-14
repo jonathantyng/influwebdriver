@@ -11,8 +11,8 @@ public class geo_checkin extends BaseClass{
 
 
     @Test
-    public void geo_checkin() {
-        wd.get("url");
+    public void create_geo_checkin() {
+        //wd.get("http://may14.influitiveqa.com");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");

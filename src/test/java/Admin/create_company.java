@@ -12,7 +12,7 @@ public class create_company extends BaseClass{
     public void createcompany() {
 
 
-        wd.get("http://app.influitives.com/users/sign_in");
+        wd.get("http://app.influitiveqa.com/users/sign_in");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
@@ -49,11 +49,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("sanitytwoapril28");
+        wd.findElement(By.id("company_name")).sendKeys("may14");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("sanitytwoapril28");
+        wd.findElement(By.id("company_subdomain")).sendKeys("may14");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
