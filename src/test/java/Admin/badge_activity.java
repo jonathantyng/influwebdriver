@@ -1,6 +1,5 @@
 package Admin;
 
-import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -58,15 +57,16 @@ public class badge_activity extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Any Type")).click();
         //wd.findElement(By.cssSelector("select2-input select2-focused")).sendKeys("Advocate Joined");
-        wd.findElement(By.name("Advanced Level")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]/div")).click();
         wd.findElement(By.id("badge_settings_event_times")).click();
         wd.findElement(By.id("badge_settings_event_times")).clear();
         wd.findElement(By.id("badge_settings_event_times")).sendKeys("1");
         wd.findElement(By.id("create_badge_button")).click();
     }
 
-    @After
-    public void tearDown() {
-        wd.quit();
-    }
+    //@After
+    //public void tearDown() {
+        //wd.quit();
+    //}
 }

@@ -1,5 +1,6 @@
 package Admin;
 
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,7 +12,7 @@ public class social_signup extends BaseClass{
     @Test
     public void email_password_signup() {
 
-        //wd.get("http://may14.influitiveqa.com/join/Test");
+        wd.get("http://may15.influitiveqa.com/join/Test");
         wd.findElement(By.id("registration_user_email")).click();
         wd.findElement(By.id("registration_user_email")).clear();
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
@@ -21,19 +22,11 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("registration_user_password")).click();
         wd.findElement(By.id("registration_user_password")).clear();
         wd.findElement(By.id("registration_user_password")).sendKeys("macbook18");
-        wd.findElement(By.name("commit")).click();
-        try {
-            Thread.sleep(3000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        wd.findElement(By.cssSelector("span")).click();
-        try {
-            Thread.sleep(3000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        wd.findElement(By.linkText("Sign out")).click();
+        //wd.findElement(By.name("commit")).click();
+
+        //Check for errors
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+
         try {
             Thread.sleep(3000l);
         } catch (Exception e) {
@@ -42,9 +35,9 @@ public class social_signup extends BaseClass{
     }
 
         @Test
-        public void facebook_singup (){
+        public void linkedin_singup (){
 
-        //wd.get("http://may14.influitiveqa.com/join/sanity");
+        wd.get("http://may15.influitiveqa.com/join/sanity");
         wd.findElement(By.cssSelector("img[alt=\"Linkedin\"]")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).click();
         wd.findElement(By.id("session_key-oauthAuthorizeForm")).clear();
@@ -53,20 +46,12 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("session_password-oauthAuthorizeForm")).clear();
         wd.findElement(By.id("session_password-oauthAuthorizeForm")).sendKeys("macbook18");
         wd.findElement(By.name("authorize")).click();
-        wd.findElement(By.name("commit")).click();
-        try {
-            Thread.sleep(3000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        wd.findElement(By.id("contact-dropdown")).click();
-        try {
-            Thread.sleep(3000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        wd.findElement(By.linkText("Sign out")).click();
-        try {
+        //wd.findElement(By.name("commit")).click();
+
+        //Check for errors
+            Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+
+            try {
             Thread.sleep(3000l);
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -75,7 +60,7 @@ public class social_signup extends BaseClass{
 
     @Test
     public void facebook_signup(){
-        //wd.get("http://may14.influitiveqa.com/join/sanity");
+        wd.get("http://may15.influitiveqa.com/join/sanity");
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
         wd.findElement(By.id("email")).click();
         wd.findElement(By.id("email")).clear();
@@ -84,11 +69,13 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("pass")).clear();
         wd.findElement(By.id("pass")).sendKeys("macbook18");
         wd.findElement(By.id("u_0_1")).click();
-        wd.findElement(By.name("commit")).click();
-        wd.findElement(By.id("contact-dropdown")).click();
+        //wd.findElement(By.name("commit")).click();
+
+        //Check for errors
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Sign out")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
     }
 
 

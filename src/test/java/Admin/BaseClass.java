@@ -2,6 +2,7 @@ package Admin;
 
 
 import org.junit.Before;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -18,7 +19,10 @@ ChromeDriver wd;
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        wd.get("http://may31.influitiveqa.com");
+        wd.get("http://may15.influitiveqa.com");
+
+        wd.manage().window().setSize(new Dimension(1400,1400));
+
 
     }
 
@@ -56,6 +60,8 @@ public class BaseClass {
                 capabilities);
         capabilities.setCapability("screen-resolution", "1920x1200");
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wd.get("http://may31.influitiveqa.com");
+
         }
     }
 

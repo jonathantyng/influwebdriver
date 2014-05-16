@@ -45,7 +45,7 @@ public class Admin_Dashboard extends BaseClass {
 
         //Click 'Add a Goal'
 
-        wd.findElement(By.linkText("+ Add a Goal!")).click();
+        wd.findElement(By.linkText("Add a Goal")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
 
         //Expand dropdown

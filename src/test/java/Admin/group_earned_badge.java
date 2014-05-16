@@ -1,9 +1,7 @@
 package Admin;
 
-import org.junit.After;
 import org.junit.Test;
-
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
 
 public class group_earned_badge extends BaseClass{
 
@@ -50,17 +48,17 @@ public class group_earned_badge extends BaseClass{
         wd.findElement(By.id("link-membership rules")).click();
         wd.findElement(By.linkText("Behaviour")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id='s2id_autogen35']/ul")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen20\"]/ul/li")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id='s2id_autogen35']/ul")).sendKeys("Social Cookie");
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen20\"]/ul/li")).sendKeys("Social Cookie");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.className("select2-match")).click();
         wd.findElement(By.id("save-button")).click();
     }
 
-    @After
-    public void tearDown() {
-        wd.quit();
-    }
+    //@After
+    //public void tearDown() {
+        //wd.quit();
+    //}
 
 }

@@ -1,5 +1,6 @@
 package Admin;
 
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -69,8 +70,8 @@ public class badge_specific_challenge extends BaseClass{
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
-    //@After
-    //public void tearDown() {
-        //wd.quit();
-    //}
+    @After
+    public void tearDown() {
+        wd.quit();
+    }
 }

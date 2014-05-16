@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 public class create_company extends BaseClass{
 
     @Test
-    public void createcompany() {
+    public void create_new_company() {
 
 
         wd.get("http://app.influitiveqa.com/users/sign_in");
@@ -42,6 +42,7 @@ public class create_company extends BaseClass{
         wd.findElement(By.linkText("Settings")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Companies")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a Company")).click();
@@ -49,11 +50,11 @@ public class create_company extends BaseClass{
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-        wd.findElement(By.id("company_name")).sendKeys("may14");
+        wd.findElement(By.id("company_name")).sendKeys("may15");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
-        wd.findElement(By.id("company_subdomain")).sendKeys("may14");
+        wd.findElement(By.id("company_subdomain")).sendKeys("may15");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -68,6 +69,7 @@ public class create_company extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("blue")).click();
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[3]/div")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(60000l); } catch (Exception e) { throw new RuntimeException(e); }
 

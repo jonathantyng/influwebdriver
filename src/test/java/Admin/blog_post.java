@@ -2,8 +2,9 @@ package Admin;
 
 import org.junit.After;
 import org.junit.Test;
-
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class blog_post extends BaseClass{
 
@@ -87,12 +88,12 @@ public class blog_post extends BaseClass{
         wd.quit();
     }
 
-    //public static boolean isAlertPresent(FirefoxDriver wd) {
-      //  try {
-        //    wd.switchTo().alert();
-          //  return true;
-        //} catch (NoAlertPresentException e) {
-          //  return false;
-       // }
-   // }
+    public static boolean isAlertPresent(ChromeDriver wd) {
+        try {
+            wd.switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException e) {
+            return false;
+        }
+    }
 }
