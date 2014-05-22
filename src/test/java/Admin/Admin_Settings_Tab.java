@@ -12,14 +12,14 @@ import org.openqa.selenium.interactions.Actions;
 /**
  * Created by patrickpriestley on 2014-05-02.
  */
-public class Admin_Settings_Tab extends BaseClass{
+public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void settings_program_name(){
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -51,7 +51,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -94,7 +94,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -121,7 +121,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -165,7 +165,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -258,7 +258,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -292,7 +292,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -374,7 +374,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -437,7 +437,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -476,7 +476,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -520,7 +520,7 @@ public class Admin_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 

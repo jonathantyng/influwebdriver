@@ -10,16 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by patrickpriestley on 2014-05-02.
  */
-public class Admin_Challenges_Tab extends BaseClass{
+public class Admin_Challenges_Tab extends AdminBase{
 
-    String baseUrl = "http://may31.influitiveqa.com";
+    String baseUrl = "http://advocatetest.influitives.com";
 
     @Test
     public void challenge_search(){
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -61,7 +61,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -105,7 +105,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -159,7 +159,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -215,7 +215,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -285,7 +285,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -355,7 +355,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -426,7 +426,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get(baseUrl);
+        //wd.get(baseUrl);
 
         //Admin sign in
 
@@ -472,7 +472,7 @@ public class Admin_Challenges_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 

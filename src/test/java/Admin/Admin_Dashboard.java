@@ -10,14 +10,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Admin_Dashboard extends BaseClass {
+public class Admin_Dashboard extends AdminBase {
     /*
     @Test
     public void admin_goal_learnmore() {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        wd.get("http://advocatetest.influitives.com");
 
         //Click on 'Learn More'
 
@@ -35,7 +35,7 @@ public class Admin_Dashboard extends BaseClass {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -79,11 +79,11 @@ public class Admin_Dashboard extends BaseClass {
 
 
     @Test
-    public void edit_exisiting_goal(){
+    public void edit_existing_goal(){
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -118,7 +118,7 @@ public class Admin_Dashboard extends BaseClass {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -159,7 +159,7 @@ public class Admin_Dashboard extends BaseClass {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 

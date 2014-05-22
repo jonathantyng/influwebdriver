@@ -10,14 +10,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by patrickpriestley on 2014-05-08.
  */
-public class Admin_Email_Settings_Tab extends BaseClass{
+public class Admin_Email_Settings_Tab extends AdminBase{
 
     @Test
     public void general_email_settings(){
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -51,7 +51,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -129,7 +129,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -199,7 +199,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -270,7 +270,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -330,7 +330,7 @@ public class Admin_Email_Settings_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com/users/sign_in");
+        //wd.get("http://advocatetest.influitives.com/users/sign_in");
 
         //Admin sign in
 

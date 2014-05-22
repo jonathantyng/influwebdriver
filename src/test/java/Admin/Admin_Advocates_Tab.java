@@ -10,14 +10,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by patrickpriestley on 2014-05-02.
  */
-public class Admin_Advocates_Tab extends BaseClass {
+public class Admin_Advocates_Tab extends AdminBase {
 
     @Test
     public void toggle_level_fiter(){
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -84,7 +84,7 @@ public class Admin_Advocates_Tab extends BaseClass {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -126,7 +126,7 @@ public class Admin_Advocates_Tab extends BaseClass {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -192,7 +192,7 @@ public class Admin_Advocates_Tab extends BaseClass {
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 

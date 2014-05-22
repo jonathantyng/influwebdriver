@@ -10,14 +10,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by patrickpriestley on 2014-05-02.
  */
-public class Admin_Rewards_Tab extends BaseClass{
+public class Admin_Rewards_Tab extends AdminBase{
 
     @Test
     public void search_rewards(){
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -57,7 +57,7 @@ public class Admin_Rewards_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -101,7 +101,7 @@ public class Admin_Rewards_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -150,7 +150,7 @@ public class Admin_Rewards_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
@@ -208,7 +208,7 @@ public class Admin_Rewards_Tab extends BaseClass{
 
         //Navigate to hub
 
-        wd.get("http://may31.influitiveqa.com");
+        //wd.get("http://advocatetest.influitives.com");
 
         //Admin sign in
 
