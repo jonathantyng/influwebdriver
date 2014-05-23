@@ -2,9 +2,9 @@ package Admin;
 
 import org.junit.After;
 import org.junit.Test;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
 
 public class twitter_post extends BaseClass{
     
@@ -89,6 +89,7 @@ public class twitter_post extends BaseClass{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
+
 
     @After
     public void tearDown() {

@@ -93,7 +93,7 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         //Select groups dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen11\"]")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen7\"]")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
 
         //Select group from dropdown

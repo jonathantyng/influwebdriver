@@ -19,7 +19,7 @@ public class AdminBase {
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        wd.get("http://may31.influitiveqa.com");
+        wd.get("http://sanitymay20.influitives.com");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 

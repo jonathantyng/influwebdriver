@@ -8,11 +8,9 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Created by patrickpriestley on 2014-05-02.
+ * Created by patrickpriestley on 2014-05-02...
  */
 public class Admin_Challenges_Tab extends AdminBase{
-
-    String baseUrl = "http://advocatetest.influitives.com";
 
     @Test
     public void challenge_search(){
@@ -134,12 +132,12 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Click on challenge type dropdown
 
-        wd.findElement(By.cssSelector("#s2id_autogen14")).click();
+        wd.findElement(By.cssSelector("#s2id_autogen9")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Search for Survey from challenge type dropdown
 
-        wd.findElement(By.cssSelector("#s2id_autogen14")).sendKeys("Survey");
+        wd.findElement(By.cssSelector("#s2id_autogen9")).sendKeys("Survey");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on survey type
@@ -188,12 +186,12 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Click on challenge creator field
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen15\"]")).click();
+        wd.findElement(By.cssSelector("#s2id_autogen10")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter text into search field
 
-        wd.findElement(By.id("s2id_autogen15")).sendKeys("All");
+        wd.findElement(By.cssSelector("#s2id_autogen10")).sendKeys("All");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

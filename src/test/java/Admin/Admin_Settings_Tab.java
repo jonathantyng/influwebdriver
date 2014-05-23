@@ -142,13 +142,13 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Select colour
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[2]/div/div/label[5]/span")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3225\"]/div[2]/div/div/label[3]/span")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Check off 'use different logo for emails and make sure it expands
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[3]/div[1]/div[2]/div[1]/div/label")).click();
+        wd.findElement(By.xpath("//*[@id=\"white_label_email_logo_enabled\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -187,7 +187,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //View AA guide in new tab
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[2]/p[2]/a")).click();
+        wd.findElement(By.linkText("guide to AdvocateAnywhere")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("AdvocateAnywhere lets you embed 'widgets' into any HTML page"));
 
@@ -230,13 +230,13 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Change widget image size
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[6]/a[2]/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3225\"]/div[6]/a[2]/img")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select new colour scheme
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[7]/div[1]/span[5]")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3225\"]/div[7]/div[1]/span[3]")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -329,7 +329,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Drag and drop badge
 
-        WebElement source = wd.findElement(By.xpath("//*[@id=\"badge_21\"]/img"));
+        WebElement source = wd.findElement(By.xpath("//*[@id=\"badge_15\"]"));
         WebElement target = wd.findElement(By.id("level_3"));
 
         Actions builder = new Actions(wd);
@@ -409,17 +409,18 @@ public class Admin_Settings_Tab extends AdminBase{
         //Check for errors
 
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add test group to private leaderboard field
 
-        wd.findElement(By.id("s2id_autogen9")).click();
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen9\"]")).sendKeys("Test Group");
+        wd.findElement(By.id("s2id_autogen4")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).sendKeys("Test Group");
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
 
         //Add test group to private leaderboard field
 
-        wd.findElement(By.id("s2id_autogen9")).click();
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen9\"]")).sendKeys("Sanity Group");
+        wd.findElement(By.id("s2id_autogen4")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).sendKeys("Sanity Group");
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
 
         //Save private leaderboards

@@ -130,12 +130,12 @@ public class Admin_Rewards_Tab extends AdminBase{
 
         //Click on reward type field
 
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen12\"]")).click();
+        wd.findElement(By.cssSelector("#s2id_autogen8")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter text
 
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen12\"]")).sendKeys("All");
+        wd.findElement(By.cssSelector("#s2id_autogen8")).sendKeys("All");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on search result
