@@ -10,9 +10,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 /**
- * Created by patrickpriestley on 2014-05-02.
+ * Created by patrick priestley on 2014-05-02
+ *
  */
+
 public class Admin_Settings_Tab extends AdminBase{
+
+    String settings_tab = "//*[@id=\"header\"]/div/div/div[1]/ul[1]/li/a";
+
+
 
     @Test
     public void settings_program_name(){
@@ -29,7 +35,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -61,7 +67,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -104,7 +110,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -131,7 +137,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -142,7 +148,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Select colour
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3225\"]/div[2]/div/div/label[3]/span")).click();
+        wd.findElement(By.id("white_label_color_scheme_purple")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -175,7 +181,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -230,13 +236,13 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Change widget image size
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3225\"]/div[6]/a[2]/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[6]/a[2]/img")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select new colour scheme
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3225\"]/div[7]/div[1]/span[3]")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[7]/div[1]/span[6]")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -268,7 +274,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -302,7 +308,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -384,7 +390,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -448,7 +454,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -487,7 +493,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -531,7 +537,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 

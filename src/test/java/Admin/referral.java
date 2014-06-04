@@ -63,10 +63,10 @@ public class referral extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("add-stage")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//img[@alt='Refer_prospect']")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[14]/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("params.fields21")).click();
-        wd.findElement(By.id("params.required20")).click();
+        wd.findElement(By.id("params.fields23")).click();
+        wd.findElement(By.id("params.required22")).click();
         wd.findElement(By.cssSelector("div.vertical-space-medium > label.input.checkbox")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();

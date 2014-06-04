@@ -50,7 +50,7 @@ public class group_sanity extends BaseClass{
         wd.findElement(By.id("group_token")).click();
         wd.findElement(By.id("group_token")).clear();
         wd.findElement(By.id("group_token")).sendKeys("Sanity");
-        wd.findElement(By.id("link-membership rules")).click();
+        wd.findElement(By.id("link-membership-rules")).click();
         wd.findElement(By.id("save-button")).click();
     }
 

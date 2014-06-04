@@ -60,8 +60,9 @@ public class online_action extends BaseClass{
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
         //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         wd.findElement(By.id("add-stage")).click();
-        wd.findElement(By.xpath("//img[@alt='Online_action']")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[12]/img")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();
         wd.findElement(By.name("params.url")).sendKeys("http://mashable.com/2013/04/09/no-nose-gifs/");

@@ -61,8 +61,8 @@ public class twitter_post extends BaseClass{
         wd.findElement(By.id("allow_multiple_response2")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("img.icon")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//img[@alt='Twitter_post']")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[4]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Preview")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }

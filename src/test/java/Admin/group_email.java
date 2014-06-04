@@ -49,7 +49,7 @@ public class group_email extends BaseClass{
         wd.findElement(By.id("group_description")).click();
         wd.findElement(By.id("group_description")).clear();
         wd.findElement(By.id("group_description")).sendKeys("This is a Admin group for employees with employee email addresses!");
-        wd.findElement(By.id("link-membership rules")).click();
+        wd.findElement(By.id("link-membership-rules")).click();
         wd.findElement(By.linkText("Add new criteria...")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_group_search_criteria_attributes0_field_name > a.select2-choice > span.select2-chosen")).click();

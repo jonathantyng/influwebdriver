@@ -10,14 +10,16 @@ public class social_signup extends BaseClass{
     @Test
     public void email_password_signup() {
 
+        wd.get("http://june4.influitiveqa.com/join/test");
+        /*
         //Enter join code
 
         wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"group_token\"]")).sendKeys("Test");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Next")).click();
-
+        wd.findElement(By.name("commit")).click();
+        */
         //Enter user information
 
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
@@ -40,15 +42,17 @@ public class social_signup extends BaseClass{
         @Test
         public void linkedin_singup (){
 
-        //Enter join code
+            wd.get("http://june4.influitiveqa.com/join/test");
 
+            //Enter join code
+        /*
         wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"group_token\"]")).sendKeys("Test");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        wd.findElement(By.linkText("Next")).click();
-
+        wd.findElement(By.name("commit")).click();
+        */
 
         //Enter user information
 
@@ -67,14 +71,18 @@ public class social_signup extends BaseClass{
     @Test
     public void facebook_signup(){
 
+
+        wd.get("http://june4.influitiveqa.com/join/test");
+
+        /*
         //Enter join code
 
         wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"group_token\"]")).sendKeys("Test");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Next")).click();
-
+        wd.findElement(By.name("commit")).click();
+        */
 
         //Enter user information
 

@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class Admin_Challenges_Tab extends AdminBase{
 
+
     @Test
     public void challenge_search(){
 

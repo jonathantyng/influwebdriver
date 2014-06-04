@@ -10,7 +10,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by patrickpriestley on 2014-05-08.
  */
+
 public class Admin_Email_Settings_Tab extends AdminBase{
+
+    String settings_tab = "//*[@id=\"header\"]/div/div/div[1]/ul[1]/li/a";
 
     @Test
     public void general_email_settings(){
@@ -27,7 +30,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -61,7 +64,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -139,7 +142,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -209,7 +212,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -280,7 +283,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -295,7 +298,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
         //Preview challenge email
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"edit_email_template_1\"]/fieldset/input")).click();
+        wd.findElement(By.linkText("Preview")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -340,7 +343,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to the settings page
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/ul[1]/li/a")).click();
+        wd.findElement(By.xpath(settings_tab)).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Settings")).click();
 
@@ -353,7 +356,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Preview challenge email
 
-        wd.findElement(By.xpath("//*[@id=\"configuration-panel\"]/div/fieldset/form/input")).click();
+        wd.findElement(By.linkText("Preview")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

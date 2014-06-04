@@ -45,7 +45,7 @@ public class group_earned_badge extends BaseClass{
         wd.findElement(By.id("group_description")).click();
         wd.findElement(By.id("group_description")).clear();
         wd.findElement(By.id("group_description")).sendKeys("This is a group for people who have earned the social cookie.");
-        wd.findElement(By.id("link-membership rules")).click();
+        wd.findElement(By.id("link-membership-rules")).click();
         wd.findElement(By.linkText("Behaviour")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"s2id_autogen20\"]/ul/li")).click();

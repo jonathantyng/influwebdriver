@@ -64,7 +64,7 @@ public class approval_challenge extends BaseClass{
         wd.findElement(By.cssSelector("#c42> label > input[name=\"subject\"]")).clear();
         wd.findElement(By.cssSelector("#c42> label > input[name=\"subject\"]")).sendKeys("The second question issss?");
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        wd.findElement(By.xpath("//img[@alt='Corporate_confirmation']")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[18]")).click();
         wd.findElement(By.id("ui-id-2")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();

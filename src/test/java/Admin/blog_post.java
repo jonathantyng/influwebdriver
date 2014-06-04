@@ -59,7 +59,8 @@ public class blog_post extends BaseClass{
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.cssSelector("img.icon")).click();
-        wd.findElement(By.xpath("//img[@alt='Blog_post']")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[1]/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();
