@@ -78,6 +78,19 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
         wd.findElement(By.linkText("Influitive Labs")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Turn on community
+
+        wd.findElement(By.id("toggles_community")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Turn on zones
+
+        wd.findElement(By.id("toggles_zones")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save settings
+
         wd.findElement(By.name("commit")).click();
     }
 

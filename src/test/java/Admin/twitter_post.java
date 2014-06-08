@@ -37,6 +37,7 @@ public class twitter_post extends BaseClass{
 
         //Add twitter post challenge
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();

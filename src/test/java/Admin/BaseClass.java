@@ -15,11 +15,11 @@ ChromeDriver wd;
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/patrickp/Influitive/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        wd.get("http://june4.influitiveqa.com");
+        wd.get("http://sanityjune6.influitives.com");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 

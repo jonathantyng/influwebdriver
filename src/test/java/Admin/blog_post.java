@@ -37,6 +37,7 @@ public class blog_post extends BaseClass{
 
         //Create Blog Post challenge
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
@@ -60,7 +61,7 @@ public class blog_post extends BaseClass{
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.cssSelector("img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[1]/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[5]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).clear();

@@ -37,6 +37,7 @@ public class referral extends BaseClass{
 
         //Add referral challenge
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
@@ -63,7 +64,7 @@ public class referral extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("add-stage")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[14]/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[14]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("params.fields23")).click();
         wd.findElement(By.id("params.required22")).click();

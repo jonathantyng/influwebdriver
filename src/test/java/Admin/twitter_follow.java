@@ -37,6 +37,7 @@ public class twitter_follow extends BaseClass{
 
         //Add twitter follow challenge
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
@@ -62,7 +63,7 @@ public class twitter_follow extends BaseClass{
         //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[6]/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[1]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("screen_name")).click();
         wd.findElement(By.name("screen_name")).clear();

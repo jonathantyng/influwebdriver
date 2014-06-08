@@ -1,5 +1,6 @@
 package Admin;
 
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -65,8 +66,8 @@ public class badge_activity extends BaseClass{
         wd.findElement(By.id("create_badge_button")).click();
     }
 
-    //@After
-    //public void tearDown() {
-        //wd.quit();
-    //}
+    @After
+    public void tearDown() {
+        wd.quit();
+    }
 }

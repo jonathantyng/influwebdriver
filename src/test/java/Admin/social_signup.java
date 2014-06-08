@@ -10,7 +10,7 @@ public class social_signup extends BaseClass{
     @Test
     public void email_password_signup() {
 
-        wd.get("http://june4.influitiveqa.com/join/test");
+        wd.get("http://sanityjune6.influitives.com/join/test");
         /*
         //Enter join code
 
@@ -42,7 +42,7 @@ public class social_signup extends BaseClass{
         @Test
         public void linkedin_singup (){
 
-            wd.get("http://june4.influitiveqa.com/join/test");
+            wd.get("http://sanityjune6.influitives.com/join/test");
 
             //Enter join code
         /*
@@ -72,7 +72,7 @@ public class social_signup extends BaseClass{
     public void facebook_signup(){
 
 
-        wd.get("http://june4.influitiveqa.com/join/test");
+        wd.get("http://sanityjune6.influitives.com/join/test");
 
         /*
         //Enter join code

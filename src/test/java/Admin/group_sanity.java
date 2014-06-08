@@ -39,6 +39,7 @@ public class group_sanity extends BaseClass{
 
         //Add Test Group
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a group")).click();
         wd.findElement(By.id("group_name")).click();
         wd.findElement(By.id("group_name")).click();

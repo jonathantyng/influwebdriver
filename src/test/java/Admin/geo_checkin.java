@@ -63,7 +63,7 @@ public class geo_checkin extends BaseClass{
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//img[@alt='Check_in']")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[12]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.address")).click();
         wd.findElement(By.cssSelector("input.address")).clear();

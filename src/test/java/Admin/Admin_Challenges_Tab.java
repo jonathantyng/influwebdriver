@@ -133,6 +133,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Click on challenge type dropdown
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_autogen9")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
@@ -243,6 +244,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Deselect Active toggle
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(2) > label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
