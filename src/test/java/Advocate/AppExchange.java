@@ -2,9 +2,9 @@ package Advocate;
 
 import org.junit.After;
 import org.junit.Test;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
 
 public class AppExchange extends Advocate{
 
@@ -16,7 +16,7 @@ public class AppExchange extends Advocate{
         wd.get("https://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("alice.advocate@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
@@ -30,7 +30,7 @@ public class AppExchange extends Advocate{
         wd.get("https://advocatetest.influitives.com/challenges/20");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Enter saleforce user info
+        //Enter salesforce user info
 
         wd.findElement(By.id("app_exchange_handle_text_")).click();
         wd.findElement(By.id("app_exchange_handle_text_")).clear();
@@ -39,7 +39,7 @@ public class AppExchange extends Advocate{
 
         //Click 'Take me there' to view appexchange review site
 
-        wd.findElement(By.linkText("Take Me There")).click();
+        wd.findElement(By.linkText("Go there")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Store original handle
@@ -64,14 +64,11 @@ public class AppExchange extends Advocate{
         //Complete the challenge
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("commit")).click();
+        wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[3]/div/input")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Signout
 
-        wd.findElement(By.id("contact-dropdown")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Sign out")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }

@@ -15,7 +15,7 @@ ChromeDriver wd;
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickp/Influitive/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

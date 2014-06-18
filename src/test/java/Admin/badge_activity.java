@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class badge_activity extends BaseClass{
 
     @Test
-    public void createactivitybadge() {
+    public void create_activity_badge() {
         //wd.get("http://may14.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();

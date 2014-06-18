@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class appexchangechallenge extends BaseClass{
 
     @Test
-    public void appexchangechallenge() {
+    public void create_appexchange_challenge() {
 
         //Sign into app and access challenge screen
 

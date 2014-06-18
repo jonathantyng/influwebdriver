@@ -148,7 +148,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Select colour
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3230\"]/div[2]/div/div/label[6]")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/div[2]/div/div/label[6]/span")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -236,13 +236,13 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Change widget image size
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3230\"]/div[7]/div[1]/span[6]")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/div[6]/a[2]/img")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select new colour scheme
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[7]/div[1]/span[6]")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/div[7]/div[1]/span[6]")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
