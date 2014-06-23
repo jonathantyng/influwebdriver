@@ -51,7 +51,6 @@ public class group_test extends BaseClass{
         wd.findElement(By.id("group_token")).clear();
         wd.findElement(By.id("group_token")).sendKeys("Test");
         wd.findElement(By.id("link-membership-rules")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 

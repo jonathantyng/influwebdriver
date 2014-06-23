@@ -10,7 +10,7 @@ public class social_signup extends BaseClass{
     @Test
     public void email_password_signup() {
 
-        wd.get("http://sanityjune16.influitives.com/join/sanity");
+        wd.get("http://sanityjune6.influitives.com/join/test");
         /*
         //Enter join code
 
@@ -31,8 +31,6 @@ public class social_signup extends BaseClass{
 
         //Check for errors
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("sorry"));
-
 
         try {
             Thread.sleep(3000l);
@@ -44,7 +42,7 @@ public class social_signup extends BaseClass{
         @Test
         public void linkedin_singup (){
 
-            wd.get("http://sanityjune16.influitives.com/join/sanity");
+            wd.get("http://sanityjune6.influitives.com/join/test");
 
             //Enter join code
         /*
@@ -65,7 +63,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.name("commit")).click();
 
         //Check for errors
-        //Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
@@ -74,7 +72,7 @@ public class social_signup extends BaseClass{
     public void facebook_signup(){
 
 
-        wd.get("http://sanityjune16.influitives.com/join/sanity");
+        wd.get("http://sanityjune6.influitives.com/join/test");
 
         /*
         //Enter join code
@@ -96,7 +94,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("pass")).clear();
         wd.findElement(By.id("pass")).sendKeys("macbook18");
         wd.findElement(By.id("u_0_1")).click();
-        wd.findElement(By.name("commit")).click();
+        //wd.findElement(By.name("commit")).click();
 
         //Check for errors
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));

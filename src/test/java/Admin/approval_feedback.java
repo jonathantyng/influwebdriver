@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 public class approval_feedback extends BaseClass{
 
     @Test
-    public void create_approval_with_feedback() {
+    public void approval_with_feedback() {
         //wd.get("http://may14.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();

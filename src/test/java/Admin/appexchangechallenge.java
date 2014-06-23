@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class appexchangechallenge extends BaseClass{
 
     @Test
-    public void create_appexchange_challenge() {
+    public void appexchangechallenge() {
 
         //Sign into app and access challenge screen
 
@@ -66,7 +66,7 @@ public class appexchangechallenge extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[4]/ol/li[3]")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[9]")).click();
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).sendKeys("https://appexchange.salesforce.com/listingDetail?listingId=a0N300000016YDkEAM");
         //wd.findElement(By.linkText("Load")).click();

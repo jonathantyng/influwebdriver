@@ -43,7 +43,7 @@ public class badge_points_reached extends BaseClass{
         }
 
         //Continue creating badges
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
         wd.findElement(By.id("add_badge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("badge_name")).click();

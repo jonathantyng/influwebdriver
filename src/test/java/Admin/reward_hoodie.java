@@ -34,7 +34,6 @@ public class reward_hoodie extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a reward")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("link-headline")).click();
@@ -53,7 +52,7 @@ public class reward_hoodie extends BaseClass{
         wd.findElement(By.id("reward_points")).click();
         wd.findElement(By.id("reward_points")).clear();
         wd.findElement(By.id("reward_points")).sendKeys("10");
-        wd.findElement(By.xpath("//*[@id=\"redeeming\"]/fieldset[3]/div/a")).click();
+        wd.findElement(By.linkText("+ Add A Question")).click();
         wd.findElement(By.name("subject")).click();
         wd.findElement(By.name("subject")).clear();
         wd.findElement(By.name("subject")).sendKeys("What size do you wear??");

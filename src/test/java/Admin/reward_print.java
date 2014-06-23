@@ -35,7 +35,6 @@ public class reward_print extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a reward")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("link-headline")).click();
