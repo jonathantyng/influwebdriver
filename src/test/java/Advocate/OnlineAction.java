@@ -16,7 +16,7 @@ public class OnlineAction extends Advocate{
         wd.get("https://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("alice.advocate@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
@@ -32,7 +32,7 @@ public class OnlineAction extends Advocate{
 
         //Click 'Take me there' to view article
 
-        wd.findElement(By.linkText("Take Me There")).click();
+        wd.findElement(By.linkText("Go there")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Store original handle
@@ -57,15 +57,9 @@ public class OnlineAction extends Advocate{
         //Complete the challenge
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("commit")).click();
+        wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[3]/div/input")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Signout
-
-        wd.findElement(By.id("contact-dropdown")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.linkText("Sign out")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 
