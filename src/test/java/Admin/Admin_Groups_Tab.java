@@ -86,6 +86,7 @@ public class Admin_Groups_Tab extends AdminBase {
 
         //Select 'Has a join code' toggle
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"group_search\"]/section/section/div[1]/label")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -143,6 +144,7 @@ public class Admin_Groups_Tab extends AdminBase {
 
         //Select sort dropdown
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"s2id_sort_order\"]/a/span[1]")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
 

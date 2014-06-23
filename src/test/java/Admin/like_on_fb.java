@@ -62,7 +62,7 @@ public class like_on_fb extends BaseClass{
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[3]")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[3]/ol/li[5]")).click();
         wd.findElement(By.name("params.facebook_page_url")).click();
         wd.findElement(By.name("params.facebook_page_url")).clear();
         wd.findElement(By.name("params.facebook_page_url")).sendKeys("www.facebook.com/pepsi");

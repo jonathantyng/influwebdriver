@@ -60,7 +60,7 @@ public class multi_stage extends BaseClass{
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.id("allow_multiple_response2")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[15]")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[5]/ol/li[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("public")).click();
         wd.findElement(By.name("subject")).click();
@@ -75,7 +75,7 @@ public class multi_stage extends BaseClass{
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[2]/div")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[15]")).click();
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[5]/ol/li[7]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
         wd.findElement(By.name("commit")).click();

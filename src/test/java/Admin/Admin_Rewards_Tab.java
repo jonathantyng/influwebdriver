@@ -86,6 +86,7 @@ public class Admin_Rewards_Tab extends AdminBase{
 
         //Select 'targeted to group' dropdown
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
@@ -130,6 +131,7 @@ public class Admin_Rewards_Tab extends AdminBase{
 
         //Click on reward type field
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_autogen8")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
@@ -179,6 +181,7 @@ public class Admin_Rewards_Tab extends AdminBase{
 
         //Select 'Active' toggle
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[1]/div[1]/label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -237,6 +240,7 @@ public class Admin_Rewards_Tab extends AdminBase{
 
         //Select 'In Catalog' toggle
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[2]/div[1]/label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));

@@ -89,6 +89,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'targeted to group' dropdown
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
@@ -502,6 +503,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Click on sort order dropdown
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_sort_order")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
@@ -518,7 +520,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'Dismissed Count'
 
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[3]/div")).click();
+        wd.findElement(By.linkText("Dismissed Count")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -529,7 +531,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select Active Count
 
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[4]/div")).click();
+        wd.findElement(By.linkText("Active Count")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -540,7 +542,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'Alphabetical'
 
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[5]/div")).click();
+        wd.findElement(By.linkText("Alphabetical")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

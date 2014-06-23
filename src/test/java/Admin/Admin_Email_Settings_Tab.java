@@ -167,6 +167,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Preview invitation email
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"new_settings_builder\"]/input[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -298,7 +299,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
         //Preview challenge email
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"edit_email_template_1\"]/fieldset/input")).click();
+        wd.findElement(By.xpath("//*[@id=\"edit_email_template_4\"]/fieldset/input")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

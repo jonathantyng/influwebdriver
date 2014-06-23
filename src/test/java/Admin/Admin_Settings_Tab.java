@@ -78,6 +78,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Preview about page text
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("preview-link")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -148,7 +149,8 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Select colour
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3230\"]/div[2]/div/div/label[6]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/div[2]/div/div/label[2]/span")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -219,6 +221,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Preview AA
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("preview-advocate-anywhere")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -236,13 +239,15 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Change widget image size
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3230\"]/div[7]/div[1]/span[6]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/div[6]/a[2]")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select new colour scheme
 
-        wd.findElement(By.xpath("//*[@id=\"edit_white_label_85\"]/div[7]/div[1]/span[6]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"edit_white_label_3185\"]/div[7]/div[1]/span[2]")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -289,6 +294,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Save changes
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
@@ -396,6 +402,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to 'Levels and Badges'
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[2]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//*[@id=\"collapse-me1\"]/li[3]/a")).click();
@@ -419,13 +426,13 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Add test group to private leaderboard field
 
-        wd.findElement(By.id("s2id_autogen4")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).click();
         wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).sendKeys("Test Group");
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
 
         //Add test group to private leaderboard field
 
-        wd.findElement(By.id("s2id_autogen4")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).click();
         wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).sendKeys("Sanity Group");
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
 

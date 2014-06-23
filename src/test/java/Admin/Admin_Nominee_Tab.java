@@ -295,6 +295,7 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         //Select 80 to 100
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("search_by_impact_score_80 to 100")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -365,6 +366,7 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         //Select 20 and above
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("search_by_activity_count_20 and above")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
