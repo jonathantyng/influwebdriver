@@ -2,10 +2,9 @@ package Advocate;
 
 import org.junit.After;
 import org.junit.Test;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
 
 public class UploadImage extends Advocate{
 
@@ -17,7 +16,7 @@ public class UploadImage extends Advocate{
         wd.get("https://advocatetest.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("alice.advocate@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();

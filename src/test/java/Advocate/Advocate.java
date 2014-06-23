@@ -13,7 +13,7 @@ public class Advocate {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickp/Influitive/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
