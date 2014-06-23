@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a186e0b5-ae1c-4936-9167-c57a8eea1d39" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Advocate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/AppExchange.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/AppExchange.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Approval.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Approval.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/ApprovalFeedback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/BlogPost.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/BlogPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/CoprorateConfirm.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/CoprorateConfirm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/FBLike.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/FBLike.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/FollowOnTwitter.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/FollowOnTwitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/JoinGroup.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/JoinGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/JoinLinkedinGroup.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/JoinLinkedinGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/LinkedinRecom.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/LinkedinRecom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/MultiSurvey.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/MultiSurvey.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/NPS.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/NPS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/OnlineAction.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/OnlineAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/OnlineReview.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/OnlineReview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Referral.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Referral.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/ShareLink.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/ShareLink.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/Survey.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/Survey.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/TwitterPost.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/TwitterPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java" afterPath="$PROJECT_DIR$/src/test/java/Advocate/UploadImage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Admin/create_company.java" afterPath="$PROJECT_DIR$/src/test/java/Admin/create_company.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Test.iws" />
@@ -94,41 +76,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinkedinRecom.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/LinkedinRecom.java">
+      <file leaf-file-name="AdminBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/AdminBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="810">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1050">
+              <caret line="10" column="93" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiSurvey.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/MultiSurvey.java">
+      <file leaf-file-name="BaseClass.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="309" max-vertical-offset="915">
-              <caret line="41" column="75" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1065">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NPS.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/NPS.java">
+      <file leaf-file-name="create_company.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="900">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnlineAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/OnlineAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="669" max-vertical-offset="1200">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state vertical-scroll-proportion="1.9701493" vertical-offset="120" max-vertical-offset="1380">
+              <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -164,6 +136,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="create_company_settings.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1163" max-vertical-offset="1515">
+              <caret line="92" column="8" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Survey.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/Survey.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -184,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogPost.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BlogPost.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/BlogPost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3761194" vertical-offset="324" max-vertical-offset="1200">
+            <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1200">
               <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding />
             </state>
@@ -215,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Admin/create_company.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/group_sanity.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/group_test.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/badge_activity.java" />
@@ -226,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Admin/AdminBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/Admin_Dashboard.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/social_signup.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/approval_challenge.java" />
         <option value="$PROJECT_DIR$/src/test/java/Admin/blog_post.java" />
@@ -266,6 +246,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Advocate/Survey.java" />
         <option value="$PROJECT_DIR$/src/test/java/Advocate/TwitterPost.java" />
         <option value="$PROJECT_DIR$/src/test/java/Advocate/BlogPost.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Admin/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Admin/create_company.java" />
       </list>
     </option>
   </component>
@@ -309,7 +291,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
+    <option name="x" value="37" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="774" />
@@ -842,8 +824,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <frame x="37" y="22" width="1280" height="774" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.49963847" order="7" side_tool="false" content_ui="tabs" />
@@ -862,7 +844,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956952" sideWeight="0.6397351" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3421875" sideWeight="0.93068033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3421875" sideWeight="0.93068033" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46905088" sideWeight="0.9108971" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -896,13 +878,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_sanity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="453" max-vertical-offset="930">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Admin/group_test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="945">
@@ -951,30 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="472" max-vertical-offset="3255">
           <caret line="47" column="70" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1163" max-vertical-offset="1515">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/AdminBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="10" column="93" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1293,8 +1244,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Advocate/BlogPost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3761194" vertical-offset="324" max-vertical-offset="1200">
+        <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1200">
           <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/AdminBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="10" column="93" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1065">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company_settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1163" max-vertical-offset="1515">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Admin/create_company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9701493" vertical-offset="120" max-vertical-offset="1380">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
           <folding />
         </state>
       </provider>
