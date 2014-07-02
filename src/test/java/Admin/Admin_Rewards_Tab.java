@@ -262,8 +262,55 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[2]/div[2]/label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("wrong"));
 
     }
+
+    @Test
+    public void edit_reward(){
+
+        //Admin sign in
+
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.name("commit")).click();
+
+        //Navigate to Rewards tab
+
+        wd.findElement(By.id("Rewards")).click();
+
+        //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
+
+        boolean exists = wd.findElements( By.linkText("No Thanks")).size() != 0;
+
+        if (exists)
+        {
+            wd.findElement(By.linkText("No Thanks")).click();
+            System.out.println("Group Tutorial Dismissed");
+        }
+        else
+        {
+            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            System.out.println("Tutorial not encountered");
+        }
+
+        //Click on reward dropdown toggle
+
+        wd.findElement(By.xpath("//*[@id=\"list_collection\"]/li/div[2]/div/a/img")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+        //Edit Reward
+
+        wd.findElement(By.xpath("//*[@id=\"list_collection\"]/li/div[2]/div/ul/li[1]/a")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("wrong"));
+
+
+    }
+
+
 
     @After
     public void tearDown() {

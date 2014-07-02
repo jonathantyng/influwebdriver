@@ -38,37 +38,54 @@ public class appexchangechallenge extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
-        //Create a new appexchange challenge
+        //Add a challenge
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         wd.findElement(By.linkText("Add a challenge")).click();
+
+        //Create from scratch
+
         wd.findElement(By.id("create-new-challenge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select challenge type dropdown and select 'Testimonial'
+
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Testimonial");
         wd.findElement(By.className("select2-match")).click();
+
+        //Select allow multiple responses
+
         wd.findElement(By.id("allow_multiple_response2")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("name")).click();
-        wd.findElement(By.name("name")).clear();
+
+        //Enter challenge name and description
+
         wd.findElement(By.name("name")).sendKeys("AppExchange Review");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("headline")).click();
-        wd.findElement(By.name("headline")).clear();
         wd.findElement(By.name("headline")).sendKeys("AppExchange Review");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("description")).click();
-        wd.findElement(By.name("description")).clear();
         wd.findElement(By.name("description")).sendKeys("AppExchange Review");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select new stage
+
         wd.findElement(By.cssSelector("img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[4]/ol/li[2]")).click();
+
+        //Choose appexchange challenge type
+
+        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[4]/ol/li[3]")).click();
+
+        //Enter appexchange url
+
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).sendKeys("https://appexchange.salesforce.com/listingDetail?listingId=a0N300000016YDkEAM");
         //wd.findElement(By.linkText("Load")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Navigate back to the main tab
+
         wd.findElement(By.id("ui-id-2")).click();
 
         /*
@@ -84,6 +101,9 @@ public class appexchangechallenge extends BaseClass{
         */
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-1")).click();
+
+        //Save challenge
+
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
