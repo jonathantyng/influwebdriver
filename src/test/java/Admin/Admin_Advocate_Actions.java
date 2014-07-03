@@ -1,9 +1,12 @@
 package Admin;
 
 import junit.framework.Assert;
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -112,7 +115,7 @@ public class Admin_Advocate_Actions extends AdminBase {
           //Click on award points
 
           wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[2]/div[4]/div/a")).click();
-          wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[2]/div[4]/div/a")).clear();
+          //wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[2]/div[4]/div/a")).clear();
           Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
           try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
           //wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[2]/div[4]/div/a")).click();
@@ -411,5 +414,19 @@ public class Admin_Advocate_Actions extends AdminBase {
         wd.findElement(By.xpath("//*[@id=\"new_point_adjustment\"]/div[2]/input")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
 
+    }
+
+    @After
+    public void tearDown() {
+        wd.quit();
+    }
+
+    public static boolean isAlertPresent(ChromeDriver wd) {
+        try {
+            wd.switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException e) {
+            return false;
+        }
     }
 }

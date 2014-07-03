@@ -8,6 +8,7 @@ import org.openqa.selenium.*;
 
 public class corporate_confirm extends BaseClass{
 
+
     @Test
     public void corporateconfirm() {
         //wd.get("http://may14.influitiveqa.com/users/sign_in");
@@ -129,6 +130,7 @@ public class corporate_confirm extends BaseClass{
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
     }
 
     @After

@@ -206,6 +206,52 @@ public class Admin_Dashboard extends AdminBase {
     }
     */
 
+    @Test
+    public void admin_challenge_action_center(){
+
+        //Admin sign in
+
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.name("commit")).click();
+
+        //Click on challenge confirmation action center link
+
+        wd.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div[1]/div/div[1]/a/button")).click();
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+        //Switch to rewards tab
+
+        wd.findElement(By.xpath("//*[@id=\"inboxes\"]/li[2]/a")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+    }
+
+    @Test
+    public void admin_reward_action_center(){
+
+        //Admin sign in
+
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.name("commit")).click();
+
+        //Click on rewards confirmation action center link
+
+        wd.findElement(By.xpath("//*[@id=\"content\"]/div/div[2]/div[1]/div/div[2]/a/button")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+        //Switch to challenge tab
+
+        wd.findElement(By.xpath("//*[@id=\"inboxes\"]/li[1]/a")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+
+
+    }
+
     @After
     public void tearDown() {
         wd.quit();

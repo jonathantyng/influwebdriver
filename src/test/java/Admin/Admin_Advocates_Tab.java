@@ -211,6 +211,42 @@ public class Admin_Advocates_Tab extends AdminBase {
         Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("No records found"));
 
     }
+
+    @Test
+    public void import_advocates(){
+
+        //Admin sign in
+
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.name("commit")).click();
+
+        //Navigate to Advocates tab
+
+        wd.findElement(By.id("Advocates")).click();
+
+        //Click on advocates tab dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"wrapper\"]/div/div[1]/span/div/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select import advocates from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"wrapper\"]/div/div[1]/span/div/ul/li[1]/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select CSV file --- uses the absolute path of the file on comp
+
+        wd.findElement(By.xpath("//*[@id=\"advocate_csv_importer_csv\"]")).sendKeys("/Users/patrickprestley/Workspace/import.csv");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Import -- click on import button
+
+        wd.findElement(By.xpath("//*[@id=\"new_advocate_csv_importer\"]/div[3]/input")).click();
+        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+    }
     @After
     public void tearDown() {
         wd.quit();
