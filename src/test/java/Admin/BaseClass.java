@@ -19,7 +19,7 @@ ChromeDriver wd;
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        wd.get("https://july2.influitiveqa.com/");
+        wd.get("https://sanityjune2.influitives.com/");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 

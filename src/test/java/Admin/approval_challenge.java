@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class approval_challenge extends BaseClass{
 
     @Test
-    public void approval_challengee() {
+    public void approval_challenge_creation() {
         //wd.get("http://may14.influitiveqa.com/users/sign_in");
 
         //Sign in as admin
@@ -68,7 +68,7 @@ public class approval_challenge extends BaseClass{
 
         //Select the survey challenge stage
 
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[5]/ol/li[6]")).click();
+        wd.findElement(By.xpath("//img[@alt='Questions']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter question
@@ -82,12 +82,12 @@ public class approval_challenge extends BaseClass{
 
         //Enter second question
 
-        wd.findElement(By.cssSelector("#c42> label > input[name=\"subject\"]")).sendKeys("The second question issss?");
+        wd.findElement(By.xpath("//*[@id=\"c65\"]/label[1]/input")).sendKeys("The second question issss?");
 
         //Add corporate confirmation stage
 
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[5]/ol/li[7]")).click();
+        wd.findElement(By.xpath("//img[@alt='Corporate confirmation']")).click();
         wd.findElement(By.id("ui-id-2")).click();
 
         //Save challenge

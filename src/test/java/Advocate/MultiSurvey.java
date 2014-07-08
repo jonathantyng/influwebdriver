@@ -32,8 +32,6 @@ public class MultiSurvey extends Advocate{
 
         //Enter survey response
 
-        wd.findElement(By.id("activity_responses_attributes_0_body")).click();
-        wd.findElement(By.id("activity_responses_attributes_0_body")).clear();
         wd.findElement(By.id("activity_responses_attributes_0_body")).sendKeys("This is a survey response");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 

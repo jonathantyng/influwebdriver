@@ -75,7 +75,8 @@ public class appexchangechallenge extends BaseClass{
 
         //Choose appexchange challenge type
 
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[4]/ol/li[3]")).click();
+        //wd.findElement(By.xpath("//*[@id=\"stages\"]/div[4]/ol/li[3]")).click();
+        wd.findElement(By.xpath("//img[@alt='App exchange']")).click();
 
         //Enter appexchange url
 

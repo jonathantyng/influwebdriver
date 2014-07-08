@@ -72,7 +72,8 @@ public class blog_post extends BaseClass{
 
         //Select blog post stage
 
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[3]/ol/li[5]")).click();
+        wd.findElement(By.xpath("//img[@alt='Blog post']")).click();
+        //wd.findElement(By.xpath("//*[@id=\"stages\"]/div[3]/ol/li[5]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter blog post URL
@@ -89,10 +90,11 @@ public class blog_post extends BaseClass{
 
         //Set visibility to one person
 
-        wd.findElement(By.id("visibility_setting_membership_specific")).click();
-        wd.findElement(By.id("s2id_autogen1")).click();
-        wd.findElement(By.id("s2id_autogen1")).clear();
-        wd.findElement(By.id("s2id_autogen1")).sendKeys("Pelican");
+        wd.findElement(By.id("criteria_radio")).click();
+        wd.findElement(By.xpath("//*[@id=\"include-conditions-list\"]/div/footer/ul/li[2]/a")).click();
+
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen36\"]/ul/li")).click();
+        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]")).sendKeys("Pelican");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("img[alt=\"Pelican Pete\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
