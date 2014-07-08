@@ -1,10 +1,10 @@
 package Advocate;
 
+
 import org.junit.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
-
 
 public class Advocate {
 
@@ -13,22 +13,30 @@ public class Advocate {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickp/Influitive/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.get("http://advocatetest.influitives.com");
+
     }
 }
-
 
 
 
 //
 //Uncomment everything below to enable SauceLabs integration
 //
-
-
 /*
+
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 public class Advocate {
 
     WebDriver wd;
@@ -39,7 +47,7 @@ public class Advocate {
 
         DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
         capabilities.setCapability("version", "8");
-        capabilities.setCapability("platform", Platform.XP);
+        capabilities.setCapability("platform", "XP");
         capabilities.setCapability("name", "Advocate Challenge Completion");
         capabilities.setCapability("screen-resolution", "1920x1200");
         this.wd = new RemoteWebDriver(

@@ -37,6 +37,9 @@ public class Approval extends Advocate{
 
         //Submit response
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
         wd.findElement(By.name("commit")).click();
 
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }

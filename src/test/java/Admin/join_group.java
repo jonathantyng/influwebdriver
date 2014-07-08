@@ -90,7 +90,8 @@ public class join_group extends BaseClass{
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
         //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[13]")).click();
+        wd.findElement(By.xpath("//img[@alt='Influitive group join']")).click();
+        //wd.findElement(By.xpath("//*[@id=\"stages\"]/ol/li[13]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.xpath("//div[@id='s2id_params.group_id17']/a/span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }

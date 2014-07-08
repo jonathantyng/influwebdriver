@@ -166,6 +166,54 @@ public class Admin_Groups_Tab extends AdminBase {
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }
 
+    @Test
+    public void edit_group(){
+
+        //Admin sign in
+
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.name("commit")).click();
+
+        //Navigate to Groups tab
+
+        wd.findElement(By.id("Groups")).click();
+
+        //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
+
+        boolean exists = wd.findElements( By.linkText("No Thanks")).size() != 0;
+
+        if (exists)
+        {
+            wd.findElement(By.linkText("No Thanks")).click();
+            System.out.println("Group Tutorial Dismissed");
+        }
+        else
+        {
+            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            System.out.println("Tutorial not encountered");
+        }
+
+        //Click on groups dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"list_collection\"]/li[1]/div/div[1]/div/a/img")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select edit from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"list_collection\"]/li[1]/div/div[1]/div/ul/li[1]/a")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("wrong"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save group
+
+        wd.findElement(By.xpath("//*[@id=\"save-button\"]")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("wrong"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+    }
+
 
     @After
     public void tearDown() {

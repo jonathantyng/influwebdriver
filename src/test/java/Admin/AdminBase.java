@@ -14,10 +14,10 @@ public class AdminBase {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickp/Influitive/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
 
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://advocatetest.influitives.com");
 
         wd.manage().window().setSize(new Dimension(1400,1400));

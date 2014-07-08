@@ -32,6 +32,7 @@ public class FollowOnTwitter extends Advocate{
 
         //Follow
 
+        //wd.findElement(By.id("commit")).click();
         wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[3]/div/input")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 

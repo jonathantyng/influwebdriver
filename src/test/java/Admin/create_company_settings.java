@@ -71,7 +71,7 @@ public class create_company_settings extends BaseClass{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("provider_setting_options_token")).click();
         wd.findElement(By.id("provider_setting_options_token")).clear();
-        wd.findElement(By.id("provider_setting_options_token")).sendKeys("BQbPYIxOnWTk9KgGSObictiY");
+        wd.findElement(By.id("provider_setting_options_token")).sendKeys("5VpZIINumjpRTd68BJIazhkP");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

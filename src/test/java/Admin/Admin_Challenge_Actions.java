@@ -8,16 +8,11 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Created by patrickpriestley on 2014-05-02.
+ * Created by patrickprestley on 2014-07-02.
  */
-public class Admin_Rewards_Tab extends AdminBase{
+public class Admin_Challenge_Actions extends AdminBase{
 
-    @Test
-    public void search_rewards(){
-
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com");
+    public void edit_challenge(){
 
         //Admin sign in
 
@@ -25,9 +20,9 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.name("commit")).click();
 
-        //Navigate to Rewards tab
+        //Navigate to Challenges tab
 
-        wd.findElement(By.id("Rewards")).click();
+        wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
@@ -36,7 +31,7 @@ public class Admin_Rewards_Tab extends AdminBase{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Group Tutorial Dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
@@ -44,20 +39,27 @@ public class Admin_Rewards_Tab extends AdminBase{
             System.out.println("Tutorial not encountered");
         }
 
-        //Click on search field and enter text
+        //Select challenge dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"search_name_contains\"]")).sendKeys("Test");
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select edit from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[1]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save challenge
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-creator\"]/div[1]/div[2]/input")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 
     @Test
-    public void filter_by_group(){
-
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com");
+    public void notify_advocates(){
 
         //Admin sign in
 
@@ -65,9 +67,9 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.name("commit")).click();
 
-        //Navigate to Rewards tab
+        //Navigate to Challenges tab
 
-        wd.findElement(By.id("Rewards")).click();
+        wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
@@ -76,7 +78,7 @@ public class Admin_Rewards_Tab extends AdminBase{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Group Tutorial Dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
@@ -84,25 +86,20 @@ public class Admin_Rewards_Tab extends AdminBase{
             System.out.println("Tutorial not encountered");
         }
 
-        //Select 'targeted to group' dropdown
+        //Select challenge dropdown
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")).click();
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Select group from dropdown
+        //Select notify advocates from dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[2]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
     }
-
     @Test
-    public void filter_reward_type(){
-
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com");
+    public void preview_challenge(){
 
         //Admin sign in
 
@@ -110,9 +107,9 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.name("commit")).click();
 
-        //Navigate to Rewards tab
+        //Navigate to Challenges tab
 
-        wd.findElement(By.id("Rewards")).click();
+        wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
@@ -121,7 +118,7 @@ public class Admin_Rewards_Tab extends AdminBase{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Group Tutorial Dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
@@ -129,30 +126,26 @@ public class Admin_Rewards_Tab extends AdminBase{
             System.out.println("Tutorial not encountered");
         }
 
-        //Click on reward type field
+        //Select challenge dropdown
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_autogen8")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
-        //Enter text
-
-        wd.findElement(By.cssSelector("#s2id_autogen8")).sendKeys("All");
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Click on search result
+        //Select preview from dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li/div")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[3]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Close preview
+
+        wd.findElement(By.xpath("//*[@id=\"modal\"]/div[1]/button")).click();
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     @Test
-    public void reward_state_toggles(){
-
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com");
+    public void clone_challenge(){
 
         //Admin sign in
 
@@ -160,9 +153,9 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.name("commit")).click();
 
-        //Navigate to Rewards tab
+        //Navigate to Challenges tab
 
-        wd.findElement(By.id("Rewards")).click();
+        wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
@@ -171,7 +164,7 @@ public class Admin_Rewards_Tab extends AdminBase{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Group Tutorial Dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
@@ -179,39 +172,26 @@ public class Admin_Rewards_Tab extends AdminBase{
             System.out.println("Tutorial not encountered");
         }
 
-        //Select 'Active' toggle
+        //Select challenge dropdown
 
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[1]/div[1]/label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select clone from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[4]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
-        //Deselect 'Active' toggle
-
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[1]/div[1]/label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save clone
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-creator\"]/div[1]/div[2]/input")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
-        //Select 'Unpublished' toggle
-
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[1]/div[2]/label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
-        //Deselect 'Unpublished' toggle
-
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[1]/div[2]/label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
     }
 
     @Test
-    public void reward_redemption_toggle(){
-
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com");
+    public void save_as_template(){
 
         //Admin sign in
 
@@ -219,9 +199,9 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.name("commit")).click();
 
-        //Navigate to Rewards tab
+        //Navigate to Challenges tab
 
-        wd.findElement(By.id("Rewards")).click();
+        wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
@@ -230,7 +210,7 @@ public class Admin_Rewards_Tab extends AdminBase{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Group Tutorial Dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
@@ -238,36 +218,47 @@ public class Admin_Rewards_Tab extends AdminBase{
             System.out.println("Tutorial not encountered");
         }
 
-        //Select 'In Catalog' toggle
+        //Select challenge dropdown
 
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[2]/div[1]/label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select save as template from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[5]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
-        //Deselect 'In Catalog' toggle
-
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[2]/div[1]/label")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Select 'Perk' toggle
+        //Add template title
 
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[2]/div[2]/label")).click();
+        wd.findElement(By.xpath("//*[@id=\"template_attributes.title\"]")).sendKeys("Challenge Temp");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Deselect 'Perk' toggle
+        //Click on template categories
 
-        wd.findElement(By.xpath("//*[@id=\"reward_search\"]/section/section[2]/div[2]/label")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen6\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select category from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Enter template description
+
+        wd.findElement(By.xpath("//*[@id=\"template_attributes.description\"]")).sendKeys("This is a challenge description");
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save template
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-creator\"]/div[2]/div[2]/input")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("wrong"));
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 
     @Test
-    public void edit_reward(){
+    public void publishing_options(){
 
         //Admin sign in
 
@@ -275,9 +266,9 @@ public class Admin_Rewards_Tab extends AdminBase{
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.name("commit")).click();
 
-        //Navigate to Rewards tab
+        //Navigate to Challenges tab
 
-        wd.findElement(By.id("Rewards")).click();
+        wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
@@ -286,7 +277,7 @@ public class Admin_Rewards_Tab extends AdminBase{
         if (exists)
         {
             wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Group Tutorial Dismissed");
+            System.out.println("Challenge Tutorial Dismissed");
         }
         else
         {
@@ -294,23 +285,24 @@ public class Admin_Rewards_Tab extends AdminBase{
             System.out.println("Tutorial not encountered");
         }
 
-        //Click on reward dropdown toggle
+        //Select challenge dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"list_collection\"]/li/div[2]/div/a/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select publishing options from dropdown
+
+        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[7]/a\n")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Edit Reward
+        //Select publish from modal
 
-        wd.findElement(By.xpath("//*[@id=\"list_collection\"]/li/div[2]/div/ul/li[1]/a")).click();
+        wd.findElement(By.xpath("//*[@id=\"visibility_setting_publish\"]")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("wrong"));
-
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
-
-
 
     @After
     public void tearDown() {

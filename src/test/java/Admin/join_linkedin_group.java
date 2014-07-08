@@ -60,7 +60,8 @@ public class join_linkedin_group extends BaseClass{
         wd.findElement(By.id("featured1")).click();
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"stages\"]/div[3]/ol/li[4]")).click();
+        wd.findElement(By.xpath("//img[@alt='Linkedin group join']")).click();
+        //wd.findElement(By.xpath("//*[@id=\"stages\"]/div[3]/ol/li[6]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("entered_url")).click();
         wd.findElement(By.name("entered_url")).clear();
