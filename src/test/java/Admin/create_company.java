@@ -60,29 +60,23 @@ public class create_company extends BaseClass{
 
         wd.findElement(By.linkText("Add a Company")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-<<<<<<< HEAD
 
         //Enter company name into text field
 
-=======
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).click();
         wd.findElement(By.id("company_name")).clear();
-<<<<<<< HEAD
         wd.findElement(By.id("company_name")).sendKeys("june24");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("company_subdomain")).click();
         wd.findElement(By.id("company_subdomain")).clear();
         wd.findElement(By.id("company_subdomain")).sendKeys("june24");
-=======
->>>>>>> FETCH_HEAD
         wd.findElement(By.id("company_name")).sendKeys("july8");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter company subdomain into text field
 
         wd.findElement(By.id("company_subdomain")).sendKeys("july8");
->>>>>>> c1e8ef787d0d0c3e487eb4395bc8486cd64b2266
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
