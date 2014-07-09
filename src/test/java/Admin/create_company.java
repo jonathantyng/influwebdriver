@@ -11,14 +11,13 @@ public class create_company extends BaseClass{
     @Test
     public void create_new_company() {
 
-
+        //Navigate to hub
         wd.get("http://app.influitiveqa.com/users/sign_in");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
+
+        //Sign in as admin
+
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.id("sign-in-button")).click();
 
@@ -37,39 +36,61 @@ public class create_company extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
+        //Click on the admin dropdown (top right corner of screen)
+
         wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/div[1]/ul[1]/li/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select Settings from dropdown
+
         wd.findElement(By.linkText("Settings")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select system from settings list
+
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select Companies from System settings list
+
         wd.findElement(By.linkText("Companies")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select 'Add a company'
+
         wd.findElement(By.linkText("Add a Company")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("company_name")).click();
-        wd.findElement(By.id("company_name")).click();
-        wd.findElement(By.id("company_name")).clear();
+
+        //Enter company name into text field
+
         wd.findElement(By.id("company_name")).sendKeys("july8");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("company_subdomain")).click();
-        wd.findElement(By.id("company_subdomain")).clear();
+
+        //Enter company subdomain into text field
+
         wd.findElement(By.id("company_subdomain")).sendKeys("july8");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
         //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         //wd.findElement(By.linkText("Evangelist")).click();
-        wd.findElement(By.id("company_administrator_email")).click();
-        wd.findElement(By.id("company_administrator_email")).clear();
+
+        //Enter admin email address
+
         wd.findElement(By.id("company_administrator_email")).sendKeys("samanthatester99@yahoo.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("company_administrator_name")).click();
-        wd.findElement(By.id("company_administrator_name")).clear();
+
+        //Enter admin name
+
         wd.findElement(By.id("company_administrator_name")).sendKeys("Samantha Tester");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Set the hub colour to green
+
         wd.findElement(By.linkText("blue")).click();
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[3]/div")).click();
         try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save and create company
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(60000l); } catch (Exception e) { throw new RuntimeException(e); }
 

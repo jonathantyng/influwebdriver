@@ -10,14 +10,15 @@ public class twitter_follow extends BaseClass{
     
     @Test
     public void twitter_follow() {
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
+
+        //Log in as super admin
+
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.id("sign-in-button")).click();
+
+        //Navigate to challenge tab
+
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -35,49 +36,66 @@ public class twitter_follow extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
-        //Add twitter follow challenge
+        //Add new challenge
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("name")).click();
-        wd.findElement(By.name("name")).clear();
+
+        //Enter challenge name
+
         wd.findElement(By.name("name")).sendKeys("Follow on Twitter");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Select Twitter from challenge type dropdown
+
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Twitter");
         wd.findElement(By.className("select2-match")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("headline")).click();
-        wd.findElement(By.name("headline")).clear();
+
+        //Enter headline and description
+
         wd.findElement(By.name("headline")).sendKeys("Follow on Twitter");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("description")).click();
-        wd.findElement(By.name("description")).clear();
         wd.findElement(By.name("description")).sendKeys("Follow on Twitter is amazing. Complete this challenge.");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
-        //wd.findElement(By.xpath("//div[@id='challenge']/section/fieldset[2]/label[2]")).click();
+
+        //Add a stage
+
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //wd.findElement(By.xpath("//*[@id=\"stages\"]/div[3]/ol/li[1]")).click();
+
+        //Select twitter follow stage
+
         wd.findElement(By.xpath("//img[@alt='Twitter follow']")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("screen_name")).click();
-        wd.findElement(By.name("screen_name")).clear();
+
+        //Enter twitter handle
+
         wd.findElement(By.name("screen_name")).sendKeys("pepsi");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Click to load twitter preview
+
         wd.findElement(By.cssSelector("button.load-preview")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("screen_name")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("ui-id-2")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Save challenge
+
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Publish challenge
+
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();

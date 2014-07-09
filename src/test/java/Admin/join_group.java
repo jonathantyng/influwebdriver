@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
 
 public class join_group extends BaseClass{
-    
+
     @Test
     public void join_group() {
         //wd.get("http://may14.influitiveqa.com/users/sign_in");

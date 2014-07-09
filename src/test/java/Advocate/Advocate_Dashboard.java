@@ -78,7 +78,7 @@ public class Advocate_Dashboard extends Advocate{
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[2]/div/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
 
@@ -96,13 +96,13 @@ public class Advocate_Dashboard extends Advocate{
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[4]/p[2]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Close badges modal
 
         wd.findElement(By.xpath("//*[@id=\"modal\"]/div[1]/button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
 
@@ -120,7 +120,7 @@ public class Advocate_Dashboard extends Advocate{
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[1]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
 
@@ -138,7 +138,7 @@ public class Advocate_Dashboard extends Advocate{
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[2]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
     @After

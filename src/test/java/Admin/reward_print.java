@@ -10,14 +10,15 @@ public class reward_print extends BaseClass{
 
     @Test
     public void reward_p() {
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
+
+        //Sign in as super admin
+
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.id("sign-in-button")).click();
+
+        //Navigate to rewards tab
+
         wd.findElement(By.id("Rewards")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -35,30 +36,46 @@ public class reward_print extends BaseClass{
             System.out.println("Tutorial not encountered");
         }
 
+
+        //Add a reward
+
         wd.findElement(By.linkText("Add a reward")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Click on rewards info tab and enter name and description
+
         wd.findElement(By.id("link-headline")).click();
-        wd.findElement(By.id("reward_name")).click();
-        wd.findElement(By.id("reward_name")).click();
-        wd.findElement(By.id("reward_name")).clear();
         wd.findElement(By.id("reward_name")).sendKeys("Printfection Perk");
-        wd.findElement(By.id("reward_description")).click();
-        wd.findElement(By.id("reward_description")).clear();
         wd.findElement(By.id("reward_description")).sendKeys("This is a perk from printfection");
+
+        //Choose reward type
+
         wd.findElement(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Swag");
         wd.findElement(By.cssSelector("div.select2-result-label")).click();
+
+        //Make reward perkable
+
         wd.findElement(By.id("link-redeeming")).click();
         wd.findElement(By.id("awardable")).click();
         wd.findElement(By.id("reward_settings_rule_type_none")).click();
+
+        //Select printfection from fulfillment tab
+
         wd.findElement(By.id("link-fulfillment")).click();
         wd.findElement(By.id("reward_kind_redemptionlink")).click();
-        wd.findElement(By.id("reward_redemption_links")).click();
-        wd.findElement(By.id("reward_redemption_links")).clear();
+
+        //Enter redemtion link
+
         wd.findElement(By.id("reward_redemption_links")).sendKeys("http://www.pepsi.com");
+
+        //Save reward
+
         wd.findElement(By.id("save-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Publish reward
+
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();

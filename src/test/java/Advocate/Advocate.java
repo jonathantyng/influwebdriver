@@ -2,6 +2,7 @@ package Advocate;
 
 
 import org.junit.Before;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -18,6 +19,8 @@ public class Advocate {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://advocatetest.influitives.com");
+
+        wd.manage().window().setSize(new Dimension(1400,1400));
 
     }
 }

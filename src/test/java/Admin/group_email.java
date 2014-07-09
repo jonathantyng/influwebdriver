@@ -10,17 +10,18 @@ public class group_email extends BaseClass{
 
     @Test
     public void create_group_email () {
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
+
+        //Log in as super admin
+
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Navigate to the groups tab
+
         wd.findElement(By.id("Groups")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -40,15 +41,15 @@ public class group_email extends BaseClass{
 
         //Add Test Group
 
-
-        wd.findElement(By.id("Groups")).click();
         wd.findElement(By.linkText("Add a group")).click();
-        wd.findElement(By.id("group_name")).click();
-        wd.findElement(By.id("group_name")).clear();
+
+        //Enter name and decription
+
         wd.findElement(By.id("group_name")).sendKeys("Employee Group");
-        wd.findElement(By.id("group_description")).click();
-        wd.findElement(By.id("group_description")).clear();
         wd.findElement(By.id("group_description")).sendKeys("This is a Admin group for employees with employee email addresses!");
+
+        //Select membership rules tab
+
         wd.findElement(By.id("link-membership-rules")).click();
         wd.findElement(By.linkText("Add new criteria...")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

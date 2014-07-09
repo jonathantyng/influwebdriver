@@ -15,12 +15,8 @@ public class sfdc_reference extends BaseClass{
         wd.get("http://developer.force.com/");
         wd.findElement(By.linkText("DE LOGIN")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("username")).click();
-        wd.findElement(By.id("username")).clear();
         wd.findElement(By.id("username")).sendKeys("patrick@influitive.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("password")).click();
-        wd.findElement(By.id("password")).clear();
         wd.findElement(By.id("password")).sendKeys("1nflu1t1v3");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("Login")).click();
