@@ -57,9 +57,13 @@ public class multi_stage extends BaseClass{
 
         //Enter challenge headline and description
 
-        wd.findElement(By.name("headline")).sendKeys("Multi-Stage Challenge");
+        wd.findElement(By.name("headline")).sendKeys("THIS WEEK ONLY! A super bonus that is yours for the taking!");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("description")).sendKeys("Multi-Stage Challenge is amazing. Complete this challenge.");
+        wd.findElement(By.name("description")).sendKeys("![limo](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxAKcZWzfSVrn4CHqko80w9fOGmmjtmOVYOJO3e3mYQDGMRhWV)\n" +
+                "\n" +
+                "We have some hot new rewards for July and we want you to get a head start in redeeming them! Just think, a limo ride from the airport could be yours with these bonus points.\n" +
+                "\n" +
+                "Click next for more information.");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Feature challenge and enable multiple completions

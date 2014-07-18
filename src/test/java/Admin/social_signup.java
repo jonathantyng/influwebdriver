@@ -10,7 +10,7 @@ public class social_signup extends BaseClass{
     @Test
     public void email_password_signup() {
 
-        wd.get("http://july2.influitiveqa.com/join/test");
+        wd.get("http://july17.influitiveqa.com/join/test");
         /*
         //Enter join code
 
@@ -42,7 +42,7 @@ public class social_signup extends BaseClass{
         @Test
         public void linkedin_singup (){
 
-            wd.get("http://july2.influitiveqa.com/join/test");
+            wd.get("http://july17.influitiveqa.com/join/test");
 
             //Enter join code
         /*
@@ -66,13 +66,18 @@ public class social_signup extends BaseClass{
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-    }
+        //Click Create Account
+
+        wd.findElement(By.xpath("//*[@id=\"new_registration\"]/input")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        }
 
     @Test
     public void facebook_signup(){
 
 
-        wd.get("http://july2.influitiveqa.com/join/test");
+        wd.get("http://july17.influitiveqa.com/join/test");
 
         /*
         //Enter join code
@@ -89,7 +94,7 @@ public class social_signup extends BaseClass{
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        wd.findElement(By.id("email")).sendKeys("advocate_john@yahoo.com");
+        wd.findElement(By.id("email")).sendKeys("alice.advocate@gmail.com");
         wd.findElement(By.id("pass")).click();
         wd.findElement(By.id("pass")).clear();
         wd.findElement(By.id("pass")).sendKeys("macbook18");
@@ -101,6 +106,10 @@ public class social_signup extends BaseClass{
 
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        //Click Create Account
+
+        wd.findElement(By.xpath("//*[@id=\"new_registration\"]/input")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
     @Test

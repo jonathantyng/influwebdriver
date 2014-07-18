@@ -1,11 +1,16 @@
 package Admin;
 
 import junit.framework.Assert;
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by patrickpriestley on 2014-05-02...
@@ -470,7 +475,7 @@ public class Admin_Challenges_Tab extends AdminBase{
     }
 
     @Test
-    public void challenge_sorting(){
+    public void challenge_sorting() throws IOException {
 
         //Navigate to hub
 
@@ -546,9 +551,19 @@ public class Admin_Challenges_Tab extends AdminBase{
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
+
     }
+
     @After
     public void tearDown() {
+
+            File screenshot = wd.getScreenshotAs(OutputType.FILE);
+            try {
+                FileUtils.copyFile(screenshot, new File("/Users/patrickprestley/Desktop/new/test"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         wd.quit();
     }
 

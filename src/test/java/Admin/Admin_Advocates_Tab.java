@@ -243,7 +243,7 @@ public class Admin_Advocates_Tab extends AdminBase {
         //Import -- click on import button
 
         wd.findElement(By.xpath("//*[@id=\"new_advocate_csv_importer\"]/div[3]/input")).click();
-        Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("Error"));
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }

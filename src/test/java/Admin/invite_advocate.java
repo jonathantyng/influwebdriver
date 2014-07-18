@@ -73,7 +73,7 @@ public class invite_advocate extends BaseClass{
             throw new RuntimeException(e);
         }
 
-        wd.findElement(By.id("send-invites-btn")).click();
+        wd.findElement(By.id("send-invites")).click();
 
         try {
             Thread.sleep(3000l);
@@ -144,7 +144,7 @@ public class invite_advocate extends BaseClass{
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        wd.findElement(By.id("send-invites-btn")).click();
+        wd.findElement(By.id("send-invites")).click();
         try {
             Thread.sleep(3000l);
         } catch (Exception e) {
@@ -198,7 +198,7 @@ public class invite_advocate extends BaseClass{
         wd.findElement(By.cssSelector("div.name")).click();
         wd.findElement(By.cssSelector("input.pull-right.highlighted")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("send-invites-btn")).click();
+        wd.findElement(By.id("send-invites")).click();
     }
     
     @After

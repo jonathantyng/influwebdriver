@@ -9,7 +9,7 @@ import org.openqa.selenium.*;
 public class group_email extends BaseClass{
 
     @Test
-    public void create_group_email () {
+    public void create_group_email ()  {
 
         //Log in as super admin
 
