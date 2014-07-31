@@ -36,6 +36,7 @@ public class create_company extends BaseClass{
             System.out.println("Challenge Tutorial Dismissed");
         }
         else
+
         {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"header-bar\"]/div[1]/div/div/ul[1]/li/a")));
             System.out.println("Tutorial not encountered");
@@ -73,13 +74,13 @@ public class create_company extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_name")));
 
-        wd.findElement(By.id("company_name")).sendKeys("sanityjuly31");
+        wd.findElement(By.id("company_name")).sendKeys("princessland");
 
         //Enter company subdomain into text field
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_subdomain")));
 
-        wd.findElement(By.id("company_subdomain")).sendKeys("sanityjuly31");
+        wd.findElement(By.id("company_subdomain")).sendKeys("princessland");
 
         //Enter admin email address
 
@@ -105,7 +106,7 @@ public class create_company extends BaseClass{
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
 
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(60000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 

@@ -55,7 +55,7 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         //Close invite nominee modal
 
-        wd.findElement(By.cssSelector("#modal > div.modal-header > button")).click();
+        wd.findElement(By.cssSelector("#modal > div.modal-header-bar > button")).click();
 
     }
 

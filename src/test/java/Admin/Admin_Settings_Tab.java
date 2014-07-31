@@ -14,7 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 public class Admin_Settings_Tab extends AdminBase{
 
 
-    String settings_tab = "//*[@id=\"header\"]/div/div/div[1]/ul[1]/li/a";
+    String settings_tab = "//*[@id=\"header-bar\"]/div/div/div[1]/ul[1]/li/a";
 
     @Test
     public void settings_program_name(){

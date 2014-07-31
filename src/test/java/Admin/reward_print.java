@@ -42,7 +42,7 @@ public class reward_print extends BaseClass{
 
 
         //Add a reward
-
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a reward")).click();
 
         //Click on rewards info tab and enter name and description
