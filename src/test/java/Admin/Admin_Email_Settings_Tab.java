@@ -6,6 +6,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Created by patrickpriestley on 2014-05-08.
@@ -17,6 +19,8 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
     @Test
     public void general_email_settings(){
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Navigate to hub
 
@@ -31,13 +35,14 @@ public class Admin_Email_Settings_Tab extends AdminBase{
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Settings")));
         wd.findElement(By.linkText("Settings")).click();
 
         //Navigate to 'General' settings
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")));
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"collapse-me2\"]/li[1]/a")));
         wd.findElement(By.xpath("//*[@id=\"collapse-me2\"]/li[1]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -52,9 +57,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
     @Test
     public void welcome_email_settings(){
 
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Admin sign in
 
@@ -70,6 +73,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Navigate to 'welcome email' settings
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("Settings")));
         wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[3]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Welcome Email")).click();
