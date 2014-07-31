@@ -29,8 +29,13 @@ public class Admin_Dashboard extends AdminBase {
 
         //Click 'Add a Goal'
 
+<<<<<<< HEAD
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"admin-goals\"]/header/div/a")));
         wd.findElement(By.xpath("//*[@id=\"admin-goals\"]/header/div/a")).click();
+=======
+        wd.findElement(By.xpath("//*[@id=\"admin-goals\"]/header-bar/div/a")).click();
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
+>>>>>>> FETCH_HEAD
 
         //Expand dropdown
 
