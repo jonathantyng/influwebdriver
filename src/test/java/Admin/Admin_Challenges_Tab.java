@@ -1,15 +1,14 @@
 package Admin;
 
 import junit.framework.Assert;
-import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
 import java.io.IOException;
 
 /**
@@ -20,6 +19,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
     @Test
     public void challenge_search(){
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Navigate to hub
 
@@ -33,6 +34,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -46,7 +48,7 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("search_name_or_headline_contains")));
             System.out.println("Tutorial not encountered");
         }
 
@@ -63,6 +65,8 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void challenges_targeted_groups(){
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
 
         //wd.get("http://advocatetest.influitives.com");
@@ -75,6 +79,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -88,18 +93,17 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")));
             System.out.println("Tutorial not encountered");
         }
 
         //Select 'targeted to group' dropdown
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select group from dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]")));
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
@@ -108,6 +112,8 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void select_challenge_type(){
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
 
         //wd.get("http://advocatetest.influitives.com");
@@ -120,6 +126,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -133,25 +140,23 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen9")));
             System.out.println("Tutorial not encountered");
         }
 
         //Click on challenge type dropdown
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_autogen9")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Search for Survey from challenge type dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen9")));
         wd.findElement(By.cssSelector("#s2id_autogen9")).sendKeys("Survey");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on survey type
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#select2-drop > ul > li > div > span")));
         wd.findElement(By.cssSelector("#select2-drop > ul > li > div > span")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Assert no error appears
 
@@ -163,6 +168,8 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void select_challenge_creator(){
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
 
         //wd.get("http://advocatetest.influitives.com");
@@ -175,6 +182,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -188,25 +196,23 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen10")));
             System.out.println("Tutorial not encountered");
         }
 
         //Click on challenge creator field
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_autogen10")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter text into search field
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen10")));
         wd.findElement(By.cssSelector("#s2id_autogen10")).sendKeys("All");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 'All' from dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")));
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Assert that no error has occurred
 
@@ -219,6 +225,8 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void challenge_state_toggles(){
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
 
         //wd.get("http://advocatetest.influitives.com");
@@ -231,6 +239,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -244,45 +253,43 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(2) > label")));
             System.out.println("Tutorial not encountered");
         }
 
         //Deselect Active toggle
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(2) > label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Active toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(2) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(2) > label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Unpublished toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(3) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(3) > label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Unpublished toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(3) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(3) > label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Archived toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(4) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(4) > label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Archived toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(4) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(4) > label")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
@@ -290,6 +297,8 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void challenge_expiry_toggle(){
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
 
         //wd.get("http://advocatetest.influitives.com");
@@ -302,6 +311,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -315,42 +325,42 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(2) > label")));
             System.out.println("Tutorial not encountered");
         }
 
         //Select 'This Week' toggle
 
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(2) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect 'This Week' toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(2) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(2) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 'Next Week' toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(3) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(3) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect 'Next Week' toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(3) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(3) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 'Overdue' toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect 'Overdue' toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -360,6 +370,8 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void challenge_channel_toggle(){
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
 
         //wd.get("http://advocatetest.influitives.com");
@@ -372,6 +384,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -385,7 +398,7 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(2) > label")));
             System.out.println("Tutorial not encountered");
         }
 
@@ -397,30 +410,31 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Deselect AdvocateAnywhere toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(2) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(2) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select AdvocateHub toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect AdvocateAnywhere toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Maven toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Maven toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -430,10 +444,7 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void challenge_other_toggle(){
 
-
-        //Navigate to hub
-
-        //wd.get(baseUrl);
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Admin sign in
 
@@ -443,6 +454,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -456,18 +468,18 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(5) > div > label")));
             System.out.println("Tutorial not encountered");
         }
 
         //Select Featured toggle
 
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(5) > div > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Featured toggle
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(5) > div > label")));
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(5) > div > label"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
@@ -477,9 +489,7 @@ public class Admin_Challenges_Tab extends AdminBase{
     @Test
     public void challenge_sorting() throws IOException {
 
-        //Navigate to hub
-
-        //wd.get("http://advocatetest.influitives.com");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Admin sign in
 
@@ -489,6 +499,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to Challenges tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
@@ -502,53 +513,52 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_sort_order")));
             System.out.println("Tutorial not encountered");
         }
 
         //Click on sort order dropdown
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_sort_order")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select 'Completed Count' from dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]/div")));
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]/div")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Click on sort order dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")));
         wd.findElement(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select 'Dismissed Count'
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Dismissed Count")));
         wd.findElement(By.linkText("Dismissed Count")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Click on sort dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")));
         wd.findElement(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Active Count
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Active Count")));
         wd.findElement(By.linkText("Active Count")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select sort dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")));
         wd.findElement(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select 'Alphabetical'
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Alphabetical")));
         wd.findElement(By.linkText("Alphabetical")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
 
@@ -557,12 +567,12 @@ public class Admin_Challenges_Tab extends AdminBase{
     @After
     public void tearDown() {
 
-            File screenshot = wd.getScreenshotAs(OutputType.FILE);
-            try {
-                FileUtils.copyFile(screenshot, new File("/Users/patrickprestley/Desktop/new/test"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            //File screenshot = wd.getScreenshotAs(OutputType.FILE);
+            //try {
+               // FileUtils.copyFile(screenshot, new File("/Users/patrickprestley/Desktop/new/test"));
+            //} catch (IOException e) {
+                //e.printStackTrace();
+            //}
 
         wd.quit();
     }

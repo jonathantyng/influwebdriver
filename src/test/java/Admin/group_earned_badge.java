@@ -3,20 +3,21 @@ package Admin;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class group_earned_badge extends BaseClass{
 
     @Test
     public void group_badge () {
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Log in as super admin
 
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Navigate to the groups tab
 
@@ -33,13 +34,12 @@ public class group_earned_badge extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.name("Add a group")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add Test Group
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a group")).click();
 
         //Enter group name and description
@@ -54,14 +54,14 @@ public class group_earned_badge extends BaseClass{
         //Select behaviour from includes criteria
 
         wd.findElement(By.linkText("Behaviour")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on the secondary dropdown and select social cookie
 
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen19\"]/ul/li")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen19\"]/ul/li")).sendKeys("Social Cookie");
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"s2id_autogen14\"]/ul/li")));
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen14\"]/ul/li")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"s2id_autogen14\"]/ul/li")));
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen14\"]/ul/li")).sendKeys("Social Cookie");
+        wd.findElement(By.xpath("select2-match"));
         wd.findElement(By.className("select2-match")).click();
 
         //Save group

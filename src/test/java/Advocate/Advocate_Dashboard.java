@@ -60,8 +60,6 @@ public class Advocate_Dashboard extends Advocate{
 
         //
 
-
-
     }
 
     @Test

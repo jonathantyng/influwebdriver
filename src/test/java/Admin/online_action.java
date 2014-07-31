@@ -5,11 +5,15 @@ import org.junit.Test;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class online_action extends BaseClass{
     
     @Test
     public void online_action() {
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Log in as super admin
 
@@ -32,70 +36,73 @@ public class online_action extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add new challenge
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Start With Blank Challenge")));
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
 
         //Enter challenge name
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("name")));
         wd.findElement(By.name("name")).sendKeys("Online Action and Share");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select social media from challenge type dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")));
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.select2-input.select2-focused")));
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Social Media");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("select2-match")));
         wd.findElement(By.className("select2-match")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter challenge headline and description
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("headline")));
         wd.findElement(By.name("headline")).sendKeys("Online Action and Share");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("description")));
         wd.findElement(By.name("description")).sendKeys("Online Action and Share is amazing. Complete this challenge.");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("label.input.checkbox")));
         wd.findElement(By.cssSelector("label.input.checkbox")).click();
 
         //Add a new stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("add-stage")));
         wd.findElement(By.id("add-stage")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select online action stage type
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='Online action']")));
         wd.findElement(By.xpath("//img[@alt='Online action']")).click();
-        //wd.findElement(By.xpath("//*[@id=\"stages\"]/div[5]/ol/li[2]")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter URL
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("params.url")));
         wd.findElement(By.name("params.url")).sendKeys("http://mashable.com/2013/04/09/no-nose-gifs/");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Load embedly preview
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Load")));
         wd.findElement(By.linkText("Load")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-2")));
         wd.findElement(By.id("ui-id-2")).click();
 
         //Save challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@name='commit'])[2]")));
         wd.findElement(By.xpath("(//input[@name='commit'])[2]")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
     
     @After

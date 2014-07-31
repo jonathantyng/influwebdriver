@@ -4,13 +4,17 @@ import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class social_signup extends BaseClass{
     
     @Test
     public void email_password_signup() {
 
-        wd.get("http://july17.influitiveqa.com/join/test");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
+        wd.get("http://sanityjuly31.influitiveqa.com/join/test");
         /*
         //Enter join code
 
@@ -25,24 +29,20 @@ public class social_signup extends BaseClass{
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
         wd.findElement(By.id("registration_contact_name")).sendKeys("Bob Advocate");
         wd.findElement(By.id("registration_user_password")).sendKeys("macbook18");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
 
         //Check for errors
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        try {
-            Thread.sleep(3000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
-
         @Test
         public void linkedin_singup (){
 
-            wd.get("http://july17.influitiveqa.com/join/test");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
+        wd.get("http://sanityjuly31.influitiveqa.com/join/test");
 
             //Enter join code
         /*
@@ -68,16 +68,17 @@ public class social_signup extends BaseClass{
 
         //Click Create Account
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"new_registration\"]/input")));
         wd.findElement(By.xpath("//*[@id=\"new_registration\"]/input")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         }
 
     @Test
     public void facebook_signup(){
 
-
-        wd.get("http://july17.influitiveqa.com/join/test");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+        wd.get("http://sanityjuly31.influitiveqa.com/join/test");
 
         /*
         //Enter join code
@@ -104,27 +105,17 @@ public class social_signup extends BaseClass{
         //Check for errors
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Click Create Account
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"new_registration\"]/input")));
         wd.findElement(By.xpath("//*[@id=\"new_registration\"]/input")).click();
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
-
+    /*
     @Test
     public void customdomain_email_password_signup() {
 
         wd.get("http://lindsay.codesharks.ca/join/sanity");
-        /*
-        //Enter join code
-
-        wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"group_token\"]")).sendKeys("Test");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("commit")).click();
-        */
         //Enter user information
 
         wd.findElement(By.id("registration_user_email")).sendKeys("advocatebob7+test45@gmail.com");
@@ -149,15 +140,6 @@ public class social_signup extends BaseClass{
 
         wd.get("http://lindsay.codesharks.ca/join/sanity");
 
-        //Enter join code
-        /*
-        wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"group_token\"]")).sendKeys("Test");
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-
-        wd.findElement(By.name("commit")).click();
-        */
 
         //Enter user information
 
@@ -179,16 +161,6 @@ public class social_signup extends BaseClass{
 
         wd.get("http://lindsay.codesharks.ca/join/sanity");
 
-        /*
-        //Enter join code
-
-        wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.xpath("//*[@id=\"group_token\"]")).sendKeys("Test");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("commit")).click();
-        */
-
         //Enter user information
 
         wd.findElement(By.cssSelector("img[alt=\"Facebook\"]")).click();
@@ -207,7 +179,7 @@ public class social_signup extends BaseClass{
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
-
+    */
 
     @After
     public void tearDown() {

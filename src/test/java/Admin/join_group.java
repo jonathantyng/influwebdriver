@@ -5,12 +5,14 @@ import org.junit.Test;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class join_group extends BaseClass{
 
     @Test
     public void join_group() {
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
 
@@ -18,11 +20,7 @@ public class join_group extends BaseClass{
 
         if (signin)
         {
-            wd.findElement(By.id("user_email")).click();
-            wd.findElement(By.id("user_email")).clear();
             wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-            wd.findElement(By.id("user_password")).click();
-            wd.findElement(By.id("user_password")).clear();
             wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
             wd.findElement(By.id("sign-in-button")).click();
             System.out.println("Sign in complete");
@@ -32,7 +30,7 @@ public class join_group extends BaseClass{
         else
         {
             System.out.println("Found cookie");
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
             wd.findElement(By.id("Challenges")).click();
         }
 
@@ -47,33 +45,19 @@ public class join_group extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
             System.out.println("Tutorial not encountered");
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
         }
 
         //Add join group challenge
 
         wd.findElement(By.linkText("Add a challenge")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Start With Blank Challenge")));
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.name("name")).click();
-        wd.findElement(By.name("name")).clear();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("name")));
         wd.findElement(By.name("name")).sendKeys("Join Group");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        /*
-        wd.findElement(By.linkText("Add...")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("challenge_type_name")).click();
-        wd.findElement(By.id("challenge_type_name")).click();
-        wd.findElement(By.id("challenge_type_name")).clear();
-        wd.findElement(By.id("challenge_type_name")).sendKeys("Join Group");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#new_challenge_type > input[name=\"commit\"]")).click();
-        wd.findElement(By.cssSelector("button.close")).click();
-        */
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();

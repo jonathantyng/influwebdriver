@@ -1,17 +1,20 @@
 package Admin;
 
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class corporate_confirm extends BaseClass{
 
 
     @Test
     public void corporateconfirm() {
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Log in as admin
 
@@ -34,7 +37,7 @@ public class corporate_confirm extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
             System.out.println("Tutorial not encountered");
         }
 
@@ -46,18 +49,16 @@ public class corporate_confirm extends BaseClass{
         //Enter the challenge name and description
 
         wd.findElement(By.name("name")).sendKeys("Two Corporate Confirmations");
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("headline")).sendKeys("Two Corporate Confirmations");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("description")).sendKeys("Two Corporate Confirmations. Testing approving advocates in different stages of a challenge.");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select challenge type from dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")));
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.select2-input.select2-focused")));
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Survey");
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("select2-match")));
         wd.findElement(By.className("select2-match")).click();
 
         //Feature challenge toggle
@@ -67,69 +68,72 @@ public class corporate_confirm extends BaseClass{
         //Add a new stage
 
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select the survey challenge type
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='Questions']")));
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter survey question
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("subject")));
         wd.findElement(By.name("subject")).sendKeys("The first question.");
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enable public responses
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("public")));
         wd.findElement(By.name("public")).click();
 
         //Add a stage
 
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select corporate confirmation stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='Corporate_confirmation']")));
         wd.findElement(By.xpath("//img[@alt='Corporate_confirmation']")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add a stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#add-stage > img.icon")));
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add another survey stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='Questions']")));
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter second survey question
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#c44 > label > input[name=\"subject\"]")));
         wd.findElement(By.cssSelector("#c44 > label > input[name=\"subject\"]")).sendKeys("The second question");
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add a stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#add-stage > img.icon")));
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Add a corporate confirmation stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='Corporate_confirmation']")));
         wd.findElement(By.xpath("//img[@alt='Corporate_confirmation']")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-2")));
         wd.findElement(By.id("ui-id-2")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Save challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
+
 
     }
 

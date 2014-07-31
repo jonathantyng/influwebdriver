@@ -5,17 +5,22 @@ import org.junit.Test;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class create_company extends BaseClass{
 
     @Test
     public void create_new_company() {
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Navigate to hub
         wd.get("http://app.influitiveqa.com/users/sign_in");
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Sign in as admin
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("user_email")));
 
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
@@ -32,67 +37,75 @@ public class create_company extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"header-bar\"]/div[1]/div/div/ul[1]/li/a")));
             System.out.println("Tutorial not encountered");
         }
 
         //Click on the admin dropdown (top right corner of screen)
 
-        wd.findElement(By.xpath("//*[@id=\"header\"]/div/div/div[1]/ul[1]/li/a")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"header-bar\"]/div[1]/div/div/ul[1]/li/a")).click();
 
         //Select Settings from dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Settings")));
+
         wd.findElement(By.linkText("Settings")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select system from settings list
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='accordion']/li[4]/h4")));
+
         wd.findElement(By.xpath("//ul[@id='accordion']/li[4]/h4")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select Companies from System settings list
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Companies")));
+
         wd.findElement(By.linkText("Companies")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select 'Add a company'
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a Company")));
+
         wd.findElement(By.linkText("Add a Company")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter company name into text field
 
-        wd.findElement(By.id("company_name")).sendKeys("july17");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_name")));
+
+        wd.findElement(By.id("company_name")).sendKeys("sanityjuly31");
 
         //Enter company subdomain into text field
 
-        wd.findElement(By.id("company_subdomain")).sendKeys("july17");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //wd.findElement(By.linkText("Evangelist")).click();
-        //try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //wd.findElement(By.linkText("Evangelist")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_subdomain")));
+
+        wd.findElement(By.id("company_subdomain")).sendKeys("sanityjuly31");
 
         //Enter admin email address
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_administrator_email")));
+
         wd.findElement(By.id("company_administrator_email")).sendKeys("samanthatester99@yahoo.com");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter admin name
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_administrator_name")));
+
         wd.findElement(By.id("company_administrator_name")).sendKeys("Samantha Tester");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Set the hub colour to green
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("blue")));
+
         wd.findElement(By.linkText("blue")).click();
         wd.findElement(By.xpath("//div[@id='select2-drop']/ul/li[3]/div")).click();
-        try { Thread.sleep(4000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Save and create company
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
+
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(60000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(30000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 

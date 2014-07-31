@@ -4,12 +4,16 @@ import org.junit.*;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class nps extends BaseClass{
 
 
     @Test
     public void nps() {
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Sign in as super admin
 
@@ -32,63 +36,70 @@ public class nps extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add new challenge
 
         wd.findElement(By.linkText("Add a challenge")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Start With Blank Challenge")));
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
 
         //Enter challenge name
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("name")));
         wd.findElement(By.name("name")).sendKeys("NPS Survey Challenge");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select survey from challenge type dropdown
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")));
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("input.select2-input.select2-focused")));
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Survey");
         wd.findElement(By.className("select2-match")).click();
 
         //Enter challenge headline and desciption
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("headline")));
         wd.findElement(By.name("headline")).sendKeys("NPS Survey Challenge");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("description")));
         wd.findElement(By.name("description")).sendKeys("NPS Survey Challenge");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Feature the challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("featured1")));
         wd.findElement(By.id("featured1")).click();
 
         //Add a new stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#add-stage > img.icon")));
         wd.findElement(By.cssSelector("#add-stage > img.icon")).click();
 
         //Select the NPS stage type
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='Nps']")));
         wd.findElement(By.xpath("//img[@alt='Nps']")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter custom button text
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("instructions")));
         wd.findElement(By.name("instructions")).sendKeys("Do it!");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-2")));
         wd.findElement(By.id("ui-id-2")).click();
 
         //Save challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
     
     @After

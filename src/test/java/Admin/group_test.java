@@ -4,20 +4,21 @@ import org.junit.After;
 import org.junit.Test;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class group_test extends BaseClass{
 
     @Test
     public void group_tests () {
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Log in as super admin
 
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Navigate to groups tab
 
@@ -34,13 +35,12 @@ public class group_test extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a group")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add Test Group
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a group")).click();
 
         //Enter name and description

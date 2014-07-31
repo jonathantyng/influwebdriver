@@ -11,27 +11,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Admin_Dashboard extends AdminBase {
-    /*
-    @Test
-    public void admin_goal_learnmore() {
-
-        //Navigate to hub
-
-        wd.get("http://advocatetest.influitives.com");
-
-        //Click on 'Learn More'
-
-        wd.findElement(By.linkText("Learn more")).click();
-        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
-
-        //Verify URL
-
-
-    }
-    */
 
     @Test
     public void add_a_system_goal() {
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Navigate to hub
 

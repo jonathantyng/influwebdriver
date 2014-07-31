@@ -4,11 +4,15 @@ import org.junit.After;
 import org.junit.Test;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class reward_duffelbag extends BaseClass{
 
     @Test
     public void reward_duffel() {
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Log in as super admin
 
@@ -31,14 +35,13 @@ public class reward_duffelbag extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a reward")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add a new reward
 
         wd.findElement(By.linkText("Add a reward")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Navigate to reward info tab and enter name and descriptiom
 
@@ -48,32 +51,35 @@ public class reward_duffelbag extends BaseClass{
 
         //Select reward type
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")));
         wd.findElement(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Swag");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.select2-result-label")));
         wd.findElement(By.cssSelector("div.select2-result-label")).click();
 
         //Award as perk
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("link-redeeming")));
         wd.findElement(By.id("link-redeeming")).click();
         wd.findElement(By.id("awardable")).click();
 
         //Award if advocate completes the follow on twitter challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_reward_settings_challenge_id > a.select2-choice > span")));
         wd.findElement(By.cssSelector("#s2id_reward_settings_challenge_id > a.select2-choice > span")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-drop\"]/div/input")));
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/div/input")).sendKeys("Follow on Twitter");
         wd.findElement(By.className("select2-match")).click();
 
         //Save reward
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("save-button")));
         wd.findElement(By.id("save-button")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish reward
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
     }
 

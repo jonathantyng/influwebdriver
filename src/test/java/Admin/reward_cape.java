@@ -3,11 +3,15 @@ package Admin;
 import org.junit.Test;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class reward_cape extends BaseClass{
 
     @Test
     public void cape() {
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Log in as super admin
 
@@ -30,58 +34,54 @@ public class reward_cape extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a reward")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add a new reward
 
         wd.findElement(By.linkText("Add a reward")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //View reward info tab and enter name and description
         wd.findElement(By.id("link-headline")).click();
         wd.findElement(By.id("reward_name")).sendKeys("Cape");
         wd.findElement(By.id("reward_description")).sendKeys("This is a great Cape!");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select reward type
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")));
         wd.findElement(By.cssSelector("#s2id_reward_reward_type_id > a.select2-choice")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
-        //wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Swag");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.select2-result-label")));
         wd.findElement(By.cssSelector("div.select2-result-label")).click();
 
         //Select redeeming tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("link-redeeming")));
         wd.findElement(By.id("link-redeeming")).click();
 
         //Choose perk settings
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("awardable")));
         wd.findElement(By.id("awardable")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Award if user completes the join linkedin group challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_reward_settings_challenge_id > a.select2-choice > span.select2-chosen")));
         wd.findElement(By.cssSelector("#s2id_reward_settings_challenge_id > a.select2-choice > span.select2-chosen")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#select2-drop > div.select2-search > input.select2-input.select2-focused")));
         wd.findElement(By.cssSelector("#select2-drop > div.select2-search > input.select2-input.select2-focused")).sendKeys("Join a LinkedIn Group");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.select2-result-label")));
         wd.findElement(By.cssSelector("div.select2-result-label")).click();
-        /*
-        wd.findElement(By.id("reward_settings_challenge_times")).click();
-        wd.findElement(By.id("reward_settings_challenge_times")).clear();
-        wd.findElement(By.id("reward_settings_challenge_times")).sendKeys("3");
-
-        */
 
         //Save reward
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("save-button")));
         wd.findElement(By.id("save-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish reward
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
     }
     /*

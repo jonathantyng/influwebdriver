@@ -15,7 +15,7 @@ import org.junit.runners.Suite;
 
     @RunWith(Suite.class)
 
-    @Suite.SuiteClasses({CompanyCreation_Suite.class, ChallengeCreation_Suite.class, CompanyCreationPartTwo.class, Admin_Suite.class})
+    @Suite.SuiteClasses({CompanyCreation_Suite.class, ChallengeCreation_Suite.class, CompanyCreationPartTwo.class})
 
     public class Sanity_Test {
 

@@ -5,21 +5,24 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class appexchangechallenge extends BaseClass{
 
     @Test
     public void appexchangechallenge() {
 
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+
         //Sign into app and access challenge screen
 
         //wd.get("http://may14.influitiveqa.com/users/sign_in");
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("user_password")));
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sign-in-button")));
         wd.findElement(By.id("sign-in-button")).click();
         wd.findElement(By.id("Challenges")).click();
 
@@ -34,22 +37,21 @@ public class appexchangechallenge extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add a challenge
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
 
         //Create from scratch
 
         wd.findElement(By.id("create-new-challenge")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select challenge type dropdown and select 'Testimonial'
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")));
         wd.findElement(By.cssSelector("#s2id_challenge_type_id0 > a.select2-choice > span")).click();
         wd.findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys("Testimonial");
         wd.findElement(By.className("select2-match")).click();
@@ -57,24 +59,21 @@ public class appexchangechallenge extends BaseClass{
         //Select allow multiple responses
 
         wd.findElement(By.id("allow_multiple_response2")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter challenge name and description
 
         wd.findElement(By.name("name")).sendKeys("AppExchange Review");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("headline")).sendKeys("AppExchange Review");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("description")).sendKeys("AppExchange Review");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select new stage
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("img.icon")));
         wd.findElement(By.cssSelector("img.icon")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Choose appexchange challenge type
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@alt='App exchange']")));
         //wd.findElement(By.xpath("//*[@id=\"stages\"]/div[4]/ol/li[3]")).click();
         wd.findElement(By.xpath("//img[@alt='App exchange']")).click();
 
@@ -83,10 +82,10 @@ public class appexchangechallenge extends BaseClass{
         wd.findElement(By.name("params.url")).click();
         wd.findElement(By.name("params.url")).sendKeys("https://appexchange.salesforce.com/listingDetail?listingId=a0N300000016YDkEAM");
         //wd.findElement(By.linkText("Load")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Navigate back to the main tab
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-2")));
         wd.findElement(By.id("ui-id-2")).click();
 
         /*
@@ -100,20 +99,21 @@ public class appexchangechallenge extends BaseClass{
         wd.findElement(By.className("select2-match")).click();
 
         */
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-1")));
         wd.findElement(By.id("ui-id-1")).click();
 
         //Save challenge
 
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish Challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 

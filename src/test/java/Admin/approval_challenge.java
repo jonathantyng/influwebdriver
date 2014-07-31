@@ -5,12 +5,15 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class approval_challenge extends BaseClass{
 
     @Test
     public void approval_challenge_creation() {
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
+
+        WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Sign in as admin
 
@@ -33,13 +36,12 @@ public class approval_challenge extends BaseClass{
         }
         else
         {
-            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
             System.out.println("Tutorial not encountered");
         }
 
         //Add Challenge
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.linkText("Add a challenge")).click();
 
         //Start with blank challenge
@@ -69,10 +71,10 @@ public class approval_challenge extends BaseClass{
         //Select the survey challenge stage
 
         wd.findElement(By.xpath("//img[@alt='Questions']")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter question
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("subject")));
         wd.findElement(By.name("subject")).sendKeys("The first question issss??");
 
         //Add another question stage
@@ -82,7 +84,8 @@ public class approval_challenge extends BaseClass{
 
         //Enter second question
 
-        wd.findElement(By.xpath("//*[@id=\"c65\"]/label[1]/input")).sendKeys("The second question issss?");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"c75\"]/label[1]/input")));
+        wd.findElement(By.xpath("//*[@id=\"c75\"]/label[1]/input")).sendKeys("The second question issss?");
 
         //Add corporate confirmation stage
 
@@ -92,15 +95,17 @@ public class approval_challenge extends BaseClass{
 
         //Save challenge
 
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Publish challenge
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
         wd.findElement(By.name("commit")).click();
-        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 

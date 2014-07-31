@@ -4,21 +4,17 @@ import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 /**
- * Created by patrick priestley on 2014-05-02
- *
+ * Created by patrickpriestley on 2014-05-02.
  */
 
 public class Admin_Settings_Tab extends AdminBase{
 
+
     String settings_tab = "//*[@id=\"header\"]/div/div/div[1]/ul[1]/li/a";
-
-
 
     @Test
     public void settings_program_name(){
@@ -578,14 +574,6 @@ public class Admin_Settings_Tab extends AdminBase{
         wd.quit();
     }
 
-    public static boolean isAlertPresent(ChromeDriver wd) {
-        try {
-            wd.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
-
     }
 
-}
+

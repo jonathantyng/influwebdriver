@@ -4,13 +4,14 @@ package Admin;
 import org.junit.Before;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
 
-ChromeDriver wd;
+RemoteWebDriver wd;
 
     @Before
     public void setUp() throws Exception {
@@ -18,12 +19,18 @@ ChromeDriver wd;
         System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
 
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        wd.get("http://july17.influitiveqa.com");
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.get("http://sanityjuly31.influitiveqa.com/");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
+        /*
+        //wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-
+        wd = new RemoteWebDriver(
+                new URL("http://127.0.0.1:4444/wd/hub"),
+                DesiredCapabilities.chrome()
+        );
+        */
     }
 
 }
