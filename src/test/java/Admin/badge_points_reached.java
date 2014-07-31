@@ -30,8 +30,8 @@ public class badge_points_reached extends BaseClass{
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Settings")));
         wd.findElement(By.linkText("Settings")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='accordion']/li[2]/h4")));
-        wd.findElement(By.xpath("//ul[@id='accordion']/li[2]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//ul[@id='accordion']/li[2]/h4")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Levels & Badges")));
         wd.findElement(By.linkText("Levels & Badges")).click();
 
@@ -52,6 +52,7 @@ public class badge_points_reached extends BaseClass{
 
         //Add a new badge
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("add_badge")).click();
 
         //Enter badge name and description

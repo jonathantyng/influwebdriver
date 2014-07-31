@@ -16,11 +16,11 @@ RemoteWebDriver wd;
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/shannon/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://sanityjuly31.influitiveqa.com/");
+        wd.get("http://princessland.influitiveqa.com/");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
         /*
