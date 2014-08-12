@@ -55,6 +55,7 @@ public class invite_advocate extends BaseClass{
         //Save select and send invite
 
         wd.findElement(By.id("save-button")).click();
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.name")));
         wd.findElement(By.cssSelector("div.name")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
@@ -168,6 +169,7 @@ public class invite_advocate extends BaseClass{
         //Save select and send invite
 
         wd.findElement(By.id("save-button")).click();
+        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.name")));
         wd.findElement(By.cssSelector("div.name")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}

@@ -93,13 +93,13 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("s2id_search_for_group")));
             System.out.println("Tutorial not encountered");
         }
 
         //Select 'targeted to group' dropdown
 
-        wd.findElement(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")).click();
+        wd.findElement(By.id("s2id_search_for_group")).click();
 
         //Select group from dropdown
 
@@ -140,18 +140,18 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen9")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen7")));
             System.out.println("Tutorial not encountered");
         }
 
         //Click on challenge type dropdown
 
-        wd.findElement(By.cssSelector("#s2id_autogen9")).click();
+        wd.findElement(By.cssSelector("#s2id_autogen7")).click();
 
         //Search for Survey from challenge type dropdown
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen9")));
-        wd.findElement(By.cssSelector("#s2id_autogen9")).sendKeys("Survey");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen7")));
+        wd.findElement(By.cssSelector("#s2id_autogen7")).sendKeys("Survey");
 
         //Click on survey type
 
@@ -196,17 +196,17 @@ public class Admin_Challenges_Tab extends AdminBase{
         }
         else
         {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen10")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("s2id_autogen8")));
             System.out.println("Tutorial not encountered");
         }
 
         //Click on challenge creator field
-        wd.findElement(By.cssSelector("#s2id_autogen10")).click();
+        wd.findElement(By.id("s2id_autogen8")).click();
 
         //Enter text into search field
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_autogen10")));
-        wd.findElement(By.cssSelector("#s2id_autogen10")).sendKeys("All");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("s2id_autogen8")));
+        wd.findElement(By.id("s2id_autogen8")).sendKeys("All");
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select 'All' from dropdown
@@ -531,6 +531,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")));
         wd.findElement(By.cssSelector("#s2id_sort_order > a > span.select2-chosen")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select 'Dismissed Count'
 

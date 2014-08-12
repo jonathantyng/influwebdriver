@@ -3,12 +3,9 @@ package Admin;
 import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Created by patrickpriestley on 2014-05-02.
@@ -55,7 +52,7 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         //Close invite nominee modal
 
-        wd.findElement(By.cssSelector("#modal > div.modal-header-bar > button")).click();
+        wd.findElement(By.cssSelector("#modal > div.modal-header > button")).click();
 
     }
 
@@ -172,31 +169,31 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         //Deselect Active toggle
 
-        wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(2) > label")).click();
+        wd.findElement(By.id("search_by_hidden_active")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Active toggle
 
-        wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(2) > label")).click();
+        wd.findElement(By.id("search_by_hidden_active")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Active toggle
 
-        wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(2) > label")).click();
+        wd.findElement(By.id("search_by_hidden_active")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select hidden toggle
 
-        wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(3) > label")).click();
+        wd.findElement(By.id("search_by_hidden_archived")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect hidden toggle
 
-        wd.findElement(By.cssSelector("#nominee_search > div.filter-container > section:nth-child(4) > div:nth-child(3) > label")).click();
+        wd.findElement(By.id("search_by_hidden_archived")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }
@@ -293,30 +290,6 @@ public class Admin_Nominee_Tab extends AdminBase {
 
         wd.findElement(By.cssSelector("#wrapper > div > div.main-half > span > ul > li > a")).click();
 
-        //Select archive button
-
-        wd.findElement(By.cssSelector("#contact-list > tr:nth-child(1) > td.archive > span")).click();
-        try {
-            Thread.sleep(2000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-        //Handle pop-up
-
-        try {
-            WebDriverWait wait = new WebDriverWait(wd, 2);
-            wait.until(ExpectedConditions.alertIsPresent());
-            Alert alert = wd.switchTo().alert();
-            alert.accept();
-        } catch (Exception e) {
-            //exception handling
-        }
-
-        //Check for errors
-
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
 
     }
      @Test
@@ -355,12 +328,6 @@ public class Admin_Nominee_Tab extends AdminBase {
          //Sort NPS column ascending order
 
          wd.findElement(By.id("sort-nps")).click();
-         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
-         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
-         //Sort Impact column ascending order
-
-         wd.findElement(By.id("sort-impact")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
          Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

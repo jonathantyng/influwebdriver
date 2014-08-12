@@ -185,7 +185,8 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to AdvocateAnywhere settings
 
-        wd.findElement(By.xpath("//*[@id=\"collapse-me0\"]/li[5]/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[2]/h4")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

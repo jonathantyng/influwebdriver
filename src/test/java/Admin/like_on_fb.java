@@ -87,6 +87,7 @@ public class like_on_fb extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("params.facebook_page_url")));
         wd.findElement(By.name("params.facebook_page_url")).sendKeys("www.facebook.com/pepsi");
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter custom notification message
 

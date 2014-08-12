@@ -158,8 +158,8 @@ public class Admin_Groups_Tab extends AdminBase {
         //Select '# of Challenges' from dropdown
 
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-drop\"]/ul/li[3]/div\"")));
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[3]/div")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-5")));
+        wd.findElement(By.id("select2-result-label-5")).click();
         try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }

@@ -88,6 +88,7 @@ public class online_review extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("params.url")));
         wd.findElement(By.name("params.url")).sendKeys("http://www.influitive.com");
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-2")));
         wd.findElement(By.id("ui-id-2")).click();
 

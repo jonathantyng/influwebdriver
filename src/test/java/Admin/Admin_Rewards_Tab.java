@@ -87,12 +87,12 @@ public class Admin_Rewards_Tab extends AdminBase{
         //Select 'targeted to group' dropdown
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_search_visibility_groups_id_equals > a > span.select2-chosen")).click();
+        wd.findElement(By.id("select2-chosen-5")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select group from dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[2]")).click();
+        wd.findElement(By.id("select2-result-label-11")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
     }
@@ -132,12 +132,12 @@ public class Admin_Rewards_Tab extends AdminBase{
         //Click on reward type field
 
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.cssSelector("#s2id_autogen8")).click();
+        wd.findElement(By.cssSelector("#s2id_autogen6")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter text
 
-        wd.findElement(By.cssSelector("#s2id_autogen8")).sendKeys("All");
+        wd.findElement(By.cssSelector("#s2id_autogen6")).sendKeys("All");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on search result

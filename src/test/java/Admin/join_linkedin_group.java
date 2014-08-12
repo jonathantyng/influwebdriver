@@ -93,7 +93,7 @@ public class join_linkedin_group extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button.load-preview.right")));
         wd.findElement(By.cssSelector("button.load-preview.right")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Save challenge
 

@@ -165,14 +165,14 @@ public class Admin_Advocate_Actions extends AdminBase {
 
         //Click on perk dropdown
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-chosen-10\"]")));
-        wd.findElement(By.xpath("//*[@id=\"select2-chosen-10\"]")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-chosen-7\"]")));
+        wd.findElement(By.xpath("//*[@id=\"select2-chosen-7\"]")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select perk from list
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-results-10\"]")));
-        wd.findElement(By.xpath("//*[@id=\"select2-results-10\"]")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"select2-results-7\"]")));
+        wd.findElement(By.xpath("//*[@id=\"select2-results-7\"]")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Click give reward button

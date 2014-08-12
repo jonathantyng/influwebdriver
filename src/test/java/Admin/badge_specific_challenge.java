@@ -27,9 +27,9 @@ public class badge_specific_challenge extends BaseClass{
         wd.findElement(By.xpath("//*[@id=\"header-bar\"]/div[1]/div/div/ul[1]/li/a")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Settings")));
         wd.findElement(By.linkText("Settings")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul[@id='accordion']/li[2]/h4")));
         wd.findElement(By.xpath("//ul[@id='accordion']/li[2]/h4")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Levels & Badges")));
         wd.findElement(By.linkText("Levels & Badges")).click();
 

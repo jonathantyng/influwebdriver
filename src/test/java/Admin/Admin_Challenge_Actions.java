@@ -252,8 +252,8 @@ public class Admin_Challenge_Actions extends AdminBase{
 
         //Click on template categories
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"s2id_autogen6\"]")));
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen6\"]")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"s2id_autogen5\"]")));
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen5\"]")).click();
 
         //Select category from dropdown
 

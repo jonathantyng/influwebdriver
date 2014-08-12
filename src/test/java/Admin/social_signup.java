@@ -14,7 +14,7 @@ public class social_signup extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        wd.get("http://princessland.influitiveqa.com/join/test");
+        wd.get("http://sanityaug5.influitives.com/join/test");
         /*
         //Enter join code
 
@@ -42,9 +42,9 @@ public class social_signup extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        wd.get("http://princessland.influitiveqa.com/join/test");
+        wd.get("http://sanityaug5.influitives.com/join/test");
 
-            //Enter join code
+        //Enter join code
         /*
         wd.findElement(By.xpath("//*[@id=\"logged-out-form-container\"]/div[1]/section[4]/a")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -78,7 +78,7 @@ public class social_signup extends BaseClass{
     public void facebook_signup(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-        wd.get("http://princessland.influitiveqa.com/join/test");
+        wd.get("http://sanityaug5.influitives.com/join/test");
 
         /*
         //Enter join code

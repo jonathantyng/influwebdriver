@@ -11,7 +11,7 @@ public class persistent_referral extends BaseClass{
 
 
         @Test
-        public void Blog_Post() {
+        public void edit_persistent_referral_challenge() {
 
             WebDriverWait wait = new WebDriverWait(wd, 5);
 
@@ -88,6 +88,7 @@ public class persistent_referral extends BaseClass{
 
             //Save challenge
 
+            try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
             wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
             wd.findElement(By.name("commit")).click();
             try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }

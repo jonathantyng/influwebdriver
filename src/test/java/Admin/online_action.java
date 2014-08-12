@@ -88,6 +88,7 @@ public class online_action extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Load")));
         wd.findElement(By.linkText("Load")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ui-id-2")));
         wd.findElement(By.id("ui-id-2")).click();
 
