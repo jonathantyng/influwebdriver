@@ -535,8 +535,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'Dismissed Count'
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Dismissed Count")));
-        wd.findElement(By.linkText("Dismissed Count")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-11")));
+        wd.findElement(By.id("select2-result-label-11")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Click on sort dropdown
@@ -546,8 +546,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select Active Count
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Active Count")));
-        wd.findElement(By.linkText("Active Count")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-30")));
+        wd.findElement(By.id("select2-result-label-30")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select sort dropdown
@@ -557,8 +557,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'Alphabetical'
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Alphabetical")));
-        wd.findElement(By.linkText("Alphabetical")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-33")));
+        wd.findElement(By.id("select2-result-label-33")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
