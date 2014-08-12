@@ -83,6 +83,7 @@ public class blog_post extends BaseClass{
         //Click the load button
 
         wd.findElement(By.className("summarize-url")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Navigate to visibility settings
 

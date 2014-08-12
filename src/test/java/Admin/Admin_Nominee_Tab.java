@@ -333,7 +333,7 @@ public class Admin_Nominee_Tab extends AdminBase {
 
          //Sort Activity count column ascending order
 
-         wd.findElement(By.id("sort-activity")).click();
+         wd.findElement(By.id("sort-last-activity")).click();
          try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
          Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 

@@ -16,7 +16,7 @@ public class create_company extends BaseClass{
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
         //Navigate to hub
-        wd.get("http://app.influitives.com/users/sign_in");
+        wd.get("http://app.influitiveqa.com/users/sign_in");
 
         //Sign in as admin
 
@@ -74,13 +74,13 @@ public class create_company extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_name")));
 
-        wd.findElement(By.id("company_name")).sendKeys("war");
+        wd.findElement(By.id("company_name")).sendKeys("aug12");
 
         //Enter company subdomain into text field
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_subdomain")));
 
-        wd.findElement(By.id("company_subdomain")).sendKeys("war");
+        wd.findElement(By.id("company_subdomain")).sendKeys("aug12");
 
         //Enter admin email address
 

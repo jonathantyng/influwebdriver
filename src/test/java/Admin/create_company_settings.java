@@ -93,24 +93,36 @@ public class create_company_settings extends BaseClass{
         wd.findElement(By.id("company_preference_deliver_notifications")).click();
         wd.findElement(By.name("commit")).click();
 
-        //Select SFDC settings
+        //Select Integration settings
 
-        wd.findElement(By.xpath("//ul[@id='accordion']/li[5]/h4")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"accordion\"]/li[5]/h4")));
+        wd.findElement(By.xpath("//*[@id=\"accordion\"]/li[5]/h4")).click();
 
-        //Select general settings
+        //Select Library
 
-        //wd.findElement(By.cssSelector("#collapse-me4 > li > a")).click();
-        //try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"collapse-me5\"]/li[1]/a")));
+        wd.findElement(By.xpath("//*[@id=\"collapse-me5\"]/li[1]/a")).click();
+
+        //Install SFDC
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"new_provider\"]/div[2]")));
+        wd.findElement(By.xpath("//*[@id=\"new_provider\"]/div[2]")).click();
+
+        //Click on 'Credentials'
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"integration-listing\"]/div/div[3]/div/div[2]/div/button")));
+        wd.findElement(By.xpath("//*[@id=\"integration-listing\"]/div/div[3]/div/div[2]/div/button")).click();
 
         //Enter SFDC credentials
 
-        wd.findElement(By.id("provider_setting_options_user_name")).sendKeys("patrick@influitive.com");
-        wd.findElement(By.id("provider_setting_options_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("provider_setting_options_token")).sendKeys("mFMn1Bj0GSx0QnHkRfG1pvKD4");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
+        wd.findElement(By.id("username")).sendKeys("patrick@influitive.com");
+        wd.findElement(By.id("password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.id("token")).sendKeys("mFMn1Bj0GSx0QnHkRfG1pvKD4");
 
         //Save settings
 
-        wd.findElement(By.name("commit")).click();
+        wd.findElement(By.xpath("//*[@id=\"integration-listing\"]/div/div[3]/div/div[3]/div/div/div[2]/form/div[5]/input")).click();
 
         //Select..
 

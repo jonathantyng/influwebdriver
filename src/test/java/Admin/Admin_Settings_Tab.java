@@ -190,12 +190,12 @@ public class Admin_Settings_Tab extends AdminBase{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //View AA guide in new tab
+        /*View AA guide in new tab
 
         wd.findElement(By.linkText("guide to AdvocateAnywhere")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("AdvocateAnywhere lets you embed 'widgets' into any HTML page"));
-
+        */
         //Store original handle
 
         String winHandleBefore = wd.getWindowHandle();
@@ -423,14 +423,14 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Add test group to private leaderboard field
 
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).click();
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).sendKeys("Test Group");
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]")).sendKeys("Test Group");
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
 
         //Add test group to private leaderboard field
 
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).click();
-        wd.findElement(By.xpath("//*[@id=\"s2id_autogen4\"]")).sendKeys("Sanity Group");
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]")).click();
+        wd.findElement(By.xpath("//*[@id=\"s2id_autogen1\"]")).sendKeys("Sanity Group");
         wd.findElement(By.xpath("//*[@id=\"select2-drop\"]/ul/li[1]/div")).click();
 
         //Save private leaderboards

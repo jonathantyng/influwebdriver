@@ -109,6 +109,7 @@ public class appexchangechallenge extends BaseClass{
 
         //Publish Challenge
 
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("NOT PUBLISHED")));
         wd.findElement(By.linkText("NOT PUBLISHED")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("commit")));
