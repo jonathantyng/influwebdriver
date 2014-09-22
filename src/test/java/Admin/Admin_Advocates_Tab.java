@@ -177,26 +177,26 @@ public class Admin_Advocates_Tab extends AdminBase {
 
         //Select Promoter toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(4) > label")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(4) > label")));
+        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(4) > label")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
 
         //Un-toggle promoter toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(4) > label")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(4) > label")));
+        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(4) > label")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
 
         //Select unknown toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(5) > label")));
-        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(5) > label")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(5) > label")));
+        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(5) > label")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
 
         //Un-toggle unknown toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(5) > label")));
-        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(4) > div:nth-child(5) > label")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(5) > label")));
+        wd.findElement(By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(5) > label")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("error"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
@@ -223,8 +223,8 @@ public class Admin_Advocates_Tab extends AdminBase {
 
         //Enter text into advocate search field
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("search_search_for_term")));
-        wd.findElement(By.id("search_search_for_term")).sendKeys("11111");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("q_search_for_term")));
+        wd.findElement(By.id("q_search_for_term")).sendKeys("11111");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertTrue(wd.findElement(By.tagName("body")).getText().contains("No records found"));
 

@@ -14,7 +14,7 @@ public class social_signup extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        wd.get("http://aug12.influitiveqa.com/join/test");
+        wd.get("http://sanitysept15.influitives.com/join/test");
         /*
         //Enter join code
 
@@ -42,7 +42,7 @@ public class social_signup extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        wd.get("http://aug12.influitiveqa.com/join/test");
+        wd.get("http://sanitysept15.influitives.com/join/test");
 
         //Enter join code
         /*
@@ -78,7 +78,7 @@ public class social_signup extends BaseClass{
     public void facebook_signup(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-        wd.get("http://aug12.influitiveqa.com/join/test");
+        wd.get("http://sanitysept15.influitives.com/join/test");
 
         /*
         //Enter join code

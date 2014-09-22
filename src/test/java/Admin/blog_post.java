@@ -95,9 +95,9 @@ public class blog_post extends BaseClass{
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("criteria_radio")));
         wd.findElement(By.id("criteria_radio")).click();
         wd.findElement(By.xpath("//*[@id=\"include-conditions-list\"]/div/footer/ul/li[2]/a")).click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("s2id_autogen81")));
-        wd.findElement(By.id("s2id_autogen81")).click();
-        wd.findElement(By.id("s2id_autogen81")).sendKeys("Pelican");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("s2id_autogen25")));
+        wd.findElement(By.id("s2id_autogen25")).click();
+        wd.findElement(By.id("s2id_autogen25")).sendKeys("Pelican");
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("img[alt=\"Pelican Pete\"]")));
         wd.findElement(By.cssSelector("img[alt=\"Pelican Pete\"]")).click();
 

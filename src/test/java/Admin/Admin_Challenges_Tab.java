@@ -54,7 +54,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Enter challenge into search field
 
-        wd.findElement(By.id("search_name_or_headline_contains")).sendKeys("1234567");
+        wd.findElement(By.id("q_name_or_headline_cont")).sendKeys("1234567");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Make sure no records are found
@@ -99,7 +99,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'targeted to group' dropdown
 
-        wd.findElement(By.id("s2id_search_for_group")).click();
+        wd.findElement(By.id("s2id_q_for_group")).click();
 
         //Select group from dropdown
 
@@ -282,8 +282,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select Archived toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(4) > label")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(3) > label")));
+        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(2) > div:nth-child(3) > label")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Archived toggle
@@ -352,19 +352,6 @@ public class Admin_Challenges_Tab extends AdminBase{
         wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(3) > label"));
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Select 'Overdue' toggle
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label"));
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
-        //Deselect 'Overdue' toggle
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(3) > div:nth-child(4) > label"));
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
-
     }
 
     @Test
@@ -416,26 +403,26 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select AdvocateHub toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(3) > label")));
+        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(3) > label"));
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
-        //Deselect AdvocateAnywhere toggle
+        //Deselect AdvocateHub toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(3) > label"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(3) > label")));
+        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(3) > label"));
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select Maven toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(4) > label")));
+        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(4) > label"));
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Deselect Maven toggle
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label")));
-        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(4) > div:nth-child(4) > label"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(4) > label")));
+        wd.findElement(By.cssSelector("#challenge_search > section > section:nth-child(6) > div:nth-child(4) > label"));
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
@@ -546,8 +533,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select Active Count
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-30")));
-        wd.findElement(By.id("select2-result-label-30")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-28")));
+        wd.findElement(By.id("select2-result-label-28")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select sort dropdown
@@ -557,8 +544,8 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Select 'Alphabetical'
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-33")));
-        wd.findElement(By.id("select2-result-label-33")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("select2-result-label-21")));
+        wd.findElement(By.id("select2-result-label-21")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
