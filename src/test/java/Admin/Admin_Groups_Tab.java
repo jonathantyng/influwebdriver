@@ -19,12 +19,6 @@ public class Admin_Groups_Tab extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Groups tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Groups")));
@@ -57,12 +51,6 @@ public class Admin_Groups_Tab extends AdminBase {
     public void filter_groups(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Groups tab
 
@@ -114,12 +102,6 @@ public class Admin_Groups_Tab extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Groups tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Groups")));
@@ -168,12 +150,6 @@ public class Admin_Groups_Tab extends AdminBase {
     public void edit_group(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Groups tab
 

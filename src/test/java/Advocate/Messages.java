@@ -1,10 +1,6 @@
 package Advocate;
 
 import org.junit.After;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.chrome.ChromeDriver;
-import junit.framework.Assert;
-import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -17,15 +13,6 @@ public class Messages extends Advocate{
 
     @Test
     public void message_admin() {
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try {Thread.sleep(2000l);} catch (Exception e) {throw new RuntimeException(e);}
-
-
 
         //Message Center
 

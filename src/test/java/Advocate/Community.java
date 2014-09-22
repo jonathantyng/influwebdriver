@@ -6,7 +6,6 @@ package Advocate;
  * Created by shannon on 2014-09-18.
  */
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -17,13 +16,6 @@ public class Community extends Advocate{
 
     @Test
     public void post_to_community(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Toggle menu bar to Community
 

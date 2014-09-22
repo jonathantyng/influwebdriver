@@ -14,12 +14,6 @@ public class group_sanity extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Log in as super admin
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Select groups tab
 
         wd.findElement(By.id("Groups")).click();

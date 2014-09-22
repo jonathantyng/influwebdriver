@@ -2,6 +2,7 @@ package Advocate;
 
 
 import org.junit.Before;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -19,6 +20,12 @@ public class Advocate {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://princessland.influitives.com");
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 

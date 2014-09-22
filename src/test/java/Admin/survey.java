@@ -11,12 +11,6 @@ public class survey extends BaseClass{
     @Test
     public void create_survey() {
 
-        //Sign in as super admin
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the challenge tab
 
         wd.findElement(By.id("Challenges")).click();

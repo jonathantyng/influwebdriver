@@ -11,20 +11,6 @@ public class OnlineReview extends Advocate{
     @Test
     public void OReview() {
 
-        //Sign into app and access challenge screen
-
-        wd.get("https://princessland.influitives.com/users/sign_in");
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Load challenge
 
         wd.get("https://princessland.influitives.com/challenges/31");

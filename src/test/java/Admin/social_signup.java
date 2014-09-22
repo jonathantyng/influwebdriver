@@ -13,8 +13,6 @@ public class social_signup extends BaseClass{
     public void email_password_signup() {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        wd.get("http://sanitysept15.influitives.com/join/test");
         /*
         //Enter join code
 
@@ -41,8 +39,6 @@ public class social_signup extends BaseClass{
         public void linkedin_singup (){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        wd.get("http://sanitysept15.influitives.com/join/test");
 
         //Enter join code
         /*
@@ -78,8 +74,6 @@ public class social_signup extends BaseClass{
     public void facebook_signup(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-        wd.get("http://sanitysept15.influitives.com/join/test");
-
         /*
         //Enter join code
 

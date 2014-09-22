@@ -4,7 +4,6 @@ package Advocate;
  * Created by shannon on 2014-09-18.
  */
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -16,14 +15,6 @@ public class ChallengesPage extends Advocate{
 
     @Test
     public void toggle_challenges() {
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try {Thread.sleep(5000l);} catch (Exception e) {throw new RuntimeException(e);}
-
 
         //Head on over to the Challenges page
 

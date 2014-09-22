@@ -22,16 +22,6 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
@@ -57,12 +47,6 @@ public class Admin_Email_Settings_Tab extends AdminBase{
     public void welcome_email_settings(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -141,12 +125,6 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(settings_tab)));
@@ -214,12 +192,6 @@ public class Admin_Email_Settings_Tab extends AdminBase{
     public void digest_email_settings(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -291,12 +263,6 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(settings_tab)));
@@ -351,12 +317,6 @@ public class Admin_Email_Settings_Tab extends AdminBase{
     public void notifications_email_settings(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 

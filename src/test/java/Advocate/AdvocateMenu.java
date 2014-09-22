@@ -1,6 +1,5 @@
 package Advocate;
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -15,13 +14,6 @@ public class AdvocateMenu extends Advocate{
 
     @Test
     public void quick_filter_challenges(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Toggle menu bar to Challenges
 

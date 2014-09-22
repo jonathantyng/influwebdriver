@@ -11,15 +11,6 @@ public class group_email extends BaseClass{
     @Test
     public void create_group_email ()  {
 
-        //Log in as super admin
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Navigate to the groups tab
 
         wd.findElement(By.id("Groups")).click();

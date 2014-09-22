@@ -14,7 +14,6 @@ public class sfdc_reference extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-
         //Log in to SFDC Dev account
 
         wd.get("http://salesforce.com/");

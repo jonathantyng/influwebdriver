@@ -2,17 +2,16 @@ package Admin;
 
 
 import org.junit.Before;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseClass {
+public class BaseLogin {
 
 
-RemoteWebDriver wd;
+    RemoteWebDriver wd;
 
     @Before
     public void setUp() throws Exception {
@@ -21,15 +20,10 @@ RemoteWebDriver wd;
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://sanitysept15.influitives.com/");
+        wd.manage().window().setSize(new Dimension(1400,1400));
 
-        //Sign in as admin
+        wd.get("http://sanitysept12.influitives.com/join/test");
 
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
-        wd.manage().window().setSize(new Dimension(1400, 1400));
         /*
         //wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 

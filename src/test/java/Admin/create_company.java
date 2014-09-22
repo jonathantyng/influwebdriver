@@ -15,17 +15,6 @@ public class create_company extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to hub
-        wd.get("http://app.influitives.com/users/sign_in");
-
-        //Sign in as admin
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("user_email")));
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
         boolean exists = wd.findElements( By.className("remove")).size() != 0;

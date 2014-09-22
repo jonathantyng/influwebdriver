@@ -15,16 +15,6 @@ public class Admin_Rewards_Tab extends AdminBase{
     @Test
     public void search_rewards(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Rewards tab
 
         wd.findElement(By.id("Rewards")).click();
@@ -54,16 +44,6 @@ public class Admin_Rewards_Tab extends AdminBase{
 
     @Test
     public void filter_by_group(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Rewards tab
 
@@ -99,16 +79,6 @@ public class Admin_Rewards_Tab extends AdminBase{
 
     @Test
     public void filter_reward_type(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Rewards tab
 
@@ -149,16 +119,6 @@ public class Admin_Rewards_Tab extends AdminBase{
 
     @Test
     public void reward_state_toggles(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Rewards tab
 
@@ -209,16 +169,6 @@ public class Admin_Rewards_Tab extends AdminBase{
     @Test
     public void reward_redemption_toggle(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Rewards tab
 
         wd.findElement(By.id("Rewards")).click();
@@ -268,12 +218,6 @@ public class Admin_Rewards_Tab extends AdminBase{
 
     @Test
     public void edit_reward(){
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Rewards tab
 

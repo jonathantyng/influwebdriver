@@ -17,16 +17,6 @@ public class Admin_Dashboard extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Click 'Add a Goal'
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"admin-goals\"]/header/div/a")));
@@ -69,12 +59,6 @@ public class Admin_Dashboard extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //click goal edit gear wheel
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#admin-goals > ul > li:nth-child(2) > div.goal-dropdown > div > div > a > img")));
@@ -105,12 +89,6 @@ public class Admin_Dashboard extends AdminBase {
     public void delete_system_goal() {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //click goal edit gear wheel
 
@@ -149,12 +127,6 @@ public class Admin_Dashboard extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Click on challenge confirmation action center link
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"content\"]/div/div[2]/div[1]/div/div[1]/a/button")));
@@ -173,12 +145,6 @@ public class Admin_Dashboard extends AdminBase {
     public void admin_reward_action_center(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Click on rewards confirmation action center link
 

@@ -2,6 +2,7 @@ package Admin;
 
 
 import org.junit.Before;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -19,6 +20,12 @@ public class AdminBase {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.get("http://princessland.influitives.com");
+
+        //Sign in as admin
+
+        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
+        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
+        wd.findElement(By.id("sign-in-button")).click();
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 

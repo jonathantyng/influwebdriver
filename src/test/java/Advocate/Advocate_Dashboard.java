@@ -15,13 +15,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
     public void quick_filter_challenges(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Toggle challenges by Featured
 
         wd.findElement(By.xpath("//*[@id=\"challenge-filter\"]/ul/li[2]")).click();
@@ -48,13 +41,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
     public void filter_by_type(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Select 'By Type' dropdown - big ass failing test!
 
         wd.findElement(By.cssSelector("#select2-chosen-15")).click();
@@ -66,13 +52,6 @@ public class Advocate_Dashboard extends Advocate{
 
     @Test
     public void add_goal(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on add a goal
 
@@ -92,13 +71,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
     public void link_to_Make_a_Referral(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Click on Make a Referral
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[1]/a")).click();
@@ -110,13 +82,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
     public void link_to_Visit_Community(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Click on Visit Community
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[2]/a")).click();
@@ -127,13 +92,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
     public void link_to_Maven(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Click on Maven IOS App
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[3]/a")).click();
@@ -143,13 +101,6 @@ public class Advocate_Dashboard extends Advocate{
 
     @Test
     public void view_levels(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on 'Level up by unlocking badges'
 
@@ -168,13 +119,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
     public void make_a_referral_link(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //Click on the make a referral
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[1]/a")).click();
@@ -185,13 +129,6 @@ public class Advocate_Dashboard extends Advocate{
 
     @Test
     public void visit_community(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on 'Visit Community'
 
@@ -204,13 +141,6 @@ public class Advocate_Dashboard extends Advocate{
     @Test
        public void see_earned_badges(){
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
         //See Earned Badges
 
         wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[4]/div[3]/a")).click();
@@ -220,13 +150,6 @@ public class Advocate_Dashboard extends Advocate{
 
     @Test
     public void powered_by_influitive(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on Powered By Influitive
 
@@ -238,15 +161,6 @@ public class Advocate_Dashboard extends Advocate{
 
     @Test
     public void Notifications() {
-
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
-
 
         //Click on notifications
 

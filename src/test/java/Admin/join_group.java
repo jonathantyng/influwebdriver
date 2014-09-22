@@ -14,25 +14,9 @@ public class join_group extends BaseClass{
     public void join_group() {
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //If user doesn't have a cookie, sign in. Otherwise, continue with testing.
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
+        wd.findElement(By.id("Challenges")).click();
 
-        boolean signin = wd.findElements( By.id("user_email")).size() != 0;
-
-        if (signin)
-        {
-            wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-            wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-            wd.findElement(By.id("sign-in-button")).click();
-            System.out.println("Sign in complete");
-            wd.findElement(By.id("Challenges")).click();
-
-        }
-        else
-        {
-            System.out.println("Found cookie");
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
-            wd.findElement(By.id("Challenges")).click();
-        }
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 

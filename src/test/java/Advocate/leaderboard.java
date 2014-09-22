@@ -1,6 +1,5 @@
 package Advocate;
 
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -17,13 +16,6 @@ public class leaderboard extends Advocate{
 
     @Test
     public void leaderboard(){
-
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on 'View Top 10'
 

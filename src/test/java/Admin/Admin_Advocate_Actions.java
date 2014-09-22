@@ -20,12 +20,6 @@ public class Admin_Advocate_Actions extends AdminBase {
 
           WebDriverWait wait = new WebDriverWait(wd, 5);
 
-          //Admin sign in
-
-          wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-          wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-          wd.findElement(By.name("commit")).click();
-
           //Navigate to Advocates Tab
 
           wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Advocates")));
@@ -73,12 +67,6 @@ public class Admin_Advocate_Actions extends AdminBase {
       public void log_activity(){
 
           WebDriverWait wait = new WebDriverWait(wd, 5);
-
-          //Admin sign in
-
-          wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-          wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-          wd.findElement(By.name("commit")).click();
 
           //Navigate to Advocates Tab
 
@@ -140,12 +128,6 @@ public class Admin_Advocate_Actions extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates Tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Advocates")));
@@ -187,12 +169,6 @@ public class Admin_Advocate_Actions extends AdminBase {
     public void send_advocate_message(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Advocates Tab
 
@@ -236,12 +212,6 @@ public class Admin_Advocate_Actions extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates Tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Advocates")));
@@ -277,12 +247,6 @@ public class Admin_Advocate_Actions extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates Tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Advocates")));
@@ -315,12 +279,6 @@ public class Admin_Advocate_Actions extends AdminBase {
     public void enable_advocate_account(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Advocates Tab
 
@@ -355,12 +313,6 @@ public class Admin_Advocate_Actions extends AdminBase {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates Tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Advocates")));
@@ -385,12 +337,6 @@ public class Admin_Advocate_Actions extends AdminBase {
     public void adjust_points(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Advocates Tab
 

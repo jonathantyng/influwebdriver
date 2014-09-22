@@ -14,17 +14,6 @@ public class Events extends Advocate {
     @Test
     public void eventzone() {
 
-        //Sign in as advocate
-
-        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
-        wd.findElement(By.id("user_password")).sendKeys("macbook18");
-        wd.findElement(By.id("sign-in-button")).click();
-        try {
-            Thread.sleep(5000l);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
         //enter event zone
 
         wd.findElement(By.cssSelector("#challenge-cards > div.col-0.column > div.widget.zone-card")).click();

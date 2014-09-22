@@ -18,12 +18,6 @@ public class Admin_Challenge_Actions extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -68,12 +62,6 @@ public class Admin_Challenge_Actions extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -110,12 +98,6 @@ public class Admin_Challenge_Actions extends AdminBase{
     public void preview_challenge(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 
@@ -160,12 +142,6 @@ public class Admin_Challenge_Actions extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -208,12 +184,6 @@ public class Admin_Challenge_Actions extends AdminBase{
     public void save_as_template(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 
@@ -278,12 +248,6 @@ public class Admin_Challenge_Actions extends AdminBase{
     public void publishing_options(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 

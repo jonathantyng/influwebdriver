@@ -15,15 +15,8 @@ public class appexchangechallenge extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Sign into app and access challenge screen
+        //Navigate to the challenges tab
 
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("user_password")));
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("sign-in-button")));
-        wd.findElement(By.id("sign-in-button")).click();
         wd.findElement(By.id("Challenges")).click();
 
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.

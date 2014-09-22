@@ -16,12 +16,6 @@ public class blog_post extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Sign in as admin
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the challenges tab
 
         wd.findElement(By.id("Challenges")).click();

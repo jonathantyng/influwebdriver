@@ -18,16 +18,6 @@ public class geo_checkin extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //wd.get("http://may14.influitiveqa.com");
-        wd.findElement(By.id("user_email")).click();
-        wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).click();
-        wd.findElement(By.id("user_password")).clear();
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-        wd.findElement(By.id("Challenges")).click();
-
         //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
 
         boolean exists = wd.findElements( By.linkText("No Thanks")).size() != 0;

@@ -13,14 +13,6 @@ public class badge_activity extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //wd.get("http://may14.influitiveqa.com/users/sign_in");
-
-        //Log in as admin
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to level and badges settings
 
         wd.findElement(By.xpath("//*[@id=\"header-bar\"]/div[1]/div/div/ul[1]/li/a")).click();

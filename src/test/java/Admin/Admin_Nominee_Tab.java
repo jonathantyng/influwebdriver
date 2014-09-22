@@ -15,16 +15,6 @@ public class Admin_Nominee_Tab extends AdminBase {
     @Test
     public void generate_url(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates tab
 
         wd.findElement(By.id("Advocates")).click();
@@ -58,16 +48,6 @@ public class Admin_Nominee_Tab extends AdminBase {
 
     @Test
     public void add_new_nominee(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Advocates tab
 
@@ -116,16 +96,6 @@ public class Admin_Nominee_Tab extends AdminBase {
     @Test
     public void search_for_nominee(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates tab
 
         wd.findElement(By.id("Advocates")).click();
@@ -148,16 +118,6 @@ public class Admin_Nominee_Tab extends AdminBase {
 
     @Test
     public void toggle_nominee_status(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Advocates tab
 
@@ -200,16 +160,6 @@ public class Admin_Nominee_Tab extends AdminBase {
 
     @Test
     public void toggle_nominee_nps(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Advocates tab
 
@@ -272,16 +222,6 @@ public class Admin_Nominee_Tab extends AdminBase {
     @Test
     public void archive_nominee() {
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Advocates tab
 
         wd.findElement(By.id("Advocates")).click();
@@ -294,16 +234,6 @@ public class Admin_Nominee_Tab extends AdminBase {
     }
      @Test
     public void nominee_column_sort(){
-
-         //Navigate to hub
-
-         //wd.get("http://princessland.influitives.com");
-
-         //Admin sign in
-
-         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-         wd.findElement(By.name("commit")).click();
 
          //Navigate to Advocates tab
 

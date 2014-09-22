@@ -22,16 +22,6 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -66,16 +56,6 @@ public class Admin_Challenges_Tab extends AdminBase{
     public void challenges_targeted_groups(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 
@@ -113,16 +93,6 @@ public class Admin_Challenges_Tab extends AdminBase{
     public void select_challenge_type(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 
@@ -170,16 +140,6 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -226,16 +186,6 @@ public class Admin_Challenges_Tab extends AdminBase{
     public void challenge_state_toggles(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 
@@ -299,16 +249,6 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -358,16 +298,6 @@ public class Admin_Challenges_Tab extends AdminBase{
     public void challenge_channel_toggle(){
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 
@@ -433,12 +363,6 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
-
         //Navigate to Challenges tab
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Challenges")));
@@ -477,12 +401,6 @@ public class Admin_Challenges_Tab extends AdminBase{
     public void challenge_sorting() throws IOException {
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.name("commit")).click();
 
         //Navigate to Challenges tab
 

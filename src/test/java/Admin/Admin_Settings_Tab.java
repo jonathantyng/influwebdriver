@@ -19,16 +19,6 @@ public class Admin_Settings_Tab extends AdminBase{
     @Test
     public void settings_program_name(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
@@ -50,16 +40,6 @@ public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void settings_custom_messaging(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -95,16 +75,6 @@ public class Admin_Settings_Tab extends AdminBase{
     @Test
     public void settings_custom_domain(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
@@ -121,16 +91,6 @@ public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void settings_branding(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -166,16 +126,6 @@ public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void settings_advocateanywhere(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -264,16 +214,6 @@ public class Admin_Settings_Tab extends AdminBase{
     @Test
     public void settings_point_structure(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
@@ -298,16 +238,6 @@ public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void levels_and_badges(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -381,16 +311,6 @@ public class Admin_Settings_Tab extends AdminBase{
     @Test
     public void private_leaderboards(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
@@ -446,16 +366,6 @@ public class Admin_Settings_Tab extends AdminBase{
     @Test
     public void settings_reward_types(){
 
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
-
         //Navigate to the settings page
 
         wd.findElement(By.xpath(settings_tab)).click();
@@ -484,16 +394,6 @@ public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void settings_challenge_type(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
@@ -528,16 +428,6 @@ public class Admin_Settings_Tab extends AdminBase{
 
     @Test
     public void settings_event_type(){
-
-        //Navigate to hub
-
-        //wd.get("http://princessland.influitives.com/users/sign_in");
-
-        //Admin sign in
-
-        wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
-        wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("sign-in-button")).click();
 
         //Navigate to the settings page
 
