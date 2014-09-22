@@ -153,14 +153,14 @@ public class Admin_Advocate_Actions extends AdminBase {
 
         //Click on advocate dropdown
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"advocate_15\"]/div[2]/div")));
-        wd.findElement(By.xpath("//*[@id=\"advocate_15\"]/div[2]/div")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"advocate_19\"]/div[2]/div/a/img")));
+        wd.findElement(By.xpath("//*[@id=\"advocate_19\"]/div[2]/div/a/img")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select give perk from dropdown
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"advocate_15\"]/div[2]/div/ul/li[3]/a")));
-        wd.findElement(By.xpath("//*[@id=\"advocate_15\"]/div[2]/div/ul/li[3]/a")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"advocate_19\"]/div[2]/div/ul/li[3]/a")));
+        wd.findElement(By.xpath("//*[@id=\"advocate_19\"]/div[2]/div/ul/li[3]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Click on perk dropdown

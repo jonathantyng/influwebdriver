@@ -46,7 +46,7 @@ public class Admin_Email_Settings_Tab extends AdminBase{
 
         //Click 'Update Default Sender'
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"new_settings_builder\"]/div[3]/input")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"new_settings_builder\"]/div[3]/input")));
         wd.findElement(By.xpath("//*[@id=\"new_settings_builder\"]/div[3]/input")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));

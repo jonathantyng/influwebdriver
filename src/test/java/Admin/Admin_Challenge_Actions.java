@@ -237,12 +237,12 @@ public class Admin_Challenge_Actions extends AdminBase{
 
         //Select challenge dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"challenge-109\"]/div[2]/div/a")).click();
 
         //Select save as template from dropdown
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[5]/a")));
-        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[5]/a")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"challenge-109\"]/div[2]/div/ul/li[5]/a")));
+        wd.findElement(By.xpath("//*[@id=\"challenge-109\"]/div[2]/div/ul/li[5]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Add template title
@@ -307,12 +307,12 @@ public class Admin_Challenge_Actions extends AdminBase{
 
         //Select challenge dropdown
 
-        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/a/img")).click();
+        wd.findElement(By.xpath("//*[@id=\"challenge-109\"]/div[2]/div/a/img")).click();
 
         //Select publishing options from dropdown
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[7]/a\n")));
-        wd.findElement(By.xpath("//*[@id=\"challenge-102\"]/div[2]/div/ul/li[7]/a\n")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"challenge-109\"]/div[2]/div/ul/li[7]/a")));
+        wd.findElement(By.xpath("//*[@id=\"challenge-109\"]/div[2]/div/ul/li[7]/a")).click();
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
         //Select publish from modal

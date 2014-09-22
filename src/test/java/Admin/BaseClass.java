@@ -20,7 +20,7 @@ RemoteWebDriver wd;
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://aug12.influitiveqa.com/");
+        wd.get("http://sanitysept15.influitives.com/");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
         /*

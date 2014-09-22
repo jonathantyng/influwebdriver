@@ -135,7 +135,7 @@ public class Admin_Nominee_Tab extends AdminBase {
         wd.findElement(By.cssSelector("#wrapper > div > div.main-half > span > ul > li > a")).click();
 
         //Select nominee search field and enter name
-        wd.findElement(By.id("search_name_or_email_contains")).sendKeys("New Nominee");
+        wd.findElement(By.id("q_name_or_email_cont")).sendKeys("New Nominee");
         try {Thread.sleep(4000l);} catch (Exception e) {throw new RuntimeException(e);}
 
         //Check for errors

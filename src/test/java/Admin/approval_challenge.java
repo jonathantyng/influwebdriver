@@ -84,8 +84,8 @@ public class approval_challenge extends BaseClass{
 
         //Enter second question
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"c65\"]/label[1]/input")));
-        wd.findElement(By.xpath("//*[@id=\"c65\"]/label[1]/input")).sendKeys("The second question issss?");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"c75\"]/label[1]/input")));
+        wd.findElement(By.xpath("//*[@id=\"c75\"]/label[1]/input")).sendKeys("The second question issss?");
 
         //Add corporate confirmation stage
 

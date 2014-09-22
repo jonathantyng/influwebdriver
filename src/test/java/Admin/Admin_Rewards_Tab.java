@@ -46,7 +46,7 @@ public class Admin_Rewards_Tab extends AdminBase{
 
         //Click on search field and enter text
 
-        wd.findElement(By.xpath("//*[@id=\"search_name_contains\"]")).sendKeys("Test");
+        wd.findElement(By.id("q_name_cont")).sendKeys("Test");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
