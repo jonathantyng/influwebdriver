@@ -14,11 +14,11 @@ public class Advocate {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/shannon/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wd.get("http://advocatetest.influitives.com");
+        wd.get("http://princessland.influitives.com");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 
@@ -30,7 +30,9 @@ public class Advocate {
 //
 //Uncomment everything below to enable SauceLabs integration
 //
+
 /*
+
 
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -61,3 +63,4 @@ public class Advocate {
 }
 
 */
+

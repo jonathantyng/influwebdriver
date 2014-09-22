@@ -8,7 +8,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Created by patrickprestley on 2014-07-03.
+ * Created by patrickprestley on 2014-07-03. Updated by Shannonon 2014-09-18
  */
 public class Advocate_Dashboard extends Advocate{
 
@@ -17,7 +17,7 @@ public class Advocate_Dashboard extends Advocate{
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -43,19 +43,21 @@ public class Advocate_Dashboard extends Advocate{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
     }
 
+    //The below test won't pass, no matter what I do... *sad face*
+
     @Test
     public void filter_by_type(){
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        try { Thread.sleep(10000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Select 'By Type' dropdown
+        //Select 'By Type' dropdown - big ass failing test!
 
-        wd.findElement(By.xpath("//*[@id=\"select2-chosen-8\"]")).click();
+        wd.findElement(By.cssSelector("#select2-chosen-15")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //
@@ -67,7 +69,7 @@ public class Advocate_Dashboard extends Advocate{
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -78,6 +80,65 @@ public class Advocate_Dashboard extends Advocate{
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
+        //Add goal
+
+        wd.findElement(By.cssSelector("#all-rewards > ul:nth-child(1) > li > section > div.goal-toggle")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
+    }
+
+
+    @Test
+    public void link_to_Make_a_Referral(){
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Click on Make a Referral
+
+        wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[1]/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+    }
+
+
+    @Test
+    public void link_to_Visit_Community(){
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Click on Visit Community
+
+        wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[2]/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+    }
+
+    @Test
+    public void link_to_Maven(){
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Click on Maven IOS App
+
+        wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[1]/h2[3]/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
     }
 
     @Test
@@ -85,7 +146,7 @@ public class Advocate_Dashboard extends Advocate{
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -109,7 +170,7 @@ public class Advocate_Dashboard extends Advocate{
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -127,7 +188,7 @@ public class Advocate_Dashboard extends Advocate{
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
@@ -139,6 +200,74 @@ public class Advocate_Dashboard extends Advocate{
         Assert.assertFalse(wd.findElement(By.tagName("body")).getText().contains("Error"));
 
     }
+
+    @Test
+       public void see_earned_badges(){
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //See Earned Badges
+
+        wd.findElement(By.xpath("//*[@id=\"main\"]/div[1]/section[4]/div[3]/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+    }
+
+    @Test
+    public void powered_by_influitive(){
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Click on Powered By Influitive
+
+        wd.findElement(By.xpath("//*[@id=\"content\"]/footer/h3/a")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+    }
+
+
+    @Test
+    public void Notifications() {
+
+
+        //Sign in as advocate
+
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
+        wd.findElement(By.id("user_password")).sendKeys("macbook18");
+        wd.findElement(By.id("sign-in-button")).click();
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
+        //Click on notifications
+
+        wd.findElement(By.xpath("//*[@id=\"notifications-menu\"]/a/ins")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Toggle to previous notificatons by clicking 'More'
+
+        wd.findElement(By.xpath("//*[@id=\"notification-drop\"]/a[2]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Toggle back
+
+        wd.findElement(By.xpath("//*[@id=\"notification-drop\"]/a[1]")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
+
+    }
+
+
     @After
     public void tearDown() {
         wd.quit();

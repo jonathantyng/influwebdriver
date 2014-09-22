@@ -21,7 +21,7 @@ public class Admin_Advocates_Tab extends AdminBase {
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -92,7 +92,7 @@ public class Admin_Advocates_Tab extends AdminBase {
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -138,7 +138,7 @@ public class Admin_Advocates_Tab extends AdminBase {
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -208,7 +208,7 @@ public class Admin_Advocates_Tab extends AdminBase {
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 

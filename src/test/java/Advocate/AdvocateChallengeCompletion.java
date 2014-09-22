@@ -8,7 +8,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @SuppressWarnings("unused")
 @RunWith(Suite.class)
-@SuiteClasses({BlogPost.class, FollowOnTwitter.class, JoinGroup.class, JoinLinkedinGroup.class, MultiSurvey.class, NPS.class, OnlineAction.class, OnlineReview.class, Referral.class, ShareLink.class, Survey.class, TwitterPost.class})
+@SuiteClasses({Approval.class, OnlineAction.class, JoinGroup.class, Referral.class,  })
 public class AdvocateChallengeCompletion {
 
 }

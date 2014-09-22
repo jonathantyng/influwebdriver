@@ -24,7 +24,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -69,7 +69,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -116,7 +116,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -172,7 +172,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -229,7 +229,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -301,7 +301,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 
@@ -374,7 +374,7 @@ public class Admin_Challenges_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com");
+        //wd.get("http://princessland.influitives.com");
 
         //Admin sign in
 

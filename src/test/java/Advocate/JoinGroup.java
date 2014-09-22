@@ -13,10 +13,10 @@ public class JoinGroup extends Advocate{
 
         //Sign into app and access challenge screen
 
-        wd.get("https://advocatetest.influitives.com/users/sign_in");
+        wd.get("https://princessland.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
@@ -27,8 +27,8 @@ public class JoinGroup extends Advocate{
 
         //Load challenge
 
-        wd.get("https://advocatetest.influitives.com/challenges/24");
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.cssSelector("#challenge-cards > div.col-1.column > div:nth-child(1) > div.title")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Join Group
 

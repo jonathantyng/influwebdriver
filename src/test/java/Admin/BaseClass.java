@@ -16,7 +16,7 @@ RemoteWebDriver wd;
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/shannon/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

@@ -17,14 +17,14 @@ public class Advocate_Challenges_Tab extends Advocate {
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //View challenges tab
 
-        wd.get("http://advocatetest.influitives.com/challenges");
+        wd.get("http://princessland.influitives.com/challenges");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on completed filter
@@ -45,14 +45,14 @@ public class Advocate_Challenges_Tab extends Advocate {
 
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //View challenges tab
 
-        wd.get("http://advocatetest.influitives.com/challenges");
+        wd.get("http://princessland.influitives.com/challenges");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on "Earned Badges"
@@ -67,14 +67,14 @@ public class Advocate_Challenges_Tab extends Advocate {
     public void view_levels(){
         //Sign in as advocate
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //View challenges tab
 
-        wd.get("http://advocatetest.influitives.com/challenges");
+        wd.get("http://princessland.influitives.com/challenges");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click on "Level up by.."

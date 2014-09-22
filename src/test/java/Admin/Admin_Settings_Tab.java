@@ -21,7 +21,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -53,7 +53,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -97,7 +97,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -124,7 +124,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -169,7 +169,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -266,7 +266,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -301,7 +301,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -383,7 +383,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -448,7 +448,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -487,7 +487,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 
@@ -531,7 +531,7 @@ public class Admin_Settings_Tab extends AdminBase{
 
         //Navigate to hub
 
-        //wd.get("http://advocatetest.influitives.com/users/sign_in");
+        //wd.get("http://princessland.influitives.com/users/sign_in");
 
         //Admin sign in
 

@@ -13,11 +13,11 @@ public class ScreenshotTests extends BasePage{
 	@Test
 	public void testElementScreenshot(){
 
-        wd.get("https://advocatetest.influitives.com/users/sign_in");
+        wd.get("https://princessland.influitives.com/users/sign_in");
 
         //Enter email and password to sign in
 
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         wd.findElement(By.id("user_password")).sendKeys("macbook18");
 
         //Click submit button
@@ -27,7 +27,7 @@ public class ScreenshotTests extends BasePage{
 
         //Load challenge
 
-        wd.get("https://advocatetest.influitives.com/challenges/20");
+        wd.get("https://princessland.influitives.com/challenges/20");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
         WebElement Appex = wd.findElement(By.xpath("//*[@id=\"open-challenges\"]/ul"));
         try {

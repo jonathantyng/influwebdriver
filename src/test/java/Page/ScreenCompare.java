@@ -49,7 +49,7 @@ public class ScreenCompare extends BasePage{
 
         //Navigate to hub
 
-        wd.get("https://advocatetest.influitives.com/corporate/contacts");
+        wd.get("https://princessland.influitives.com/corporate/contacts");
 
         //Enter email and password to sign in
 
@@ -90,7 +90,7 @@ public class ScreenCompare extends BasePage{
 
             //Navigate to hub
 
-            wd.get("https://advocatetest.influitives.com/corporate/challenges");
+            wd.get("https://princessland.influitives.com/corporate/challenges");
 
             //Enter email and password to sign in
 
@@ -144,7 +144,7 @@ public class ScreenCompare extends BasePage{
 
         //Navigate to hub
 
-        wd.get("https://advocatetest.influitives.com/corporate/groups");
+        wd.get("https://princessland.influitives.com/corporate/groups");
 
         //Enter email and password to sign in
 

@@ -14,10 +14,10 @@ public class NPS extends Advocate{
 
         //Sign into app and access challenge screen
 
-        wd.get("https://advocatetest.influitives.com/users/sign_in");
+        wd.get("https://princessland.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
@@ -28,7 +28,7 @@ public class NPS extends Advocate{
 
         //Load challenge
 
-        wd.get("https://advocatetest.influitives.com/challenges/29");
+        wd.get("https://princessland.influitives.com/challenges/29");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select NPS value

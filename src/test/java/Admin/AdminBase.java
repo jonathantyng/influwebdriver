@@ -14,11 +14,11 @@ public class AdminBase {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/shannon/chromedriver");
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://advocatetest.influitives.com");
+        wd.get("http://princessland.influitives.com");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
 
@@ -57,10 +57,11 @@ public class BaseClass {
                 capabilities);
         capabilities.setCapability("screen-resolution", "1920x1200");
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-        wd.get("http://advocatetest.influitives.com");
+        wd.get("http://princessland.influitives.com");
 
         }
     }
+
 
 
 */

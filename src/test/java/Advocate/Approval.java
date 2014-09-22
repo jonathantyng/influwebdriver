@@ -9,14 +9,14 @@ import org.openqa.selenium.*;
 public class Approval extends Advocate{
 
     @Test
-    public void approvall() {
+    public void approval() {
 
         //Sign into app and access challenge screen
 
-        wd.get("https://advocatetest.influitives.com/users/sign_in");
+        wd.get("https://princessland.influitives.com/users/sign_in");
         wd.findElement(By.id("user_email")).click();
         wd.findElement(By.id("user_email")).clear();
-        wd.findElement(By.id("user_email")).sendKeys("advocatebob7@gmail.com");
+        wd.findElement(By.id("user_email")).sendKeys("lisasimpson@thesimpsons.com");
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.id("user_password")).click();
         wd.findElement(By.id("user_password")).clear();
@@ -25,24 +25,16 @@ public class Approval extends Advocate{
         wd.findElement(By.id("sign-in-button")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Load challenge
+        //Click on challenge card for Approval Challenge
 
-        wd.get("https://advocatetest.influitives.com/challenges/21");
+        wd.findElement(By.cssSelector("#challenge-cards > div.col-1.column > div:nth-child(1) > div.title")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Enter text into field
+        //Click Approval
 
-        wd.findElement(By.id("activity_responses_attributes_0_body")).click();
-        wd.findElement(By.id("activity_responses_attributes_0_body")).sendKeys("This is a response!");
-
-        //Submit response
-
+        wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[3]/div/input")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-
-        wd.findElement(By.name("commit")).click();
-
-        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
     }
