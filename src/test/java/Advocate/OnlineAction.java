@@ -13,9 +13,8 @@ public class OnlineAction extends Advocate{
 
         //Load challenge
 
-        wd.findElement(By.cssSelector("#challenge-cards > div.col-2.column > div:nth-child(1) > div.title")).click();
-        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
-
+        wd.get("https://advocatetest.influitives.com/challenges/30");
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click 'Go there' to view article
 

@@ -13,11 +13,13 @@ public class MultiSurvey extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/28");
+        wd.get("https://advocatetest.influitives.com/challenges/28");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter survey response
 
+        wd.findElement(By.id("activity_responses_attributes_0_body")).click();
+        wd.findElement(By.id("activity_responses_attributes_0_body")).clear();
         wd.findElement(By.id("activity_responses_attributes_0_body")).sendKeys("This is a survey response");
         try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 

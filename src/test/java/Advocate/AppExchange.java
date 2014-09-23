@@ -13,7 +13,7 @@ public class AppExchange extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/20");
+        wd.get("https://advocatetest.influitives.com/challenges/20");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter saleforce user info
@@ -53,6 +53,12 @@ public class AppExchange extends Advocate{
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
+        //Signout
+
+        wd.findElement(By.id("contact-dropdown")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.linkText("Sign out")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
     }
 

@@ -13,7 +13,7 @@ public class LinkedinRecom extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/27");
+        wd.get("https://advocatetest.influitives.com/challenges/27");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Recommend

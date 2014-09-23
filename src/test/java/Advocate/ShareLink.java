@@ -13,7 +13,7 @@ public class ShareLink extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/33");
+        wd.get("https://advocatetest.influitives.com/challenges/33");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Select twitter

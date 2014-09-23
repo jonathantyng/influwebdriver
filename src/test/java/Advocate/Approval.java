@@ -9,17 +9,30 @@ import org.openqa.selenium.*;
 public class Approval extends Advocate{
 
     @Test
-    public void approval() {
+    public void approvall() {
 
-        //Click on challenge card for Approval Challenge
+        //Load challenge
 
-        wd.findElement(By.cssSelector("#challenge-cards > div.col-1.column > div:nth-child(1) > div.title")).click();
+        wd.get("https://advocatetest.influitives.com/challenges/21");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        //Click Approval
+        //Enter text into field
 
-        wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[3]/div/input")).click();
+        wd.findElement(By.id("activity_responses_attributes_0_body")).click();
+        wd.findElement(By.id("activity_responses_attributes_0_body")).sendKeys("This is a response!");
+
+        //Submit response
+
+        wd.findElement(By.name("commit")).click();
+
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Signout
+
+        wd.findElement(By.id("contact-dropdown")).click();
         try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.linkText("Sign out")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
 
 
 

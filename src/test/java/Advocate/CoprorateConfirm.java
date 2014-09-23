@@ -13,7 +13,7 @@ public class CoprorateConfirm extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/23");
+        wd.get("https://advocatetest.influitives.com/challenges/23");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Enter response
@@ -26,6 +26,15 @@ public class CoprorateConfirm extends Advocate{
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
         wd.findElement(By.name("commit")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+        //Signout
+
+        wd.findElement(By.id("contact-dropdown")).click();
+        try { Thread.sleep(2000l); } catch (Exception e) { throw new RuntimeException(e); }
+        wd.findElement(By.linkText("Sign out")).click();
+        try { Thread.sleep(3000l); } catch (Exception e) { throw new RuntimeException(e); }
+
+
 
     }
 

@@ -13,7 +13,7 @@ public class OnlineReview extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/31");
+        wd.get("https://advocatetest.influitives.com/challenges/31");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Click 'Go there' to view article

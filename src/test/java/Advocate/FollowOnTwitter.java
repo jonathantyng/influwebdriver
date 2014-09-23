@@ -13,12 +13,11 @@ public class FollowOnTwitter extends Advocate{
 
         //Load challenge
 
-        wd.get("https://princessland.influitives.com/challenges/35");
+        wd.get("https://advocatetest.influitives.com/challenges/35");
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
         //Follow
 
-        //wd.findElement(By.id("commit")).click();
         wd.findElement(By.xpath("//*[@id=\"new_activity\"]/div[3]/div/input")).click();
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
