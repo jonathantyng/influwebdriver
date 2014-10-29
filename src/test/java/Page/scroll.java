@@ -11,8 +11,8 @@ public class scroll extends BasePage{
     public void testing(){
 
         wd.get("http://www.cnn.com");
-
-        wd.executeScript("window.scrollBy(0,500)");
+// TODO: This should scroll to an element
+//        wd.executeScript("window.scrollBy(0,500)");
 
 
 

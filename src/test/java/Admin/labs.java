@@ -80,7 +80,8 @@ public class labs extends BaseClass {
 
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
 
-        wd.executeScript("window.scrollBy(0,700)");
+//        TODO: Not sure what this is trying to do
+//        wd.executeScript("window.scrollBy(0,700)");
 
 
         try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }

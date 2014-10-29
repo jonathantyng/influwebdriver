@@ -68,10 +68,10 @@ public class Events extends BaseClass {
         //Name/Description for New Event
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("zone_name")));
-        wd.findElementById("zone_name").sendKeys("New Zone");
+        wd.findElement(By.id("zone_name")).sendKeys("New Zone");
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("zone_description")));
-        wd.findElementById("zone_description").sendKeys("This is the new zone");
+        wd.findElement(By.id("zone_description")).sendKeys("This is the new zone");
 
         //Save Zone
 
