@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -126,7 +126,7 @@ public class twitter_post extends BaseClass{
         wd.quit();
     }
 
-    public static boolean isAlertPresent(FirefoxDriver wd) {
+    public static boolean isAlertPresent(WebDriver wd) {
         try {
             wd.switchTo().alert();
             return true;

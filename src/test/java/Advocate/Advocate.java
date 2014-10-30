@@ -6,11 +6,12 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
 
 
 public class Advocate {
 
-    ChromeDriver wd;
+    WebDriver wd;
 
     @Before
     public void setUp() throws Exception {

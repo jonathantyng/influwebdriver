@@ -1,13 +1,16 @@
 package Page;
 
-import org.openqa.selenium.*;
+import java.awt.Rectangle;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.internal.WrapsDriver;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 
 public class WebElementExtender {
 

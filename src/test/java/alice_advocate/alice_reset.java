@@ -2,8 +2,7 @@ package alice_advocate;
 
 import org.junit.After;
 import org.junit.Test;
-
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
 
 public class alice_reset extends BaseClassTwo{
 

@@ -7,11 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
 
 public class BasePage {
 
 
-    ChromeDriver wd;
+    WebDriver wd;
 
     @Before
     public void setUp() throws Exception {
@@ -24,8 +25,6 @@ public class BasePage {
         capabilities.setCapability("screen-resolution", "1920x1080");
 
         wd.manage().window().setSize(new Dimension(1400,1400));
-
-
     }
 
 }

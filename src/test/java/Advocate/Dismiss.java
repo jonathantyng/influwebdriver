@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
 
 /**
  * Created by shannon on 2014-09-22.
@@ -80,7 +80,7 @@ public class Dismiss extends Advocate {
             wd.quit();
         }
 
-    public static boolean isAlertPresent(FirefoxDriver wd) {
+    public static boolean isAlertPresent(WebDriver wd) {
         try {
             wd.switchTo().alert();
             return true;

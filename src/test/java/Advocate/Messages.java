@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 
 /**
  * Created by Shannon on 2014-09-18.
@@ -112,7 +112,7 @@ public class Messages extends Advocate{
         wd.quit();
     }
 
-    public static boolean isAlertPresent(ChromeDriver wd) {
+    public static boolean isAlertPresent(WebDriver wd) {
         try {
             wd.switchTo().alert();
             return true;

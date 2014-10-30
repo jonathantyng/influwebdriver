@@ -4,13 +4,14 @@ package Admin;
 import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AdminBase {
 
-    ChromeDriver wd;
+    WebDriver wd;
 
     @Before
     public void setUp() throws Exception {

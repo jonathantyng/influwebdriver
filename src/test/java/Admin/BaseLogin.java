@@ -4,14 +4,14 @@ package Admin;
 import org.junit.Before;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
 
 public class BaseLogin {
 
 
-    RemoteWebDriver wd;
+    WebDriver wd;
 
     @Before
     public void setUp() throws Exception {
