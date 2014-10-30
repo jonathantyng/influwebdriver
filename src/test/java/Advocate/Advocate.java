@@ -16,8 +16,6 @@ public class Advocate {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/patrickprestley/Downloads/chromedriver");
-
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         wd.get("http://advocatetest.influitives.com/");

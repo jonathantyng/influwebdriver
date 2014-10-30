@@ -13,8 +13,6 @@ public class BaseClassTwo {
     @Before
     public void setUp() throws Exception {
 
-        System.setProperty("webdriver.chrome.driver" ,"/Users/patrickprestley/Downloads/chromedriver");
-
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
