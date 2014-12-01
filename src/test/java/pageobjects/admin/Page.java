@@ -3,21 +3,27 @@ package pageobjects.admin;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageobjects.PageObject;
-import pageobjects.admin.challenge.List;
 
 public class Page extends PageObject {
 
     private final By contextSwitchSelector = By.cssSelector("#context-switcher a");
     private final By challengesNavSelector = By.cssSelector("#main-navigation #Challenges");
+    private final By groupsNavSelector = By.cssSelector("#main-navigation #Groups");
     
     public Page(WebDriver driver) {
         super(driver);
     }
 
-    public List navigateToChallenges() {
+    public pageobjects.admin.challenge.List navigateToChallenges() {
         findElement(challengesNavSelector).click();
         
-        return new List(getDriver());
+        return new pageobjects.admin.challenge.List(getDriver());
+    }
+    
+    public pageobjects.admin.groups.List navigateToGroups() {
+        findElement(groupsNavSelector).click();
+        
+        return new pageobjects.admin.groups.List(getDriver());
     }
             
     public pageobjects.advocate.Page switchToAdvocateContext() {
