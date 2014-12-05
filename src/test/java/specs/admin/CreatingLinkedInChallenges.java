@@ -4,12 +4,14 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
+import pageobjects.admin.challenge.Show;
 
 public class CreatingLinkedInChallenges {
 
@@ -31,7 +33,7 @@ public class CreatingLinkedInChallenges {
     @Test
     public void canCreateAnApprovalChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        Show showPage = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToChallenges()
                 .dismissTutorial()
                 .addNewChallenge()
@@ -45,13 +47,7 @@ public class CreatingLinkedInChallenges {
                 .validate()
                 .saveChallenge();
         
-        
-        try {
-            Thread.sleep(20000L);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(CreatingLinkedInChallenges.class.getName()).log(Level.SEVERE, null, ex);
-        }
-       
+        Assert.assertEquals("LinkedIn Challenge", showPage.getChallengeName());       
     }
 }
                 

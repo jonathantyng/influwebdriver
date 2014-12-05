@@ -18,7 +18,7 @@ public class LinkedInJoinGroupStage extends Stage {
 
     public LinkedInJoinGroupStage validate() {
         findInEditor(By.cssSelector(".load-preview")).click();
-        waitForElementToDisapear(By.cssSelector(".editor.stage .error"));
+        waitForElement(By.cssSelector(".linkedin-group.preview"));
         return this;
     }
 
