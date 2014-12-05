@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
 
-public class CreatingFacebookChallenges {
+public class CreatingLinkedInChallenges {
 
     WebDriver driver;
 
@@ -36,13 +36,23 @@ public class CreatingFacebookChallenges {
                 .dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .chooseChallengeType("Facebook")
-                .fillInName("Facebook Challenge")
-                .fillInDescription("This is a Facebook challenge")
-                .fillInHeadline("Facebook Challenge")
+                .chooseChallengeType("LinkedIn")
+                .fillInName("LinkedIn Challenge")
+                .fillInHeadline("Join our LinkedIn Group!")
                 .addStage()
-                .facebookLikeStage()
-//                .addFacebookPageURL("https://www.facebook.com/PepsiCanada")
-//                .saveChallenge();
+                .linkedInJoinGroup()
+                .fillInGroupURL("https://www.linkedin.com/groups/Influitives-Community-4449061")
+                .validate()
+                .saveChallenge();
+        
+        
+        try {
+            Thread.sleep(20000L);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(CreatingLinkedInChallenges.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
     }
 }
+                
+                

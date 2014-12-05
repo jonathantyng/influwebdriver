@@ -30,4 +30,10 @@ public class AddStageChooser extends Creator {
         
         return new FacebookLikeStage(getDriver());
     }
+
+    public LinkedInJoinGroupStage linkedInJoinGroup() {
+        findElement(By.cssSelector("img[alt='Linkedin group join']")).click();
+        
+        return new LinkedInJoinGroupStage(getDriver());
+    }
 }
