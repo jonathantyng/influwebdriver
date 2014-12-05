@@ -18,7 +18,7 @@ public class AdminBase {
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://advocatetest.influitives.com");
+        wd.get("http://dec4.influitives.com");
 
         //Sign in as admin
 

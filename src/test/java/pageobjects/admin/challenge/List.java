@@ -27,6 +27,7 @@ public class List extends Page {
 
         return this;
     }
+    
     private void verifyOnChallengesPage() {
         if( null == findElement(addChallengeSelector) ) {
             throw new RuntimeException("Not on admin challenge list page");

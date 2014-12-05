@@ -7,7 +7,6 @@ import pageobjects.admin.challenge.creator.AddStageChooser;
 
 public class Creator extends Page {
     private final By verifySelector = By.cssSelector("#challenge-creator");
-    
     private final By addStageSelector = By.cssSelector("#add-stage > img.icon");
     private final By saveButtonSelector = By.name("commit");
  

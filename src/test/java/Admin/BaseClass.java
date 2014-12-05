@@ -19,7 +19,7 @@ public class BaseClass {
 
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://sanitysept15.influitives.com/");
+        wd.get("http://dec4.influitives.com/");
 
         //Sign in as admin
 

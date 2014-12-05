@@ -56,21 +56,21 @@ public class create_company extends BaseClass{
 
         //Select 'Add a company'
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a Company")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#configuration-panel > div > div.clearfix.padded > a.button.highlighted.right")));
 
-        wd.findElement(By.linkText("Add a Company")).click();
+        wd.findElement(By.cssSelector("#configuration-panel > div > div.clearfix.padded > a.button.highlighted.right")).click();
 
         //Enter company name into text field
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_name")));
 
-        wd.findElement(By.id("company_name")).sendKeys("sanitysept15");
+        wd.findElement(By.id("company_name")).sendKeys("dec4");
 
         //Enter company subdomain into text field
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_subdomain")));
 
-        wd.findElement(By.id("company_subdomain")).sendKeys("sanitysept15");
+        wd.findElement(By.id("company_subdomain")).sendKeys("dec4");
 
         //Enter admin email address
 

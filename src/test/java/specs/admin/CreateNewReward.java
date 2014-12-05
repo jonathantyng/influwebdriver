@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
 import pageobjects.admin.groups.Details;
 
-public class CreateNewGroup {
+public class CreateNewReward {
 
     WebDriver driver;
 
@@ -29,17 +29,21 @@ public class CreateNewGroup {
     }
 
     @Test
-    public void canCreateNewGroup() {
+    public void canCreateNewReward() {
         LoginPage start = new LoginPage(driver);
-        final String groupName = "Sanity Group";
         
-        Details detailsPage = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
-                .navigateToGroups()
+         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+                .navigateToRewards()
                 .dismissTutorial()
-                .addNewGroup()
-                .fillInName(groupName)       
-                .saveGroup();
+                .addNewReward();
+//                .navToHeadline()
+//                .addHeadline()
+//                .addDescription()
+//                .selectRewardType()
+//                .setAsFeatured;
+//                .navToRedeeming
+                  
+         
 
-        Assert.assertEquals(groupName, detailsPage.getGroupName());
     }
 }

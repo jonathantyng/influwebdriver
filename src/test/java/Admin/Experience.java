@@ -109,19 +109,14 @@ public class Experience extends BaseClass {
             wd.findElement(By.name("completion_text")).sendKeys("Experiences Rock!");
             wd.findElement(By.id("ui-id-2")).click();
             wd.findElement(By.name("New Experience")).click();
-  }    
-        
-    
-    
-    }
-            
-            
-
+  }       
      @After
     public void tearDown() {
         wd.quit();
     }
-    
 }
+
+    
+
 
 

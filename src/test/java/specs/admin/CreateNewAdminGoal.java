@@ -1,7 +1,8 @@
 package specs.admin;
 
 import java.util.concurrent.TimeUnit;
-import junit.framework.Assert;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,9 +10,8 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
-import pageobjects.admin.groups.Details;
 
-public class CreateNewGroup {
+public class CreateNewAdminGoal {
 
     WebDriver driver;
 
@@ -29,17 +29,14 @@ public class CreateNewGroup {
     }
 
     @Test
-    public void canCreateNewGroup() {
+    public void canCreateAdminGoal() {
         LoginPage start = new LoginPage(driver);
-        final String groupName = "Sanity Group";
-        
-        Details detailsPage = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
-                .navigateToGroups()
-                .dismissTutorial()
-                .addNewGroup()
-                .fillInName(groupName)       
-                .saveGroup();
-
-        Assert.assertEquals(groupName, detailsPage.getGroupName());
-    }
+        start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+                    .addNewAdminGoal();
+//                    .setTrackableAmount()
+//                    .setGoalAmount();
+// //                 .clickSave();
+//        
+                    
+    }   
 }
