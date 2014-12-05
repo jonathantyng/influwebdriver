@@ -4,13 +4,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pageobjects.admin.challenge.Creator;
 import specs.admin.CreatingApprovalChallenges;
 
-public class SurveyStage extends Creator {
+public class SurveyStage extends Stage {
     public static final By VERIFYSELECTOR = By.cssSelector(".stage-details.questions");
     
-    private final By editorSelector = By.cssSelector(".stage.editor");
     private final By subjectSelector = By.name("subject");
     
     public SurveyStage(WebDriver driver) {
@@ -18,7 +16,7 @@ public class SurveyStage extends Creator {
     }
     
     public SurveyStage fillInSubject(String subject) {
-        findChildOfVisibleParent(editorSelector, subjectSelector).sendKeys(subject);
+        findInEditor(subjectSelector).sendKeys(subject);
         
         return this;
     }

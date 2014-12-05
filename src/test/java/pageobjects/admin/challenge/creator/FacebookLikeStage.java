@@ -3,11 +3,9 @@ package pageobjects.admin.challenge.creator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pageobjects.admin.challenge.Creator;
 
-public class FacebookLikeStage extends Creator {
+public class FacebookLikeStage extends Stage {
 
-    private final By editorSelector = By.cssSelector(".editor.stage");
     private final By facebookURLSelector = By.name("params.facebook_page_url");
     
     public FacebookLikeStage(WebDriver driver) {
@@ -15,7 +13,7 @@ public class FacebookLikeStage extends Creator {
     }
 
     public FacebookLikeStage addFacebookPageURL(String facebookPageURL) {
-        findChildOfVisibleParent(editorSelector, facebookURLSelector).sendKeys(facebookPageURL);
+        findInEditor(facebookURLSelector).sendKeys(facebookPageURL);
         
         return this;
     }
