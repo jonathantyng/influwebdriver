@@ -1,7 +1,8 @@
 package specs.admin;
 
 import java.util.concurrent.TimeUnit;
-import junit.framework.Assert;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,9 +10,8 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
-import pageobjects.admin.groups.Details;
 
-public class CreateNewReward {
+public class CreatingFacebookChallenges {
 
     WebDriver driver;
 
@@ -29,22 +29,20 @@ public class CreateNewReward {
     }
 
     @Test
-    public void canCreateNewReward() {
+    public void canCreateAnApprovalChallenge() {
         LoginPage start = new LoginPage(driver);
-        
-         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
-                .navigateToRewards()
+        start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+                .navigateToChallenges()
                 .dismissTutorial()
-                .addNewReward();
-//                .navToHeadline()
-//                .addHeadline()
-//                .addDescription()
-//                .selectRewardType()
-//                .setAsFeatured;
-//                .navToRedeeming
-                  
-                  
-         
-
+                .addNewChallenge()
+                .createBlankChallenge()
+                .chooseChallengeType("Facebook")
+                .fillInName("Facebook Challenge")
+                .fillInDescription("This is a Facebook challenge")
+                .fillInHeadline("Facebook Challenge")
+                .addStage()
+                .facebookLikeStage()
+                .addFacebookPageURL("https://www.facebook.com/PepsiCanada");
+//                .saveChallenge();
     }
 }

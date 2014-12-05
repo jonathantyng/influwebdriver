@@ -7,6 +7,7 @@ import pageobjects.admin.challenge.Creator;
 public class AddStageChooser extends Creator {
     private final By surveyStageSelector = By.xpath("//img[@alt='Questions']");
     private final By corporateConfirmationStageSelector = By.xpath("//img[@alt='Corporate confirmation']");
+    private final By facebookLikeStageSelector = By.cssSelector("img[alt='Facebook like page']");
 
     public AddStageChooser(WebDriver driver) {
         super(driver);
@@ -22,5 +23,11 @@ public class AddStageChooser extends Creator {
         findElement(corporateConfirmationStageSelector).click();
         
         return new CorporateConfirmationStage(getDriver());
+    }
+    
+    public FacebookLikeStage facebookLikeStage() {
+        findElement(facebookLikeStageSelector).click();
+        
+        return new FacebookLikeStage(getDriver());
     }
 }
