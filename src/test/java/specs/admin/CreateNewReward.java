@@ -9,7 +9,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
-import pageobjects.admin.groups.Details;
+import pageobjects.admin.rewards.List;
 
 public class CreateNewReward {
 
@@ -32,19 +32,17 @@ public class CreateNewReward {
     public void canCreateNewReward() {
         LoginPage start = new LoginPage(driver);
         
-         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        List rewardList = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToRewards()
                 .dismissTutorial()
-                .addNewReward();
-//                .navToHeadline()
-//                .addHeadline()
-//                .addDescription()
-//                .selectRewardType()
-//                .setAsFeatured;
-//                .navToRedeeming
-                  
-                  
-         
-
+                .addNewReward()
+                .chooseManualFulfillment()
+                .moveToDetailsPane()
+                .fillInName("New reward name")
+                .fillInDescription("Some description")
+                .chooseType("Swag")
+                .saveReward();
+                
+        Assert.assertEquals("New reward name", rewardList.getRewardName(1));
     }
 }

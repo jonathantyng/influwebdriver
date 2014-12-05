@@ -1,5 +1,7 @@
 package pageobjects;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.Predicate;
 import org.openqa.selenium.By;
