@@ -8,6 +8,9 @@ public class AddStageChooser extends Creator {
     private final By surveyStageSelector = By.xpath("//img[@alt='Questions']");
     private final By corporateConfirmationStageSelector = By.xpath("//img[@alt='Corporate confirmation']");
     private final By facebookLikeStageSelector = By.cssSelector("img[alt='Facebook like page']");
+    private final By referralStageSelector = By.cssSelector("img[alt='Refer prospect']");
+    private final By LinkedInJoinGroupSelector = By.cssSelector("img[alt='Linkedin group join']");
+
 
     public AddStageChooser(WebDriver driver) {
         super(driver);
@@ -32,8 +35,15 @@ public class AddStageChooser extends Creator {
     }
 
     public LinkedInJoinGroupStage linkedInJoinGroup() {
-        findElement(By.cssSelector("img[alt='Linkedin group join']")).click();
+        findElement(LinkedInJoinGroupSelector).click();
         
         return new LinkedInJoinGroupStage(getDriver());
     }
+    
+    public ReferralChallenge trackableReferralChallenge() {
+        findElement(referralStageSelector).click();
+        
+        return new ReferralChallenge(getDriver());
+    }
+
 }

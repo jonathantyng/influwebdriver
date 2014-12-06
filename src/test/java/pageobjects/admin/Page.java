@@ -39,4 +39,4 @@ public class Page extends PageObject {
         return new pageobjects.admin.rewards.List(getDriver());
     }
 
-}
+  

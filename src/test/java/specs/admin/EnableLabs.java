@@ -1,8 +1,6 @@
 package specs.admin;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +8,6 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
-
 public class EnableLabs {
 
     WebDriver driver;
@@ -32,8 +29,6 @@ public class EnableLabs {
     public void enableInfluitiveLabs() {
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3");
-                     
-    
-    }
-    
+                    // .navigateToSettings();
+    } 
 }

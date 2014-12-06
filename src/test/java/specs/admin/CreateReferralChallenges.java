@@ -10,8 +10,9 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
+import pageobjects.admin.challenge.creator.AddStageChooser;
 
-public class CreatingFacebookChallenges {
+public class CreateReferralChallenges {
 
     WebDriver driver;
 
@@ -29,20 +30,21 @@ public class CreatingFacebookChallenges {
     }
 
     @Test
-    public void canCreateAnApprovalChallenge() {
+    public void canCreateAReferralChallenge() {
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToChallenges()
                 .dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .chooseChallengeType("Facebook")
-                .fillInName("Facebook Challenge")
-                .fillInDescription("This is a Facebook challenge")
-                .fillInHeadline("Facebook Challenge")
+                .chooseChallengeType("Referral")
+                .fillInName("Referral Challenge")
+                .fillInHeadline("Referral Challenge for You!")
+                .fillInDescription("Refer your friends")
                 .addStage()
-                .facebookLikeStage()
-                .addFacebookPageURL("https://www.facebook.com/PepsiCanada")
+                .trackableReferralChallenge()
                 .saveChallenge();
-    }
+                
+                }
+    
 }
