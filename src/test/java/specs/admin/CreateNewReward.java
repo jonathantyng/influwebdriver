@@ -34,7 +34,7 @@ public class CreateNewReward {
         
         List rewardList = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToRewards()
-                .dismissTutorial()
+                .<pageobjects.admin.rewards.List>dismissTutorial()
                 .addNewReward()
                 .chooseManualFulfillment()
                 .moveToDetailsPane()

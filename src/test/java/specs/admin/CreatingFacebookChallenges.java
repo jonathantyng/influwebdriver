@@ -33,7 +33,7 @@ public class CreatingFacebookChallenges {
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToChallenges()
-                .dismissTutorial()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
                 .chooseChallengeType("Facebook")

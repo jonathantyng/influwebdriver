@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageobjects.admin.challenge.creator.SurveyStage;
+import specs.admin.CreatingApprovalChallenges;
 
 public class PageObject {
 
@@ -41,7 +43,7 @@ public class PageObject {
     protected WebElement findChildOfVisibleParent(By parentSelector, By childSelector) {
         return findVisibleElement(parentSelector).findElement(childSelector);
     }
- 
+
     protected WebElement findVisibleElement(By selector) {
         java.util.List<WebElement> elements = getDriver().findElements(selector);
 
@@ -58,6 +60,16 @@ public class PageObject {
 
     protected void waitForElementToDisapear(By selector) {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(selector));
+    }
+
+    public <T extends PageObject > T pause(long time) {
+        try {
+            Thread.sleep(time);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(CreatingApprovalChallenges.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return (T)this;
     }
 
     protected WebDriver getDriver() {

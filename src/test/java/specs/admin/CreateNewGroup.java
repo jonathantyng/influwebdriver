@@ -35,7 +35,7 @@ public class CreateNewGroup {
         
         Details detailsPage = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToGroups()
-                .dismissTutorial()
+                .<pageobjects.admin.groups.List>dismissTutorial()
                 .addNewGroup()
                 .fillInName(groupName)       
                 .saveGroup();

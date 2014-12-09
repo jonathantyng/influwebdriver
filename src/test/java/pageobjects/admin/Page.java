@@ -10,6 +10,7 @@ public class Page extends PageObject {
     private final By challengesNavSelector = By.cssSelector("#main-navigation #Challenges");
     private final By groupsNavSelector = By.cssSelector("#main-navigation #Groups");
     private final By rewardNavSelector = By.cssSelector("#main-navigation #Rewards");
+    private final By dismissTutorialSelector = By.cssSelector(".guider #NoThanks");
 
     public Page(WebDriver driver) {
         super(driver);
@@ -38,5 +39,13 @@ public class Page extends PageObject {
 
         return new pageobjects.admin.rewards.List(getDriver());
     }
+    
+    public <T extends Page> T dismissTutorial() {
+        findElement(dismissTutorialSelector).click();
+        waitForElementToDisapear(dismissTutorialSelector);
+
+        return (T)this;
+    }
+
 }
   

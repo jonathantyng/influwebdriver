@@ -1,8 +1,6 @@
 package specs.admin;
 
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,6 +8,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.LoginPage;
+import pageobjects.admin.challenge.TemplateLibrary;
 
 public class CreatingApprovalChallenges {
 
@@ -33,7 +32,7 @@ public class CreatingApprovalChallenges {
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToChallenges()
-                .dismissTutorial()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
                 .chooseChallengeType("Survey")
