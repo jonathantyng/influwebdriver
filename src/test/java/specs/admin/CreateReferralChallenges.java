@@ -44,7 +44,7 @@ public class CreateReferralChallenges {
                 .addStage()
                 .trackableReferralChallenge()
                 .saveChallenge();
-                
-                }
-    
+
+    }
+
 }
