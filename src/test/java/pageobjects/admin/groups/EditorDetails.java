@@ -3,6 +3,7 @@ package pageobjects.admin.groups;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pageobjects.admin.challenge.creator.Details;
 
 public class EditorDetails extends Editor {
 
@@ -29,6 +30,12 @@ public class EditorDetails extends Editor {
     public EditorDetails fillInInviteCode(String description) {
         findElement(groupInviteCode).sendKeys(description);
 
+        return this;
+    }
+
+    public EditorDetails generateGroupDetails() {
+        fillInName("Random Group");   
+        
         return this;
     }
 

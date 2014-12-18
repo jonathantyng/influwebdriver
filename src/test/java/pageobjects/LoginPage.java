@@ -12,7 +12,8 @@ public class LoginPage extends PageObject {
     private final By passwordFieldSelector = By.cssSelector(".new-session #user_password");
     private final By signinButtonSelector = By.cssSelector(".new-session #sign-in-button");
     private final By pageVerificationSelector = By.cssSelector("form.new-session");
-
+    private final By facebookIcon = By.cssSelector(".login-providers #Facebook");
+    
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -49,4 +50,8 @@ public class LoginPage extends PageObject {
         return findElement(signinButtonSelector);
     }
  
+    private WebElement clickFacebookIcon(){
+        return findElement(facebookIcon);
+    }
 }
+    
