@@ -9,6 +9,6 @@ package specs.admin.group;
  *
  * @author shannon
  */
-public class CreateNewAdvocateInfoGroup {
+public class CreateNewAdvocateInfo {
     
 }

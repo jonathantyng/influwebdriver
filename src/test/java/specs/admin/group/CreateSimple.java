@@ -6,7 +6,7 @@ import pageobjects.LoginPage;
 import pageobjects.admin.groups.Details;
 import specs.admin.AbstractSpec;
 
-public class CreateNewGroup extends AbstractSpec {
+public class CreateSimple extends AbstractSpec {
 
     @Test
     public void canCreateNewGroup() {
