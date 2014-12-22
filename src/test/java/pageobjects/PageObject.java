@@ -9,8 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageobjects.admin.challenge.creator.SurveyStage;
-import specs.admin.CreatingApprovalChallenges;
 
 public class PageObject {
 
@@ -66,7 +64,7 @@ public class PageObject {
         try {
             Thread.sleep(time);
         } catch (InterruptedException ex) {
-            Logger.getLogger(CreatingApprovalChallenges.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(getClass().getName()).log(Level.SEVERE, null, ex);
         }
 
         return (T)this;

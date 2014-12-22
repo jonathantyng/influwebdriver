@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AbstractSpec {
 
-    WebDriver driver;
+    protected WebDriver driver;
 
     @Before
     public void setup() {

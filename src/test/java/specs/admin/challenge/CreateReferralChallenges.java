@@ -1,7 +1,8 @@
-package specs.admin;
+package specs.admin.challenge;
 
 import org.junit.Test;
 import pageobjects.LoginPage;
+import specs.admin.AbstractSpec;
 
 public class CreateReferralChallenges extends AbstractSpec {
 

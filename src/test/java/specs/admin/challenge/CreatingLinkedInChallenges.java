@@ -1,9 +1,10 @@
-package specs.admin;
+package specs.admin.challenge;
 
 import org.junit.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
 import pageobjects.admin.challenge.Show;
+import specs.admin.AbstractSpec;
 
 public class CreatingLinkedInChallenges extends AbstractSpec {
 
