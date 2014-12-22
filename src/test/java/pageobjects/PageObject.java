@@ -73,4 +73,8 @@ public class PageObject {
     protected WebDriver getDriver() {
         return this.driver;
     }
+
+    protected void waitForAjaxLoader() {
+        waitForElementToDisapear(By.cssSelector(".ajax-load"));
+    }
 }

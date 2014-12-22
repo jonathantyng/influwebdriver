@@ -7,6 +7,7 @@ import pageobjects.admin.Page;
 public class Editor extends Page {
     
     private final By saveButtonSelector = By.id("save-button");
+    private final By targettingTabSelector = By.cssSelector("#tab_advocates a");
     
     public Editor(WebDriver driver) {
         super(driver);
@@ -16,5 +17,11 @@ public class Editor extends Page {
         findElement(saveButtonSelector).click();
         
         return new Details(getDriver());
+    }
+    
+    public EditorTargeting switchToTargetting() {
+        findElement(targettingTabSelector).click();
+        
+        return new EditorTargeting(getDriver());
     }
 }

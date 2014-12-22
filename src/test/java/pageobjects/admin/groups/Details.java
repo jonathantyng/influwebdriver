@@ -23,5 +23,22 @@ public class Details extends Page {
         
         return new AddAdvocates(getDriver());
     }
+
+    public String waitForAndGetNewMembershipCount() {
+        int tries = 0;
+        while(tries++ < 3) {
+            getDriver().navigate().refresh();
+            
+            if (getLastRefreshed().equals("Membership updated less than a minute ago")) {
+                break;
+            }
+        }
+        
+        return findElement(By.xpath("//*[@id='kpis']//*[@class='details_actions']//p[contains(text(), 'Member Count')]/strong ")).getText();
+    }
+    
+    public String getLastRefreshed() {
+        return findElement(By.xpath("//*[@id='kpis']//*[@class='details_actions']")).getText();
+    }
    
 }
