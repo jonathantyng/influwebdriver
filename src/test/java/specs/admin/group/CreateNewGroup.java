@@ -1,9 +1,10 @@
-package specs.admin;
+package specs.admin.group;
 
 import junit.framework.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
 import pageobjects.admin.groups.Details;
+import specs.admin.AbstractSpec;
 
 public class CreateNewGroup extends AbstractSpec {
 
