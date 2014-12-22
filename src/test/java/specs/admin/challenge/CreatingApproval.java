@@ -4,7 +4,7 @@ import org.junit.Test;
 import pageobjects.LoginPage;
 import specs.admin.AbstractSpec;
 
-public class CreatingApprovalChallenges extends AbstractSpec {
+public class CreatingApproval extends AbstractSpec {
 
     @Test
     public void canCreateAnApprovalChallenge() {

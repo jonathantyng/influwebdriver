@@ -6,7 +6,7 @@ import pageobjects.LoginPage;
 import pageobjects.admin.challenge.Show;
 import specs.admin.AbstractSpec;
 
-public class CreatingLinkedInChallenges extends AbstractSpec {
+public class CreatingLinkedIn extends AbstractSpec {
 
     @Test
     public void canCreateAnApprovalChallenge() {

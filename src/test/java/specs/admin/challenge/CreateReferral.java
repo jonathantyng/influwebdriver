@@ -4,7 +4,7 @@ import org.junit.Test;
 import pageobjects.LoginPage;
 import specs.admin.AbstractSpec;
 
-public class CreateReferralChallenges extends AbstractSpec {
+public class CreateReferral extends AbstractSpec {
 
     @Test
     public void canCreateAReferralChallenge() {
