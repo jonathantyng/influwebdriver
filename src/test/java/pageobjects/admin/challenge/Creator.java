@@ -30,5 +30,5 @@ public class Creator extends Page {
         if( null == findElement(verifySelector) ) {
             throw new RuntimeException("Not on challenge creator");
         }
-    }
+    } 
 }

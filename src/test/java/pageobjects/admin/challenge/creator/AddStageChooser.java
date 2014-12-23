@@ -17,7 +17,7 @@ public class AddStageChooser extends Creator {
     }
     
     public SurveyStage surveyStage() {
-        findElement(surveyStageSelector).click();
+        findElement(surveyStageSelector).click(); 
         
         return new SurveyStage(getDriver());
     }
