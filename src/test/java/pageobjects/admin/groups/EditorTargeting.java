@@ -13,6 +13,7 @@ public class EditorTargeting extends Editor {
     private final By conditionOperatorSelector = By.cssSelector(".operator");
     private final By conditionFieldNameSelector = By.cssSelector(".field-name");
     private final By firstConditionSelector = By.cssSelector(".conditions .condition:first-child");
+    private final By firstExplicitAdvocateNameSelector = By.cssSelector("#ui-id-2 .advocate:first-child .name");
     
     public EditorTargeting(WebDriver driver) {
         super(driver);
@@ -48,4 +49,9 @@ public class EditorTargeting extends Editor {
         return findElement(advocateInclusionCount).getText();
     }
     
+    public String getFirstExplicitAdvocateName() {
+        waitForAjaxLoader();
+        
+        return findElement(firstExplicitAdvocateNameSelector).getText();
+    }
 }

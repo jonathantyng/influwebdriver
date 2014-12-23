@@ -33,6 +33,10 @@ public class PageObject {
     protected void chooseSelect2Match() {
         findElement(By.className("select2-match")).click();
     }
+    
+    protected void chooseFirstSelect2Result() {
+        findElement(By.className("select2-result")).click();
+    }
 
     protected WebElement findElement(By selector) {
         return getDriver().findElement(selector);
