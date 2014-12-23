@@ -6,7 +6,7 @@ import pageobjects.LoginPage;
 import pageobjects.admin.groups.EditorTargeting;
 import specs.admin.AbstractSpec;
 
-public class TargettedByName extends AbstractSpec {
+public class TargettedByEmail extends AbstractSpec {
     
     @Test
     public void groupTargettedByNameOnlyHasThatPerson() {
