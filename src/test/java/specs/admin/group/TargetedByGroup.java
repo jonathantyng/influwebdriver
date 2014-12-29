@@ -18,7 +18,7 @@ public class TargetedByGroup extends AbstractSpec{
             .generateGroupDetails()
             .switchToTargeting()
             .targetToGroups()
-            .addGroupName("Fan")
+            .targetByGroupName("Fan")
             .saveGroup();
     
     //add verification group advocate count = fan advocate count 
