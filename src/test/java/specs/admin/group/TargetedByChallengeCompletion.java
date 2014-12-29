@@ -17,14 +17,13 @@ public class TargetedByChallengeCompletion extends AbstractSpec{
                 .<pageobjects.admin.groups.List>dismissTutorial()
                 .addNewGroup()
                 .generateGroupDetails()
-                .switchToTargeting()
-                .;
-                
-                
-                
+                .switchToTargeting();
+//                .addChallengeCompletionCriteria() 
+//                .targetByCompletedChallenge()
+//                .saveGroup();
+       
+        //add assertion
+       
 
-}
-    
-    
-    
+        }
 }
