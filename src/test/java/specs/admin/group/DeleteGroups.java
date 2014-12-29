@@ -12,7 +12,6 @@ public class DeleteGroups extends AbstractSpec{
         LoginPage login = new LoginPage(driver);
         //login step - unsure, we don't use the targeting module so i'm not sure what the line here would be
         //login.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
-        
             .navigateToGroups()
             .<pageobjects.admin.groups.List>dismissTutorial()
             .selectDropdownOnEmptyGroup()
