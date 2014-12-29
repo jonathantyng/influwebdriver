@@ -6,10 +6,10 @@ import pageobjects.LoginPage;
 import pageobjects.admin.groups.EditorTargeting;
 import specs.admin.AbstractSpec;
 
-public class TargettedByName extends AbstractSpec {
+public class TargetedByName extends AbstractSpec {
     
     @Test
-    public void groupTargettedByNameOnlyHasThatPerson() {
+    public void groupTargetedByNameOnlyHasThatPerson() {
         LoginPage login = new LoginPage(driver);
         EditorTargeting groupEditor = login.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
                 .navigateToGroups()
