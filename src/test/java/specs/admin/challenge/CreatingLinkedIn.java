@@ -11,7 +11,7 @@ public class CreatingLinkedIn extends AbstractSpec {
     @Test
     public void canCreateAnApprovalChallenge() {
         LoginPage start = new LoginPage(driver);
-        Show showPage = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        Show showPage = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()

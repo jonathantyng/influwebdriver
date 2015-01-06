@@ -13,7 +13,7 @@ public class CreateSimple extends AbstractSpec {
         LoginPage start = new LoginPage(driver);
         final String groupName = "Sanity Group";
         
-        Details detailsPage = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        Details detailsPage = start.loginAdministrator()
                 .navigateToGroups()
                 .<pageobjects.admin.groups.List>dismissTutorial()
                 .addNewGroup()

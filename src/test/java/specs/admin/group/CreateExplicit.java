@@ -14,7 +14,7 @@ public class CreateExplicit extends AbstractSpec {
         LoginPage login = new LoginPage(driver);
         final String advocateName = "Alice Advocate";
         
-        EditorTargeting groupEditor = login.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        EditorTargeting groupEditor = login.loginAdministrator()
             .navigateToGroups()
             .<pageobjects.admin.groups.List>dismissTutorial()          
             .addNewGroup()

@@ -9,7 +9,7 @@ public class CreatingApproval extends AbstractSpec {
     @Test
     public void canCreateAnApprovalChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()

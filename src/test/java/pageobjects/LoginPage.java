@@ -18,6 +18,10 @@ public class LoginPage extends PageObject {
         super(driver);
     }
  
+    public pageobjects.admin.Dashboard loginAdministrator() {
+        return loginAdministrator("admin@influitive.com", "1nflu1t1v3");
+    }
+    
     public pageobjects.admin.Dashboard loginAdministrator(String username, String password) {
         this.loginUser(username, password);
         return new pageobjects.admin.Dashboard(getDriver());

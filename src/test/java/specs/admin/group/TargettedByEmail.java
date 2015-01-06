@@ -11,7 +11,7 @@ public class TargettedByEmail extends AbstractSpec {
     @Test
     public void groupTargettedByNameOnlyHasThatPerson() {
         LoginPage login = new LoginPage(driver);
-        EditorTargeting groupEditor = login.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        EditorTargeting groupEditor = login.loginAdministrator()
                 .navigateToGroups()
                 .<pageobjects.admin.groups.List>dismissTutorial()
                 .addNewGroup()

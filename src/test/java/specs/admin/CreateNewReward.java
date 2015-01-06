@@ -11,7 +11,7 @@ public class CreateNewReward extends AbstractSpec {
     public void canCreateNewReward() {
         LoginPage start = new LoginPage(driver);
         
-        List rewardList = start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        List rewardList = start.loginAdministrator()
                 .navigateToRewards()
                 .<pageobjects.admin.rewards.List>dismissTutorial()
                 .addNewReward()

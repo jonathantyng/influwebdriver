@@ -8,7 +8,7 @@ public class CreateNewAdminGoal extends AbstractSpec {
     @Test
     public void canCreateAdminGoal() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator("admin@influitive.com", "1nflu1t1v3")
+        start.loginAdministrator()
                 .addNewAdminGoal();
 //                    .setTrackableAmount()
 //                    .setGoalAmount();
