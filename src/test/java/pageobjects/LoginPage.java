@@ -13,13 +13,15 @@ public class LoginPage extends PageObject {
     private final By signinButtonSelector = By.cssSelector(".new-session #sign-in-button");
     private final By pageVerificationSelector = By.cssSelector("form.new-session");
     private final By facebookIcon = By.cssSelector(".login-providers #Facebook");
+    private final String influAdminPassword = "1nflu1t1v3";
+    private final String influAdminEmail = "admin@influitive.com";
     
     public LoginPage(WebDriver driver) {
         super(driver);
     }
  
     public pageobjects.admin.Dashboard loginAdministrator() {
-        return loginAdministrator("admin@influitive.com", "1nflu1t1v3");
+        return loginAdministrator(influAdminEmail, influAdminPassword);
     }
     
     public pageobjects.admin.Dashboard loginAdministrator(String username, String password) {
