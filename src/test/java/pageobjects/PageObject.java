@@ -37,6 +37,10 @@ public class PageObject {
     protected WebElement findElement(By selector) {
         return getDriver().findElement(selector);
     }
+    
+    protected java.util.List<WebElement> findElements(By selector) {
+        return getDriver().findElements(selector);
+    }
 
     protected WebElement findChildOfVisibleParent(By parentSelector, By childSelector) {
         return findVisibleElement(parentSelector).findElement(childSelector);
