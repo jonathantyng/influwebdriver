@@ -1,6 +1,7 @@
 package pageobjects.admin.groups;
 
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,8 +12,9 @@ public class List extends Page {
     private final By addGroupSelector = By.cssSelector("#wrapper > div > div.main-half > span > ul > li > a");
     private final By hasJoinCodeFilterSelector = By.cssSelector(".filters .input");
     private final By groupListItemSelector = By.cssSelector("ul.list > li");
-    private final By groupNameSelector = By.cssSelector(".name a");
     private final By searchBarInputSelector = By.cssSelector("input.search-field");
+    private final By groupNameSelector = By.cssSelector(".list .name > a");
+    private final By fanGroup = By.xpath("//*[@id=\"list_collection\"]/li[1]/div/div[3]/div/a");
     
     public List(WebDriver driver) {
         super(driver);
@@ -46,7 +48,22 @@ public class List extends Page {
     
     public List searchForGroup(String groupName) {
         findElement(searchBarInputSelector).sendKeys(groupName);
+        waitForAjaxLoader();
         
         return this;
+    }
+    
+    public java.util.List<String> getGroupNames() {
+        java.util.List<WebElement> groupNames = findElements(groupNameSelector);
+        
+        return groupNames.stream()
+                .map(WebElement::getText)
+                .collect(Collectors.toList());
+    }
+
+    public viewGroup(String groupName) {
+        findElement(fanGroup);
+                
+                return this;
     }
 }

@@ -10,6 +10,7 @@ public class AddStageChooser extends Creator {
     private final By facebookLikeStageSelector = By.cssSelector("img[alt='Facebook like page']");
     private final By referralStageSelector = By.cssSelector("img[alt='Refer prospect']");
     private final By LinkedInJoinGroupSelector = By.cssSelector("img[alt='Linkedin group join']");
+    private final By twitterFollowStage = By.cssSelector("#stages > div:nth-child(3) > ol > li:nth-child(2)");
 
 
     public AddStageChooser(WebDriver driver) {
@@ -45,5 +46,13 @@ public class AddStageChooser extends Creator {
         
         return new ReferralChallenge(getDriver());
     }
+
+    public Object twitterFollowStage() {
+        findElement(twitterFollowStage).click();
+        
+        return new TwitterFollowStage(getDriver());
+                
+    }
+ 
 
 }
