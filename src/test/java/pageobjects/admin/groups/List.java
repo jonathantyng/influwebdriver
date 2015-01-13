@@ -61,9 +61,11 @@ public class List extends Page {
                 .collect(Collectors.toList());
     }
 
-    public viewGroup(String groupName) {
+    // TODO: Make this use the passed in group name
+    // Currently it will find a specific group e.g 3rd on the page
+    public List viewGroup(String groupName) {
         findElement(fanGroup);
                 
-                return this;
+        return this;
     }
 }

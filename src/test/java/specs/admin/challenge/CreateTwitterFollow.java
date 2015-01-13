@@ -17,18 +17,22 @@ public class CreateTwitterFollow extends AbstractSpec{
                     .<pageobjects.admin.challenge.List>dismissTutorial()
                     .addNewChallenge()
                     .createBlankChallenge()
+                    .chooseChallengeType("Twitter")
                     .fillInName("Twitter Follow")
                     .fillInDescription("Follow us on Twitter")
                     .fillInHeadline("Tweet Tweet!")
                     .addStage()
-                    .twitterFollowStage();
-                    //.addTwitterFollowStageDetails
-                    //.saveChallenge();
-                    //addAssertion
-            }
+                    .twitterFollowStage()
+                    .addTwitterUserToFollow("Pepsi")
+                    .validateTwitterUser()
+                    .saveChallenge();
+              
+    }
+                    
+}   
                     
             
-        }       
+               
         
         
     

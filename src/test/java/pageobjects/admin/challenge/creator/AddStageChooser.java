@@ -47,7 +47,7 @@ public class AddStageChooser extends Creator {
         return new ReferralChallenge(getDriver());
     }
 
-    public Object twitterFollowStage() {
+    public TwitterFollowStage twitterFollowStage() {
         findElement(twitterFollowStage).click();
         
         return new TwitterFollowStage(getDriver());
