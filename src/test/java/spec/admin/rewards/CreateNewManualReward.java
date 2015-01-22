@@ -1,21 +1,21 @@
-package specs.admin;
+package spec.admin.rewards;
 
 import junit.framework.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
 import pageobjects.admin.rewards.List;
+import specs.admin.AbstractSpec;
 
-public class CreateNewReward extends AbstractSpec {
+public class CreateNewManualReward extends AbstractSpec {
 
     @Test
     public void canCreateNewReward() {
-        LoginPage start = new LoginPage(driver);
-        
+        LoginPage start = new LoginPage(driver);      
         List rewardList = start.loginAdministrator()
                 .navigateToRewards()
                 .<pageobjects.admin.rewards.List>dismissTutorial()
                 .addNewReward()
-                .chooseManualFulfillment()
+                //.chooseManualFulfillment()
                 .moveToDetailsPane()
                 .fillInName("New reward name")
                 .fillInDescription("Some description")

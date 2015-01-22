@@ -26,7 +26,12 @@ public class CreateTwitterFollow extends AbstractSpec{
                     .addTwitterUserToFollow("Pepsi")
                     .validateTwitterUser()
                     .saveChallenge();
-              
+            try {Thread.sleep(10000l);} catch (Exception e) {throw new RuntimeException(e);}
+  
+              // TODO: Make this challenge save - currently the twitter validation fails and the challenge 
+              // will not save. Adding targeting and assertions, publish challenge.
+            
+   
     }
                     
 }   

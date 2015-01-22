@@ -31,13 +31,8 @@ public class LoginSocialFacebook {
     @Test
     public void LoginwithFacebook(){
         LoginPage start = new LoginPage(driver);
-//            .clickFacebookIcon();
+//                .clickFacebookIcon();
 //        
     
-    }
-
-   
-
-  
-    
+    }  
 }

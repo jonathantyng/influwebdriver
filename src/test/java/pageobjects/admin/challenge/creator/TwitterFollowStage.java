@@ -22,6 +22,7 @@ public class TwitterFollowStage extends Stage {
 
     public TwitterFollowStage validateTwitterUser() {
         findElement(validateTwitterUserSelector).click(); 
+        waitForElement(By.cssSelector("#c75 > div > div > fieldset > div.twitter-preview.hide.callout.column.x-husky-width"));
                 
         return this;
                 }

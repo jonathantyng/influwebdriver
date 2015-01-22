@@ -10,6 +10,18 @@ public class CreateNewAdminGoal extends AbstractSpec {
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
                 .addNewAdminGoal();
+                
+                
+        
+        try {
+            Thread.sleep(100000);
+        }
+        
+        catch (Exception e){
+            throw new RuntimeException(e);
+        }
+            
+            
 //                    .setTrackableAmount()
 //                    .setGoalAmount();
 // //                 .clickSave();

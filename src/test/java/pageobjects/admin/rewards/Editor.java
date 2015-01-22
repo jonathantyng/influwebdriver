@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import pageobjects.admin.Page;
 
 public class Editor extends Page {
-    private final By detailsSelector = By.cssSelector("#tab_details a");
+    private final By detailsSelector = By.cssSelector("#link-headline");
     private final By saveButtonSelector = By.id("save-button");
   
     public Editor(WebDriver driver) {
