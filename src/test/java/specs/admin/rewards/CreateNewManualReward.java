@@ -10,6 +10,8 @@ public class CreateNewManualReward extends AbstractSpec {
 
     @Test
     public void canCreateNewReward() {
+        final String rewardName = "New manual reward";
+        
         LoginPage start = new LoginPage(driver);      
         List rewardList = start.loginAdministrator()
                 .navigateToRewards()
@@ -17,11 +19,11 @@ public class CreateNewManualReward extends AbstractSpec {
                 .addNewReward()
                 //.chooseManualFulfillment()
                 .moveToDetailsPane()
-                .fillInName("New reward name")
+                .fillInName(rewardName)
                 .fillInDescription("Some description")
                 .chooseType("Swag")
                 .saveReward();
                 
-        Assert.assertEquals("New reward name", rewardList.getRewardName(1));
+        Assert.assertEquals(rewardName, rewardList.getRewardName(1));
     }
 }

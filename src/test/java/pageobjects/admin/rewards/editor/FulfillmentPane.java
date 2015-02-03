@@ -32,5 +32,13 @@ public class FulfillmentPane extends Editor {
         
         return this;
     }
+
+    public FulfillmentPane chooseAdvocateChosenCharityFor(Integer i) {
+        findElement(By.id("reward_provider_first_giving")).click();
+        findElement(By.id("advocate_chosen")).click();
+        findElement(By.id("reward_amount")).sendKeys(i.toString());
+        
+        return this;
+    }
           
 }
