@@ -1,5 +1,5 @@
 
-package spec.admin.rewards;
+package specs.admin.rewards;
 
 import org.junit.Test;
 import pageobjects.LoginPage;

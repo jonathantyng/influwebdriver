@@ -1,4 +1,4 @@
-package spec.admin.rewards;
+package specs.admin.rewards;
 
 import junit.framework.Assert;
 import org.junit.Test;
