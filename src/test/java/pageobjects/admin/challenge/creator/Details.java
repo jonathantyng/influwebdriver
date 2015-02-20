@@ -55,4 +55,13 @@ public class Details extends Creator {
 
         return this;
     }
+
+    public Details generateDetails(String challengeName) {
+        fillInName(challengeName)
+                .fillInHeadline("challengeHeadline")
+                .fillInDescription("challengeDescription")
+                .chooseChallengeType("Act");
+        
+        return this;
+    }
 }
