@@ -11,6 +11,7 @@ class CommentOnBlogPost extends Stage {
     }
 
     public Object generateLinkToPost(String string) {
+        return null;
 
         
     }

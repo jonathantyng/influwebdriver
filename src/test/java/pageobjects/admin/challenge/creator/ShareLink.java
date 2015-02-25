@@ -12,10 +12,10 @@ class ShareLink extends Stage {
         super(driver);
     }
 
-    public linkToContent fillinLinkDetails(String linkURL) {
-        findElement(linkToContent).sendKeys(linkURL);
-       
-        return new linkToContent;
-    }
-
+//    public linkToContent fillinLinkDetails(String linkURL) {
+//        findElement(linkToContent).sendKeys(linkURL);
+//       
+//        return new linkToContent();
+//    }
+ 
 }

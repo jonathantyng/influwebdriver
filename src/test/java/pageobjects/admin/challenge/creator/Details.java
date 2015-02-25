@@ -18,12 +18,7 @@ public class Details extends Creator {
     }
 
     public Details chooseChallengeType(String challengeType) {
-        findParentOf(challengeTypeSelector)
-                .findElement(By.cssSelector(".select2-container"))
-                .click();
-
-        typeInSelect2Input(challengeType);
-        chooseSelect2Match();
+        searchSelect2For(challengeTypeSelector, challengeType);
 
         return this;
     }

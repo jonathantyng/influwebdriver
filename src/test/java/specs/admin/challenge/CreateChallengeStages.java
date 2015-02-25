@@ -1,3 +1,5 @@
+//This suite tests each invidvidual challenge type, with unique specs. 
+
 
 package specs.admin.challenge;
 
@@ -57,6 +59,18 @@ public class CreateChallengeStages extends AbstractSpec {
 
     @Test
     public void canCreateJoinGroupChallenge() {
+        LoginPage start = new LoginPage(driver);
+        start.loginAdministrator()
+                .navigateToChallenges()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
+                .addNewChallenge()
+                .createBlankChallenge()
+                .generateDetails("ChallengeDetails")
+                .addStage()
+                .joinAGroup()
+                .selectExistingGroupFromDropdown("Fan")
+                .pause(5000L);
+               
         
     }
 
@@ -115,38 +129,92 @@ public class CreateChallengeStages extends AbstractSpec {
         Assert.assertEquals("LinkedIn Challenge", showPage.getChallengeName());       
     }
      
-     @Test
-     public void createShareALinkChallenge() {
-         LoginPage start = new LoginPage (driver);
-         Show showPage = start.loginAdministrator()
-                 .navigateToChallenges()
-                 .<pageobjects.admin.challenge.List>dismissTutorial()
-                 .addNewChallenge()
-                 .createBlankChallenge()
-                 .generateDetails("ChallengeName")
-                 .addStage()
-                 .shareALink();
-                 //.fillinLinkDetails("LinkURL");
-                 //.saveChallenge();
-                 
-  
-     }
-
-
-     @Test
-     public void canCreateCommentOnBlogChallenge() {
-         LoginPage start = new LoginPage (driver);
-         Show showPage = start.loginAdministrator()
-                 .navigateToChallenges()
-                 .<pageobjects.admin.challenge.List>dismissTutorial()
-                 .addNewChallenge()
-                 .createBlankChallenge()
-                 .generateDetails("Comment On Blog")
-                 .addStage()
-                 .commentOnABlog()
-                 .generateLinkToPost()
-                 .savechallenge();
-         
+//     @Test
+//     public void createShareALinkChallenge() {
+//         LoginPage start = new LoginPage (driver);
+//         Show showPage = start.loginAdministrator()
+//                 .navigateToChallenges()
+//                 .<pageobjects.admin.challenge.List>dismissTutorial()
+//                 .addNewChallenge()
+//                 .createBlankChallenge()
+//                 .generateDetails("ChallengeName")
+//                 .addStage()
+//                 .shareALink()
+//                 .fillinLinkDetails("LinkURL")
+//                 .saveChallenge();
+     
+     
+//     @Test
+//     public void completeAnActionOnline(){
+//         LoginPage start = new LoginPage (driver);
+//         Show showPage = start.loginAdministrator()
+//                 .navigateToChallenges()
+//                 .<pageobjects.admin.challenge.List>dismissTutorial()
+//                 .addNewChallenge()
+//                 .createBlankChallenge()
+//                 .generateDetails("ActionOnlineChallenge")
+//                 .addStage()
+//                 .onlineActionStage()
+//                 .addLinkToContent()
+//                 .loadPreview
+//                 .saveChallenge()
+//                 .publishChallenge();
+//               
+     
+//
+//     @Test
+//     public void createNPSChallenge (){
+//         LoginPage start = new LoginPage (driver);
+//         Show showPage = start.loginAdministrator()
+//                 .navigateToChallenges()
+//                 .<pageobjects.admin.challenge.list>dismissTutorial()
+//                 .addNewChallenge()
+//                 .createBlankChallenge()
+//                 .generateDetails("Whatever")
+//                 .addStage()
+//                 .npsStage()
+//                 .saveChallenge()
+//                 .publishChallenge()
+//                 
+                 //assert some shit here.
+                      
+     
+//     @Test
+//     public void createUpdateYourProfileChallenge(){
+//     LoginPage start = new LoginPage (driver);
+//     Show showPage = start.loginAdministrator()
+//             .navigateToChallenges()
+//             .<pageobjects.admin.challenge.list>dismissTutorial()
+//             .addNewChallenge()
+//             .createBlankChallenge()
+//             .generateDetails()
+//             .addStage()
+//             .updateYourProfileStage()
+//             .saveChallenge()
+//             .publishChallenge();
+//     }
+//     
+     
+     @Test 
+     public void createAdvocateWorkflowChallenge(){
+     LoginPage start = new LoginPage (driver);
+     Show showPage = start.loginAdministrator()
+             .navigateToChallenges()
+             .<pageobjects.admin.challenge.List>dismissTutorial()
+             .addNewChallenge()
+             .createBlankChallenge()
+             .generateDetails("Advocate Workflow")
+             .addStage()
+             .advocateWorkflowStage()
+             .saveChallenge();
+             //.publishChallenge()
      
      }
+     
+     
+     
+     
+     
+     
 }
+           

@@ -14,6 +14,8 @@ public class AddStageChooser extends Creator {
     private final By twitterFollowStageSelector = By.cssSelector("#stages > div:nth-child(3) > ol > li:nth-child(2)");
     private final By shareALinkSelector = By.cssSelector("img[alt='Share link']");
     private final By blogPostSelector = By.cssSelector("img[alt='Blog post']");
+    private final By AdvocateWorkflowSelector = By.cssSelector("img[alt='Advocate acceptance']");
+
 
 
     public AddStageChooser(WebDriver driver) {
@@ -73,6 +75,18 @@ public class AddStageChooser extends Creator {
         findElement(blogPostSelector).sendKeys("http://www.reddit.com");
     
         return new CommentOnBlogPost(getDriver());
+    }
+
+    public JoinAGroupStage joinAGroup() {
+        findElement(By.cssSelector("img[alt='Influitive group join']")).click();
+        
+        return new JoinAGroupStage(getDriver());
+    }
+
+    public AdvocateWorkflowStage advocateWorkflowStage() {
+        findElement(AdvocateWorkflowSelector).click();
+        
+        return new AdvocateWorkflowStage;
     }
     
 }

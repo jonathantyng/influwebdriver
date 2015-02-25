@@ -85,4 +85,10 @@ public class PageObject {
     protected void waitForAjaxLoader() {
         waitForElementToDisapear(By.cssSelector(".ajax-load"));
     }
+
+    protected void searchSelect2For(By selector, String thingToSelect) {
+        findParentOf(selector).findElement(By.cssSelector(".select2-container")).click();
+        typeInSelect2Input(thingToSelect);
+        chooseSelect2Match();
+    }
 }
