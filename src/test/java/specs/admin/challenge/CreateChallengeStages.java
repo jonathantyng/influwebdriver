@@ -24,11 +24,10 @@ public class CreateChallengeStages extends AbstractSpec {
                 .addStage()
                 .postToTwitterStage()
                 .chooseTypeOfTweet("Hashtag")
-                .pause(5000);
-                //.inputRequiredContent("#paulsimon")
-                //.inputDefaultText(#paulsimon")
-                //.saveChallenge
-                //.publishChallenge
+                .inputRequiredContent("#paulsimon")
+                .inputDefaultText("#paulsimon")
+                .saveChallenge
+                .publishChallenge;
         
         //insert assertion statement here 
                 
@@ -197,8 +196,8 @@ public class CreateChallengeStages extends AbstractSpec {
      
      @Test 
      public void createAdvocateWorkflowChallenge(){
-     LoginPage start = new LoginPage (driver);
-     Show showPage = start.loginAdministrator()
+      LoginPage start = new LoginPage(driver);
+            start.loginAdministrator()     
              .navigateToChallenges()
              .<pageobjects.admin.challenge.List>dismissTutorial()
              .addNewChallenge()
@@ -206,7 +205,9 @@ public class CreateChallengeStages extends AbstractSpec {
              .generateDetails("Advocate Workflow")
              .addStage()
              .advocateWorkflowStage()
+             .pause(5000L)
              .saveChallenge();
+           
              //.publishChallenge()
      
      }
