@@ -32,10 +32,10 @@ public class TwitterPost extends Creator {
         return this;         
     }
 
-    public void inputDefaultText(String paulsimon) {
+    public TwitterPost inputDefaultText(String paulsimon) {
         findElement(By.name("params.default_text")).sendKeys("#paulsimon");    
                 
-        
+        return this;
     }
     
     

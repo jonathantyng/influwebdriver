@@ -26,8 +26,8 @@ public class CreateChallengeStages extends AbstractSpec {
                 .chooseTypeOfTweet("Hashtag")
                 .inputRequiredContent("#paulsimon")
                 .inputDefaultText("#paulsimon")
-                .saveChallenge
-                .publishChallenge;
+                .saveChallenge();
+                //.publishChallenge();
         
         //insert assertion statement here 
                 
@@ -204,8 +204,7 @@ public class CreateChallengeStages extends AbstractSpec {
              .createBlankChallenge()
              .generateDetails("Advocate Workflow")
              .addStage()
-             .advocateWorkflowStage()
-             .pause(5000L)
+             .advocateWorkflow()
              .saveChallenge();
            
              //.publishChallenge()
