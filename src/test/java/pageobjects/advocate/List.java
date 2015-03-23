@@ -3,10 +3,14 @@ package pageobjects.advocate;
 import org.openqa.selenium.WebDriver;
 import pageobjects.PageObject;
 
-public class Page extends PageObject {
+public class List extends PageObject {
 
-    public Page(WebDriver driver) {
+    public List(WebDriver driver) {
         super(driver);
     }
+ 
     
+      public void navigateToAdvocates() {
+          
+      }
 }

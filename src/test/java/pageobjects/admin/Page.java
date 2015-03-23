@@ -11,6 +11,8 @@ public class Page extends PageObject {
     private final By groupsNavSelector = By.cssSelector("#main-navigation #Groups");
     private final By rewardNavSelector = By.cssSelector("#main-navigation #Rewards");
     private final By dismissTutorialSelector = By.cssSelector(".guider #NoThanks");
+    private final By advocateNavSelector = By.cssSelector("#main-navigation #Advocates");
+    
 
     public Page(WebDriver driver) {
         super(driver);
@@ -28,16 +30,22 @@ public class Page extends PageObject {
         return new pageobjects.admin.groups.List(getDriver());
     }
 
-    public pageobjects.advocate.Page switchToAdvocateContext() {
+    public pageobjects.advocate.List switchToAdvocateContext() {
         findElement(contextSwitchSelector).click();
 
-        return new pageobjects.advocate.Page(getDriver());
+        return new pageobjects.advocate.List(getDriver());
     }
 
     public pageobjects.admin.rewards.List navigateToRewards() {
         findElement(rewardNavSelector).click();
 
         return new pageobjects.admin.rewards.List(getDriver());
+    }
+    
+     public pageobjects.admin.advocates.List navigateToAdvocates() {
+        findElement(advocateNavSelector).click();
+                
+        return new pageobjects.admin.advocates.List(getDriver());
     }
     
     public <T extends Page> T dismissTutorial() {

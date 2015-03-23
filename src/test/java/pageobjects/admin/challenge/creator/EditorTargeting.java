@@ -34,11 +34,11 @@ public class EditorTargeting extends Creator{
     }
 
     public EditorTargeting provideAdvocatePosition() {
-        findElement(By.cssSelector("#s2id_autogen22 > ul")).sendKeys("CEO");
+        findElement(By.cssSelector("#s2id_autogen22")).click();
         
         return this;
     }
-    
+
 }
 
    

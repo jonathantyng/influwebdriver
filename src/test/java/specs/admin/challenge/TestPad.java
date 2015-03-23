@@ -22,7 +22,7 @@ public class TestPad extends AbstractSpec{
              .switchToTargeting() 
              .targetToSpecificAdvocates()
              .setAdvocateInfoCriteria()
-             .provideAdvocatePosition("CEO")
+             .provideAdvocatePosition()
              .pause(5000L);
              //.saveChallenge();
             
