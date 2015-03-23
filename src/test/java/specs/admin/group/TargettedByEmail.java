@@ -16,7 +16,7 @@ public class TargettedByEmail extends AbstractSpec {
                 .<pageobjects.admin.groups.List>dismissTutorial()
                 .addNewGroup()
                 .generateGroupDetails()
-                .switchToTargetting()
+                .switchToTargeting()
                 .addAdvocateInfoCriteria()
                 .targetByEmail("alice.advocate@gmail.com");
         

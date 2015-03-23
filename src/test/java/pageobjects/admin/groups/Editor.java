@@ -19,7 +19,7 @@ public class Editor extends Page {
         return new Details(getDriver());
     }
     
-    public EditorTargeting switchToTargetting() {
+    public EditorTargeting switchToTargeting() {
         findElement(targettingTabSelector).click();
         
         return new EditorTargeting(getDriver());

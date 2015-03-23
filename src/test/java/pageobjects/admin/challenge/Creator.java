@@ -1,5 +1,6 @@
 package pageobjects.admin.challenge;
 
+import pageobjects.admin.challenge.creator.EditorTargeting;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageobjects.admin.Page;
@@ -30,5 +31,11 @@ public class Creator extends Page {
         if( null == findElement(verifySelector) ) {
             throw new RuntimeException("Not on challenge creator");
         }
+    }
+
+    public EditorTargeting switchToTargeting() {
+        findElement(By.cssSelector("a[href='#targeting']")).click();
+        
+        return new EditorTargeting(getDriver());
     }
 }
