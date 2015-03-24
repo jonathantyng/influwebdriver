@@ -31,7 +31,7 @@ public class join_group extends BaseClass{
         else
         {
             System.out.println("Tutorial not encountered");
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a Challenge")));
         }
 
         //Add join group challenge

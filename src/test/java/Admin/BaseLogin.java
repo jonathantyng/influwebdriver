@@ -17,10 +17,10 @@ public class BaseLogin {
     public void setUp() throws Exception {
 
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.manage().window().setSize(new Dimension(1400,1400));
 
-        wd.get("http://sanitysept12.influitives.com/join/test");
+        wd.get("http://sanitymarch13.influitives.com/join/test");
 
         /*
         //wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

@@ -35,7 +35,7 @@ public class group_sanity extends BaseClass{
 
         //Add Test Group
 
-        wd.findElement(By.linkText("Add a group")).click();
+        wd.findElement(By.linkText("Add a Group")).click();
 
         //Enter name and description
 

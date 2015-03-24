@@ -30,7 +30,7 @@ public class persistent_referral extends BaseClass{
             }
             else
             {
-                wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
+                wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a Challenge")));
                 System.out.println("Tutorial not encountered");
             }
 

@@ -18,8 +18,8 @@ public class BaseClass {
     public void setUp() throws Exception {
 
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        wd.get("http://dec4.influitives.com/");
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wd.get("http://sanitymarch13.influitives.com/");
 
         //Sign in as admin
 
@@ -28,6 +28,17 @@ public class BaseClass {
         wd.findElement(By.id("sign-in-button")).click();
 
         wd.manage().window().setSize(new Dimension(1400, 1400));
+        
+        try { Thread.sleep(5000l); } catch (Exception e) { throw new RuntimeException(e); }
+        
+        //Navigate to the challenges tab
+
+        wd.findElement(By.id("Challenges")).click();
+
+        //Add a challenge
+
+        wd.findElement(By.linkText("Add a Challenge")).click();
+        
         /*
         //wd.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 

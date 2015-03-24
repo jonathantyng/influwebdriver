@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class social_signup extends BaseClass{
+public class social_signup extends BaseLogin{
     
     @Test
     public void email_password_signup() {

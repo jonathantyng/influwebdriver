@@ -16,28 +16,6 @@ public class online_review extends BaseClass{
 
         WebDriverWait wait = new WebDriverWait(wd, 5);
 
-        //Navigate to the challenges tab
-
-        wd.findElement(By.id("Challenges")).click();
-
-        //If tutorial hasn't been completed, dismiss pop-up.. Otherwise continue.
-
-        boolean exists = wd.findElements( By.linkText("No Thanks")).size() != 0;
-
-        if (exists)
-        {
-            wd.findElement(By.linkText("No Thanks")).click();
-            System.out.println("Challenge Tutorial Dismissed");
-        }
-        else
-        {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add a challenge")));
-            System.out.println("Tutorial not encountered");
-        }
-
-        //Add new challenge
-
-        wd.findElement(By.linkText("Add a challenge")).click();
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Start With Blank Challenge")));
         wd.findElement(By.linkText("Start With Blank Challenge")).click();
 

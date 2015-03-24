@@ -112,7 +112,7 @@ public class create_company_settings extends BaseClass{
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
         wd.findElement(By.id("username")).sendKeys("patrick@influitive.com");
         wd.findElement(By.id("password")).sendKeys("1nflu1t1v3");
-        wd.findElement(By.id("token")).sendKeys("mFMn1Bj0GSx0QnHkRfG1pvKD4");
+        wd.findElement(By.id("token")).sendKeys("2L1CG08ApKuXW1iJD3hIoL7j");
 
         //Save settings
 

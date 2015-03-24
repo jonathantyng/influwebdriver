@@ -69,7 +69,7 @@
             <activation>
                 <property>
                     <name>env.HOME</name>
-                    <value>/Users/patrickp</value>
+                    <value>/Users/patrickpriestley</value>
                 </property>
             </activation>
             <build>
@@ -81,7 +81,7 @@
                             <systemProperties>
                                 <property>
                                     <name>webdriver.chrome.driver</name>
-                                    <value>/Users/patrickp/Downloads/chromedriver</value>
+                                    <value>/Users/patrickpriestley/Workspace/chromedriver</value>
                                 </property>
                             </systemProperties>
                         </configuration>

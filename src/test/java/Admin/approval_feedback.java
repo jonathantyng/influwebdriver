@@ -37,7 +37,7 @@ public class approval_feedback extends BaseClass{
 
         //Add a new challenge
 
-        wd.findElement(By.linkText("Add a challenge")).click();
+        wd.findElement(By.linkText("Add a Challenge")).click();
         wd.findElement(By.id("create-new-challenge")).click();
 
         //Choose challenge type from dropdown

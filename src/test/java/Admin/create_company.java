@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class create_company extends BaseClass{
+public class create_company extends BaseCreate{
 
     @Test
     public void create_new_company() {
@@ -64,13 +64,13 @@ public class create_company extends BaseClass{
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_name")));
 
-        wd.findElement(By.id("company_name")).sendKeys("dec4");
+        wd.findElement(By.id("company_name")).sendKeys("jan30");
 
         //Enter company subdomain into text field
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("company_subdomain")));
 
-        wd.findElement(By.id("company_subdomain")).sendKeys("dec4");
+        wd.findElement(By.id("company_subdomain")).sendKeys("jan30");
 
         //Enter admin email address
 

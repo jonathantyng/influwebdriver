@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class BaseCreate {
 
@@ -18,7 +19,7 @@ public class BaseCreate {
     public void setUp() throws Exception {
 
         wd = new ChromeDriver();
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         wd.get("http://app.influitives.com/");
 
         //Sign in as admin
@@ -26,6 +27,7 @@ public class BaseCreate {
         wd.findElement(By.id("user_email")).sendKeys("admin@influitive.com");
         wd.findElement(By.id("user_password")).sendKeys("1nflu1t1v3");
         wd.findElement(By.id("sign-in-button")).click();
+        
 
         wd.manage().window().setSize(new Dimension(1400, 1400));
         /*
