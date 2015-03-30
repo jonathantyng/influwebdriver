@@ -21,8 +21,7 @@ public class TestPad extends AbstractSpec{
              .advocateWorkflow()
              .switchToTargeting() 
              .targetToSpecificAdvocates()
-             .setAdvocateInfoCriteria()
-             .provideAdvocatePosition()
+             .targetByPosition("CEO")
              .pause(5000L);
              //.saveChallenge();
             

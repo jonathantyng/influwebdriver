@@ -17,6 +17,9 @@ public class SearchForAdvocate extends AbstractSpec{
                 .searchAdvocateName()
                 .pause(5000L);
     
+        //assert()
+    
     } 
+    
     
 }
