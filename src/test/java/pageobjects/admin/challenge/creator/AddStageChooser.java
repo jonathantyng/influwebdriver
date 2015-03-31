@@ -10,11 +10,17 @@ public class AddStageChooser extends Creator {
     private final By corporateConfirmationStageSelector = By.xpath("//img[@alt='Corporate confirmation']");
     private final By facebookLikeStageSelector = By.cssSelector("img[alt='Facebook like page']");
     private final By referralStageSelector = By.cssSelector("img[alt='Refer prospect']");
-    private final By LinkedInJoinGroupSelector = By.cssSelector("img[alt='Linkedin group join']");
+    private final By linkedInJoinGroupSelector = By.cssSelector("img[alt='Linkedin group join']");
     private final By twitterFollowStageSelector = By.cssSelector("#stages > div:nth-child(3) > ol > li:nth-child(2)");
     private final By shareALinkSelector = By.cssSelector("img[alt='Share link']");
     private final By blogPostSelector = By.cssSelector("img[alt='Blog post']");
     private final By advocateWorkflowSelector = By.cssSelector("img[alt='Advocate acceptance']");
+    private final By answerSomeQuestionsSelector = By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(1)");
+    private final By postToTwitterSelector = By.cssSelector("img[alt='Twitter post']");
+    private final By joinAGroupSelector = By.cssSelector("img[alt='Influitive group join']");
+    private final By onlineActionStageSelector = By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(3)");
+    private final By uploadAnImageStageSelector = By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(9)");
+
 
 
 
@@ -41,7 +47,7 @@ public class AddStageChooser extends Creator {
     }
 
     public LinkedInJoinGroupStage linkedInJoinGroup() {
-        findElement(LinkedInJoinGroupSelector).click();
+        findElement(linkedInJoinGroupSelector).click();
         
         return new LinkedInJoinGroupStage(getDriver());
     }
@@ -60,7 +66,7 @@ public class AddStageChooser extends Creator {
     }
 
     public TwitterPost postToTwitterStage() {
-        findElement(By.cssSelector("img[alt='Twitter post']")).click();
+        findElement(postToTwitterSelector).click();
         
         return new TwitterPost(getDriver());
     }
@@ -78,7 +84,7 @@ public class AddStageChooser extends Creator {
     }
 
     public JoinAGroupStage joinAGroup() {
-        findElement(By.cssSelector("img[alt='Influitive group join']")).click();
+        findElement(joinAGroupSelector).click();
         
         return new JoinAGroupStage(getDriver());
     }
@@ -90,9 +96,21 @@ public class AddStageChooser extends Creator {
     }
 
     public AnswerSomeQuestionsStage answerSomeQuestions() {
-        findElement(By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(1)")).click();
+        findElement(answerSomeQuestionsSelector).click();
         
         return new AnswerSomeQuestionsStage(getDriver());
+    }
+
+    public OnlineActionStage onlineAction() {
+        findElement(onlineActionStageSelector).click();
+        
+        return new OnlineActionStage(getDriver());
+    }
+
+    public UploadAnImageStage uploadAnImage() {
+        findElement(uploadAnImageStageSelector).click();
+        
+        return new UploadAnImageStage(getDriver());
     }
     
 }
