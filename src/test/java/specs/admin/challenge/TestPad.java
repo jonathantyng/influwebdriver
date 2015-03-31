@@ -8,23 +8,20 @@ import specs.admin.AbstractSpec;
 public class TestPad extends AbstractSpec{
    
 
-     @Test 
-     public void createAdvocateWorkflowChallenge(){
-      LoginPage start = new LoginPage(driver);
-            start.loginAdministrator()     
-             .navigateToChallenges()
-             .<pageobjects.admin.challenge.List>dismissTutorial()
-             .addNewChallenge()
-             .createBlankChallenge()
-             .generateDetails("Advocate Workflow")
-             .addStage()
-             .advocateWorkflow()
-             .switchToTargeting() 
-             .targetToSpecificAdvocates()
-             .targetByPosition("CEO")
-             .pause(5000L);
-             //.saveChallenge();
-            
-     }
      
+     @Test
+     public void createAnswerSomeQuestionsChallenge(){
+         LoginPage start = new LoginPage(driver);
+         start.loginAdministrator()
+                 .navigateToChallenges()
+                 .<pageobjects.admin.challenge.List>dismissTutorial()
+                 .addNewChallenge()
+                 .createBlankChallenge()
+                 .generateDetails("Answer Some Questions")
+                 .addStage()
+                 .answerSomeQuestions()
+                 .generateQuestion()
+                 .saveChallenge();
+           
+     }
 }

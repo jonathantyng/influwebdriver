@@ -92,6 +92,22 @@ public class EditorTargeting extends Editor {
     
     }
 
+    public EditorTargeting targetByResponse() {
+        findElement(By.cssSelector("#include-conditions-list > div > footer > ul > li:nth-child(5) > a")).click();
+        
+        WebElement parent = findElement(firstConditionSelector);
+        parent.findElement(conditionFieldNameSelector).click();
+        typeInSelect2Input("Yes or No");
+        chooseSelect2Match();
+        
+        parent.findElement(conditionValuesSelector).click();
+        typeInSelect2Input("Yes");
+        chooseSelect2Match();
+        
+        return this;
+           
+    }
+
 
 
 

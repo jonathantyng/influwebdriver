@@ -88,5 +88,11 @@ public class AddStageChooser extends Creator {
         
         return new AdvocateWorkflowStage(getDriver());
     }
+
+    public AnswerSomeQuestionsStage answerSomeQuestions() {
+        findElement(By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(1)")).click();
+        
+        return new AnswerSomeQuestionsStage(getDriver());
+    }
     
 }
