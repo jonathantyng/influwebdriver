@@ -4,7 +4,6 @@ package specs.admin.challenge;
 import org.junit.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
-import pageobjects.admin.challenge.Show;
 import specs.admin.AbstractSpec;
 
 public class CreateChallengeStages extends AbstractSpec {
@@ -46,7 +45,6 @@ public class CreateChallengeStages extends AbstractSpec {
                 .addTwitterUserToFollow("Pepsi")
                 .validateTwitterUser()
                 .saveChallenge();
-     
 
         // TODO: Make this challenge save - currently the twitter validation fails and the challenge 
         // will not save. Adding targeting and assertions, publish challenge.
@@ -208,7 +206,7 @@ public class CreateChallengeStages extends AbstractSpec {
                 .targetToSpecificAdvocates()
                 .targetByPosition("CEO")
                 .pause(5000L);
-             //.saveChallenge();
+        //.saveChallenge();
 
     }
 
@@ -240,11 +238,9 @@ public class CreateChallengeStages extends AbstractSpec {
                 .addStage()
                 .uploadAnImage()
                 .saveChallenge();
-        
- 
+
     }
-    
-    
+
     @Test
     public void corporateConfirmationChallenge() {
         LoginPage start = new LoginPage(driver);
@@ -259,14 +255,28 @@ public class CreateChallengeStages extends AbstractSpec {
                 .addStage()
                 .corporateConfirmationStage()
                 .saveChallenge();
-        
-                
-    
+
     }
-    
+
+    @Test
+
+    public void geoCheckInChallenge() {
+        LoginPage start = new LoginPage(driver);
+        start.loginAdministrator()
+                .navigateToChallenges()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
+                .addNewChallenge()
+                .createBlankChallenge()
+                .generateDetails("Geo CheckIn")
+                .addStage()
+                .geoCheckInStage()
+                .setGeoLocation("191 Niagara Toronto Ontario")
+                .validateLocation()
+                .saveChallenge();
+
+    }
+
      //@Test for Online Review
     //@Test for AppExchange
     //@Test for GetApp
-    //@Test for GeoCheckin
-  
 }

@@ -112,5 +112,12 @@ public class AddStageChooser extends Creator {
         
         return new UploadAnImageStage(getDriver());
     }
+
+    public GeoCheckInStage geoCheckInStage() {
+        findElement(By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(7)")).click();
+        
+        return new GeoCheckInStage(getDriver());
+    
+    }
     
 }

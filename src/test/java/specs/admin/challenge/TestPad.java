@@ -5,21 +5,25 @@ import pageobjects.LoginPage;
 import specs.admin.AbstractSpec;
 
 public class TestPad extends AbstractSpec {
-    @Test
-    public void corporateConfirmationChallenge() {
+        
+    
+    
+    @Test 
+    
+    public void geoCheckInChallenge() {
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Upload an Image")
+                .generateDetails("Geo CheckIn")
                 .addStage()
-                .advocateWorkflow()
-                .addStage()
-                .corporateConfirmationStage()
+                .geoCheckInStage()
+                .setGeoLocation("191 Niagara Toronto Ontario")
+                .validateLocation()
                 .saveChallenge();
-
-    }
+             
+        }
 
 }
