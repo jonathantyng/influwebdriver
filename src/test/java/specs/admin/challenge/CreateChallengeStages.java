@@ -277,7 +277,7 @@ public class CreateChallengeStages extends AbstractSpec {
 
     }
 
-    @Test
+       @Test
     
     public void onlineReviewChallenge() {
         LoginPage start = new LoginPage(driver);
@@ -288,8 +288,9 @@ public class CreateChallengeStages extends AbstractSpec {
                 .createBlankChallenge()
                 .generateDetails("Online Review")
                 .addStage()
-                .onlineReviewStage();
-        
+                .onlineReviewStage()
+                .linkToReviewContent("www.reddit.com")
+                .<pageobjects.admin.challenge.Creator>pause(5000L);
     
     
     }

@@ -2,6 +2,7 @@ package pageobjects.admin;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import pageobjects.PageObject;
 
 public class Page extends PageObject {
@@ -12,6 +13,8 @@ public class Page extends PageObject {
     private final By rewardNavSelector = By.cssSelector("#main-navigation #Rewards");
     private final By dismissTutorialSelector = By.cssSelector(".guider #NoThanks");
     private final By advocateNavSelector = By.cssSelector("#main-navigation #Advocates");
+    private final By firstConditionSelector = By.cssSelector(".conditions .condition:first-child");
+    private final By conditionFieldNameSelector = By.cssSelector(".field-name");
     
 
     public Page(WebDriver driver) {
@@ -53,6 +56,15 @@ public class Page extends PageObject {
         waitForElementToDisapear(dismissTutorialSelector);
 
         return (T)this;
+    }
+    
+    public pageobjects.admin.settings.List navigateToSettings() {
+        findElement(By.cssSelector("#header-bar > div.container > div > div > ul:nth-child(1)")).click();
+        
+        findElement(By.linkText("Settings")).click();
+        
+    
+        return new pageobjects.admin.settings.List(getDriver());
     }
 
 }
