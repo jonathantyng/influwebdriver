@@ -1,14 +1,15 @@
 
-package pageobjects.admin.challenge.creator;
+package pageobjects.admin.challenge.creator.stages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pageobjects.admin.challenge.creator.Stage;
 
  
 public class TwitterFollowStage extends Stage {
 
     private final By twitterUserToFollowSelector = By.name("screen_name");
-    private final By validateTwitterUserSelector = By.cssSelector("#c75 > div > div > fieldset > div.column.larger-width > label > div:nth-child(1) > button");
+    private final By validateTwitterUserSelector = By.cssSelector("button.load-preview");
   
     public TwitterFollowStage(WebDriver driver) {
         super(driver);
@@ -21,8 +22,8 @@ public class TwitterFollowStage extends Stage {
     }   
 
     public TwitterFollowStage validateTwitterUser() {
-        findElement(validateTwitterUserSelector).click(); 
-        waitForElement(By.cssSelector("#c75 > div > div > fieldset > div.twitter-preview.hide.callout.column.x-husky-width"));
+        findElement(validateTwitterUserSelector).click();
+        
                 
         return this;
                 }

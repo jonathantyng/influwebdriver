@@ -1,9 +1,26 @@
 package pageobjects.admin.challenge.creator;
 
+import pageobjects.admin.challenge.creator.stages.OnlineReviewStage;
+import pageobjects.admin.challenge.creator.stages.AnswerSomeQuestionsStage;
+import pageobjects.admin.challenge.creator.stages.CorporateConfirmationStage;
+import pageobjects.admin.challenge.creator.stages.CommentOnBlogPost;
+import pageobjects.admin.challenge.creator.stages.AdvocateWorkflowStage;
+import pageobjects.admin.challenge.creator.stages.TwitterFollowStage;
+import pageobjects.admin.challenge.creator.stages.UploadAnImageStage;
+import pageobjects.admin.challenge.creator.stages.UpdateProfileStage;
+import pageobjects.admin.challenge.creator.stages.SurveyStage;
+import pageobjects.admin.challenge.creator.stages.GeoCheckInStage;
+import pageobjects.admin.challenge.creator.stages.JoinAGroupStage;
+import pageobjects.admin.challenge.creator.stages.ShareLink;
+import pageobjects.admin.challenge.creator.stages.NPSStage;
+import pageobjects.admin.challenge.creator.stages.FacebookLikeStage;
+import pageobjects.admin.challenge.creator.stages.OnlineActionStage;
+import pageobjects.admin.challenge.creator.stages.LinkedInJoinGroupStage;
+import pageobjects.admin.challenge.creator.stages.ReferralChallenge;
+import pageobjects.admin.challenge.creator.stages.TwitterPost;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageobjects.admin.challenge.Creator;
-import pageobjects.admin.challenge.Show;
 
 public class AddStageChooser extends Creator {
     private final By surveyStageSelector = By.xpath("//img[@alt='Questions']");
@@ -11,15 +28,18 @@ public class AddStageChooser extends Creator {
     private final By facebookLikeStageSelector = By.cssSelector("img[alt='Facebook like page']");
     private final By referralStageSelector = By.cssSelector("img[alt='Refer prospect']");
     private final By linkedInJoinGroupSelector = By.cssSelector("img[alt='Linkedin group join']");
-    private final By twitterFollowStageSelector = By.cssSelector("#stages > div:nth-child(3) > ol > li:nth-child(2)");
+    private final By twitterFollowStageSelector = By.cssSelector("img[alt='Twitter follow']");
     private final By shareALinkSelector = By.cssSelector("img[alt='Share link']");
     private final By blogPostSelector = By.cssSelector("img[alt='Blog post']");
     private final By advocateWorkflowSelector = By.cssSelector("img[alt='Advocate acceptance']");
-    private final By answerSomeQuestionsSelector = By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(1)");
+    private final By answerSomeQuestionsSelector = By.cssSelector("img[alt='Questions']");
     private final By postToTwitterSelector = By.cssSelector("img[alt='Twitter post']");
     private final By joinAGroupSelector = By.cssSelector("img[alt='Influitive group join']");
-    private final By onlineActionStageSelector = By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(3)");
-    private final By uploadAnImageStageSelector = By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(9)");
+    private final By onlineActionStageSelector = By.cssSelector("img[alt='Online action']");
+    private final By uploadAnImageStageSelector = By.cssSelector("img[alt='Question with image']");
+    private final By geoCheckInStageSelector = By.cssSelector("img[alt='Check in']");
+    private final By npsStageSelector = By.cssSelector("img[alt='Nps']");
+    private final By updateProfileStageSelector = By.cssSelector("img[alt='Update profile']");
 
 
 
@@ -114,10 +134,29 @@ public class AddStageChooser extends Creator {
     }
 
     public GeoCheckInStage geoCheckInStage() {
-        findElement(By.cssSelector("#stages > div:nth-child(5) > ol > li:nth-child(7)")).click();
+        findElement(geoCheckInStageSelector).click();
         
         return new GeoCheckInStage(getDriver());
     
+    }
+
+    public NPSStage npsStage() {
+         findElement(npsStageSelector).click();
+         
+         return new NPSStage(getDriver());
+    }
+
+    public UpdateProfileStage updateYourProfileStage() {
+          findElement(updateProfileStageSelector).click();
+          
+          return new UpdateProfileStage(getDriver());
+    
+    }
+
+    public OnlineReviewStage onlineReviewStage() {
+            findElement(By.cssSelector("img[alt='Review']")).click();
+            
+           return new OnlineReviewStage(getDriver());
     }
     
 }

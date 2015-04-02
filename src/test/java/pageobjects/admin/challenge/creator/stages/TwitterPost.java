@@ -1,28 +1,24 @@
 
-package pageobjects.admin.challenge.creator;
+package pageobjects.admin.challenge.creator.stages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobjects.admin.challenge.Creator;
+import pageobjects.admin.challenge.creator.Stage;
 
-public class TwitterPost extends Creator {
+public class TwitterPost extends Stage {
 
-    private final By TypeOfTweetSelector = By.id("select2-drop");
     private final WebElement requiredContent = findElement(By.name("params.required_content"));
+    private final By firstConditionSelector = By.cssSelector(".conditions .condition:first-child");
+    private final By conditionFieldNameSelector = By.cssSelector(".field-name");
     
     public TwitterPost(WebDriver driver) {
         super(driver);
     }
 
     public TwitterPost chooseTypeOfTweet(String typeOfTweet) {
-        findParentOf(TypeOfTweetSelector)
-                .findElement(By.cssSelector("#s2id_autogen22_search"))
-                .click();
-        
-        typeInSelect2Input(typeOfTweet);
-        chooseSelect2Match();
-        
+        searchSelect2For(By.id("params.content_type20"), typeOfTweet);
+       
         return this;
     }
 

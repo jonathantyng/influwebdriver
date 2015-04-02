@@ -36,11 +36,11 @@ public class EditorTargeting extends Creator {
         typeInSelect2Input("Position");
         chooseSelect2Match();
 
-        parent.findElement(conditionOperatorSelector).click();
-        findElement(conditionOperaterEqualsSelector).click();
+        //parent.findElement(conditionOperatorSelector).click();
+        //findElement(conditionOperaterEqualsSelector).click();
 
         parent.findElement(conditionValuesSelector).click();
-        typeInSelect2Input(position);
+        typeInSelect2Input("CEO");
         chooseSelect2Match();
 
         return this;

@@ -16,14 +16,16 @@ public class CreateChallengeStages extends AbstractSpec {
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("ChallengeName")
+                .generateDetails("Post to Twitter")
+                .addStage()
+                .postToTwitterStage()
                 .addStage()
                 .postToTwitterStage()
                 .chooseTypeOfTweet("Hashtag")
+                .<pageobjects.admin.challenge.creator.stages.TwitterPost>pause(5000L)
                 .inputRequiredContent("#paulsimon")
-                .inputDefaultText("#paulsimon")
+                .inputDefaultText("#paulsimon is the best")
                 .saveChallenge();
-                //.publishChallenge();
 
         //insert assertion statement here 
     }
@@ -44,10 +46,11 @@ public class CreateChallengeStages extends AbstractSpec {
                 .twitterFollowStage()
                 .addTwitterUserToFollow("Pepsi")
                 .validateTwitterUser()
+                .switchToTargeting()
+                .targetToSpecificAdvocates()
+                .targetByPosition("CEO")
                 .saveChallenge();
 
-        // TODO: Make this challenge save - currently the twitter validation fails and the challenge 
-        // will not save. Adding targeting and assertions, publish challenge.
     }
 
     @Test
@@ -118,8 +121,7 @@ public class CreateChallengeStages extends AbstractSpec {
                 .validate()
                 .saveChallenge();
 
-        Assert.assertEquals("LinkedIn Challenge", showPage.getChallengeName());
-
+        //Assert.assertEquals("LinkedIn Challenge", showPage.getChallengeName());
     }
 
     @Test
@@ -151,46 +153,46 @@ public class CreateChallengeStages extends AbstractSpec {
                 .addStage()
                 .onlineAction()
                 .addLinkToContent("http://mccallspatternbehavior.tumblr.com/")
-                .saveChallenge()
-                .dismissPublishTutorial()
-                .pause(5000000L);
-                //.publishChallenge()
-                //.updatePublishingOptions();
+                .saveChallenge();
+                //.dismissPublishTutorial()
+        //.pause(5000000L);
+        //.publishChallenge()
+        //.updatePublishingOptions();
 
     }
 //               
 
-//
-//     @Test
-//     public void createNPSChallenge (){
-//         LoginPage start = new LoginPage (driver);
-//         Show showPage = start.loginAdministrator()
-//                 .navigateToChallenges()
-//                 .<pageobjects.admin.challenge.list>dismissTutorial()
-//                 .addNewChallenge()
-//                 .createBlankChallenge()
-//                 .generateDetails("Whatever")
-//                 .addStage()
-//                 .npsStage()
-//                 .saveChallenge()
-//                 .publishChallenge()
-//                 
-    //assert some shit here.
-//     @Test
-//     public void createUpdateYourProfileChallenge(){
-//     LoginPage start = new LoginPage (driver);
-//     Show showPage = start.loginAdministrator()
-//             .navigateToChallenges()
-//             .<pageobjects.admin.challenge.list>dismissTutorial()
-//             .addNewChallenge()
-//             .createBlankChallenge()
-//             .generateDetails()
-//             .addStage()
-//             .updateYourProfileStage()
-//             .saveChallenge()
-//             .publishChallenge();
-//     }
-//     
+    @Test
+    public void createNPSChallenge() {
+        LoginPage start = new LoginPage(driver);
+        start.loginAdministrator()
+                .navigateToChallenges()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
+                .addNewChallenge()
+                .createBlankChallenge()
+                .generateDetails("NPS Challenge")
+                .addStage()
+                .npsStage()
+                .saveChallenge();
+
+        //assert some shit here.
+    }
+
+    @Test
+    public void createUpdateYourProfileChallenge() {
+        LoginPage start = new LoginPage(driver);
+        start.loginAdministrator()
+                .navigateToChallenges()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
+                .addNewChallenge()
+                .createBlankChallenge()
+                .generateDetails("Update Yo Profile")
+                .addStage()
+                .updateYourProfileStage()
+                .saveChallenge();
+        //.publishChallenge();
+    }
+
     @Test
     public void createAdvocateWorkflowChallenge() {
         LoginPage start = new LoginPage(driver);
@@ -205,8 +207,7 @@ public class CreateChallengeStages extends AbstractSpec {
                 .switchToTargeting()
                 .targetToSpecificAdvocates()
                 .targetByPosition("CEO")
-                .pause(5000L);
-        //.saveChallenge();
+                .saveChallenge();
 
     }
 
@@ -276,7 +277,22 @@ public class CreateChallengeStages extends AbstractSpec {
 
     }
 
-     //@Test for Online Review
+    @Test
+    
+    public void onlineReviewChallenge() {
+        LoginPage start = new LoginPage(driver);
+        start.loginAdministrator()
+                .navigateToChallenges()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
+                .addNewChallenge()
+                .createBlankChallenge()
+                .generateDetails("Online Review")
+                .addStage()
+                .onlineReviewStage();
+        
+    
+    
+    }
     //@Test for AppExchange
     //@Test for GetApp
 }
