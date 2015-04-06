@@ -25,11 +25,5 @@ public class AddNewNominee extends AbstractSpec {
            
         
         }
-    
-    
-
-    
-    
-    
-    
+   
 }
