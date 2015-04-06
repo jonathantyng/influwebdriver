@@ -13,7 +13,7 @@ public class List extends Page {
     }
 
     public List navigateToScoringAndAchievement() {
-        findElement(By.linkText("Scoring & Achievement")).click();
+        findElement(By.cssSelector(".accordion-section:nth-child(2) .section-heading")).click();
         
         return this;
     }
