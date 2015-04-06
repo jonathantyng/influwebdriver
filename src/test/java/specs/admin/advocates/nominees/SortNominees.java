@@ -4,7 +4,7 @@ import org.junit.Test;
 import pageobjects.LoginPage;
 import specs.admin.AbstractSpec;
 
-public class FilterNominees extends AbstractSpec {
+public class SortNominees extends AbstractSpec {
 
     @Test
     public void filterNomineesByName() {

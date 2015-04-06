@@ -15,6 +15,8 @@ public class List extends Page{
         private final By sortNomineesByRelationshipSelector = By.cssSelector("#sort-relationship");
         private final By sortNomineesByChallengeCompletionsSelector = By.cssSelector("#sort-challenge-completions");
         private final By sortNomineesByLastActivitySelector = By.cssSelector("#sort-last-activity");
+        private final By filterByNomineeNameSelector = By.cssSelector("#q_name_or_email_cont");
+        private final By filterByActiveNomineesSelector = By.cssSelector("#search_by_hidden_active");
 
 
 
@@ -64,9 +66,23 @@ public class List extends Page{
         
         return this;
     }
+
+    public List filterByNomineeName() {
+        findElement(filterByNomineeNameSelector).sendKeys("Shannon");
+        
+        return this;
+    }
     
+    public List filterByActiveNominees() {
+        findElement(filterByActiveNomineesSelector).click();
+        
+        return this;
+    }
     
+    public List filterByArchivedNominees(){
+        findElement(filterBy)
     
+    }
     
 
 
