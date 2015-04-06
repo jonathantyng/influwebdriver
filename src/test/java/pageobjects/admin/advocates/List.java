@@ -21,6 +21,7 @@ private final By filterByDetratorNPSSelector = By.cssSelector("#contact_search >
 private final By filterByNeutralNPSSelector = By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(3) > label");
 private final By filterByAdvocatePromotorSelector = By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(4) > label");
 private final By filterByAdvocateUnknownNPSSelector = By.cssSelector("#contact_search > section > section:nth-child(5) > div:nth-child(5) > label");
+    private Object pageobjects;
 
     
     public List(WebDriver driver) {
@@ -109,10 +110,12 @@ private final By filterByAdvocateUnknownNPSSelector = By.cssSelector("#contact_s
     
         return this;
     }
-    
-    
-    
 
-    
+    public pageobjects.admin.nominees.List inviteNominees() {
+        findElement(By.cssSelector("#wrapper > div > div.main-half > span > ul > li > a")).click();
+        
+        return new pageobjects.admin.nominees.List(getDriver());
+    }
     
 }
+   
