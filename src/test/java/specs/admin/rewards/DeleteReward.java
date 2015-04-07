@@ -13,8 +13,15 @@ public class DeleteReward extends AbstractSpec {
                 .navigateToRewards()
                 .<pageobjects.admin.rewards.List>dismissTutorial()
                 .addNewReward()
-                .makeBasicReward("Some Reward");
+                .makeBasicReward("Some Reward")
+                .navigateToRewards()
+                .deleteNewReward()
+                .confirmDelete()
+                .pause(5000L);
+                
 
+        //assert reward is not on rewards list
+        
     }
 
 }

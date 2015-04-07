@@ -9,7 +9,7 @@ public class FulfillmentPane extends Editor {
     private final By manualSelector = By.id("reward_kind_manual");
     private final By redemptionLinkFulfillmentSelector = By.cssSelector("#reward_provider_printfection");
     private final By rememptionLinkFullfilmentURLSelector = By.cssSelector("#reward_redemption_links");
-
+    private final By tangoCardRewardSelector = By.cssSelector("#reward_provider_tango_card");
     private final By rewardAmountSelector = By.id("reward_amount");
     private final By advocateChosenCharitySelector = By.id("advocate_chosen");
     private final By charityRewardSelector = By.id("reward_provider_first_giving");
@@ -51,5 +51,11 @@ public class FulfillmentPane extends Editor {
                 .chooseType("Swag")
                 .saveReward();
 
+    }
+
+    public FulfillmentPane chooseTangoCardFulfilment() {
+        findElement(tangoCardRewardSelector).click();
+        
+        return this;
     }
 }

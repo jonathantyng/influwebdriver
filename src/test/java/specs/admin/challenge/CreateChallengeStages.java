@@ -25,9 +25,10 @@ public class CreateChallengeStages extends AbstractSpec {
                 .<pageobjects.admin.challenge.creator.stages.TwitterPost>pause(5000L)
                 .inputRequiredContent("#paulsimon")
                 .inputDefaultText("#paulsimon is the best")
-                .saveChallenge();
+                .saveChallenge()
+                .navigateToChallenges();
 
-        //insert assertion statement here 
+        //Assert.assertEquals(rewardName, rewardList.getRewardName(1)); 
     }
 
     @Test

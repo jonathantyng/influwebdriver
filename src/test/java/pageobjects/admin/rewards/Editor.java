@@ -19,9 +19,9 @@ public class Editor extends Page {
         return new DetailsPane(getDriver());
     }
 
-    public List saveReward() {
+    public Show saveReward() {
         findElement(saveButtonSelector).click();
         
-        return new List(getDriver());
+        return new Show(getDriver());
     }
 }

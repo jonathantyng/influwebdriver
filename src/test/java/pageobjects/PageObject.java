@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageObject {
 
-    private final WebDriver driver;
+    public final WebDriver driver;
     private final WebDriverWait wait;
     private final Predicate<WebElement> displayedElementPredicate = new Predicate<WebElement>() {
         @Override

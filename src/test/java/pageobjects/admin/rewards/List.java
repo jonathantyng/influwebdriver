@@ -2,7 +2,6 @@ package pageobjects.admin.rewards;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pageobjects.admin.Page;
 import pageobjects.admin.rewards.editor.FulfillmentPane;
 
@@ -20,9 +19,16 @@ public class List extends Page {
         return new FulfillmentPane(getDriver());
     }
 
-    public String getRewardName(int rewardListNumber) {
-        By rewardSelector = By.cssSelector(".bonus:nth-child(" + rewardListNumber + ") .name");
-        WebElement element = findElement(rewardSelector);
-        return element.getText();
+    public List deleteNewReward() {
+        findElement(By.cssSelector("#list_collection > li:nth-child(1) > div.buttons > div")).click();
+        findElement(By.cssSelector("#list_collection > li:nth-child(1) > div.buttons > div > ul > li:nth-child(5) > a")).click();
+        
+        return this;
+    }
+
+    public List confirmDelete() {
+        driver.switchTo().alert().accept();
+        
+        return this;   
     }
 }

@@ -1,28 +1,34 @@
 package specs.admin.challenge;
 
+import junit.framework.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
+import pageobjects.admin.challenge.Show;
 import specs.admin.AbstractSpec;
 
 public class TestPad extends AbstractSpec {
-        
-        @Test
     
-    public void onlineReviewChallenge() {
+
+    @Test
+    public void canCreatePostToTwitterChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Post to Twitter";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Online Review")
+                .generateDetails(challengeName)
                 .addStage()
-                .onlineReviewStage()
-                .linkToReviewContent("www.reddit.com")
-                .<pageobjects.admin.challenge.Creator>pause(5000L);
-        
+                .postToTwitterStage()
+                .chooseTypeOfTweet("Hashtag")
+                .<pageobjects.admin.challenge.creator.stages.TwitterPost>pause(5000L)
+                .inputRequiredContent("#paulsimon")
+                .inputDefaultText("#paulsimon is the best")
+                .saveChallenge();
 
-        //insert assertion statement here 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+        
     }
     
 }
