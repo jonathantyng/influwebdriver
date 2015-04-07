@@ -3,6 +3,7 @@ package pageobjects.admin.rewards.editor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageobjects.admin.rewards.Editor;
+import pageobjects.admin.rewards.Show;
 
 public class FulfillmentPane extends Editor {
 
@@ -44,7 +45,7 @@ public class FulfillmentPane extends Editor {
         return this;
     }
 
-    public pageobjects.admin.rewards.List makeBasicReward(String rewardName) {
+    public Show makeBasicReward(String rewardName) {
         return moveToDetailsPane()
                 .fillInName(rewardName)
                 .fillInDescription("Some description")

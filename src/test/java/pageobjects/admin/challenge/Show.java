@@ -14,7 +14,7 @@ public class Show extends Page {
     }
 
     public String getChallengeName() {
-        return findElement(By.cssSelector(".information .name")).getText();
+        return findElement(By.cssSelector(".details .information .name")).getText();
     }
 
     public PublishingInterface publishChallenge() {

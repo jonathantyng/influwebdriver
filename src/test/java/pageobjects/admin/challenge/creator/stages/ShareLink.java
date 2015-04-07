@@ -25,5 +25,10 @@ public class ShareLink extends Stage {
         return this;
         
     }
+
+    public ShareLink addDefaultTwitterText() {
+        findElement(By.cssSelector("#c96 > div > div > fieldset > section > label.input.text > textarea")).sendKeys("Default Twitter Text");
+        return this;
+    }
  
 }

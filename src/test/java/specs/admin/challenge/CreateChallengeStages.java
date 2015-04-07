@@ -4,43 +4,43 @@ package specs.admin.challenge;
 import org.junit.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
+import pageobjects.admin.challenge.Show;
 import specs.admin.AbstractSpec;
 
 public class CreateChallengeStages extends AbstractSpec {
 
-    @Test
+     @Test
     public void canCreatePostToTwitterChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Post to Twitter";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Post to Twitter")
-                .addStage()
-                .postToTwitterStage()
+                .generateDetails(challengeName)
                 .addStage()
                 .postToTwitterStage()
                 .chooseTypeOfTweet("Hashtag")
-                .<pageobjects.admin.challenge.creator.stages.TwitterPost>pause(5000L)
                 .inputRequiredContent("#paulsimon")
                 .inputDefaultText("#paulsimon is the best")
-                .saveChallenge()
-                .navigateToChallenges();
+                .saveChallenge();
 
-        //Assert.assertEquals(rewardName, rewardList.getRewardName(1)); 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 
     @Test
     public void createTwitterFollowChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Twitter Follow";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
                 .chooseChallengeType("Twitter")
-                .fillInName("Twitter Follow")
+                .fillInName(challengeName)
                 .fillInDescription("Follow us on Twitter")
                 .fillInHeadline("Tweet Tweet!")
                 .addStage()
@@ -52,45 +52,55 @@ public class CreateChallengeStages extends AbstractSpec {
                 .targetByPosition("CEO")
                 .saveChallenge();
 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 
     @Test
     public void canCreateJoinGroupChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Join Group Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("ChallengeDetails")
+                .generateDetails(challengeName)
                 .addStage()
                 .joinAGroup()
                 .selectExistingGroupFromDropdown("Fan")
                 .saveChallenge();
 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
 
     @Test
     public void canCreateAReferralChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Referral Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
                 .chooseChallengeType("Referral")
-                .fillInName("Referral Challenge")
+                .fillInName(challengeName)
                 .fillInHeadline("Referral Challenge for You!")
                 .fillInDescription("Refer your friends")
                 .addStage()
                 .trackableReferralChallenge()
                 .saveChallenge();
+
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 
     @Test
     public void canCreateAFacebookChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Facebook Challenge";
+
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
@@ -103,18 +113,21 @@ public class CreateChallengeStages extends AbstractSpec {
                 .facebookLikeStage()
                 .addFacebookPageURL("https://www.facebook.com/PepsiCanada")
                 .saveChallenge();
+
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
 
     @Test
     public void canCreateALinkedinChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "LinkedIn Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
                 .chooseChallengeType("LinkedIn")
-                .fillInName("LinkedIn Challenge")
+                .fillInName(challengeName)
                 .fillInHeadline("Join our LinkedIn Group!")
                 .addStage()
                 .linkedInJoinGroup()
@@ -122,35 +135,39 @@ public class CreateChallengeStages extends AbstractSpec {
                 .validate()
                 .saveChallenge();
 
-        //Assert.assertEquals("LinkedIn Challenge", showPage.getChallengeName());
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
 
     @Test
     public void createShareALinkChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Share A Link Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("ChallengeName")
+                .generateDetails(challengeName)
                 .addStage()
                 .shareALink()
                 .fillInLinkDetails("reddit.com")
                 .loadURL()
                 .saveChallenge();
 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 
     @Test
     public void completeAnActionOnline() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Online Action Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("ActionOnlineChallenge")
+                .generateDetails(challengeName)
                 .addStage()
                 .onlineAction()
                 .addLinkToContent("http://mccallspatternbehavior.tumblr.com/")
@@ -160,49 +177,56 @@ public class CreateChallengeStages extends AbstractSpec {
         //.publishChallenge()
         //.updatePublishingOptions();
 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 //               
 
     @Test
     public void createNPSChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "NPS Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("NPS Challenge")
+                .generateDetails(challengeName)
                 .addStage()
                 .npsStage()
                 .saveChallenge();
 
-        //assert some shit here.
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
 
     @Test
     public void createUpdateYourProfileChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Update Yo Profile";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Update Yo Profile")
+                .generateDetails(challengeName)
                 .addStage()
                 .updateYourProfileStage()
                 .saveChallenge();
-        //.publishChallenge();
+
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 
     @Test
     public void createAdvocateWorkflowChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Advocate Workflow";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Advocate Workflow")
+                .generateDetails(challengeName)
                 .addStage()
                 .advocateWorkflow()
                 .switchToTargeting()
@@ -210,53 +234,64 @@ public class CreateChallengeStages extends AbstractSpec {
                 .targetByPosition("CEO")
                 .saveChallenge();
 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
 
     @Test
     public void createAnswerSomeQuestionsChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Answer Some Questions";
+
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Answer Some Questions")
+                .generateDetails(challengeName)
                 .addStage()
                 .answerSomeQuestions()
                 .generateQuestion()
                 .saveChallenge();
+
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
 
     }
 
     @Test
     public void uploadAnImageChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Upload an Image";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Upload an Image")
+                .generateDetails(challengeName)
                 .addStage()
                 .uploadAnImage()
                 .saveChallenge();
 
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
 
     @Test
     public void corporateConfirmationChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Corporate Confirmation Challenge";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Upload an Image")
+                .generateDetails(challengeName)
                 .addStage()
                 .advocateWorkflow()
                 .addStage()
                 .corporateConfirmationStage()
                 .saveChallenge();
+        
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
 
     }
 
@@ -264,36 +299,42 @@ public class CreateChallengeStages extends AbstractSpec {
 
     public void geoCheckInChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Geo CheckIn";
+        
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Geo CheckIn")
+                .generateDetails(challengeName)
                 .addStage()
                 .geoCheckInStage()
                 .setGeoLocation("191 Niagara Toronto Ontario")
                 .validateLocation()
                 .saveChallenge();
+        
+        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
 
     }
 
-       @Test
-    
+    @Test
+
     public void onlineReviewChallenge() {
         LoginPage start = new LoginPage(driver);
-        start.loginAdministrator()
+        final String challengeName = "Online Review";
+        final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
                 .addNewChallenge()
                 .createBlankChallenge()
-                .generateDetails("Online Review")
+                .generateDetails(challengeName)
                 .addStage()
                 .onlineReviewStage()
-                .linkToReviewContent("www.reddit.com")
-                .<pageobjects.admin.challenge.Creator>pause(5000L);
-    
-    
+                .linkToReviewContent("http://www.reddit.com")
+                .saveChallenge();
+        
+          Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
     }
     //@Test for AppExchange
     //@Test for GetApp

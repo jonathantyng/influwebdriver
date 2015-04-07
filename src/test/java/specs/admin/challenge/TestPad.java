@@ -9,10 +9,11 @@ import specs.admin.AbstractSpec;
 public class TestPad extends AbstractSpec {
     
 
-    @Test
-    public void canCreatePostToTwitterChallenge() {
+
+  @Test
+    public void createShareALinkChallenge() {
         LoginPage start = new LoginPage(driver);
-        final String challengeName = "Post to Twitter";
+        final String challengeName = "Share A Link Challenge";
         final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
@@ -20,15 +21,14 @@ public class TestPad extends AbstractSpec {
                 .createBlankChallenge()
                 .generateDetails(challengeName)
                 .addStage()
-                .postToTwitterStage()
-                .chooseTypeOfTweet("Hashtag")
-                .<pageobjects.admin.challenge.creator.stages.TwitterPost>pause(5000L)
-                .inputRequiredContent("#paulsimon")
-                .inputDefaultText("#paulsimon is the best")
+                .shareALink()
+                .fillInLinkDetails("reddit.com")
+                .loadURL()
+                .addDefaultTwitterText()
                 .saveChallenge();
 
         Assert.assertEquals(challengeName, challengeShow.getChallengeName());
-        
+
     }
     
 }

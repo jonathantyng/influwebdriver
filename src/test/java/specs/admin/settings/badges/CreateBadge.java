@@ -17,15 +17,6 @@ public class CreateBadge extends AbstractSpec{
                     .navigateToScoringAndAchievement()
                     .pause(5000L);
                 
-        
-        
-    
-    
+      
     }
-    
-    
-    
-    
-    
-    
 }
