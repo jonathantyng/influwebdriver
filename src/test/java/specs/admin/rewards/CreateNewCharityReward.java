@@ -21,7 +21,8 @@ public class CreateNewCharityReward extends AbstractSpec {
                 .fillInName(rewardName)
                 .fillInDescription("Some description")
                 .chooseType("Charity")
-                .saveReward();
+                .saveReward()
+                .navigateToRewards();
                 
         Assert.assertEquals(rewardName, rewardList.getRewardName(1));
     }

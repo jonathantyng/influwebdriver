@@ -7,7 +7,7 @@ import specs.admin.AbstractSpec;
 public class SortNominees extends AbstractSpec {
 
     @Test
-    public void filterNomineesByName() {
+    public void sortNomineesByName() {
 
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
@@ -18,7 +18,7 @@ public class SortNominees extends AbstractSpec {
     }
 
     @Test
-    public void filterNomineesBySource() {
+    public void sortNomineesBySource() {
 
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
@@ -28,7 +28,7 @@ public class SortNominees extends AbstractSpec {
     }
 
     @Test
-    public void filterNomineesByNPSScore() {
+    public void sortNomineesByNPSScore() {
 
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
@@ -38,7 +38,7 @@ public class SortNominees extends AbstractSpec {
     }
 
     @Test
-    public void filterNomineesByRelationship() {
+    public void sortNomineesByRelationship() {
 
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
@@ -48,7 +48,7 @@ public class SortNominees extends AbstractSpec {
     }
 
     @Test
-    public void filterNomineesByChallengeCompletions() {
+    public void sortNomineesByChallengeCompletions() {
 
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()
@@ -58,7 +58,7 @@ public class SortNominees extends AbstractSpec {
     }
 
     @Test
-    public void filterNomineesByLastActivity() {
+    public void sortNomineesByLastActivity() {
 
         LoginPage start = new LoginPage(driver);
         start.loginAdministrator()

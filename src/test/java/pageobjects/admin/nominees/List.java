@@ -17,6 +17,12 @@ public class List extends Page{
         private final By sortNomineesByLastActivitySelector = By.cssSelector("#sort-last-activity");
         private final By filterByNomineeNameSelector = By.cssSelector("#q_name_or_email_cont");
         private final By filterByActiveNomineesSelector = By.cssSelector("#search_by_hidden_active");
+        private final By filterByArchivedNomineesSelector = By.cssSelector("#search_by_hidden_archived");
+        private final By filterByDetractorNomineeSelector = By.cssSelector("#search_by_nps_category_detractor");
+        private final By filterByNeutralNomineeSelector = By.cssSelector("#search_by_nps_category_neutral");
+        private final By filterByPromoterNomineeSelector = By.cssSelector("#search_by_nps_category_promoter");
+        private final By filterByUnknownNPSNomineesSelector = By.cssSelector("#search_by_nps_category_unknown");
+        private final By filterByNomineeSourceSelector = By.cssSelector("#s2id_autogen8");
 
 
 
@@ -80,10 +86,39 @@ public class List extends Page{
     }
     
     public List filterByArchivedNominees(){
-        findElement(filterBy)
-    
+        findElement(filterByArchivedNomineesSelector).click();
+        
+        return this;
+    }
+
+    public List filterByDetractorNominee(){
+        findElement(filterByDetractorNomineeSelector).click();
+        
+        return this;
+    }
+
+    public List filterByNeutralNominee(){
+        findElement(filterByNeutralNomineeSelector).click();
+        
+        return this;
     }
     
+    public List filterByPromoterNominee(){
+        findElement(filterByPromoterNomineeSelector).click();
+        
+        return this;
+    }
+    
+    public List filterByUnknownNPSNominees() {
+        findElement(filterByUnknownNPSNomineesSelector).click();
+        
+        return this;
+    
+    }
 
-
+    public List filterByNomineeSource() {
+        findElement(filterByNomineeSourceSelector).sendKeys("Maven");
+        
+        return this;
+    }
 }
