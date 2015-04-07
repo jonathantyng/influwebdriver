@@ -138,7 +138,7 @@ public class CreateChallengeStages extends AbstractSpec {
         Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
 
-    @Test
+  @Test
     public void createShareALinkChallenge() {
         LoginPage start = new LoginPage(driver);
         final String challengeName = "Share A Link Challenge";
@@ -152,6 +152,7 @@ public class CreateChallengeStages extends AbstractSpec {
                 .shareALink()
                 .fillInLinkDetails("reddit.com")
                 .loadURL()
+                .addDefaultTwitterText()
                 .saveChallenge();
 
         Assert.assertEquals(challengeName, challengeShow.getChallengeName());
