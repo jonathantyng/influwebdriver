@@ -24,4 +24,10 @@ public class TemplateLibrary extends Page {
             throw new RuntimeException("Not on the template library");
         }
     }
+
+    public Creator selectChallengeFromTemplate() {
+        findElement(By.cssSelector("#template-31 > div.template-actions > a")).click();
+        
+        return new Creator(getDriver());
+    }
 }

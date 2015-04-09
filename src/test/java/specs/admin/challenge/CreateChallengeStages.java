@@ -1,4 +1,4 @@
-//This suite tests each invidvidual challenge type, with unique specs. 
+
 package specs.admin.challenge;
 
 import org.junit.Assert;

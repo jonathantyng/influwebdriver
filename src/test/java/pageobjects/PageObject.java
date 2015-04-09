@@ -67,6 +67,10 @@ public class PageObject {
     protected void waitForElementToDisapear(By selector) {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(selector));
     }
+    
+    protected void waitForElementToAppear(By selector) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
+    }
 
     public <T extends PageObject > T pause(long time) {
         try {

@@ -22,12 +22,13 @@ public class add extends Page{
 
     public add addNomineeEmail() {
         findElement(nomineeEmailSelector).sendKeys("shannon+nominee@influitive.com");
+        
     
         return this;   
     }
 
-    public add addNomineeName() {
-        findElement(nomineeNameSelector).sendKeys("Shannon Nominee");
+    public add addNomineeName(String nomineeName) {
+        findElement(nomineeNameSelector).sendKeys(nomineeName);
         
         return this;
     }

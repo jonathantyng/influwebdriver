@@ -5,15 +5,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageobjects.admin.Page;
 
+public class AddBadge extends Page{
 
-public class List extends Page {
-
-    public List(WebDriver driver) {
+    public AddBadge(WebDriver driver) {
         super(driver);
     }
 
-    public List navigateToScoringAndAchievement() {
-        findElement(By.cssSelector(".accordion .accordion-group:nth-child(2)")).click();
+    public AddBadge addBadgeName() {
+        findElement(By.cssSelector("#badge_name")).sendKeys("Test Badge");
         
         return this;
     }

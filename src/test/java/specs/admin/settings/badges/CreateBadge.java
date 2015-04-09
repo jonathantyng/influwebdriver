@@ -14,9 +14,15 @@ public class CreateBadge extends AbstractSpec{
         LoginPage start = new LoginPage(driver);
             start.loginAdministrator()
                     .navigateToSettings()
-                    .navigateToScoringAndAchievement()
+                    
+                    .navigateToLevelsAndBadges()
+                    
+                    .<pageobjects.admin.settings.List>dismissTutorial()
+                    .addNewBadge()
                     .pause(5000L);
-                
+                    //.addBadgeName();
+            
+               
       
     }
 }

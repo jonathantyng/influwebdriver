@@ -2,7 +2,6 @@ package pageobjects.admin;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import pageobjects.PageObject;
 
 public class Page extends PageObject {
@@ -65,6 +64,13 @@ public class Page extends PageObject {
         
     
         return new pageobjects.admin.settings.List(getDriver());
+    }
+    
+    public pageobjects.admin.experiences.List navigateToExpereinces() {
+        findElement(By.cssSelector("#Experiences")).click();
+        
+        return new pageobjects.admin.experiences.List(getDriver());
+        
     }
 
 }

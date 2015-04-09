@@ -121,4 +121,24 @@ public class List extends Page{
         
         return this;
     }
+
+    public String getNomineeName() {
+            return findElement(By.cssSelector("#contact-list > tr > td.fields > div.name > a")).getText();
+            
+    }
+
+    public List selectNomineeForArchive() {
+            findElement(By.cssSelector(".invite-checkbox")).click();
+            
+            return this;
+    }
+
+    public List archiveNominee() {
+        findElement(By.cssSelector("#content > div > div.button-bar > div.span9 > input.pull-left.archive-btn.highlighted")).click();
+        driver.switchTo().alert().accept();
+        return this;
+    }
+    
+    
+    
 }
