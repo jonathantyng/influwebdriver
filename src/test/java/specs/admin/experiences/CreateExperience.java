@@ -24,7 +24,7 @@ public class CreateExperience extends AbstractSpec{
          .targetByAdvocate()
          .saveExperience();
 
-         Assert.assertEquals(experienceName, experienceList.getExperienceName);
+         Assert.assertEquals(experienceName, experienceList.getExperienceName());
     
     }    
 }
