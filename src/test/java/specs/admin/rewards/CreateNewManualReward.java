@@ -17,7 +17,7 @@ public class CreateNewManualReward extends AbstractSpec {
                 .navigateToRewards()
                 .<pageobjects.admin.rewards.List>dismissTutorial()
                 .addNewReward()
-                .chooseManualFulfillment()
+               // .chooseManualFulfillment()
                 .moveToDetailsPane()
                 .fillInName(rewardName)
                 .fillInDescription("Some description")
