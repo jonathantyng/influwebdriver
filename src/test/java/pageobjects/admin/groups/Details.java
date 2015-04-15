@@ -8,8 +8,8 @@ public class Details extends Page {
 
     private final By groupNameSelector = By.cssSelector(".details .name");
     private final By addAdvocateButton = By.cssSelector(".button-list.primary .dialog-link" );
-    private final By membershipLastUpdatedSelector = By.xpath("//*[@id='kpis']//*[@class='details_actions']");
-    private final By membershipCountSelector = By.xpath("//*[@id='kpis']//*[@class='details_actions']//p[contains(text(), 'Member Count')]/strong ");
+    private final By membershipLastUpdatedSelector = By.cssSelector("#kpis .details_actions > p:last-child");
+    private final By membershipCountSelector = By.xpath("//*[@id='kpis']//*[@class='details_actions']//p[contains(text(), 'Available to')]/strong ");
     
     public Details(WebDriver driver) {
         super(driver);
@@ -35,7 +35,9 @@ public class Details extends Page {
             }
         }
         
-        return findElement(membershipCountSelector).getText();
+        return findElement(membershipCountSelector)
+                .getText()
+                .replaceAll("\\D+", "");
     }
     
     public String getLastRefreshed() {
