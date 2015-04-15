@@ -10,69 +10,58 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PageObject {
-
-    public final WebDriver driver;
-    private final WebDriverWait wait;
-    private final Predicate<WebElement> displayedElementPredicate = new Predicate<WebElement>() {
-        @Override
-        public boolean evaluate(WebElement t) {
-            return t.isDisplayed();
-        }
-    };
-
-    public PageObject(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, 5);
-    }
-
-    protected void typeInSelect2Input(String keys) {
+public interface PageObject {
+    public WebDriver getDriver();
+    public Predicate<WebElement> getDisplayedElementPredicate();
+    public WebDriverWait getWait();
+    
+    default void typeInSelect2Input(String keys) {
         findElement(By.cssSelector("input.select2-input.select2-focused")).sendKeys(keys);
     }
 
-    protected void chooseSelect2Match() {
+    default void chooseSelect2Match() {
         findElement(By.className("select2-match")).click();
     }
     
-    protected void chooseFirstSelect2Result() {
+    default void chooseFirstSelect2Result() {
         findElement(By.className("select2-result")).click();
     }
 
-    protected WebElement findElement(By selector) {
+    default WebElement findElement(By selector) {
         return getDriver().findElement(selector);
     }
     
-    protected java.util.List<WebElement> findElements(By selector) {
+    default java.util.List<WebElement> findElements(By selector) {
         return getDriver().findElements(selector);
     }
 
-    protected WebElement findChildOfVisibleParent(By parentSelector, By childSelector) {
+    default WebElement findChildOfVisibleParent(By parentSelector, By childSelector) {
         return findVisibleElement(parentSelector).findElement(childSelector);
     }
 
-    protected WebElement findVisibleElement(By selector) {
+    default WebElement findVisibleElement(By selector) {
         java.util.List<WebElement> elements = getDriver().findElements(selector);
 
-        return CollectionUtils.find(elements, displayedElementPredicate);
+        return CollectionUtils.find(elements, getDisplayedElementPredicate());
     }
 
-    protected WebElement findParentOf(By selector) {
+    default WebElement findParentOf(By selector) {
         return findElement(selector).findElement(By.xpath("parent::*"));
     }
 
-    protected void waitForElement(By selector) {
-        wait.until(ExpectedConditions.presenceOfElementLocated(selector));
+    default void waitForElement(By selector) {
+        getWait().until(ExpectedConditions.presenceOfElementLocated(selector));
     }
 
-    protected void waitForElementToDisapear(By selector) {
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(selector));
+    default void waitForElementToDisapear(By selector) {
+        getWait().until(ExpectedConditions.invisibilityOfElementLocated(selector));
     }
     
-    protected void waitForElementToAppear(By selector) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(selector));
+    default void waitForElementToAppear(By selector) {
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(selector));
     }
 
-    public <T extends PageObject > T pause(long time) {
+    default <T extends PageObject > T pause(long time) {
         try {
             Thread.sleep(time);
         } catch (InterruptedException ex) {
@@ -82,17 +71,14 @@ public class PageObject {
         return (T)this;
     }
 
-    protected WebDriver getDriver() {
-        return this.driver;
-    }
-
-    protected void waitForAjaxLoader() {
+    default void waitForAjaxLoader() {
         waitForElementToDisapear(By.cssSelector(".ajax-load"));
     }
 
-    protected void searchSelect2For(By selector, String thingToSelect) {
+    default void searchSelect2For(By selector, String thingToSelect) {
         findParentOf(selector).findElement(By.cssSelector(".select2-container")).click();
         typeInSelect2Input(thingToSelect);
         chooseSelect2Match();
     }
+    
 }

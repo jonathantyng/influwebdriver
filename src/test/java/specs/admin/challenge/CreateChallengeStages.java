@@ -47,9 +47,6 @@ public class CreateChallengeStages extends AbstractSpec {
                 .twitterFollowStage()
                 .addTwitterUserToFollow("Pepsi")
                 .validateTwitterUser()
-                .switchToTargeting()
-                .targetToSpecificAdvocates()
-                .targetByPosition("CEO")
                 .saveChallenge();
 
         Assert.assertEquals(challengeName, challengeShow.getChallengeName());
@@ -230,9 +227,6 @@ public class CreateChallengeStages extends AbstractSpec {
                 .generateDetails(challengeName)
                 .addStage()
                 .advocateWorkflow()
-                .switchToTargeting()
-                .targetToSpecificAdvocates()
-                .targetByPosition("CEO")
                 .saveChallenge();
 
         Assert.assertEquals(challengeName, challengeShow.getChallengeName());

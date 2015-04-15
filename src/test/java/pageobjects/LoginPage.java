@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-public class LoginPage extends PageObject {
+public class LoginPage extends AbstractPageObject {
     
     private final By userNameFieldSelector = By.cssSelector(".new-session #user_email");
     private final By passwordFieldSelector = By.cssSelector(".new-session #user_password");

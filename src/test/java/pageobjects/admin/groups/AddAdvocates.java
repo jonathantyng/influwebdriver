@@ -2,10 +2,10 @@
 package pageobjects.admin.groups;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pageobjects.PageObject;
+import pageobjects.AbstractPageObject;
 
 
-public class AddAdvocates extends PageObject {
+public class AddAdvocates extends AbstractPageObject {
 
     private final By selectedAdvocateContainer = By.id("s2id_contact_ids");
     private final By commitButtonSelector = By.cssSelector(".new_explicit_group_contact input[type='submit']");

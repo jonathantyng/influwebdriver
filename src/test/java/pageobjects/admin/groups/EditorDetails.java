@@ -37,7 +37,4 @@ public class EditorDetails extends Editor {
         
         return this;
     }
-
-  
-    
 }
