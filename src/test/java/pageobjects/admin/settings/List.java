@@ -7,7 +7,7 @@ import pageobjects.admin.Page;
 
 
 public class List extends Page {
-    private final By levelsAndBadgesSelector = By.partialLinkText("Levels");
+    private final By levelsAndBadgesSelector = By.cssSelector(".accordion .accordion-group:nth-child(2) > ul > li:nth-child(2) a");
     
     public List(WebDriver driver) {
         super(driver);

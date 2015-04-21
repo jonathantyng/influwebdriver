@@ -9,11 +9,13 @@ import specs.admin.AbstractSpec;
 public class TestPad extends AbstractSpec {
     
 
+    @Test
 
-  @Test
-    public void createShareALinkChallenge() {
+  public void getAppChallenge() {
+        
+        
         LoginPage start = new LoginPage(driver);
-        final String challengeName = "Share A Link Challenge";
+        final String challengeName = "GetApp Challenge";
         final Show challengeShow = start.loginAdministrator()
                 .navigateToChallenges()
                 .<pageobjects.admin.challenge.List>dismissTutorial()
@@ -21,13 +23,10 @@ public class TestPad extends AbstractSpec {
                 .createBlankChallenge()
                 .generateDetails(challengeName)
                 .addStage()
-                .shareALink()
-                .fillInLinkDetails("reddit.com")
-                .loadURL()
-                .addDefaultTwitterText()
-                .saveChallenge();
-
-        Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+                .getAppExchangeStage();
+                
+                
+       Assert.assertEquals(challengeName, challengeShow.getChallengeName());
 
     }
     

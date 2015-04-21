@@ -19,14 +19,14 @@ public class CreateNewTangoCardReward extends AbstractSpec {
                 .navigateToRewards()
                 .<pageobjects.admin.rewards.List>dismissTutorial()
                 .addNewReward()
-                .chooseTangoCardFulfilment();
-                //.provideFulfillmentURL()
-                //.moveToDetailsPane()
-                //.fillInName(rewardName)
-                //.fillInDescription("Congrats! You won a link!")
-                //.chooseType("Gifts")
-                //.saveReward()
-                //.navigateToRewards();
+                .chooseTangoCardFulfilment()
+                .provideFulfillmentURL()
+                .moveToDetailsPane()
+                .fillInName(rewardName)
+                .fillInDescription("Congrats! You won a link!")
+                .chooseType("Gifts")
+                .saveReward()
+                .navigateToRewards();
         
         
     }

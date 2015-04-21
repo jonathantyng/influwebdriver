@@ -331,6 +331,28 @@ public class CreateChallengeStages extends AbstractSpec {
           Assert.assertEquals(challengeName, challengeShow.getChallengeName());
 
     }
-    //@Test for AppExchange
+  
+      @Test
+
+        public void appExchangeChallenge() {
+        
+        
+        LoginPage start = new LoginPage(driver);
+        final String challengeName = "AppExchange Challenge";
+        final Show challengeShow = start.loginAdministrator()
+                .navigateToChallenges()
+                .<pageobjects.admin.challenge.List>dismissTutorial()
+                .addNewChallenge()
+                .createBlankChallenge()
+                .generateDetails(challengeName)
+                .addStage()
+                .appExchangeReviewStage()
+                .linkToAppExchangeWebsite()
+                .saveChallenge();
+                
+       Assert.assertEquals(challengeName, challengeShow.getChallengeName());
+
+    }
+    
     //@Test for GetApp
 }

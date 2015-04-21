@@ -1,5 +1,7 @@
 package pageobjects.admin.challenge.creator;
 
+import pageobjects.admin.challenge.creator.stages.GetAppStage;
+import pageobjects.admin.challenge.creator.stages.AppExchangeStage;
 import pageobjects.admin.challenge.creator.stages.OnlineReviewStage;
 import pageobjects.admin.challenge.creator.stages.AnswerSomeQuestionsStage;
 import pageobjects.admin.challenge.creator.stages.CorporateConfirmationStage;
@@ -21,6 +23,7 @@ import pageobjects.admin.challenge.creator.stages.TwitterPost;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pageobjects.admin.challenge.Creator;
+import pageobjects.admin.challenge.Show;
 
 public class AddStageChooser extends Creator {
     private final By surveyStageSelector = By.xpath("//img[@alt='Questions']");
@@ -40,6 +43,10 @@ public class AddStageChooser extends Creator {
     private final By geoCheckInStageSelector = By.cssSelector("img[alt='Check in']");
     private final By npsStageSelector = By.cssSelector("img[alt='Nps']");
     private final By updateProfileStageSelector = By.cssSelector("img[alt='Update profile']");
+    private final By appExchangeStageSelector = By.cssSelector("img[alt='App exchange']");
+    private final By onlineReviewStageSelector = By.cssSelector("img[alt='Review']");
+
+
 
 
 
@@ -154,9 +161,21 @@ public class AddStageChooser extends Creator {
     }
 
     public OnlineReviewStage onlineReviewStage() {
-            findElement(By.cssSelector("img[alt='Review']")).click();
+            findElement(onlineReviewStageSelector).click();
             
            return new OnlineReviewStage(getDriver());
+    }
+
+    public AppExchangeStage appExchangeReviewStage() {
+        findElement(appExchangeStageSelector).click();
+        
+        return new AppExchangeStage(getDriver());
+    }
+
+    public GetAppStage getAppExchangeStage() {
+        findElement(By.cssSelector("img[alt='Get app']")).click();
+        
+        return new GetAppStage(getDriver());
     }
     
 }
