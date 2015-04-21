@@ -7,5 +7,10 @@ public class Dashboard extends List {
     public Dashboard(WebDriver driver) {
         super(driver);
     }
+
+    public void navigateToSettings() {
+        
+        
+    }
     
 }

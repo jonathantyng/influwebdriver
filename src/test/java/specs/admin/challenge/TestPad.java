@@ -23,7 +23,10 @@ public class TestPad extends AbstractSpec {
                 .createBlankChallenge()
                 .generateDetails(challengeName)
                 .addStage()
-                .getAppExchangeStage();
+                .getAppExchangeStage()
+                .linkToGetAppWebsite()
+                .loadGetAppWebsite()
+                .saveChallenge();
                 
                 
        Assert.assertEquals(challengeName, challengeShow.getChallengeName());

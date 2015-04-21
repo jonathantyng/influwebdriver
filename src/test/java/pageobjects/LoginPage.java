@@ -19,6 +19,8 @@ public class LoginPage extends AbstractPageObject {
     public LoginPage(WebDriver driver) {
         super(driver);
     }
+
+
  
     public pageobjects.admin.Dashboard loginAdministrator() {
         return loginAdministrator(influAdminEmail, influAdminPassword);

@@ -42,5 +42,11 @@ public class Details extends Page{
         return new EditorTargeting(getDriver());
     }
 
+    public Details makeExperiencePrivate() {
+        findElement(By.cssSelector("#private")).click();
+        
+        return this;
+    }
+
         
 }

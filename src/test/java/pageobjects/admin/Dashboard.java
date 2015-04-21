@@ -17,7 +17,13 @@ public class Dashboard extends Page {
         
         return this;
     }
-     
+
+    public AdvocateView navigateToAdvocateView() {
+        findElement(By.cssSelector("#context-switcher > a")).click();
+        
+        return new AdvocateView(getDriver());
+        
+    }
 
    
 }

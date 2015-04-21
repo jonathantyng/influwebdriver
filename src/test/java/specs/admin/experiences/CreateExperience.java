@@ -11,7 +11,7 @@ import specs.admin.AbstractSpec;
 public class CreateExperience extends AbstractSpec{
 
     @Test
-    public void canCreateNewExperience (){
+    public void canCreateNewPublicExperience (){
     LoginPage start = new LoginPage(driver);
     final String experienceName = "Super Happy Fun Time";
     final List experienceList = start.loginAdministrator()
@@ -27,4 +27,16 @@ public class CreateExperience extends AbstractSpec{
          Assert.assertEquals(experienceName, experienceList.getExperienceName());
     
     }    
+    
+    @Test 
+    public void canCreateNewPrivateExperience(){
+    LoginPage start = new LoginPage(driver);
+    start.loginAdministrator()
+            .navigateToExpereinces()
+            .addAnExperience()
+            .fillInExperienceName("Private Experience")
+            .fillInExperienceDescription("You're not invited unless I tell you the secret code")
+            .makeExperiencePrivate();
+    
+    }
 }

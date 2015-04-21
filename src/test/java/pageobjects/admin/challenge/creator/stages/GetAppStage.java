@@ -1,19 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pageobjects.admin.challenge.creator.stages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pageobjects.admin.challenge.Show;
+import pageobjects.admin.challenge.creator.Stage;
 
-/**
- *
- * @author shannon
- */
-class GetAppStage {
+
+public class GetAppStage extends Stage{
 
     public GetAppStage(WebDriver driver) {
+        super(driver);
+   
     }
+
+    public GetAppStage linkToGetAppWebsite() {
+        findElement(By.cssSelector("#c97 > div > div > fieldset > section > label > input")).sendKeys("https://www.getapp.com/marketing-software/a/advocatehub/reviews/write/");
+           
+            return this;
+    }
+
+    public GetAppStage loadGetAppWebsite() {
+        findElement(By.cssSelector("#c97 > div > div > fieldset > section > label > a")).click();
+        
+        return this;
+    }
+
     
+
 }
