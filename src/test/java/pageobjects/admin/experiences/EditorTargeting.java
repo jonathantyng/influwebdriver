@@ -29,10 +29,10 @@ public class EditorTargeting extends Details{
         return this;
      }
 
-    public List saveExperience() {
+    public Show saveExperience() {
         findElement(By.cssSelector("#save-button")).click();
         
-        return new List (getDriver());
+        return new pageobjects.admin.experiences.Show (getDriver());
     }
 
 }

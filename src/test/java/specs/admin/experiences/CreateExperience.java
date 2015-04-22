@@ -4,7 +4,7 @@ package specs.admin.experiences;
 import org.junit.Assert;
 import org.junit.Test;
 import pageobjects.LoginPage;
-import pageobjects.admin.experiences.List;
+import pageobjects.admin.experiences.Show;
 import specs.admin.AbstractSpec;
 
 
@@ -13,13 +13,13 @@ public class CreateExperience extends AbstractSpec{
     @Test
     public void canCreateNewPublicExperience (){
     LoginPage start = new LoginPage(driver);
-    final String experienceName = "Super Happy Fun Time";
-    final List experienceList = start.loginAdministrator()
+    final String experienceName = "Public Experience";
+    final Show experienceList = start.loginAdministrator()
          .navigateToExpereinces()
          .addAnExperience()
          .fillInExperienceName(experienceName)
          .fillInExperienceDescription("Where fun stuff happens!")
-         .createExperienceURL("FunTime")
+         //.createExperienceURL("FunTime")
          .switchToExperienceTargeting()
          .targetByAdvocate()
          .saveExperience();
@@ -31,12 +31,17 @@ public class CreateExperience extends AbstractSpec{
     @Test 
     public void canCreateNewPrivateExperience(){
     LoginPage start = new LoginPage(driver);
-    start.loginAdministrator()
+    final String experienceName = "Private Experience";
+    final Show experienceList = start.loginAdministrator()
             .navigateToExpereinces()
             .addAnExperience()
-            .fillInExperienceName("Private Experience")
+            .fillInExperienceName(experienceName)
             .fillInExperienceDescription("You're not invited unless I tell you the secret code")
-            .makeExperiencePrivate();
+            .makeExperiencePrivate()
+            .switchToExperienceTargeting()
+            .saveExperience();
     
+            Assert.assertEquals(experienceName, experienceList.getExperienceName());
+
     }
 }

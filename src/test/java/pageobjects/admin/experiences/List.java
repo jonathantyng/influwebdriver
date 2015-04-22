@@ -19,8 +19,5 @@ public class List extends Page{
         return new pageobjects.admin.experiences.Details (getDriver());
     }
 
-    public String getExperienceName (){
-        return findElement(By.cssSelector("#list_collection > li > div > div.id > div > a")).getText();
-    
-    }
+  
 }
