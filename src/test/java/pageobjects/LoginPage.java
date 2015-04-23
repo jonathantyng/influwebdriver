@@ -13,6 +13,10 @@ public class LoginPage extends AbstractPageObject {
     private final By signinButtonSelector = By.cssSelector(".new-session #sign-in-button");
     private final By pageVerificationSelector = By.cssSelector("form.new-session");
     private final By facebookIcon = By.cssSelector(".login-providers #Facebook");
+    private final By twitterIcon = By.cssSelector(".login-providers #Twitter");
+    private final By LinkedInIcon = By.cssSelector(".login-providers #Linkedin");
+
+
     private final String influAdminPassword = "1nflu1t1v3";
     private final String influAdminEmail = "admin@influitive.com";
     
@@ -34,6 +38,12 @@ public class LoginPage extends AbstractPageObject {
     public pageobjects.advocate.Dashboard loginAdvocate(String username, String password) {
         this.loginUser(username, password);
         return new pageobjects.advocate.Dashboard(getDriver());
+    }
+    
+    public pageobjects.advocate.LinkedInSignInPage loginWithLinkedIn(){
+        findElement(By.cssSelector("#logged-out-form-container > div.static-content > section.auth-providers.centered > div > div:nth-child(1) > a")).click();
+        
+        return new pageobjects.advocate.LinkedInSignInPage(getDriver());
     }
     
     private void loginUser(String username, String password) {
@@ -61,5 +71,14 @@ public class LoginPage extends AbstractPageObject {
     private WebElement clickFacebookIcon(){
         return findElement(facebookIcon);
     }
+    
+    private WebElement clickTwitterIcon(){
+        return findElement(twitterIcon);
+    }
+    
+    private WebElement clickLinkedInIcon(){
+        return findElement(LinkedInIcon);
+    }
+
 }
     

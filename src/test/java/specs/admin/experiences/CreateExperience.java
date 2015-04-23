@@ -19,7 +19,7 @@ public class CreateExperience extends AbstractSpec{
          .addAnExperience()
          .fillInExperienceName(experienceName)
          .fillInExperienceDescription("Where fun stuff happens!")
-         //.createExperienceURL("FunTime")
+         /*.createExperienceURL("FunTime")   This doesnt work, because you cant reuse ExperienceURLS - once it's created once, it fails every time afterwards. */
          .switchToExperienceTargeting()
          .targetByAdvocate()
          .saveExperience();
