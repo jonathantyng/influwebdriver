@@ -18,7 +18,7 @@ public class FacebookSignInPage extends Page{
     }
 
     public FacebookSignInPage fillInPassword(String password) {
-        findElement(By.cssSelector("#password")).sendKeys(password);
+        findElement(By.cssSelector("#pass")).sendKeys(password);
         
         return this;
     }

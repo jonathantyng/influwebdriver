@@ -11,11 +11,25 @@ public class TwitterSignInPage extends Page{
         super(driver);
     }
 
-    public TwitterSignInPage fillInUserNameOrEmail() {
-        findElement(By.cssSelector("#oauth_form > fieldset.sign-in > div.row.user > label")).sendKeys("alice.advocate@gmail.com");
+    public TwitterSignInPage fillInUserNameOrEmail(String email) {
+        findElement(By.cssSelector("#oauth_form > fieldset.sign-in > div.row.user > label")).sendKeys(email);
          
-        return TwitterSignInPage (getDriver());
+        return this;
     }
+
+    public TwitterSignInPage fillInPassword(String password) {
+        findElement(By.cssSelector("#oauth_form > fieldset.sign-in > div.row.password > label")).sendKeys(password);
+    
+        return this;
+    }
+
+    public Dashboard allowAccess() {
+        findElement(By.cssSelector("#allow")).click();
+        
+        return new pageobjects.advocate.Dashboard(getDriver());
+    
+    }
+    
     
     
 }

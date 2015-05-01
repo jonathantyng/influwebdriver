@@ -20,7 +20,6 @@ public class LoginSocial extends AbstractSpec{
         
         Assert.assertTrue(dashboard.hasVisiblePoints());
                 
-       //Assert.assertEquals(challengeName, challengeShow.getChallengeName());
     }
     
     
@@ -40,8 +39,11 @@ public class LoginSocial extends AbstractSpec{
     @Test 
     public void canLogInWithTwitter(){
         LoginPage start = new LoginPage(driver);
-        start.loginWithTwitter()
-                .fillInUserNameOrEmail();
+        final Dashboard dashboard = start.loginWithTwitter()
+                .fillInUserNameOrEmail("alice.advocate@gmail.com")
+                .fillInPassword("macbook18")
+                .allowAccess();
+        
         
         Assert.assertTrue(dashboard.hasVisiblePoints());
     
