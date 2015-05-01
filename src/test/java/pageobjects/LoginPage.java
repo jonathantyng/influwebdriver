@@ -15,6 +15,9 @@ public class LoginPage extends AbstractPageObject {
     private final By facebookIcon = By.cssSelector(".login-providers #Facebook");
     private final By twitterIcon = By.cssSelector(".login-providers #Twitter");
     private final By LinkedInIcon = By.cssSelector(".login-providers #Linkedin");
+    private final By loginWithLinkedInSelector = By.cssSelector("#logged-out-form-container > div.static-content > section.auth-providers.centered > div > div:nth-child(1) > a");
+    private final By loginWithFacebookSelector = By.cssSelector("#logged-out-form-container > div.static-content > section.auth-providers.centered > div > div:nth-child(3) > a > img");
+    private final By loginWithTwitterSelector = By.cssSelector("#logged-out-form-container > div.static-content > section.auth-providers.centered > div > div:nth-child(2) > a > img");
 
 
     private final String influAdminPassword = "1nflu1t1v3";
@@ -41,9 +44,22 @@ public class LoginPage extends AbstractPageObject {
     }
     
     public pageobjects.advocate.LinkedInSignInPage loginWithLinkedIn(){
-        findElement(By.cssSelector("#logged-out-form-container > div.static-content > section.auth-providers.centered > div > div:nth-child(1) > a")).click();
+        findElement(loginWithLinkedInSelector).click();
         
         return new pageobjects.advocate.LinkedInSignInPage(getDriver());
+    }
+    
+    public pageobjects.advocate.FacebookSignInPage loginWithFacebook() {
+        findElement(loginWithFacebookSelector).click();
+        
+        return new pageobjects.advocate.FacebookSignInPage (getDriver());
+    }
+    
+    public pageobjects.advocate.TwitterSignInPage loginWithTwitter(){
+        findElement(loginWithTwitterSelector).click();
+        
+        return new pageobjects.advocate.TwitterSignInPage (getDriver());
+        
     }
     
     private void loginUser(String username, String password) {
@@ -79,6 +95,8 @@ public class LoginPage extends AbstractPageObject {
     private WebElement clickLinkedInIcon(){
         return findElement(LinkedInIcon);
     }
+
+    
 
 }
     
